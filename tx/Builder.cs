@@ -10,7 +10,7 @@ public class Builder {
 		body = new Body();
 	}
 	
-	public Builder addMsgs(List<Any> msgs)
+	public Builder addMsgs(List<Any> msgs)	
 	{
 		body.addMsgs(msgs);
 		return this;	
