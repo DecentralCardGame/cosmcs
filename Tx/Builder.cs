@@ -1,6 +1,6 @@
 using Google.Protobuf.WellKnownTypes;
 
-namespace cosmcs.tx;
+namespace Cosmcs.Tx;
 
 public class Builder {
 	private Body body;

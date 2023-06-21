@@ -11,4 +11,9 @@ public class CompactBitArray {
 			Elems = ByteString.CopyFrom(elems)
 		};
 	}
+	
+	public Cosmos.Crypto.Multisig.V1beta1.CompactBitArray get()
+	{
+		return inner;
+	}
 }

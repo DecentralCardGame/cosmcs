@@ -5,12 +5,21 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  
+   <ItemGroup>
+  <ProjectReference Include="..\CS0433_1\CS0433_1.csproj">  
+    <Aliases>CustomTypes</Aliases>
+  </ProjectReference>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Ed25519" Version="1.0.0" />
+    <PackageReference Include="FsBech32" Version="0.1.2" />
+    <PackageReference Include="FSharp.Core" Version="7.0.300" />
     <PackageReference Include="Google.Protobuf" Version="3.23.3" />
     <PackageReference Include="NBitcoin.Secp256k1" Version="3.1.1" />
     <PackageReference Include="Phantasma.Tendermint.RPC" Version="1.0.6" />
+    <PackageReference Include="System.Runtime.Numerics" Version="4.3.0" />
   </ItemGroup>
 
 </Project>

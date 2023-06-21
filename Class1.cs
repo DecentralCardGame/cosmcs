@@ -1,4 +1,4 @@
-﻿namespace cosmcs;
+namespace Cosmcs;
 
 public class Class1
 {
