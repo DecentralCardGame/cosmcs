@@ -53,7 +53,6 @@ public class Body {
 
 	public byte[] intoBytes()
 	{
-		Tendermint.RPC
 		return this.intoProto().ToByteArray();
 	}
 }

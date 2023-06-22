@@ -1,3 +1,4 @@
+using Cosmcs.Crypto;
 using Google.Protobuf;
 
 namespace Cosmcs.Tx;
@@ -17,12 +18,12 @@ public class SignDoc
 		this.accoutNumber = accoutNumber;
 	}
 
-	public Raw Sign(NBitcoin.Secp256k1.ECPrivKey privKey)
+	public Raw Sign(PrivateKey privKey)
 	{
 		var sign_doc_bytes = intoBytes();
-		var signature = privKey.SignBIP340(sign_doc_bytes);
+		var signature = privKey.sign(sign_doc_bytes);
 
-		return new Raw(bodyBytes, authInfoBytes, new[] { signature.ToBytes() });
+		return new Raw(bodyBytes, authInfoBytes, new[] { signature });
 	}
 
 	public Cosmos.Tx.V1beta1.SignDoc intoProto()

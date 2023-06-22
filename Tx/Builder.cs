@@ -22,7 +22,7 @@ public class Builder {
 		return this;
 	}
 	
-	public Builder setTimeOutHeigt(long timeoutHeight)
+	public Builder setTimeOutHeigt(ulong timeoutHeight)
 	{
 		body.setTimeoutHeight(timeoutHeight);
 		return this;
