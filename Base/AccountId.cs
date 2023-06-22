@@ -10,7 +10,7 @@ public class AccountId
 	private String bech32;
 	private uint hrpLength;
 
-	public AccountId(String prefix, byte[] bytes)
+	private void newThis(String prefix, byte[] bytes)
 	{
 		var id = Bech32.encode(prefix, bytes);
 		if (!Regex.IsMatch(prefix, @"^[[a-z]|[0-9]]*"))
@@ -28,7 +28,18 @@ public class AccountId
 			throw new Exception("No the right length bro");
 		}
 	}
+
+	public AccountId(String prefix, byte[] bytes)
+	{
+		newThis(prefix, bytes);
+	}
 	
+	public AccountId(String stringId)
+	{
+		var decode = Bech32.decode(stringId).Value;
+		newThis(decode.Item1, decode.Item2);
+	}
+
 	public override string ToString()
 	{
 		return bech32;

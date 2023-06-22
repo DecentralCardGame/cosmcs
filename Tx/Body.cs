@@ -1,3 +1,4 @@
+using Google.Protobuf;
 using Google.Protobuf.WellKnownTypes;
 
 namespace Cosmcs.Tx;
@@ -5,9 +6,11 @@ namespace Cosmcs.Tx;
 public class Body {
 	private List<Any>? messages;
 	private String memo;
-	private long timeoutHeight;
+	private ulong timeoutHeight;
+	private List<Any> extensionOptions;
+	private List<Any> nonCriticalExtensionOptions;
 	
-	public Body(List<Any>? messages = null, String memo = "", long timeoutHeight = 0)
+	public Body(List<Any>? messages = null, String memo = "", ulong timeoutHeight = 0)
 	{
 		this.messages = messages;
 		this.memo = memo;
@@ -29,8 +32,28 @@ public class Body {
 		this.memo = memo;
 	}
 	
-	public void setTimeoutHeight(long timeoutHeight)
+	public void setTimeoutHeight(ulong timeoutHeight)
 	{
 		this.timeoutHeight = timeoutHeight;
+	}
+
+	public Cosmos.Tx.V1beta1.TxBody intoProto()
+	{
+		var proto = new Cosmos.Tx.V1beta1.TxBody
+		{
+			Memo = memo,
+			TimeoutHeight = timeoutHeight,
+		};
+		proto.Messages.Add(messages);
+		proto.ExtensionOptions.Add(extensionOptions);
+		proto.NonCriticalExtensionOptions.Add(nonCriticalExtensionOptions);
+
+		return proto;
+	}
+
+	public byte[] intoBytes()
+	{
+		Tendermint.RPC
+		return this.intoProto().ToByteArray();
 	}
 }

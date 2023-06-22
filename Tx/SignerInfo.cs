@@ -55,5 +55,4 @@ public class SignerPublicKey
 			default: throw new Exception("nene");
 		}
 	}
-	
 }
