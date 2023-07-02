@@ -10,60 +10,60 @@ public struct SingleData
 {
 	public SingleData(Cosmos.Tx.Signing.V1beta1.SignMode m)
 	{
-		mode = m;
+		Mode = m;
 	}
 
-	public Cosmos.Tx.Signing.V1beta1.SignMode mode { get; init; }
+	public Cosmos.Tx.Signing.V1beta1.SignMode Mode { get; init; }
 }
 
 public struct MultiData
 {
 	public MultiData(CompactBitArray b, List<ModeInfo> m)
 	{
-		bitarray = b;
-		modeInfos = m;
+		Bitarray = b;
+		ModeInfos = m;
 	}
 
-	public CompactBitArray bitarray { get; init; }
-	public List<ModeInfo> modeInfos { get; init; }
+	public CompactBitArray Bitarray { get; init; }
+	public List<ModeInfo> ModeInfos { get; init; }
 }
 
 public class ModeInfo
 {
-	private ModeInfoMode mode;
-	private SingleData? singleData;
-	private MultiData? multiData;
+	private ModeInfoMode _mode;
+	private SingleData? _singleData;
+	private MultiData? _multiData;
 
 	public ModeInfo(ModeInfoMode mode, SingleData? singleData, MultiData? multiData)
 	{
-		this.mode = mode;
-		this.singleData = singleData;
-		this.multiData = multiData;
+		_mode = mode;
+		_singleData = singleData;
+		_multiData = multiData;
 	}
 
 	public ModeInfo(SingleData singleData)
 	{
-		mode = ModeInfoMode.Single;
-		this.singleData = singleData;
+		_mode = ModeInfoMode.Single;
+		_singleData = singleData;
 	}
 
 	public ModeInfo(MultiData multiData)
 	{
-		mode = ModeInfoMode.Multi;
-		this.multiData = multiData;
+		_mode = ModeInfoMode.Multi;
+		_multiData = multiData;
 	}
 
-	public Cosmos.Tx.V1beta1.ModeInfo intoProto()
+	public Cosmos.Tx.V1beta1.ModeInfo IntoProto()
 	{
 		var proto = new Cosmos.Tx.V1beta1.ModeInfo();
-		switch (mode)
+		switch (_mode)
 		{
 			case ModeInfoMode.Single:
-				proto.Single.Mode = singleData.Value.mode;
+				proto.Single.Mode = _singleData.Value.Mode;
 				break;
 			case ModeInfoMode.Multi:
-				proto.Multi.Bitarray = multiData.Value.bitarray.get();
-				proto.Multi.ModeInfos.Add(multiData.Value.modeInfos.Select(m => m.intoProto()));
+				proto.Multi.Bitarray = _multiData.Value.Bitarray.Get();
+				proto.Multi.ModeInfos.Add(_multiData.Value.ModeInfos.Select(m => m.IntoProto()));
 				break;
 		}
 		return proto;

@@ -4,29 +4,29 @@ using Google.Protobuf.WellKnownTypes;
 namespace Cosmcs.Tx;
 
 public class SignerInfo {
-	private SignerPublicKey? publicKey;
-	private ModeInfo modeInfo;
-	private ulong sequence;
+	private SignerPublicKey? _publicKey;
+	private ModeInfo _modeInfo;
+	private ulong _sequence;
 
 	public SignerInfo(SignerPublicKey? publicKey, ulong sequence)
 	{
-		this.publicKey = publicKey;
-		this.sequence = sequence;
-		modeInfo = new ModeInfo(new SingleData(Cosmos.Tx.Signing.V1beta1.SignMode.Direct));
+		_publicKey = publicKey;
+		_sequence = sequence;
+		_modeInfo = new ModeInfo(new SingleData(Cosmos.Tx.Signing.V1beta1.SignMode.Direct));
 	}
 	
-	public AuthInfo authInfo(Fee fee)
+	public AuthInfo AuthInfo(Fee fee)
 	{
 		return new AuthInfo(new List<SignerInfo>{this}, fee);
 	}
 	
-	public Cosmos.Tx.V1beta1.SignerInfo intoProto()
+	public Cosmos.Tx.V1beta1.SignerInfo IntoProto()
 	{
 		return new Cosmos.Tx.V1beta1.SignerInfo
 		{
-			Sequence = sequence,
-			ModeInfo = modeInfo.intoProto(),
-			PublicKey = publicKey?.intoProto(),
+			Sequence = _sequence,
+			ModeInfo = _modeInfo.IntoProto(),
+			PublicKey = _publicKey?.IntoProto(),
 		};
 	}
 }
@@ -40,18 +40,18 @@ public enum SignerPublicKeyType
 
 public class SignerPublicKey
 {
-	private SignerPublicKeyType type;
-	private PublicKey? single;
-	private LegacyAminoMultisig? legacyAminoMultisig;
-	private Any? any;
+	private SignerPublicKeyType _type;
+	private PublicKey? _single;
+	private LegacyAminoMultisig? _legacyAminoMultisig;
+	private Any? _any;
 	
-	public Any intoProto()
+	public Any IntoProto()
 	{
-		switch(type)
+		switch(_type)
 		{
-			case SignerPublicKeyType.Any: return any;
-			case SignerPublicKeyType.LegacyAminoMultisig: return legacyAminoMultisig.intoProto();
-			case SignerPublicKeyType.Single: return single.intoProto();
+			case SignerPublicKeyType.Any: return _any;
+			case SignerPublicKeyType.LegacyAminoMultisig: return _legacyAminoMultisig.IntoProto();
+			case SignerPublicKeyType.Single: return _single.IntoProto();
 			default: throw new Exception("nene");
 		}
 	}
@@ -62,10 +62,10 @@ public class SignerPublicKey
 		LegacyAminoMultisig? legacyAminoMultisig,
 		Any? any)
 	{
-		this.type = type;
-		this.single = single;
-		this.legacyAminoMultisig = legacyAminoMultisig;
-		this.any = any;
+		_type = type;
+		_single = single;
+		_legacyAminoMultisig = legacyAminoMultisig;
+		_any = any;
 	}
 
 	public static SignerPublicKey Single(PublicKey key)

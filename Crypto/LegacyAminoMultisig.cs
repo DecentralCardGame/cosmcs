@@ -4,22 +4,22 @@ using Google.Protobuf.WellKnownTypes;
 namespace Cosmcs.Crypto;
 
 public class LegacyAminoMultisig {
-	public const String TYPE_URL = "/cosmos.crypto.multisig.LegacyAminoPubKey";
+	public const String TypeUrl = "/cosmos.crypto.multisig.LegacyAminoPubKey";
 	
-	private uint threshold;
-	private List<PublicKey> publicKeys;
+	private uint _threshold;
+	private List<PublicKey> _publicKeys;
 	
-	public Any intoProto()
+	public Any IntoProto()
 	{
 		var proto = new Cosmos.Crypto.Multisig.LegacyAminoPubKey
 		{
-			Threshold = threshold,
+			Threshold = _threshold,
 		};
-		proto.PublicKeys.Add(publicKeys.Select(p => p.intoProto()));
+		proto.PublicKeys.Add(_publicKeys.Select(p => p.IntoProto()));
 		
 		return new Any
 		{
-			TypeUrl = TYPE_URL,
+			TypeUrl = TypeUrl,
 			Value = proto.ToByteString()
 		};
 	}

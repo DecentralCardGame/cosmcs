@@ -16,7 +16,7 @@ public class Coin {
 		denom = new Denom(d);
 	}
 	
-	public Cosmos.Base.V1beta1.Coin intoProto()
+	public Cosmos.Base.V1beta1.Coin IntoProto()
 	{
 		return new Cosmos.Base.V1beta1.Coin
 		{

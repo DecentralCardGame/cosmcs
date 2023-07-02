@@ -3,33 +3,33 @@ using Google.Protobuf.WellKnownTypes;
 namespace Cosmcs.Tx;
 
 public class Builder {
-	private Body body;
+	private Body _body;
 	
 	public Builder()
 	{
-		body = new Body();
+		_body = new Body();
 	}
 	
-	public Builder addMsgs(List<Any> msgs)	
+	public Builder AddMsgs(List<Any> msgs)
 	{
-		body.addMsgs(msgs);
+		_body.AddMsgs(msgs);
 		return this;	
 	}
 	
-	public Builder setMemo(String memo)
+	public Builder SetMemo(String memo)
 	{
-		body.setMemo(memo);
+		_body.SetMemo(memo);
 		return this;
 	}
 	
-	public Builder setTimeOutHeigt(ulong timeoutHeight)
+	public Builder SetTimeOutHeigt(ulong timeoutHeight)
 	{
-		body.setTimeoutHeight(timeoutHeight);
+		_body.SetTimeoutHeight(timeoutHeight);
 		return this;
 	}
 	
-	public Body finish()
+	public Body Finish()
 	{
-		return body;
+		return _body;
 	}
 }

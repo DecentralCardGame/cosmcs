@@ -3,28 +3,28 @@ using Google.Protobuf;
 namespace Cosmcs.Tx;
 
 public class AuthInfo {
-	private List<SignerInfo> signerInfos;
-	private Fee fee;
+	private List<SignerInfo> _signerInfos;
+	private Fee _fee;
 	
 	public AuthInfo(List<SignerInfo> s, Fee f)
 	{
-		signerInfos = s;
-		fee = f;
+		_signerInfos = s;
+		_fee = f;
 	}
 	
-	public Cosmos.Tx.V1beta1.AuthInfo intoProto()
+	public Cosmos.Tx.V1beta1.AuthInfo IntoProto()
 	{
 		var proto = new Cosmos.Tx.V1beta1.AuthInfo
 		{
-			Fee = fee.intoProto()
+			Fee = _fee.IntoProto()
 		};
-		proto.SignerInfos.Add(signerInfos.Select(s => s.intoProto()));
+		proto.SignerInfos.Add(_signerInfos.Select(s => s.IntoProto()));
 
 		return proto;
 	}
 	
-	public byte[] intoBytes()
+	public byte[] IntoBytes()
 	{
-		return intoProto().ToByteArray();
+		return IntoProto().ToByteArray();
 	}
 }

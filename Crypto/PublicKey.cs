@@ -15,15 +15,15 @@ public class PublicKey
 	private const String ED25519_TYPE_URL = "/cosmos.crypto.ed25519.PubKey";
 	private const String SECP256K1_TYPE_URL = "/cosmos.crypto.secp256k1.PubKey";
 
-	private PublicKeyType type;
-	private byte[]? Ed25519_pub;
-	private NBitcoin.Secp256k1.ECPubKey? SECP256K1_pub;
+	private PublicKeyType _type;
+	private byte[]? _Ed25519_pub;
+	private NBitcoin.Secp256k1.ECPubKey? _SECP256K1_pub;
 
 	private PublicKey(PublicKeyType type, byte[]? Ed25519_pub, NBitcoin.Secp256k1.ECPubKey? SECP256K1_pub)
 	{
-		this.type = type;
-		this.Ed25519_pub = Ed25519_pub;
-		this.SECP256K1_pub = SECP256K1_pub;
+		_type = type;
+		_Ed25519_pub = Ed25519_pub;
+		_SECP256K1_pub = SECP256K1_pub;
 	}
 
 	public static PublicKey Secp256k1(NBitcoin.Secp256k1.ECPubKey SECP256K1_pub)
@@ -36,16 +36,16 @@ public class PublicKey
 		return new PublicKey(PublicKeyType.ED25519, Ed25519_pub, null);
 	}
 
-	public Any intoProto()
+	public Any IntoProto()
 	{
-		switch (type)
+		switch (_type)
 		{
 			case PublicKeyType.SECP256K1:
 				return new Any
 				{
 					Value = new Cosmos.Crypto.Secp256k1.PubKey
 					{
-						Key = ByteString.CopyFrom(SECP256K1_pub.ToBytes())
+						Key = ByteString.CopyFrom(_SECP256K1_pub.ToBytes())
 					}.ToByteString(),
 					TypeUrl = SECP256K1_TYPE_URL
 				};
@@ -54,7 +54,7 @@ public class PublicKey
 				{
 					Value = new Cosmos.Crypto.Ed25519.PubKey
 					{
-						Key = ByteString.CopyFrom(Ed25519_pub)
+						Key = ByteString.CopyFrom(_Ed25519_pub)
 					}.ToByteString(),
 					TypeUrl = ED25519_TYPE_URL
 				};
