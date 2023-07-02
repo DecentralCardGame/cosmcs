@@ -1,3 +1,4 @@
+using Cosmcs.Tx;
 using Google.Protobuf;
 using Google.Protobuf.WellKnownTypes;
 
@@ -59,5 +60,10 @@ public class PublicKey
 				};
 			default: throw new Exception("WTF");
 		}
+	}
+
+	public SignerPublicKey IntoSignerPublicKey()
+	{
+		return SignerPublicKey.Single(this);
 	}
 }

@@ -55,4 +55,21 @@ public class SignerPublicKey
 			default: throw new Exception("nene");
 		}
 	}
+
+	private SignerPublicKey(
+		SignerPublicKeyType type,
+		PublicKey? single,
+		LegacyAminoMultisig? legacyAminoMultisig,
+		Any? any)
+	{
+		this.type = type;
+		this.single = single;
+		this.legacyAminoMultisig = legacyAminoMultisig;
+		this.any = any;
+	}
+
+	public static SignerPublicKey Single(PublicKey key)
+	{
+		return new SignerPublicKey(SignerPublicKeyType.Single, key, null, null);
+	}
 }
