@@ -1,7 +1,8 @@
+using System.Security.Cryptography;
+using Cosmcs.Base;
 using Cosmcs.Tx;
 using Google.Protobuf;
 using Google.Protobuf.WellKnownTypes;
-using NBitcoin.Secp256k1;
 
 namespace Cosmcs.Crypto;
 
@@ -35,6 +36,17 @@ public class PublicKey
 	public static PublicKey Ed25519(byte[]? Ed25519_pub)
 	{
 		return new PublicKey(PublicKeyType.ED25519, Ed25519_pub, null);
+	}
+
+	public AccountId AccountId(string prefix)
+	{
+		if (_SECP256K1_pub != null)
+		{
+			var shaDigest = SHA256.Create().ComputeHash(_SECP256K1_pub.ToBytes());
+			var ripemdDigest = RIPEMD160.Create().ComputeHash(shaDigest);
+			return new AccountId(prefix, ripemdDigest[..20]);
+		}
+		throw new Exception("neman");
 	}
 
 	public Any IntoProto()
