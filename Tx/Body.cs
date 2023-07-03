@@ -15,6 +15,8 @@ public class Body {
 		_messages = messages ?? new List<Any>();
 		_memo = memo;
 		_timeoutHeight = timeoutHeight;
+		_extensionOptions = new List<Any>();
+		_nonCriticalExtensionOptions = new List<Any>();
 	}
 	
 	public void AddMsgs(List<Any> msgs)
