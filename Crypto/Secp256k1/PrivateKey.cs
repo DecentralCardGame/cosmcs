@@ -15,14 +15,14 @@ public class PrivateKey {
 		return PublicKey.Secp256k1(inner.CreatePubKey());
 	}
 
-	public byte[] sign(byte[] bytes)
+	public byte[] Sign(byte[] bytes)
 	{
 		byte[] span = new byte[64];
 		inner.SignECDSARFC6979(bytes).WriteCompactToSpan(span);
 		return span;
 	}
 
-	public static PrivateKey fromProto(Cosmos.Crypto.Secp256k1.PrivKey k)
+	public static PrivateKey FromProto(Cosmos.Crypto.Secp256k1.PrivKey k)
 	{
 		return new PrivateKey(k.Key.ToByteArray());
 	}

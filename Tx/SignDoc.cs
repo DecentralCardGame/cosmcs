@@ -21,7 +21,7 @@ public class SignDoc
 	public Raw Sign(PrivateKey privKey)
 	{
 		var signDocBytes = IntoBytes();
-		var signature = privKey.sign(signDocBytes);
+		var signature = privKey.Sign(signDocBytes);
 
 		return new Raw(_bodyBytes, _authInfoBytes, new[] { signature });
 	}

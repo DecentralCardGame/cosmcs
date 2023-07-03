@@ -68,9 +68,9 @@ public class PublicKey
 		switch (proto.TypeUrl)
 		{
 			case ED25519_TYPE_URL:
-				return Ed25519(proto.Value.ToByteArray());
+				return Ed25519(Cosmos.Crypto.Ed25519.PubKey.Parser.ParseFrom(proto.Value).Key.ToByteArray());
 			case SECP256K1_TYPE_URL:
-				return Secp256k1(ECPubKey.Create(proto.Value.ToByteArray()));
+				return Secp256k1(ECPubKey.Create(Cosmos.Crypto.Secp256k1.PubKey.Parser.ParseFrom(proto.Value).Key.ToByteArray()));
 			default: throw new Exception("WTF");
 		}
 	}
