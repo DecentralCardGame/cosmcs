@@ -3,6 +3,8 @@ using Cosmcs.Base;
 using Cosmcs.Tx;
 using Google.Protobuf;
 using Google.Protobuf.WellKnownTypes;
+using NBitcoin.Secp256k1;
+using SHA256 = System.Security.Cryptography.SHA256;
 
 namespace Cosmcs.Crypto;
 
