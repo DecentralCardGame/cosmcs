@@ -1,6 +1,7 @@
 using Cosmcs.Tx;
 using Google.Protobuf;
 using Google.Protobuf.WellKnownTypes;
+using NBitcoin.Secp256k1;
 
 namespace Cosmcs.Crypto;
 
@@ -58,6 +59,18 @@ public class PublicKey
 					}.ToByteString(),
 					TypeUrl = ED25519_TYPE_URL
 				};
+			default: throw new Exception("WTF");
+		}
+	}
+
+	public static PublicKey FromProto(Any proto)
+	{
+		switch (proto.TypeUrl)
+		{
+			case ED25519_TYPE_URL:
+				return Ed25519(proto.Value.ToByteArray());
+			case SECP256K1_TYPE_URL:
+				return Secp256k1(ECPubKey.Create(proto.Value.ToByteArray()));
 			default: throw new Exception("WTF");
 		}
 	}
