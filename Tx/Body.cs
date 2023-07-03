@@ -4,7 +4,7 @@ using Google.Protobuf.WellKnownTypes;
 namespace Cosmcs.Tx;
 
 public class Body {
-	private List<Any>? _messages;
+	private List<Any> _messages;
 	private String _memo;
 	private ulong _timeoutHeight;
 	private List<Any> _extensionOptions;
@@ -12,19 +12,14 @@ public class Body {
 	
 	public Body(List<Any>? messages = null, String memo = "", ulong timeoutHeight = 0)
 	{
-		_messages = messages;
+		_messages = messages ?? new List<Any>();
 		_memo = memo;
 		_timeoutHeight = timeoutHeight;
 	}
 	
 	public void AddMsgs(List<Any> msgs)
 	{
-		if (_messages is not null)
-		{
-			_messages = msgs;
-		} else {
-			_messages.AddRange(msgs);
-		}
+		_messages.AddRange(msgs);
 	}
 	
 	public void SetMemo(String memo)
