@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageId>Cosmcs</PackageId>
-    <Version>0.0.6</Version>
+    <Version>0.0.9-c</Version>
     <Authors>lxgr</Authors>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -16,9 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="CardanoBech32" Version="0.9.1" />
     <PackageReference Include="Ed25519" Version="1.0.0" />
-    <PackageReference Include="FsBech32" Version="0.1.2" />
-    <PackageReference Include="FSharp.Core" Version="7.0.300" />
     <PackageReference Include="Google.Protobuf" Version="3.23.3" />
     <PackageReference Include="NBitcoin.Secp256k1" Version="3.1.1" />
     <PackageReference Include="Phantasma.Tendermint.RPC" Version="1.0.6" />

@@ -1,5 +1,5 @@
 using System.Text.RegularExpressions;
-using FsBech32;
+using CardanoBech32;
 
 namespace Cosmcs.Base;
 
@@ -12,7 +12,7 @@ public class AccountId
 
 	private void NewThis(String prefix, byte[] bytes)
 	{
-		var id = Bech32.encode(prefix, bytes);
+		var id = Bech32Engine.Encode(prefix, bytes);
 		if (!Regex.IsMatch(prefix, @"^[[a-z]|[0-9]]*"))
 		{
 			throw new Exception("expected prefix to be lowercase alphanumeric characters only");
@@ -36,8 +36,10 @@ public class AccountId
 	
 	public AccountId(String stringId)
 	{
-		var decode = Bech32.decode(stringId).Value;
-		NewThis(decode.Item1, decode.Item2);
+		string hrp;
+		byte[] data;
+		Bech32Engine.Decode(stringId, out hrp, out data);
+		NewThis(hrp, data);
 	}
 
 	public override string ToString()
