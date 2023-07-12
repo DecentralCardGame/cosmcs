@@ -14,13 +14,19 @@ public class Fee {
 		_gasLimit = gl;
 	}
 	
+	public Fee(ulong gl)
+	{
+		_amount = new List<Coin>();
+		_gasLimit = gl;
+	}
+
 	public Cosmos.Tx.V1beta1.Fee IntoProto()
 	{
 		var proto = new Cosmos.Tx.V1beta1.Fee
 		{
 			GasLimit = _gasLimit,
-			Payer = _payer?.ToString(),
-			Granter = _granter?.ToString()
+			Payer = _payer?.ToString() ?? "",
+			Granter = _granter?.ToString() ?? ""
 		};
 		proto.Amount.Add(_amount.Select(a => a.IntoProto()));
 		

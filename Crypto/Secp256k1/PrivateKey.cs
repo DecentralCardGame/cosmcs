@@ -1,25 +1,23 @@
+using Cryptography.ECDSA;
 using Google.Protobuf;
-using NBitcoin.Secp256k1;
 
 namespace Cosmcs.Crypto.Secp256k1;
 
 public class PrivateKey {
-	private ECPrivKey inner;
+	private byte[] _inner;
 
 	public PrivateKey(byte[] bytes) {
-		inner = new Context().CreateECPrivKey(bytes);
+		_inner = bytes;
 	}
 
 	public PublicKey publicKey()
 	{
-		return PublicKey.Secp256k1(inner.CreatePubKey());
+		return PublicKey.Secp256k1(Secp256K1Manager.GetPublicKey(_inner, true));
 	}
 
 	public byte[] Sign(byte[] bytes)
 	{
-		byte[] span = new byte[64];
-		inner.SignECDSARFC6979(bytes).WriteCompactToSpan(span);
-		return span;
+		return Secp256K1Manager.SignCompact(Sha256Manager.GetHash(bytes), _inner, out var _);
 	}
 
 	public static PrivateKey FromProto(Cosmos.Crypto.Secp256k1.PrivKey k)
@@ -29,11 +27,9 @@ public class PrivateKey {
 
 	public Cosmos.Crypto.Secp256k1.PrivKey IntoProto()
 	{
-		byte[] span = {};
-		inner.WriteToSpan(span);
 		return new Cosmos.Crypto.Secp256k1.PrivKey
 		{
-			Key	= ByteString.CopyFrom(span)
+			Key	= ByteString.CopyFrom(_inner)
 		};
 	}
 

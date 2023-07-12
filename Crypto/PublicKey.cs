@@ -3,7 +3,6 @@ using Cosmcs.Base;
 using Cosmcs.Tx;
 using Google.Protobuf;
 using Google.Protobuf.WellKnownTypes;
-using NBitcoin.Secp256k1;
 using SHA256 = System.Security.Cryptography.SHA256;
 
 namespace Cosmcs.Crypto;
@@ -21,16 +20,16 @@ public class PublicKey
 
 	private PublicKeyType _type;
 	private byte[]? _Ed25519_pub;
-	private NBitcoin.Secp256k1.ECPubKey? _SECP256K1_pub;
+	private byte[]? _SECP256K1_pub;
 
-	private PublicKey(PublicKeyType type, byte[]? Ed25519_pub, NBitcoin.Secp256k1.ECPubKey? SECP256K1_pub)
+	private PublicKey(PublicKeyType type, byte[]? Ed25519_pub, byte[]? SECP256K1_pub)
 	{
 		_type = type;
 		_Ed25519_pub = Ed25519_pub;
 		_SECP256K1_pub = SECP256K1_pub;
 	}
 
-	public static PublicKey Secp256k1(NBitcoin.Secp256k1.ECPubKey SECP256K1_pub)
+	public static PublicKey Secp256k1(byte[] SECP256K1_pub)
 	{
 		return new PublicKey(PublicKeyType.SECP256K1, null, SECP256K1_pub);
 	}
@@ -44,7 +43,7 @@ public class PublicKey
 	{
 		if (_SECP256K1_pub != null)
 		{
-			var shaDigest = SHA256.Create().ComputeHash(_SECP256K1_pub.ToBytes());
+			var shaDigest = SHA256.Create().ComputeHash(_SECP256K1_pub);
 			var ripemdDigest = RIPEMD160.Create().ComputeHash(shaDigest);
 			return new AccountId(prefix, ripemdDigest[..20]);
 		}
@@ -60,7 +59,7 @@ public class PublicKey
 				{
 					Value = new Cosmos.Crypto.Secp256k1.PubKey
 					{
-						Key = ByteString.CopyFrom(_SECP256K1_pub.ToBytes())
+						Key = ByteString.CopyFrom(_SECP256K1_pub)
 					}.ToByteString(),
 					TypeUrl = SECP256K1_TYPE_URL
 				};
@@ -84,7 +83,7 @@ public class PublicKey
 			case ED25519_TYPE_URL:
 				return Ed25519(Cosmos.Crypto.Ed25519.PubKey.Parser.ParseFrom(proto.Value).Key.ToByteArray());
 			case SECP256K1_TYPE_URL:
-				return Secp256k1(ECPubKey.Create(Cosmos.Crypto.Secp256k1.PubKey.Parser.ParseFrom(proto.Value).Key.ToByteArray()));
+				return Secp256k1(Cosmos.Crypto.Secp256k1.PubKey.Parser.ParseFrom(proto.Value).Key.ToByteArray());
 			default: throw new Exception("WTF");
 		}
 	}

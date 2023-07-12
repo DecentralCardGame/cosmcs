@@ -1,3 +1,5 @@
+using Google.Protobuf.Collections;
+
 namespace Cosmcs.Tx;
 
 public enum ModeInfoMode
@@ -59,10 +61,16 @@ public class ModeInfo
 		switch (_mode)
 		{
 			case ModeInfoMode.Single:
-				proto.Single.Mode = _singleData.Value.Mode;
+				proto.Single = new Cosmos.Tx.V1beta1.ModeInfo.Types.Single
+				{
+					Mode = _singleData!.Value.Mode
+				};
 				break;
 			case ModeInfoMode.Multi:
-				proto.Multi.Bitarray = _multiData.Value.Bitarray.Get();
+				proto.Multi = new Cosmos.Tx.V1beta1.ModeInfo.Types.Multi
+				{
+					Bitarray = _multiData!.Value.Bitarray.Get(),
+				};
 				proto.Multi.ModeInfos.Add(_multiData.Value.ModeInfos.Select(m => m.IntoProto()));
 				break;
 		}

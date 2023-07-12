@@ -2,24 +2,18 @@
 
   <PropertyGroup>
     <PackageId>Cosmcs</PackageId>
-    <Version>0.0.9-c</Version>
+    <Version>0.0.9-ae</Version>
     <Authors>lxgr</Authors>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-  
-   <ItemGroup>
-  <ProjectReference Include="..\CS0433_1\CS0433_1.csproj">  
-    <Aliases>CustomTypes</Aliases>
-  </ProjectReference>
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="CardanoBech32" Version="0.9.1" />
+    <PackageReference Include="Cryptography.ECDSA.Secp256k1" Version="1.1.3" />
     <PackageReference Include="Ed25519" Version="1.0.0" />
     <PackageReference Include="Google.Protobuf" Version="3.23.3" />
-    <PackageReference Include="NBitcoin.Secp256k1" Version="3.1.1" />
     <PackageReference Include="Phantasma.Tendermint.RPC" Version="1.0.6" />
     <PackageReference Include="RIPEMD160" Version="1.0.0" />
     <PackageReference Include="System.Runtime.Numerics" Version="4.3.0" />

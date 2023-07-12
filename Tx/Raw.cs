@@ -23,6 +23,6 @@ public class Raw {
 	
 	public ResultBroadcastTxCommit BroadcastCommit(Tendermint.RPC.NodeRpcClient client)
 	{
-		return client.BroadcastTxCommit(_inner.ToByteArray().ToString());
+		return client.BroadcastTxCommit(Convert.ToHexString(_inner.ToByteString().Span));
 	}
 }

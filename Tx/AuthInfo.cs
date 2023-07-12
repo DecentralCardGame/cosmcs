@@ -11,12 +11,13 @@ public class AuthInfo {
 		_signerInfos = s;
 		_fee = f;
 	}
-	
+
 	public Cosmos.Tx.V1beta1.AuthInfo IntoProto()
 	{
 		var proto = new Cosmos.Tx.V1beta1.AuthInfo
 		{
-			Fee = _fee.IntoProto()
+			Fee = _fee.IntoProto(),
+			Tip = null
 		};
 		proto.SignerInfos.Add(_signerInfos.Select(s => s.IntoProto()));
 
