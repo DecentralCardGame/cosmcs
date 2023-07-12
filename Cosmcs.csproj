@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageId>Cosmcs</PackageId>
-    <Version>0.0.9-ae</Version>
+    <Version>0.0.10</Version>
     <Authors>lxgr</Authors>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
