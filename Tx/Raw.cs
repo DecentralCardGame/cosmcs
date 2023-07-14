@@ -21,8 +21,8 @@ public class Raw {
 		return _inner;
 	}
 	
-	public ResultBroadcastTxCommit BroadcastCommit(Tendermint.RPC.NodeRpcClient client)
+	public T Broadcast<T>(Func<byte[], T> client)
 	{
-		return client.BroadcastTxCommit(Convert.ToHexString(_inner.ToByteString().Span));
+		return client(_inner.ToByteString().Span.ToArray());
 	}
 }
