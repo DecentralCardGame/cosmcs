@@ -5,17 +5,17 @@ namespace Cosmcs.Tx;
 
 public class SignDoc
 {
-	private byte[] _bodyBytes;
-	private byte[] _authInfoBytes;
-	private String _chainId;
-	private ulong _accoutNumber;
+	public byte[] BodyBytes {get;}
+	public byte[] AuthInfoBytes {get;}
+	public String ChainId {get;}
+	public ulong AccoutNumber {get;}
 
 	public SignDoc(Body body, AuthInfo authInfo, String chainId, ulong accoutNumber)
 	{
-		_bodyBytes = body.IntoBytes();
-		_authInfoBytes = authInfo.IntoBytes();
-		_chainId = chainId;
-		_accoutNumber = accoutNumber;
+		BodyBytes = body.IntoBytes();
+		AuthInfoBytes = authInfo.IntoBytes();
+		ChainId = chainId;
+		AccoutNumber = accoutNumber;
 	}
 
 	public Raw Sign(PrivateKey privKey)
@@ -23,17 +23,17 @@ public class SignDoc
 		var signDocBytes = IntoBytes();
 		var signature = privKey.Sign(signDocBytes);
 
-		return new Raw(_bodyBytes, _authInfoBytes, new[] { signature });
+		return new Raw(BodyBytes, AuthInfoBytes, new[] { signature });
 	}
 
 	public Cosmos.Tx.V1beta1.SignDoc IntoProto()
 	{
 		return new Cosmos.Tx.V1beta1.SignDoc
 		{
-			BodyBytes = ByteString.CopyFrom(_bodyBytes),
-			AuthInfoBytes = ByteString.CopyFrom(_authInfoBytes),
-			ChainId = _chainId,
-			AccountNumber = _accoutNumber,
+			BodyBytes = ByteString.CopyFrom(BodyBytes),
+			AuthInfoBytes = ByteString.CopyFrom(AuthInfoBytes),
+			ChainId = ChainId,
+			AccountNumber = AccoutNumber,
 		};
 	}
 

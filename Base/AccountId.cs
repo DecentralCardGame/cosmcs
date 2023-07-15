@@ -5,12 +5,12 @@ namespace Cosmcs.Base;
 
 public class AccountId
 {
-	public const uint MAX_LENGTH = 255;
+	public const uint MaxLength = 255;
 
-	private String _bech32;
-	private uint _hrpLength;
+	private readonly String _bech32;
+	private readonly uint _hrpLength;
 
-	private void NewThis(String prefix, byte[] bytes)
+	public AccountId(String prefix, byte[] bytes)
 	{
 		var id = Bech32Engine.Encode(prefix, bytes);
 		if (!Regex.IsMatch(prefix, @"^[[a-z]|[0-9]]*"))
@@ -18,7 +18,7 @@ public class AccountId
 			throw new Exception("expected prefix to be lowercase alphanumeric characters only");
 		}
 
-		if (1 < bytes.Length && bytes.Length <= MAX_LENGTH)
+		if (1 < bytes.Length && bytes.Length <= MaxLength)
 		{
 			_bech32 = id;
 			_hrpLength = (uint)prefix.Length;
@@ -29,17 +29,15 @@ public class AccountId
 		}
 	}
 
-	public AccountId(String prefix, byte[] bytes)
+	public static AccountId FromStringId(String stringId)
 	{
-		NewThis(prefix, bytes);
+		Bech32Engine.Decode(stringId, out var hrp, out var data);
+		return new(hrp, data);
 	}
-	
-	public AccountId(String stringId)
+
+	public uint HrpLength()
 	{
-		string hrp;
-		byte[] data;
-		Bech32Engine.Decode(stringId, out hrp, out data);
-		NewThis(hrp, data);
+		return _hrpLength;
 	}
 
 	public override string ToString()

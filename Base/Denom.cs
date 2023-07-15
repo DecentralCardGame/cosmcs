@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 namespace Cosmcs.Base;
 
 public class Denom {
-	private String s;
+	public String D {get;}
 	
 	public Denom(String s)
 	{
@@ -11,8 +11,6 @@ public class Denom {
 		{
 			throw new Exception("ne man");
 		}
-		this.s = s;
+		D = s;
 	}
-	
-	public String denom() => s;
 }

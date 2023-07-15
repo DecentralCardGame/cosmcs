@@ -4,15 +4,15 @@ using Google.Protobuf;
 namespace Cosmcs.Crypto.Secp256k1;
 
 public class PrivateKey {
-	private byte[] _inner;
+	private readonly byte[] _inner;
 
 	public PrivateKey(byte[] bytes) {
 		_inner = bytes;
 	}
 
-	public PublicKey publicKey()
+	public PublicKey PublicKey()
 	{
-		return PublicKey.Secp256k1(Secp256K1Manager.GetPublicKey(_inner, true));
+		return Crypto.PublicKey.Secp256K1(Secp256K1Manager.GetPublicKey(_inner, true));
 	}
 
 	public byte[] Sign(byte[] bytes)

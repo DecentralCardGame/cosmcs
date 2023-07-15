@@ -9,41 +9,41 @@ namespace Cosmcs.Crypto;
 
 public enum PublicKeyType
 {
-	ED25519,
-	SECP256K1,
+	Ed25519,
+	Secp256K1,
 }
 
 public class PublicKey
 {
-	private const String ED25519_TYPE_URL = "/cosmos.crypto.ed25519.PubKey";
-	private const String SECP256K1_TYPE_URL = "/cosmos.crypto.secp256k1.PubKey";
+	private const String Ed25519TypeUrl = "/cosmos.crypto.ed25519.PubKey";
+	private const String Secp256K1TypeUrl = "/cosmos.crypto.secp256k1.PubKey";
 
-	private PublicKeyType _type;
-	private byte[]? _Ed25519_pub;
-	private byte[]? _SECP256K1_pub;
+	public PublicKeyType Type {get;}
+	private readonly byte[]? _ed25519Pub;
+	private readonly byte[]? _secp256K1Pub;
 
-	private PublicKey(PublicKeyType type, byte[]? Ed25519_pub, byte[]? SECP256K1_pub)
+	private PublicKey(PublicKeyType type, byte[]? ed25519Pub, byte[]? secp256K1Pub)
 	{
-		_type = type;
-		_Ed25519_pub = Ed25519_pub;
-		_SECP256K1_pub = SECP256K1_pub;
+		Type = type;
+		_ed25519Pub = ed25519Pub;
+		_secp256K1Pub = secp256K1Pub;
 	}
 
-	public static PublicKey Secp256k1(byte[] SECP256K1_pub)
+	public static PublicKey Secp256K1(byte[] key)
 	{
-		return new PublicKey(PublicKeyType.SECP256K1, null, SECP256K1_pub);
+		return new PublicKey(PublicKeyType.Secp256K1, null, key);
 	}
 
-	public static PublicKey Ed25519(byte[]? Ed25519_pub)
+	public static PublicKey Ed25519(byte[]? key)
 	{
-		return new PublicKey(PublicKeyType.ED25519, Ed25519_pub, null);
+		return new PublicKey(PublicKeyType.Ed25519, key, null);
 	}
 
 	public AccountId AccountId(string prefix)
 	{
-		if (_SECP256K1_pub != null)
+		if (_secp256K1Pub != null)
 		{
-			var shaDigest = SHA256.Create().ComputeHash(_SECP256K1_pub);
+			var shaDigest = SHA256.Create().ComputeHash(_secp256K1Pub);
 			var ripemdDigest = RIPEMD160.Create().ComputeHash(shaDigest);
 			return new AccountId(prefix, ripemdDigest[..20]);
 		}
@@ -52,25 +52,25 @@ public class PublicKey
 
 	public Any IntoProto()
 	{
-		switch (_type)
+		switch (Type)
 		{
-			case PublicKeyType.SECP256K1:
+			case PublicKeyType.Secp256K1:
 				return new Any
 				{
 					Value = new Cosmos.Crypto.Secp256k1.PubKey
 					{
-						Key = ByteString.CopyFrom(_SECP256K1_pub)
+						Key = ByteString.CopyFrom(_secp256K1Pub)
 					}.ToByteString(),
-					TypeUrl = SECP256K1_TYPE_URL
+					TypeUrl = Secp256K1TypeUrl
 				};
-			case PublicKeyType.ED25519:
+			case PublicKeyType.Ed25519:
 				return new Any
 				{
 					Value = new Cosmos.Crypto.Ed25519.PubKey
 					{
-						Key = ByteString.CopyFrom(_Ed25519_pub)
+						Key = ByteString.CopyFrom(_ed25519Pub)
 					}.ToByteString(),
-					TypeUrl = ED25519_TYPE_URL
+					TypeUrl = Ed25519TypeUrl
 				};
 			default: throw new Exception("WTF");
 		}
@@ -80,10 +80,10 @@ public class PublicKey
 	{
 		switch (proto.TypeUrl)
 		{
-			case ED25519_TYPE_URL:
+			case Ed25519TypeUrl:
 				return Ed25519(Cosmos.Crypto.Ed25519.PubKey.Parser.ParseFrom(proto.Value).Key.ToByteArray());
-			case SECP256K1_TYPE_URL:
-				return Secp256k1(Cosmos.Crypto.Secp256k1.PubKey.Parser.ParseFrom(proto.Value).Key.ToByteArray());
+			case Secp256K1TypeUrl:
+				return Secp256K1(Cosmos.Crypto.Secp256k1.PubKey.Parser.ParseFrom(proto.Value).Key.ToByteArray());
 			default: throw new Exception("WTF");
 		}
 	}

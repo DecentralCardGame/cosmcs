@@ -40,18 +40,18 @@ public enum SignerPublicKeyType
 
 public class SignerPublicKey
 {
-	private SignerPublicKeyType _type;
-	private PublicKey? _single;
-	private LegacyAminoMultisig? _legacyAminoMultisig;
-	private Any? _any;
+	public SignerPublicKeyType Type {get;}
+	private readonly PublicKey? _single;
+	private readonly LegacyAminoMultisig? _legacyAminoMultisig;
+	private readonly Any? _any;
 	
 	public Any IntoProto()
 	{
-		switch(_type)
+		switch(Type)
 		{
-			case SignerPublicKeyType.Any: return _any;
-			case SignerPublicKeyType.LegacyAminoMultisig: return _legacyAminoMultisig.IntoProto();
-			case SignerPublicKeyType.Single: return _single.IntoProto();
+			case SignerPublicKeyType.Any: return _any!;
+			case SignerPublicKeyType.LegacyAminoMultisig: return _legacyAminoMultisig!.IntoProto();
+			case SignerPublicKeyType.Single: return _single!.IntoProto();
 			default: throw new Exception("nene");
 		}
 	}
@@ -62,7 +62,7 @@ public class SignerPublicKey
 		LegacyAminoMultisig? legacyAminoMultisig,
 		Any? any)
 	{
-		_type = type;
+		Type = type;
 		_single = single;
 		_legacyAminoMultisig = legacyAminoMultisig;
 		_any = any;
@@ -71,5 +71,10 @@ public class SignerPublicKey
 	public static SignerPublicKey Single(PublicKey key)
 	{
 		return new SignerPublicKey(SignerPublicKeyType.Single, key, null, null);
+	}
+
+	public static SignerPublicKey LegacyAminoMultisig(LegacyAminoMultisig key)
+	{
+		return new SignerPublicKey(SignerPublicKeyType.LegacyAminoMultisig, null, key, null);
 	}
 }

@@ -3,13 +3,8 @@ using Google.Protobuf.WellKnownTypes;
 namespace Cosmcs.Tx;
 
 public class Builder {
-	private Body _body;
-	
-	public Builder()
-	{
-		_body = new Body();
-	}
-	
+	private readonly Body _body = new ();
+
 	public Builder AddMsgs(List<Any> msgs)
 	{
 		_body.AddMsgs(msgs);

@@ -1,7 +1,9 @@
 using Google.Protobuf;
 
+namespace Cosmcs.Crypto;
+
 public class CompactBitArray {
-	private  Cosmos.Crypto.Multisig.V1beta1.CompactBitArray _inner;
+	private readonly Cosmos.Crypto.Multisig.V1beta1.CompactBitArray _inner;
 	
 	public CompactBitArray(uint extraBits, byte[] elems)
 	{

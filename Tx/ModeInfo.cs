@@ -1,4 +1,4 @@
-using Google.Protobuf.Collections;
+using Cosmcs.Crypto;
 
 namespace Cosmcs.Tx;
 
@@ -32,33 +32,33 @@ public struct MultiData
 
 public class ModeInfo
 {
-	private ModeInfoMode _mode;
-	private SingleData? _singleData;
-	private MultiData? _multiData;
+	public ModeInfoMode Mode {get;}
+	private readonly SingleData? _singleData;
+	private readonly MultiData? _multiData;
 
 	public ModeInfo(ModeInfoMode mode, SingleData? singleData, MultiData? multiData)
 	{
-		_mode = mode;
+		Mode = mode;
 		_singleData = singleData;
 		_multiData = multiData;
 	}
 
 	public ModeInfo(SingleData singleData)
 	{
-		_mode = ModeInfoMode.Single;
+		Mode = ModeInfoMode.Single;
 		_singleData = singleData;
 	}
 
 	public ModeInfo(MultiData multiData)
 	{
-		_mode = ModeInfoMode.Multi;
+		Mode = ModeInfoMode.Multi;
 		_multiData = multiData;
 	}
 
 	public Cosmos.Tx.V1beta1.ModeInfo IntoProto()
 	{
 		var proto = new Cosmos.Tx.V1beta1.ModeInfo();
-		switch (_mode)
+		switch (Mode)
 		{
 			case ModeInfoMode.Single:
 				proto.Single = new Cosmos.Tx.V1beta1.ModeInfo.Types.Single

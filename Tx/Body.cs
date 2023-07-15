@@ -4,46 +4,56 @@ using Google.Protobuf.WellKnownTypes;
 namespace Cosmcs.Tx;
 
 public class Body {
-	private List<Any> _messages;
-	private String _memo;
-	private ulong _timeoutHeight;
-	private List<Any> _extensionOptions;
-	private List<Any> _nonCriticalExtensionOptions;
+	public List<Any> Messages {get;}
+	public String Memo {get; private set;}
+	public ulong TimeoutHeight {get; private set;}
+	public List<Any> ExtensionOptions {get;}
+	public List<Any> NonCriticalExtensionOptions {get;}
 	
 	public Body(List<Any>? messages = null, String memo = "", ulong timeoutHeight = 0)
 	{
-		_messages = messages ?? new List<Any>();
-		_memo = memo;
-		_timeoutHeight = timeoutHeight;
-		_extensionOptions = new List<Any>();
-		_nonCriticalExtensionOptions = new List<Any>();
+		Messages = messages ?? new List<Any>();
+		Memo = memo;
+		TimeoutHeight = timeoutHeight;
+		ExtensionOptions = new List<Any>();
+		NonCriticalExtensionOptions = new List<Any>();
 	}
 	
 	public void AddMsgs(List<Any> msgs)
 	{
-		_messages.AddRange(msgs);
+		Messages.AddRange(msgs);
 	}
-	
+
+	public void AddExtensionOptions(List<Any> opts)
+	{
+		ExtensionOptions.AddRange(opts);
+	}
+
+	public void AddNonCriticalExtensionOptions(List<Any> opts)
+	{
+		NonCriticalExtensionOptions.AddRange(opts);
+	}
+
 	public void SetMemo(String memo)
 	{
-		_memo = memo;
+		Memo = memo;
 	}
 	
 	public void SetTimeoutHeight(ulong timeoutHeight)
 	{
-		_timeoutHeight = timeoutHeight;
+		TimeoutHeight = timeoutHeight;
 	}
 
 	public Cosmos.Tx.V1beta1.TxBody IntoProto()
 	{
 		var proto = new Cosmos.Tx.V1beta1.TxBody
 		{
-			Memo = _memo,
-			TimeoutHeight = _timeoutHeight,
+			Memo = Memo,
+			TimeoutHeight = TimeoutHeight,
 		};
-		proto.Messages.Add(_messages);
-		proto.ExtensionOptions.Add(_extensionOptions);
-		proto.NonCriticalExtensionOptions.Add(_nonCriticalExtensionOptions);
+		proto.Messages.Add(Messages);
+		proto.ExtensionOptions.Add(ExtensionOptions);
+		proto.NonCriticalExtensionOptions.Add(NonCriticalExtensionOptions);
 
 		return proto;
 	}

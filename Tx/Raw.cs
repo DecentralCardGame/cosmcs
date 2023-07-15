@@ -1,10 +1,9 @@
 using Google.Protobuf;
-using Tendermint.RPC.Endpoint;
 
 namespace Cosmcs.Tx;
 
 public class Raw {
-	private Cosmos.Tx.V1beta1.TxRaw _inner;
+	private readonly Cosmos.Tx.V1beta1.TxRaw _inner;
 	
 	public Raw(byte[] bodyBytes, byte[] authInfoBytes, byte[][] signatures)
 	{

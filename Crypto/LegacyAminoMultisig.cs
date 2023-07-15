@@ -5,10 +5,15 @@ namespace Cosmcs.Crypto;
 
 public class LegacyAminoMultisig {
 	public const String TypeUrl = "/cosmos.crypto.multisig.LegacyAminoPubKey";
+	private readonly uint _threshold;
+	private readonly List<PublicKey> _publicKeys;
 	
-	private uint _threshold;
-	private List<PublicKey> _publicKeys;
-	
+	public LegacyAminoMultisig(uint t, List<PublicKey> keys)
+	{
+		_threshold = t;
+		_publicKeys = keys;
+	}
+
 	public Any IntoProto()
 	{
 		var proto = new Cosmos.Crypto.Multisig.LegacyAminoPubKey
