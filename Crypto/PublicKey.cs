@@ -47,7 +47,7 @@ public class PublicKey
 			var ripemdDigest = RIPEMD160.Create().ComputeHash(shaDigest);
 			return new AccountId(prefix, ripemdDigest[..20]);
 		}
-		throw new Exception("neman");
+		throw new Exception("not yet implemented for none secp256K1 keys");
 	}
 
 	public Any IntoProto()
@@ -72,7 +72,7 @@ public class PublicKey
 					}.ToByteString(),
 					TypeUrl = Ed25519TypeUrl
 				};
-			default: throw new Exception("WTF");
+			default: throw new Exception("no such type, please report");
 		}
 	}
 
@@ -84,7 +84,7 @@ public class PublicKey
 				return Ed25519(Cosmos.Crypto.Ed25519.PubKey.Parser.ParseFrom(proto.Value).Key.ToByteArray());
 			case Secp256K1TypeUrl:
 				return Secp256K1(Cosmos.Crypto.Secp256k1.PubKey.Parser.ParseFrom(proto.Value).Key.ToByteArray());
-			default: throw new Exception("WTF");
+			default: throw new Exception("invalid typeUrl");
 		}
 	}
 

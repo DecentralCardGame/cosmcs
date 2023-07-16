@@ -10,7 +10,7 @@ public class DefaultBroadcaster : IBroadcaster<HttpContent>
 	public JsonFormatter Formatter { get; }
 	public JsonParser Parser { get; }
 
-	public DefaultBroadcaster(string baseurl, JsonFormatter? formatter, JsonParser? parser)
+	public DefaultBroadcaster(string baseurl, JsonFormatter? formatter = null, JsonParser? parser = null)
 	{
 		BaseUrl = baseurl;
 		Client = new HttpClient();

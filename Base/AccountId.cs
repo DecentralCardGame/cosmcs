@@ -25,7 +25,7 @@ public class AccountId
 		}
 		else
 		{
-			throw new Exception("No the right length bro");
+			throw new Exception("not the right length bro");
 		}
 	}
 

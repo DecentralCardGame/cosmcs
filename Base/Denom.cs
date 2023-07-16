@@ -9,7 +9,7 @@ public class Denom {
 	{
 		if (!Regex.IsMatch(s, @"^[[A-Z]|[a-z]|[0-9]|\/]*"))
 		{
-			throw new Exception("ne man");
+			throw new Exception("invalid denom");
 		}
 		D = s;
 	}
