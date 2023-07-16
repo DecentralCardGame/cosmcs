@@ -1,3 +1,4 @@
+using Cosmcs.Broadcaster;
 using Google.Protobuf;
 
 namespace Cosmcs.Tx;
@@ -20,8 +21,18 @@ public class Raw {
 		return _inner;
 	}
 	
-	public T Broadcast<T>(Func<byte[], T> client)
+	public Task<T> BroadcastCommit<T>(IBroadcaster<T> client)
 	{
-		return client(_inner.ToByteString().Span.ToArray());
+		return client.Broadcast(_inner.ToByteString().Span.ToArray(), Cosmos.Tx.V1beta1.BroadcastMode.Block);
+	}
+
+	public Task<T> BroadcastSync<T>(IBroadcaster<T> client)
+	{
+		return client.Broadcast(_inner.ToByteString().Span.ToArray(), Cosmos.Tx.V1beta1.BroadcastMode.Sync);
+	}
+
+	public Task<T> BroadcastAsync<T>(IBroadcaster<T> client)
+	{
+		return client.Broadcast(_inner.ToByteString().Span.ToArray(), Cosmos.Tx.V1beta1.BroadcastMode.Async);
 	}
 }
