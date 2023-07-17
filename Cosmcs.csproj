@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <PackageId>Cosmcs</PackageId>
-        <Version>0.0.16</Version>
+        <Version>0.0.17</Version>
         <Authors>lxgr</Authors>
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
@@ -24,7 +24,6 @@
     <PackageReference Include="Ed25519" Version="1.0.0" />
     <PackageReference Include="Google.Protobuf" Version="3.23.3" />
     <PackageReference Include="RIPEMD160" Version="1.0.0" />
-    <PackageReference Include="System.Runtime.Numerics" Version="4.3.0" />
   </ItemGroup>
 
 </Project>
