@@ -1,16 +1,20 @@
+using System;
 using System.Text.RegularExpressions;
 
-namespace Cosmcs.Base;
+namespace Cosmcs.Base
+{
+    public class Denom
+    {
+        public string D { get; }
 
-public class Denom {
-	public String D {get;}
-	
-	public Denom(String s)
-	{
-		if (!Regex.IsMatch(s, @"^[[A-Z]|[a-z]|[0-9]|\/]*"))
-		{
-			throw new Exception("invalid denom");
-		}
-		D = s;
-	}
+        public Denom(string s)
+        {
+            if (!Regex.IsMatch(s, @"^[[A-Z]|[a-z]|[0-9]|\/]*"))
+            {
+                throw new Exception("invalid denom");
+            }
+
+            D = s;
+        }
+    }
 }

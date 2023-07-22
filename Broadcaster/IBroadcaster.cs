@@ -1,6 +1,9 @@
-namespace Cosmcs.Broadcaster;
+using System.Threading.Tasks;
 
-public interface IBroadcaster<T>
+namespace Cosmcs.Broadcaster
 {
-	public Task<T> Broadcast(byte[] bytes, Cosmos.Tx.V1beta1.BroadcastMode mode);
+    public interface IBroadcaster<T>
+    {
+        public Task<T> Broadcast(byte[] bytes, Cosmos.Tx.V1beta1.BroadcastMode mode);
+    }
 }
