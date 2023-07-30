@@ -38,7 +38,7 @@ namespace Cosmcs.Auth
         {
             return new BaseAccount(
                 AccountId.FromStringId(proto.Address),
-                PublicKey.FromProto(proto.PubKey),
+                proto.PubKey == null ? null : PublicKey.FromProto(proto.PubKey),
                 proto.AccountNumber,
                 proto.Sequence
             );
