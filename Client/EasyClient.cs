@@ -11,7 +11,7 @@ using Google.Protobuf.WellKnownTypes;
 
 namespace Cosmcs.Client {
 
-    public class EasyClient {
+    public class EasyClient: IClient{
 
         public DefaultBroadcaster Broadcaster { get; }
         public JsonFormatter Formatter { get; }
