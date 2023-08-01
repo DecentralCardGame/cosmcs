@@ -7,40 +7,40 @@ using Google.Protobuf;
 namespace Cosmos.Vesting.V1beta1 {
 	
 	public class MsgClient {
-		public EasyClient EasyClient { get; }
+		public IClient Client { get; }
 
-		public MsgClient (EasyClient client) {
-			EasyClient = client;
+		public MsgClient (IClient client) {
+			Client = client;
 		}
 
-		public Task<string> SendMsgCreateVestingAccount(Cosmos.Vesting.V1beta1.MsgCreateVestingAccount msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgCreateVestingAccount(Cosmos.Vesting.V1beta1.MsgCreateVestingAccount msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.vesting.v1beta1.MsgCreateVestingAccount"
 				}
-			);
+			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
 		}
 
-		public Task<string> SendMsgCreatePermanentLockedAccount(Cosmos.Vesting.V1beta1.MsgCreatePermanentLockedAccount msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgCreatePermanentLockedAccount(Cosmos.Vesting.V1beta1.MsgCreatePermanentLockedAccount msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.vesting.v1beta1.MsgCreatePermanentLockedAccount"
 				}
-			);
+			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
 		}
 
-		public Task<string> SendMsgCreatePeriodicVestingAccount(Cosmos.Vesting.V1beta1.MsgCreatePeriodicVestingAccount msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgCreatePeriodicVestingAccount(Cosmos.Vesting.V1beta1.MsgCreatePeriodicVestingAccount msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.vesting.v1beta1.MsgCreatePeriodicVestingAccount"
 				}
-			);
+			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
 		}
 
 	}

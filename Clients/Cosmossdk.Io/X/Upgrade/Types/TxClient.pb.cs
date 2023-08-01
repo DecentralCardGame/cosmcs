@@ -7,30 +7,30 @@ using Google.Protobuf;
 namespace Cosmos.Upgrade.V1beta1 {
 	
 	public class MsgClient {
-		public EasyClient EasyClient { get; }
+		public IClient Client { get; }
 
-		public MsgClient (EasyClient client) {
-			EasyClient = client;
+		public MsgClient (IClient client) {
+			Client = client;
 		}
 
-		public Task<string> SendMsgSoftwareUpgrade(Cosmos.Upgrade.V1beta1.MsgSoftwareUpgrade msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgSoftwareUpgrade(Cosmos.Upgrade.V1beta1.MsgSoftwareUpgrade msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade"
 				}
-			);
+			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
 		}
 
-		public Task<string> SendMsgCancelUpgrade(Cosmos.Upgrade.V1beta1.MsgCancelUpgrade msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgCancelUpgrade(Cosmos.Upgrade.V1beta1.MsgCancelUpgrade msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.upgrade.v1beta1.MsgCancelUpgrade"
 				}
-			);
+			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
 		}
 
 	}

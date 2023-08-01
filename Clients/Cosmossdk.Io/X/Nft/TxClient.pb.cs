@@ -7,20 +7,20 @@ using Google.Protobuf;
 namespace Cosmos.Nft.V1beta1 {
 	
 	public class MsgClient {
-		public EasyClient EasyClient { get; }
+		public IClient Client { get; }
 
-		public MsgClient (EasyClient client) {
-			EasyClient = client;
+		public MsgClient (IClient client) {
+			Client = client;
 		}
 
-		public Task<string> SendMsgSend(Cosmos.Nft.V1beta1.MsgSend msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgSend(Cosmos.Nft.V1beta1.MsgSend msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.nft.v1beta1.MsgSend"
 				}
-			);
+			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
 		}
 
 	}

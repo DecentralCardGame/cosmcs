@@ -7,20 +7,20 @@ using Google.Protobuf;
 namespace Cosmos.Evidence.V1beta1 {
 	
 	public class MsgClient {
-		public EasyClient EasyClient { get; }
+		public IClient Client { get; }
 
-		public MsgClient (EasyClient client) {
-			EasyClient = client;
+		public MsgClient (IClient client) {
+			Client = client;
 		}
 
-		public Task<string> SendMsgSubmitEvidence(Cosmos.Evidence.V1beta1.MsgSubmitEvidence msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgSubmitEvidence(Cosmos.Evidence.V1beta1.MsgSubmitEvidence msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.evidence.v1beta1.MsgSubmitEvidence"
 				}
-			);
+			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
 		}
 
 	}

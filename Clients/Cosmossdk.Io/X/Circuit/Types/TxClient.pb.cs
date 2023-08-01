@@ -7,40 +7,40 @@ using Google.Protobuf;
 namespace Cosmos.Circuit.V1 {
 	
 	public class MsgClient {
-		public EasyClient EasyClient { get; }
+		public IClient Client { get; }
 
-		public MsgClient (EasyClient client) {
-			EasyClient = client;
+		public MsgClient (IClient client) {
+			Client = client;
 		}
 
-		public Task<string> SendMsgAuthorizeCircuitBreaker(Cosmos.Circuit.V1.MsgAuthorizeCircuitBreaker msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgAuthorizeCircuitBreaker(Cosmos.Circuit.V1.MsgAuthorizeCircuitBreaker msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.circuit.v1.MsgAuthorizeCircuitBreaker"
 				}
-			);
+			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
 		}
 
-		public Task<string> SendMsgTripCircuitBreaker(Cosmos.Circuit.V1.MsgTripCircuitBreaker msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgTripCircuitBreaker(Cosmos.Circuit.V1.MsgTripCircuitBreaker msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.circuit.v1.MsgTripCircuitBreaker"
 				}
-			);
+			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
 		}
 
-		public Task<string> SendMsgResetCircuitBreaker(Cosmos.Circuit.V1.MsgResetCircuitBreaker msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgResetCircuitBreaker(Cosmos.Circuit.V1.MsgResetCircuitBreaker msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.circuit.v1.MsgResetCircuitBreaker"
 				}
-			);
+			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
 		}
 
 	}

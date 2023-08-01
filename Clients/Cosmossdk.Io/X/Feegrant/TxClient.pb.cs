@@ -7,30 +7,30 @@ using Google.Protobuf;
 namespace Cosmos.Feegrant.V1beta1 {
 	
 	public class MsgClient {
-		public EasyClient EasyClient { get; }
+		public IClient Client { get; }
 
-		public MsgClient (EasyClient client) {
-			EasyClient = client;
+		public MsgClient (IClient client) {
+			Client = client;
 		}
 
-		public Task<string> SendMsgGrantAllowance(Cosmos.Feegrant.V1beta1.MsgGrantAllowance msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgGrantAllowance(Cosmos.Feegrant.V1beta1.MsgGrantAllowance msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.feegrant.v1beta1.MsgGrantAllowance"
 				}
-			);
+			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
 		}
 
-		public Task<string> SendMsgRevokeAllowance(Cosmos.Feegrant.V1beta1.MsgRevokeAllowance msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgRevokeAllowance(Cosmos.Feegrant.V1beta1.MsgRevokeAllowance msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.feegrant.v1beta1.MsgRevokeAllowance"
 				}
-			);
+			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
 		}
 
 	}
