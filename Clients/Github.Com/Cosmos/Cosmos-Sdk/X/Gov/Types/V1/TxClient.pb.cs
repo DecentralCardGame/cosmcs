@@ -13,74 +13,74 @@ namespace Cosmos.Gov.V1 {
 			Client = client;
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgSubmitProposal(Cosmos.Gov.V1.MsgSubmitProposal msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgSubmitProposalResponse>> SendMsgSubmitProposal(Cosmos.Gov.V1.MsgSubmitProposal msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.gov.v1.MsgSubmitProposal"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgSubmitProposalResponse>(r.Result, Cosmos.Gov.V1.MsgSubmitProposalResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgExecLegacyContent(Cosmos.Gov.V1.MsgExecLegacyContent msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgExecLegacyContentResponse>> SendMsgExecLegacyContent(Cosmos.Gov.V1.MsgExecLegacyContent msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.gov.v1.MsgExecLegacyContent"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgExecLegacyContentResponse>(r.Result, Cosmos.Gov.V1.MsgExecLegacyContentResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgVote(Cosmos.Gov.V1.MsgVote msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgVoteResponse>> SendMsgVote(Cosmos.Gov.V1.MsgVote msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.gov.v1.MsgVote"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgVoteResponse>(r.Result, Cosmos.Gov.V1.MsgVoteResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgVoteWeighted(Cosmos.Gov.V1.MsgVoteWeighted msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgVoteWeightedResponse>> SendMsgVoteWeighted(Cosmos.Gov.V1.MsgVoteWeighted msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.gov.v1.MsgVoteWeighted"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgVoteWeightedResponse>(r.Result, Cosmos.Gov.V1.MsgVoteWeightedResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgDeposit(Cosmos.Gov.V1.MsgDeposit msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgDepositResponse>> SendMsgDeposit(Cosmos.Gov.V1.MsgDeposit msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.gov.v1.MsgDeposit"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgDepositResponse>(r.Result, Cosmos.Gov.V1.MsgDepositResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgUpdateParams(Cosmos.Gov.V1.MsgUpdateParams msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgUpdateParamsResponse>> SendMsgUpdateParams(Cosmos.Gov.V1.MsgUpdateParams msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.gov.v1.MsgUpdateParams"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgUpdateParamsResponse>(r.Result, Cosmos.Gov.V1.MsgUpdateParamsResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgCancelProposal(Cosmos.Gov.V1.MsgCancelProposal msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgCancelProposalResponse>> SendMsgCancelProposal(Cosmos.Gov.V1.MsgCancelProposal msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.gov.v1.MsgCancelProposal"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgCancelProposalResponse>(r.Result, Cosmos.Gov.V1.MsgCancelProposalResponse.Parser));
 		}
 
 	}

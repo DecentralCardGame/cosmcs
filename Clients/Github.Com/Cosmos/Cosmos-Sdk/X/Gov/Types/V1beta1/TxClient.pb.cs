@@ -13,44 +13,44 @@ namespace Cosmos.Gov.V1beta1 {
 			Client = client;
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgSubmitProposal(Cosmos.Gov.V1beta1.MsgSubmitProposal msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Gov.V1beta1.MsgSubmitProposalResponse>> SendMsgSubmitProposal(Cosmos.Gov.V1beta1.MsgSubmitProposal msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.gov.v1beta1.MsgSubmitProposal"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1beta1.MsgSubmitProposalResponse>(r.Result, Cosmos.Gov.V1beta1.MsgSubmitProposalResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgVote(Cosmos.Gov.V1beta1.MsgVote msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Gov.V1beta1.MsgVoteResponse>> SendMsgVote(Cosmos.Gov.V1beta1.MsgVote msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.gov.v1beta1.MsgVote"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1beta1.MsgVoteResponse>(r.Result, Cosmos.Gov.V1beta1.MsgVoteResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgVoteWeighted(Cosmos.Gov.V1beta1.MsgVoteWeighted msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Gov.V1beta1.MsgVoteWeightedResponse>> SendMsgVoteWeighted(Cosmos.Gov.V1beta1.MsgVoteWeighted msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.gov.v1beta1.MsgVoteWeighted"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1beta1.MsgVoteWeightedResponse>(r.Result, Cosmos.Gov.V1beta1.MsgVoteWeightedResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgDeposit(Cosmos.Gov.V1beta1.MsgDeposit msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Gov.V1beta1.MsgDepositResponse>> SendMsgDeposit(Cosmos.Gov.V1beta1.MsgDeposit msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.gov.v1beta1.MsgDeposit"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1beta1.MsgDepositResponse>(r.Result, Cosmos.Gov.V1beta1.MsgDepositResponse.Parser));
 		}
 
 	}

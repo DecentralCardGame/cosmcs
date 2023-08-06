@@ -13,44 +13,44 @@ namespace Cosmos.Bank.V1beta1 {
 			Client = client;
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgSend(Cosmos.Bank.V1beta1.MsgSend msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Bank.V1beta1.MsgSendResponse>> SendMsgSend(Cosmos.Bank.V1beta1.MsgSend msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.bank.v1beta1.MsgSend"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Bank.V1beta1.MsgSendResponse>(r.Result, Cosmos.Bank.V1beta1.MsgSendResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgMultiSend(Cosmos.Bank.V1beta1.MsgMultiSend msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Bank.V1beta1.MsgMultiSendResponse>> SendMsgMultiSend(Cosmos.Bank.V1beta1.MsgMultiSend msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.bank.v1beta1.MsgMultiSend"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Bank.V1beta1.MsgMultiSendResponse>(r.Result, Cosmos.Bank.V1beta1.MsgMultiSendResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgUpdateParams(Cosmos.Bank.V1beta1.MsgUpdateParams msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Bank.V1beta1.MsgUpdateParamsResponse>> SendMsgUpdateParams(Cosmos.Bank.V1beta1.MsgUpdateParams msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.bank.v1beta1.MsgUpdateParams"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Bank.V1beta1.MsgUpdateParamsResponse>(r.Result, Cosmos.Bank.V1beta1.MsgUpdateParamsResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgSetSendEnabled(Cosmos.Bank.V1beta1.MsgSetSendEnabled msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Bank.V1beta1.MsgSetSendEnabledResponse>> SendMsgSetSendEnabled(Cosmos.Bank.V1beta1.MsgSetSendEnabled msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.bank.v1beta1.MsgSetSendEnabled"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Bank.V1beta1.MsgSetSendEnabledResponse>(r.Result, Cosmos.Bank.V1beta1.MsgSetSendEnabledResponse.Parser));
 		}
 
 	}

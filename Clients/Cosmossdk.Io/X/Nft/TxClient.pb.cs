@@ -13,14 +13,14 @@ namespace Cosmos.Nft.V1beta1 {
 			Client = client;
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgSend(Cosmos.Nft.V1beta1.MsgSend msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Nft.V1beta1.MsgSendResponse>> SendMsgSend(Cosmos.Nft.V1beta1.MsgSend msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.nft.v1beta1.MsgSend"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Nft.V1beta1.MsgSendResponse>(r.Result, Cosmos.Nft.V1beta1.MsgSendResponse.Parser));
 		}
 
 	}

@@ -13,24 +13,24 @@ namespace Cosmos.Feegrant.V1beta1 {
 			Client = client;
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgGrantAllowance(Cosmos.Feegrant.V1beta1.MsgGrantAllowance msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Feegrant.V1beta1.MsgGrantAllowanceResponse>> SendMsgGrantAllowance(Cosmos.Feegrant.V1beta1.MsgGrantAllowance msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.feegrant.v1beta1.MsgGrantAllowance"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Feegrant.V1beta1.MsgGrantAllowanceResponse>(r.Result, Cosmos.Feegrant.V1beta1.MsgGrantAllowanceResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgRevokeAllowance(Cosmos.Feegrant.V1beta1.MsgRevokeAllowance msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Feegrant.V1beta1.MsgRevokeAllowanceResponse>> SendMsgRevokeAllowance(Cosmos.Feegrant.V1beta1.MsgRevokeAllowance msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.feegrant.v1beta1.MsgRevokeAllowance"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Feegrant.V1beta1.MsgRevokeAllowanceResponse>(r.Result, Cosmos.Feegrant.V1beta1.MsgRevokeAllowanceResponse.Parser));
 		}
 
 	}

@@ -13,24 +13,24 @@ namespace Cosmos.Crisis.V1beta1 {
 			Client = client;
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgVerifyInvariant(Cosmos.Crisis.V1beta1.MsgVerifyInvariant msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Crisis.V1beta1.MsgVerifyInvariantResponse>> SendMsgVerifyInvariant(Cosmos.Crisis.V1beta1.MsgVerifyInvariant msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.crisis.v1beta1.MsgVerifyInvariant"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Crisis.V1beta1.MsgVerifyInvariantResponse>(r.Result, Cosmos.Crisis.V1beta1.MsgVerifyInvariantResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgUpdateParams(Cosmos.Crisis.V1beta1.MsgUpdateParams msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Crisis.V1beta1.MsgUpdateParamsResponse>> SendMsgUpdateParams(Cosmos.Crisis.V1beta1.MsgUpdateParams msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.crisis.v1beta1.MsgUpdateParams"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Crisis.V1beta1.MsgUpdateParamsResponse>(r.Result, Cosmos.Crisis.V1beta1.MsgUpdateParamsResponse.Parser));
 		}
 
 	}

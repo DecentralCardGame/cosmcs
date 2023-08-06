@@ -13,74 +13,74 @@ namespace Cosmos.Distribution.V1beta1 {
 			Client = client;
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgSetWithdrawAddress(Cosmos.Distribution.V1beta1.MsgSetWithdrawAddress msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgSetWithdrawAddressResponse>> SendMsgSetWithdrawAddress(Cosmos.Distribution.V1beta1.MsgSetWithdrawAddress msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.distribution.v1beta1.MsgSetWithdrawAddress"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgSetWithdrawAddressResponse>(r.Result, Cosmos.Distribution.V1beta1.MsgSetWithdrawAddressResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgWithdrawDelegatorReward(Cosmos.Distribution.V1beta1.MsgWithdrawDelegatorReward msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgWithdrawDelegatorRewardResponse>> SendMsgWithdrawDelegatorReward(Cosmos.Distribution.V1beta1.MsgWithdrawDelegatorReward msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgWithdrawDelegatorRewardResponse>(r.Result, Cosmos.Distribution.V1beta1.MsgWithdrawDelegatorRewardResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgWithdrawValidatorCommission(Cosmos.Distribution.V1beta1.MsgWithdrawValidatorCommission msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgWithdrawValidatorCommissionResponse>> SendMsgWithdrawValidatorCommission(Cosmos.Distribution.V1beta1.MsgWithdrawValidatorCommission msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.distribution.v1beta1.MsgWithdrawValidatorCommission"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgWithdrawValidatorCommissionResponse>(r.Result, Cosmos.Distribution.V1beta1.MsgWithdrawValidatorCommissionResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgFundCommunityPool(Cosmos.Distribution.V1beta1.MsgFundCommunityPool msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgFundCommunityPoolResponse>> SendMsgFundCommunityPool(Cosmos.Distribution.V1beta1.MsgFundCommunityPool msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.distribution.v1beta1.MsgFundCommunityPool"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgFundCommunityPoolResponse>(r.Result, Cosmos.Distribution.V1beta1.MsgFundCommunityPoolResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgUpdateParams(Cosmos.Distribution.V1beta1.MsgUpdateParams msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgUpdateParamsResponse>> SendMsgUpdateParams(Cosmos.Distribution.V1beta1.MsgUpdateParams msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.distribution.v1beta1.MsgUpdateParams"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgUpdateParamsResponse>(r.Result, Cosmos.Distribution.V1beta1.MsgUpdateParamsResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgCommunityPoolSpend(Cosmos.Distribution.V1beta1.MsgCommunityPoolSpend msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgCommunityPoolSpendResponse>> SendMsgCommunityPoolSpend(Cosmos.Distribution.V1beta1.MsgCommunityPoolSpend msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.distribution.v1beta1.MsgCommunityPoolSpend"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgCommunityPoolSpendResponse>(r.Result, Cosmos.Distribution.V1beta1.MsgCommunityPoolSpendResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgDepositValidatorRewardsPool(Cosmos.Distribution.V1beta1.MsgDepositValidatorRewardsPool msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgDepositValidatorRewardsPoolResponse>> SendMsgDepositValidatorRewardsPool(Cosmos.Distribution.V1beta1.MsgDepositValidatorRewardsPool msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.distribution.v1beta1.MsgDepositValidatorRewardsPool"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgDepositValidatorRewardsPoolResponse>(r.Result, Cosmos.Distribution.V1beta1.MsgDepositValidatorRewardsPoolResponse.Parser));
 		}
 
 	}

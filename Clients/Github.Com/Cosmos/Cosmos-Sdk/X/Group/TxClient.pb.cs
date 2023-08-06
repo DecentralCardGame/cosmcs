@@ -13,144 +13,144 @@ namespace Cosmos.Group.V1 {
 			Client = client;
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgCreateGroup(Cosmos.Group.V1.MsgCreateGroup msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgCreateGroupResponse>> SendMsgCreateGroup(Cosmos.Group.V1.MsgCreateGroup msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgCreateGroup"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgCreateGroupResponse>(r.Result, Cosmos.Group.V1.MsgCreateGroupResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgUpdateGroupMembers(Cosmos.Group.V1.MsgUpdateGroupMembers msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupMembersResponse>> SendMsgUpdateGroupMembers(Cosmos.Group.V1.MsgUpdateGroupMembers msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgUpdateGroupMembers"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupMembersResponse>(r.Result, Cosmos.Group.V1.MsgUpdateGroupMembersResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgUpdateGroupAdmin(Cosmos.Group.V1.MsgUpdateGroupAdmin msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupAdminResponse>> SendMsgUpdateGroupAdmin(Cosmos.Group.V1.MsgUpdateGroupAdmin msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgUpdateGroupAdmin"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupAdminResponse>(r.Result, Cosmos.Group.V1.MsgUpdateGroupAdminResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgUpdateGroupMetadata(Cosmos.Group.V1.MsgUpdateGroupMetadata msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupMetadataResponse>> SendMsgUpdateGroupMetadata(Cosmos.Group.V1.MsgUpdateGroupMetadata msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgUpdateGroupMetadata"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupMetadataResponse>(r.Result, Cosmos.Group.V1.MsgUpdateGroupMetadataResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgCreateGroupPolicy(Cosmos.Group.V1.MsgCreateGroupPolicy msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgCreateGroupPolicyResponse>> SendMsgCreateGroupPolicy(Cosmos.Group.V1.MsgCreateGroupPolicy msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgCreateGroupPolicy"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgCreateGroupPolicyResponse>(r.Result, Cosmos.Group.V1.MsgCreateGroupPolicyResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgCreateGroupWithPolicy(Cosmos.Group.V1.MsgCreateGroupWithPolicy msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgCreateGroupWithPolicyResponse>> SendMsgCreateGroupWithPolicy(Cosmos.Group.V1.MsgCreateGroupWithPolicy msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgCreateGroupWithPolicy"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgCreateGroupWithPolicyResponse>(r.Result, Cosmos.Group.V1.MsgCreateGroupWithPolicyResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgUpdateGroupPolicyAdmin(Cosmos.Group.V1.MsgUpdateGroupPolicyAdmin msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupPolicyAdminResponse>> SendMsgUpdateGroupPolicyAdmin(Cosmos.Group.V1.MsgUpdateGroupPolicyAdmin msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgUpdateGroupPolicyAdmin"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupPolicyAdminResponse>(r.Result, Cosmos.Group.V1.MsgUpdateGroupPolicyAdminResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgUpdateGroupPolicyDecisionPolicy(Cosmos.Group.V1.MsgUpdateGroupPolicyDecisionPolicy msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupPolicyDecisionPolicyResponse>> SendMsgUpdateGroupPolicyDecisionPolicy(Cosmos.Group.V1.MsgUpdateGroupPolicyDecisionPolicy msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgUpdateGroupPolicyDecisionPolicy"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupPolicyDecisionPolicyResponse>(r.Result, Cosmos.Group.V1.MsgUpdateGroupPolicyDecisionPolicyResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgUpdateGroupPolicyMetadata(Cosmos.Group.V1.MsgUpdateGroupPolicyMetadata msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupPolicyMetadataResponse>> SendMsgUpdateGroupPolicyMetadata(Cosmos.Group.V1.MsgUpdateGroupPolicyMetadata msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgUpdateGroupPolicyMetadata"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupPolicyMetadataResponse>(r.Result, Cosmos.Group.V1.MsgUpdateGroupPolicyMetadataResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgSubmitProposal(Cosmos.Group.V1.MsgSubmitProposal msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgSubmitProposalResponse>> SendMsgSubmitProposal(Cosmos.Group.V1.MsgSubmitProposal msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgSubmitProposal"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgSubmitProposalResponse>(r.Result, Cosmos.Group.V1.MsgSubmitProposalResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgWithdrawProposal(Cosmos.Group.V1.MsgWithdrawProposal msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgWithdrawProposalResponse>> SendMsgWithdrawProposal(Cosmos.Group.V1.MsgWithdrawProposal msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgWithdrawProposal"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgWithdrawProposalResponse>(r.Result, Cosmos.Group.V1.MsgWithdrawProposalResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgVote(Cosmos.Group.V1.MsgVote msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgVoteResponse>> SendMsgVote(Cosmos.Group.V1.MsgVote msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgVote"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgVoteResponse>(r.Result, Cosmos.Group.V1.MsgVoteResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgExec(Cosmos.Group.V1.MsgExec msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgExecResponse>> SendMsgExec(Cosmos.Group.V1.MsgExec msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgExec"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgExecResponse>(r.Result, Cosmos.Group.V1.MsgExecResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgLeaveGroup(Cosmos.Group.V1.MsgLeaveGroup msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgLeaveGroupResponse>> SendMsgLeaveGroup(Cosmos.Group.V1.MsgLeaveGroup msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgLeaveGroup"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgLeaveGroupResponse>(r.Result, Cosmos.Group.V1.MsgLeaveGroupResponse.Parser));
 		}
 
 	}

@@ -13,34 +13,34 @@ namespace Cosmos.Circuit.V1 {
 			Client = client;
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgAuthorizeCircuitBreaker(Cosmos.Circuit.V1.MsgAuthorizeCircuitBreaker msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Circuit.V1.MsgAuthorizeCircuitBreakerResponse>> SendMsgAuthorizeCircuitBreaker(Cosmos.Circuit.V1.MsgAuthorizeCircuitBreaker msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.circuit.v1.MsgAuthorizeCircuitBreaker"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Circuit.V1.MsgAuthorizeCircuitBreakerResponse>(r.Result, Cosmos.Circuit.V1.MsgAuthorizeCircuitBreakerResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgTripCircuitBreaker(Cosmos.Circuit.V1.MsgTripCircuitBreaker msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Circuit.V1.MsgTripCircuitBreakerResponse>> SendMsgTripCircuitBreaker(Cosmos.Circuit.V1.MsgTripCircuitBreaker msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.circuit.v1.MsgTripCircuitBreaker"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Circuit.V1.MsgTripCircuitBreakerResponse>(r.Result, Cosmos.Circuit.V1.MsgTripCircuitBreakerResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgResetCircuitBreaker(Cosmos.Circuit.V1.MsgResetCircuitBreaker msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Circuit.V1.MsgResetCircuitBreakerResponse>> SendMsgResetCircuitBreaker(Cosmos.Circuit.V1.MsgResetCircuitBreaker msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.circuit.v1.MsgResetCircuitBreaker"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Circuit.V1.MsgResetCircuitBreakerResponse>(r.Result, Cosmos.Circuit.V1.MsgResetCircuitBreakerResponse.Parser));
 		}
 
 	}

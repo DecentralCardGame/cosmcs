@@ -13,24 +13,24 @@ namespace Cosmos.Upgrade.V1beta1 {
 			Client = client;
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgSoftwareUpgrade(Cosmos.Upgrade.V1beta1.MsgSoftwareUpgrade msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Upgrade.V1beta1.MsgSoftwareUpgradeResponse>> SendMsgSoftwareUpgrade(Cosmos.Upgrade.V1beta1.MsgSoftwareUpgrade msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Upgrade.V1beta1.MsgSoftwareUpgradeResponse>(r.Result, Cosmos.Upgrade.V1beta1.MsgSoftwareUpgradeResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgCancelUpgrade(Cosmos.Upgrade.V1beta1.MsgCancelUpgrade msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Upgrade.V1beta1.MsgCancelUpgradeResponse>> SendMsgCancelUpgrade(Cosmos.Upgrade.V1beta1.MsgCancelUpgrade msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.upgrade.v1beta1.MsgCancelUpgrade"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Upgrade.V1beta1.MsgCancelUpgradeResponse>(r.Result, Cosmos.Upgrade.V1beta1.MsgCancelUpgradeResponse.Parser));
 		}
 
 	}

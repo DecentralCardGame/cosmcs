@@ -13,34 +13,34 @@ namespace Cosmos.Authz.V1beta1 {
 			Client = client;
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgGrant(Cosmos.Authz.V1beta1.MsgGrant msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Authz.V1beta1.MsgGrantResponse>> SendMsgGrant(Cosmos.Authz.V1beta1.MsgGrant msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.authz.v1beta1.MsgGrant"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Authz.V1beta1.MsgGrantResponse>(r.Result, Cosmos.Authz.V1beta1.MsgGrantResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgExec(Cosmos.Authz.V1beta1.MsgExec msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Authz.V1beta1.MsgExecResponse>> SendMsgExec(Cosmos.Authz.V1beta1.MsgExec msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.authz.v1beta1.MsgExec"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Authz.V1beta1.MsgExecResponse>(r.Result, Cosmos.Authz.V1beta1.MsgExecResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgRevoke(Cosmos.Authz.V1beta1.MsgRevoke msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Authz.V1beta1.MsgRevokeResponse>> SendMsgRevoke(Cosmos.Authz.V1beta1.MsgRevoke msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.authz.v1beta1.MsgRevoke"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Authz.V1beta1.MsgRevokeResponse>(r.Result, Cosmos.Authz.V1beta1.MsgRevokeResponse.Parser));
 		}
 
 	}

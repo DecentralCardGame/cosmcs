@@ -13,14 +13,14 @@ namespace Cosmos.Consensus.V1 {
 			Client = client;
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgUpdateParams(Cosmos.Consensus.V1.MsgUpdateParams msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Consensus.V1.MsgUpdateParamsResponse>> SendMsgUpdateParams(Cosmos.Consensus.V1.MsgUpdateParams msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.consensus.v1.MsgUpdateParams"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Consensus.V1.MsgUpdateParamsResponse>(r.Result, Cosmos.Consensus.V1.MsgUpdateParamsResponse.Parser));
 		}
 
 	}

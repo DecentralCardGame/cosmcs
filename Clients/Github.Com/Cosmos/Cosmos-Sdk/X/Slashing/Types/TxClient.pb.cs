@@ -13,24 +13,24 @@ namespace Cosmos.Slashing.V1beta1 {
 			Client = client;
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgUnjail(Cosmos.Slashing.V1beta1.MsgUnjail msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Slashing.V1beta1.MsgUnjailResponse>> SendMsgUnjail(Cosmos.Slashing.V1beta1.MsgUnjail msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.slashing.v1beta1.MsgUnjail"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Slashing.V1beta1.MsgUnjailResponse>(r.Result, Cosmos.Slashing.V1beta1.MsgUnjailResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgUpdateParams(Cosmos.Slashing.V1beta1.MsgUpdateParams msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Slashing.V1beta1.MsgUpdateParamsResponse>> SendMsgUpdateParams(Cosmos.Slashing.V1beta1.MsgUpdateParams msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.slashing.v1beta1.MsgUpdateParams"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Slashing.V1beta1.MsgUpdateParamsResponse>(r.Result, Cosmos.Slashing.V1beta1.MsgUpdateParamsResponse.Parser));
 		}
 
 	}

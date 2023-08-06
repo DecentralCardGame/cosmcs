@@ -13,14 +13,14 @@ namespace Cosmos.Evidence.V1beta1 {
 			Client = client;
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgSubmitEvidence(Cosmos.Evidence.V1beta1.MsgSubmitEvidence msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Evidence.V1beta1.MsgSubmitEvidenceResponse>> SendMsgSubmitEvidence(Cosmos.Evidence.V1beta1.MsgSubmitEvidence msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.evidence.v1beta1.MsgSubmitEvidence"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Evidence.V1beta1.MsgSubmitEvidenceResponse>(r.Result, Cosmos.Evidence.V1beta1.MsgSubmitEvidenceResponse.Parser));
 		}
 
 	}

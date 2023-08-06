@@ -13,14 +13,14 @@ namespace Cosmos.Mint.V1beta1 {
 			Client = client;
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgUpdateParams(Cosmos.Mint.V1beta1.MsgUpdateParams msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Mint.V1beta1.MsgUpdateParamsResponse>> SendMsgUpdateParams(Cosmos.Mint.V1beta1.MsgUpdateParams msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.mint.v1beta1.MsgUpdateParams"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Mint.V1beta1.MsgUpdateParamsResponse>(r.Result, Cosmos.Mint.V1beta1.MsgUpdateParamsResponse.Parser));
 		}
 
 	}

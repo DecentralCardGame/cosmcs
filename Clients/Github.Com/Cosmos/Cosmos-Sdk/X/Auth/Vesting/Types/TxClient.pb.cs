@@ -13,34 +13,34 @@ namespace Cosmos.Vesting.V1beta1 {
 			Client = client;
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgCreateVestingAccount(Cosmos.Vesting.V1beta1.MsgCreateVestingAccount msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Vesting.V1beta1.MsgCreateVestingAccountResponse>> SendMsgCreateVestingAccount(Cosmos.Vesting.V1beta1.MsgCreateVestingAccount msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.vesting.v1beta1.MsgCreateVestingAccount"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Vesting.V1beta1.MsgCreateVestingAccountResponse>(r.Result, Cosmos.Vesting.V1beta1.MsgCreateVestingAccountResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgCreatePermanentLockedAccount(Cosmos.Vesting.V1beta1.MsgCreatePermanentLockedAccount msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Vesting.V1beta1.MsgCreatePermanentLockedAccountResponse>> SendMsgCreatePermanentLockedAccount(Cosmos.Vesting.V1beta1.MsgCreatePermanentLockedAccount msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.vesting.v1beta1.MsgCreatePermanentLockedAccount"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Vesting.V1beta1.MsgCreatePermanentLockedAccountResponse>(r.Result, Cosmos.Vesting.V1beta1.MsgCreatePermanentLockedAccountResponse.Parser));
 		}
 
-		public Task<Cosmos.Base.Abci.V1beta1.TxResponse> SendMsgCreatePeriodicVestingAccount(Cosmos.Vesting.V1beta1.MsgCreatePeriodicVestingAccount msg) {
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Vesting.V1beta1.MsgCreatePeriodicVestingAccountResponse>> SendMsgCreatePeriodicVestingAccount(Cosmos.Vesting.V1beta1.MsgCreatePeriodicVestingAccount msg) {
 			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.vesting.v1beta1.MsgCreatePeriodicVestingAccount"
 				}
-			).ContinueWith(r => Cosmos.Base.Abci.V1beta1.TxResponse.Parser.ParseJson(r.Result));
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Vesting.V1beta1.MsgCreatePeriodicVestingAccountResponse>(r.Result, Cosmos.Vesting.V1beta1.MsgCreatePeriodicVestingAccountResponse.Parser));
 		}
 
 	}
