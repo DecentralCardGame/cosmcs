@@ -26,12 +26,12 @@ namespace Cosmos.Orm.Module.V1alpha1 {
           string.Concat(
             "Cidjb3Ntb3Mvb3JtL21vZHVsZS92MWFscGhhMS9tb2R1bGUucHJvdG8SGmNv",
             "c21vcy5vcm0ubW9kdWxlLnYxYWxwaGExGiBjb3Ntb3MvYXBwL3YxYWxwaGEx",
-            "L21vZHVsZS5wcm90byIiCgZNb2R1bGU6GLrAltoBEgoQY29zbW9zc2RrLmlv",
-            "L29ybUK4AQoeY29tLmNvc21vcy5vcm0ubW9kdWxlLnYxYWxwaGExQgtNb2R1",
-            "bGVQcm90b1ABogIDQ09NqgIaQ29zbW9zLk9ybS5Nb2R1bGUuVjFhbHBoYTHK",
-            "AhpDb3Ntb3NcT3JtXE1vZHVsZVxWMWFscGhhMeICJkNvc21vc1xPcm1cTW9k",
-            "dWxlXFYxYWxwaGExXEdQQk1ldGFkYXRh6gIdQ29zbW9zOjpPcm06Ok1vZHVs",
-            "ZTo6VjFhbHBoYTFiBnByb3RvMw=="));
+            "L21vZHVsZS5wcm90byIyCgZNb2R1bGU6KLrAltoBIgogZ2l0aHViLmNvbS9j",
+            "b3Ntb3MvY29zbW9zLXNkay9vcm1CuAEKHmNvbS5jb3Ntb3Mub3JtLm1vZHVs",
+            "ZS52MWFscGhhMUILTW9kdWxlUHJvdG9QAaICA0NPTaoCGkNvc21vcy5Pcm0u",
+            "TW9kdWxlLlYxYWxwaGExygIaQ29zbW9zXE9ybVxNb2R1bGVcVjFhbHBoYTHi",
+            "AiZDb3Ntb3NcT3JtXE1vZHVsZVxWMWFscGhhMVxHUEJNZXRhZGF0YeoCHUNv",
+            "c21vczo6T3JtOjpNb2R1bGU6OlYxYWxwaGExYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Cosmos.App.V1alpha1.ModuleReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -44,8 +44,8 @@ namespace Cosmos.Orm.Module.V1alpha1 {
   #region Messages
   /// <summary>
   /// Module defines the ORM module which adds providers to the app container for
-  /// ORM ModuleDB's and in the future will automatically register query
-  /// services for modules that use the ORM.
+  /// module-scoped DB's. In the future it may provide gRPC services for interacting
+  /// with ORM data.
   /// </summary>
   public sealed partial class Module : pb::IMessage<Module>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

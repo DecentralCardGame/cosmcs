@@ -95,7 +95,7 @@ namespace Cosmos.Gov.Module.V1 {
     public const int MaxMetadataLenFieldNumber = 1;
     private ulong maxMetadataLen_;
     /// <summary>
-    /// max_metadata_len defines the maximum proposal metadata length.
+    /// max_metadata_len defines the maximum proposal metadata length. 
     /// Defaults to 255 if not explicitly set.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

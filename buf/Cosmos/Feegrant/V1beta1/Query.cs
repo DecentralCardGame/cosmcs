@@ -59,12 +59,12 @@ namespace Cosmos.Feegrant.V1beta1 {
             "eUdyYW50ZXISOC5jb3Ntb3MuZmVlZ3JhbnQudjFiZXRhMS5RdWVyeUFsbG93",
             "YW5jZXNCeUdyYW50ZXJSZXF1ZXN0GjkuY29zbW9zLmZlZWdyYW50LnYxYmV0",
             "YTEuUXVlcnlBbGxvd2FuY2VzQnlHcmFudGVyUmVzcG9uc2UiMYLT5JMCKxIp",
-            "L2Nvc21vcy9mZWVncmFudC92MWJldGExL2lzc3VlZC97Z3JhbnRlcn1CwAEK",
-            "G2NvbS5jb3Ntb3MuZmVlZ3JhbnQudjFiZXRhMUIKUXVlcnlQcm90b1ABWhdj",
-            "b3Ntb3NzZGsuaW8veC9mZWVncmFudKICA0NGWKoCF0Nvc21vcy5GZWVncmFu",
-            "dC5WMWJldGExygIXQ29zbW9zXEZlZWdyYW50XFYxYmV0YTHiAiNDb3Ntb3Nc",
-            "RmVlZ3JhbnRcVjFiZXRhMVxHUEJNZXRhZGF0YeoCGUNvc21vczo6RmVlZ3Jh",
-            "bnQ6OlYxYmV0YTFiBnByb3RvMw=="));
+            "L2Nvc21vcy9mZWVncmFudC92MWJldGExL2lzc3VlZC97Z3JhbnRlcn1C0AEK",
+            "G2NvbS5jb3Ntb3MuZmVlZ3JhbnQudjFiZXRhMUIKUXVlcnlQcm90b1ABWidn",
+            "aXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL3gvZmVlZ3JhbnSiAgNDRliq",
+            "AhdDb3Ntb3MuRmVlZ3JhbnQuVjFiZXRhMcoCF0Nvc21vc1xGZWVncmFudFxW",
+            "MWJldGEx4gIjQ29zbW9zXEZlZWdyYW50XFYxYmV0YTFcR1BCTWV0YWRhdGHq",
+            "AhlDb3Ntb3M6OkZlZWdyYW50OjpWMWJldGExYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Cosmos.Feegrant.V1beta1.FeegrantReflection.Descriptor, global::Cosmos.Base.Query.V1beta1.PaginationReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::CosmosProto.CosmosReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

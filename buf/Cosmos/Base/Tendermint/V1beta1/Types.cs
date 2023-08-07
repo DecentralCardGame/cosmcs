@@ -49,13 +49,13 @@ namespace Cosmos.Base.Tendermint.V1beta1 {
             "dXNIYXNoEhkKCGFwcF9oYXNoGAsgASgMUgdhcHBIYXNoEioKEWxhc3RfcmVz",
             "dWx0c19oYXNoGAwgASgMUg9sYXN0UmVzdWx0c0hhc2gSIwoNZXZpZGVuY2Vf",
             "aGFzaBgNIAEoDFIMZXZpZGVuY2VIYXNoEikKEHByb3Bvc2VyX2FkZHJlc3MY",
-            "DiABKAlSD3Byb3Bvc2VyQWRkcmVzc0KAAgoiY29tLmNvc21vcy5iYXNlLnRl",
-            "bmRlcm1pbnQudjFiZXRhMUIKVHlwZXNQcm90b1ABWjNnaXRodWIuY29tL2Nv",
-            "c21vcy9jb3Ntb3Mtc2RrL2NsaWVudC9ncnBjL2NtdHNlcnZpY2WiAgNDQlSq",
-            "Ah5Db3Ntb3MuQmFzZS5UZW5kZXJtaW50LlYxYmV0YTHKAh5Db3Ntb3NcQmFz",
-            "ZVxUZW5kZXJtaW50XFYxYmV0YTHiAipDb3Ntb3NcQmFzZVxUZW5kZXJtaW50",
-            "XFYxYmV0YTFcR1BCTWV0YWRhdGHqAiFDb3Ntb3M6OkJhc2U6OlRlbmRlcm1p",
-            "bnQ6OlYxYmV0YTFiBnByb3RvMw=="));
+            "DiABKAlSD3Byb3Bvc2VyQWRkcmVzc0L/AQoiY29tLmNvc21vcy5iYXNlLnRl",
+            "bmRlcm1pbnQudjFiZXRhMUIKVHlwZXNQcm90b1ABWjJnaXRodWIuY29tL2Nv",
+            "c21vcy9jb3Ntb3Mtc2RrL2NsaWVudC9ncnBjL3Rtc2VydmljZaICA0NCVKoC",
+            "HkNvc21vcy5CYXNlLlRlbmRlcm1pbnQuVjFiZXRhMcoCHkNvc21vc1xCYXNl",
+            "XFRlbmRlcm1pbnRcVjFiZXRhMeICKkNvc21vc1xCYXNlXFRlbmRlcm1pbnRc",
+            "VjFiZXRhMVxHUEJNZXRhZGF0YeoCIUNvc21vczo6QmFzZTo6VGVuZGVybWlu",
+            "dDo6VjFiZXRhMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::Tendermint.Types.TypesReflection.Descriptor, global::Tendermint.Types.EvidenceReflection.Descriptor, global::Tendermint.Version.TypesReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Amino.AminoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
