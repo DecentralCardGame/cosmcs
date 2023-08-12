@@ -27,28 +27,31 @@ namespace Cosmos.Staking.V1beta1 {
             "CiJjb3Ntb3Mvc3Rha2luZy92MWJldGExL2F1dGh6LnByb3RvEhZjb3Ntb3Mu",
             "c3Rha2luZy52MWJldGExGhRnb2dvcHJvdG8vZ29nby5wcm90bxoZY29zbW9z",
             "X3Byb3RvL2Nvc21vcy5wcm90bxoeY29zbW9zL2Jhc2UvdjFiZXRhMS9jb2lu",
-            "LnByb3RvGhFhbWluby9hbWluby5wcm90byKdBAoSU3Rha2VBdXRob3JpemF0",
+            "LnByb3RvGhFhbWluby9hbWluby5wcm90byL6BAoSU3Rha2VBdXRob3JpemF0",
             "aW9uEmUKCm1heF90b2tlbnMYASABKAsyGS5jb3Ntb3MuYmFzZS52MWJldGEx",
             "LkNvaW5CK6rfHydnaXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL3R5cGVz",
-            "LkNvaW5SCW1heFRva2VucxJWCgphbGxvd19saXN0GAIgASgLMjUuY29zbW9z",
+            "LkNvaW5SCW1heFRva2VucxKEAQoKYWxsb3dfbGlzdBgCIAEoCzI1LmNvc21v",
+            "cy5zdGFraW5nLnYxYmV0YTEuU3Rha2VBdXRob3JpemF0aW9uLlZhbGlkYXRv",
+            "cnNCLLLnsConY29zbW9zLXNkay9TdGFrZUF1dGhvcml6YXRpb24vQWxsb3dM",
+            "aXN0SABSCWFsbG93TGlzdBKBAQoJZGVueV9saXN0GAMgASgLMjUuY29zbW9z",
             "LnN0YWtpbmcudjFiZXRhMS5TdGFrZUF1dGhvcml6YXRpb24uVmFsaWRhdG9y",
-            "c0gAUglhbGxvd0xpc3QSVAoJZGVueV9saXN0GAMgASgLMjUuY29zbW9zLnN0",
-            "YWtpbmcudjFiZXRhMS5TdGFrZUF1dGhvcml6YXRpb24uVmFsaWRhdG9yc0gA",
-            "UghkZW55TGlzdBJYChJhdXRob3JpemF0aW9uX3R5cGUYBCABKA4yKS5jb3Nt",
-            "b3Muc3Rha2luZy52MWJldGExLkF1dGhvcml6YXRpb25UeXBlUhFhdXRob3Jp",
-            "emF0aW9uVHlwZRpACgpWYWxpZGF0b3JzEjIKB2FkZHJlc3MYASADKAlCGNK0",
-            "LRRjb3Ntb3MuQWRkcmVzc1N0cmluZ1IHYWRkcmVzczpIyrQtImNvc21vcy5h",
-            "dXRoei52MWJldGExLkF1dGhvcml6YXRpb26K57AqHWNvc21vcy1zZGsvU3Rh",
-            "a2VBdXRob3JpemF0aW9uQgwKCnZhbGlkYXRvcnMqngEKEUF1dGhvcml6YXRp",
-            "b25UeXBlEiIKHkFVVEhPUklaQVRJT05fVFlQRV9VTlNQRUNJRklFRBAAEh8K",
-            "G0FVVEhPUklaQVRJT05fVFlQRV9ERUxFR0FURRABEiEKHUFVVEhPUklaQVRJ",
-            "T05fVFlQRV9VTkRFTEVHQVRFEAISIQodQVVUSE9SSVpBVElPTl9UWVBFX1JF",
-            "REVMRUdBVEUQA0LQAQoaY29tLmNvc21vcy5zdGFraW5nLnYxYmV0YTFCCkF1",
-            "dGh6UHJvdG9QAVosZ2l0aHViLmNvbS9jb3Ntb3MvY29zbW9zLXNkay94L3N0",
-            "YWtpbmcvdHlwZXOiAgNDU1iqAhZDb3Ntb3MuU3Rha2luZy5WMWJldGExygIW",
-            "Q29zbW9zXFN0YWtpbmdcVjFiZXRhMeICIkNvc21vc1xTdGFraW5nXFYxYmV0",
-            "YTFcR1BCTWV0YWRhdGHqAhhDb3Ntb3M6OlN0YWtpbmc6OlYxYmV0YTFiBnBy",
-            "b3RvMw=="));
+            "c0IrsuewKiZjb3Ntb3Mtc2RrL1N0YWtlQXV0aG9yaXphdGlvbi9EZW55TGlz",
+            "dEgAUghkZW55TGlzdBJYChJhdXRob3JpemF0aW9uX3R5cGUYBCABKA4yKS5j",
+            "b3Ntb3Muc3Rha2luZy52MWJldGExLkF1dGhvcml6YXRpb25UeXBlUhFhdXRo",
+            "b3JpemF0aW9uVHlwZRpACgpWYWxpZGF0b3JzEjIKB2FkZHJlc3MYASADKAlC",
+            "GNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZ1IHYWRkcmVzczpIyrQtImNvc21v",
+            "cy5hdXRoei52MWJldGExLkF1dGhvcml6YXRpb26K57AqHWNvc21vcy1zZGsv",
+            "U3Rha2VBdXRob3JpemF0aW9uQgwKCnZhbGlkYXRvcnMq0gEKEUF1dGhvcml6",
+            "YXRpb25UeXBlEiIKHkFVVEhPUklaQVRJT05fVFlQRV9VTlNQRUNJRklFRBAA",
+            "Eh8KG0FVVEhPUklaQVRJT05fVFlQRV9ERUxFR0FURRABEiEKHUFVVEhPUkla",
+            "QVRJT05fVFlQRV9VTkRFTEVHQVRFEAISIQodQVVUSE9SSVpBVElPTl9UWVBF",
+            "X1JFREVMRUdBVEUQAxIyCi5BVVRIT1JJWkFUSU9OX1RZUEVfQ0FOQ0VMX1VO",
+            "Qk9ORElOR19ERUxFR0FUSU9OEARC0AEKGmNvbS5jb3Ntb3Muc3Rha2luZy52",
+            "MWJldGExQgpBdXRoelByb3RvUAFaLGdpdGh1Yi5jb20vY29zbW9zL2Nvc21v",
+            "cy1zZGsveC9zdGFraW5nL3R5cGVzogIDQ1NYqgIWQ29zbW9zLlN0YWtpbmcu",
+            "VjFiZXRhMcoCFkNvc21vc1xTdGFraW5nXFYxYmV0YTHiAiJDb3Ntb3NcU3Rh",
+            "a2luZ1xWMWJldGExXEdQQk1ldGFkYXRh6gIYQ29zbW9zOjpTdGFraW5nOjpW",
+            "MWJldGExYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::CosmosProto.CosmosReflection.Descriptor, global::Cosmos.Base.V1beta1.CoinReflection.Descriptor, global::Amino.AminoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Cosmos.Staking.V1beta1.AuthorizationType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -81,6 +84,10 @@ namespace Cosmos.Staking.V1beta1 {
     /// AUTHORIZATION_TYPE_REDELEGATE defines an authorization type for Msg/BeginRedelegate
     /// </summary>
     [pbr::OriginalName("AUTHORIZATION_TYPE_REDELEGATE")] Redelegate = 3,
+    /// <summary>
+    /// AUTHORIZATION_TYPE_CANCEL_UNBONDING_DELEGATION defines an authorization type for Msg/MsgCancelUnbondingDelegation
+    /// </summary>
+    [pbr::OriginalName("AUTHORIZATION_TYPE_CANCEL_UNBONDING_DELEGATION")] CancelUnbondingDelegation = 4,
   }
 
   #endregion

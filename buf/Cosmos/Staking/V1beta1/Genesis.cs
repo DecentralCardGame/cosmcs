@@ -167,7 +167,7 @@ namespace Cosmos.Staking.V1beta1 {
         = pb::FieldCodec.ForMessage(34, global::Cosmos.Staking.V1beta1.Validator.Parser);
     private readonly pbc::RepeatedField<global::Cosmos.Staking.V1beta1.Validator> validators_ = new pbc::RepeatedField<global::Cosmos.Staking.V1beta1.Validator>();
     /// <summary>
-    /// delegations defines the validator set at genesis.
+    /// validators defines the validator set at genesis.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

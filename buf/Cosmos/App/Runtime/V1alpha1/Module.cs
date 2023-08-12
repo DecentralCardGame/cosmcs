@@ -26,25 +26,28 @@ namespace Cosmos.App.Runtime.V1alpha1 {
           string.Concat(
             "Cihjb3Ntb3MvYXBwL3J1bnRpbWUvdjFhbHBoYTEvbW9kdWxlLnByb3RvEhtj",
             "b3Ntb3MuYXBwLnJ1bnRpbWUudjFhbHBoYTEaIGNvc21vcy9hcHAvdjFhbHBo",
-            "YTEvbW9kdWxlLnByb3RvItkCCgZNb2R1bGUSGQoIYXBwX25hbWUYASABKAlS",
+            "YTEvbW9kdWxlLnByb3RvItwDCgZNb2R1bGUSGQoIYXBwX25hbWUYASABKAlS",
             "B2FwcE5hbWUSJQoOYmVnaW5fYmxvY2tlcnMYAiADKAlSDWJlZ2luQmxvY2tl",
             "cnMSIQoMZW5kX2Jsb2NrZXJzGAMgAygJUgtlbmRCbG9ja2VycxIhCgxpbml0",
             "X2dlbmVzaXMYBCADKAlSC2luaXRHZW5lc2lzEiUKDmV4cG9ydF9nZW5lc2lz",
             "GAUgAygJUg1leHBvcnRHZW5lc2lzElsKE292ZXJyaWRlX3N0b3JlX2tleXMY",
             "BiADKAsyKy5jb3Ntb3MuYXBwLnJ1bnRpbWUudjFhbHBoYTEuU3RvcmVLZXlD",
-            "b25maWdSEW92ZXJyaWRlU3RvcmVLZXlzOkO6wJbaAT0KJGdpdGh1Yi5jb20v",
-            "Y29zbW9zL2Nvc21vcy1zZGsvcnVudGltZRIVChNjb3Ntb3MuYXBwLnYxYWxw",
-            "aGExIlMKDlN0b3JlS2V5Q29uZmlnEh8KC21vZHVsZV9uYW1lGAEgASgJUgpt",
-            "b2R1bGVOYW1lEiAKDGt2X3N0b3JlX2tleRgCIAEoCVIKa3ZTdG9yZUtleUK9",
-            "AQofY29tLmNvc21vcy5hcHAucnVudGltZS52MWFscGhhMUILTW9kdWxlUHJv",
-            "dG9QAaICA0NBUqoCG0Nvc21vcy5BcHAuUnVudGltZS5WMWFscGhhMcoCG0Nv",
-            "c21vc1xBcHBcUnVudGltZVxWMWFscGhhMeICJ0Nvc21vc1xBcHBcUnVudGlt",
-            "ZVxWMWFscGhhMVxHUEJNZXRhZGF0YeoCHkNvc21vczo6QXBwOjpSdW50aW1l",
-            "OjpWMWFscGhhMWIGcHJvdG8z"));
+            "b25maWdSEW92ZXJyaWRlU3RvcmVLZXlzEikKEG9yZGVyX21pZ3JhdGlvbnMY",
+            "ByADKAlSD29yZGVyTWlncmF0aW9ucxIiCgxwcmVjb21taXRlcnMYCCADKAlS",
+            "DHByZWNvbW1pdGVycxIyChVwcmVwYXJlX2NoZWNrX3N0YXRlcnMYCSADKAlS",
+            "E3ByZXBhcmVDaGVja1N0YXRlcnM6Q7rAltoBPQokZ2l0aHViLmNvbS9jb3Nt",
+            "b3MvY29zbW9zLXNkay9ydW50aW1lEhUKE2Nvc21vcy5hcHAudjFhbHBoYTEi",
+            "UwoOU3RvcmVLZXlDb25maWcSHwoLbW9kdWxlX25hbWUYASABKAlSCm1vZHVs",
+            "ZU5hbWUSIAoMa3Zfc3RvcmVfa2V5GAIgASgJUgprdlN0b3JlS2V5Qr0BCh9j",
+            "b20uY29zbW9zLmFwcC5ydW50aW1lLnYxYWxwaGExQgtNb2R1bGVQcm90b1AB",
+            "ogIDQ0FSqgIbQ29zbW9zLkFwcC5SdW50aW1lLlYxYWxwaGExygIbQ29zbW9z",
+            "XEFwcFxSdW50aW1lXFYxYWxwaGEx4gInQ29zbW9zXEFwcFxSdW50aW1lXFYx",
+            "YWxwaGExXEdQQk1ldGFkYXRh6gIeQ29zbW9zOjpBcHA6OlJ1bnRpbWU6OlYx",
+            "YWxwaGExYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Cosmos.App.V1alpha1.ModuleReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.App.Runtime.V1alpha1.Module), global::Cosmos.App.Runtime.V1alpha1.Module.Parser, new[]{ "AppName", "BeginBlockers", "EndBlockers", "InitGenesis", "ExportGenesis", "OverrideStoreKeys" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.App.Runtime.V1alpha1.Module), global::Cosmos.App.Runtime.V1alpha1.Module.Parser, new[]{ "AppName", "BeginBlockers", "EndBlockers", "InitGenesis", "ExportGenesis", "OverrideStoreKeys", "OrderMigrations", "Precommiters", "PrepareCheckStaters" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.App.Runtime.V1alpha1.StoreKeyConfig), global::Cosmos.App.Runtime.V1alpha1.StoreKeyConfig.Parser, new[]{ "ModuleName", "KvStoreKey" }, null, null, null, null)
           }));
     }
@@ -95,6 +98,9 @@ namespace Cosmos.App.Runtime.V1alpha1 {
       initGenesis_ = other.initGenesis_.Clone();
       exportGenesis_ = other.exportGenesis_.Clone();
       overrideStoreKeys_ = other.overrideStoreKeys_.Clone();
+      orderMigrations_ = other.orderMigrations_.Clone();
+      precommiters_ = other.precommiters_.Clone();
+      prepareCheckStaters_ = other.prepareCheckStaters_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -198,6 +204,54 @@ namespace Cosmos.App.Runtime.V1alpha1 {
       get { return overrideStoreKeys_; }
     }
 
+    /// <summary>Field number for the "order_migrations" field.</summary>
+    public const int OrderMigrationsFieldNumber = 7;
+    private static readonly pb::FieldCodec<string> _repeated_orderMigrations_codec
+        = pb::FieldCodec.ForString(58);
+    private readonly pbc::RepeatedField<string> orderMigrations_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// order_migrations defines the order in which module migrations are performed.
+    /// If this is left empty, it uses the default migration order.
+    /// https://pkg.go.dev/github.com/cosmos/cosmos-sdk@v0.47.0-alpha2/types/module#DefaultMigrationsOrder
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<string> OrderMigrations {
+      get { return orderMigrations_; }
+    }
+
+    /// <summary>Field number for the "precommiters" field.</summary>
+    public const int PrecommitersFieldNumber = 8;
+    private static readonly pb::FieldCodec<string> _repeated_precommiters_codec
+        = pb::FieldCodec.ForString(66);
+    private readonly pbc::RepeatedField<string> precommiters_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// precommiters specifies the module names of the precommiters
+    /// to call in the order in which they should be called. If this is left empty
+    /// no precommit function will be registered.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<string> Precommiters {
+      get { return precommiters_; }
+    }
+
+    /// <summary>Field number for the "prepare_check_staters" field.</summary>
+    public const int PrepareCheckStatersFieldNumber = 9;
+    private static readonly pb::FieldCodec<string> _repeated_prepareCheckStaters_codec
+        = pb::FieldCodec.ForString(74);
+    private readonly pbc::RepeatedField<string> prepareCheckStaters_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// prepare_check_staters specifies the module names of the prepare_check_staters
+    /// to call in the order in which they should be called. If this is left empty
+    /// no preparecheckstate function will be registered.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<string> PrepareCheckStaters {
+      get { return prepareCheckStaters_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -219,6 +273,9 @@ namespace Cosmos.App.Runtime.V1alpha1 {
       if(!initGenesis_.Equals(other.initGenesis_)) return false;
       if(!exportGenesis_.Equals(other.exportGenesis_)) return false;
       if(!overrideStoreKeys_.Equals(other.overrideStoreKeys_)) return false;
+      if(!orderMigrations_.Equals(other.orderMigrations_)) return false;
+      if(!precommiters_.Equals(other.precommiters_)) return false;
+      if(!prepareCheckStaters_.Equals(other.prepareCheckStaters_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -232,6 +289,9 @@ namespace Cosmos.App.Runtime.V1alpha1 {
       hash ^= initGenesis_.GetHashCode();
       hash ^= exportGenesis_.GetHashCode();
       hash ^= overrideStoreKeys_.GetHashCode();
+      hash ^= orderMigrations_.GetHashCode();
+      hash ^= precommiters_.GetHashCode();
+      hash ^= prepareCheckStaters_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -259,6 +319,9 @@ namespace Cosmos.App.Runtime.V1alpha1 {
       initGenesis_.WriteTo(output, _repeated_initGenesis_codec);
       exportGenesis_.WriteTo(output, _repeated_exportGenesis_codec);
       overrideStoreKeys_.WriteTo(output, _repeated_overrideStoreKeys_codec);
+      orderMigrations_.WriteTo(output, _repeated_orderMigrations_codec);
+      precommiters_.WriteTo(output, _repeated_precommiters_codec);
+      prepareCheckStaters_.WriteTo(output, _repeated_prepareCheckStaters_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -278,6 +341,9 @@ namespace Cosmos.App.Runtime.V1alpha1 {
       initGenesis_.WriteTo(ref output, _repeated_initGenesis_codec);
       exportGenesis_.WriteTo(ref output, _repeated_exportGenesis_codec);
       overrideStoreKeys_.WriteTo(ref output, _repeated_overrideStoreKeys_codec);
+      orderMigrations_.WriteTo(ref output, _repeated_orderMigrations_codec);
+      precommiters_.WriteTo(ref output, _repeated_precommiters_codec);
+      prepareCheckStaters_.WriteTo(ref output, _repeated_prepareCheckStaters_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -296,6 +362,9 @@ namespace Cosmos.App.Runtime.V1alpha1 {
       size += initGenesis_.CalculateSize(_repeated_initGenesis_codec);
       size += exportGenesis_.CalculateSize(_repeated_exportGenesis_codec);
       size += overrideStoreKeys_.CalculateSize(_repeated_overrideStoreKeys_codec);
+      size += orderMigrations_.CalculateSize(_repeated_orderMigrations_codec);
+      size += precommiters_.CalculateSize(_repeated_precommiters_codec);
+      size += prepareCheckStaters_.CalculateSize(_repeated_prepareCheckStaters_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -316,6 +385,9 @@ namespace Cosmos.App.Runtime.V1alpha1 {
       initGenesis_.Add(other.initGenesis_);
       exportGenesis_.Add(other.exportGenesis_);
       overrideStoreKeys_.Add(other.overrideStoreKeys_);
+      orderMigrations_.Add(other.orderMigrations_);
+      precommiters_.Add(other.precommiters_);
+      prepareCheckStaters_.Add(other.prepareCheckStaters_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -355,6 +427,18 @@ namespace Cosmos.App.Runtime.V1alpha1 {
             overrideStoreKeys_.AddEntriesFrom(input, _repeated_overrideStoreKeys_codec);
             break;
           }
+          case 58: {
+            orderMigrations_.AddEntriesFrom(input, _repeated_orderMigrations_codec);
+            break;
+          }
+          case 66: {
+            precommiters_.AddEntriesFrom(input, _repeated_precommiters_codec);
+            break;
+          }
+          case 74: {
+            prepareCheckStaters_.AddEntriesFrom(input, _repeated_prepareCheckStaters_codec);
+            break;
+          }
         }
       }
     #endif
@@ -392,6 +476,18 @@ namespace Cosmos.App.Runtime.V1alpha1 {
           }
           case 50: {
             overrideStoreKeys_.AddEntriesFrom(ref input, _repeated_overrideStoreKeys_codec);
+            break;
+          }
+          case 58: {
+            orderMigrations_.AddEntriesFrom(ref input, _repeated_orderMigrations_codec);
+            break;
+          }
+          case 66: {
+            precommiters_.AddEntriesFrom(ref input, _repeated_precommiters_codec);
+            break;
+          }
+          case 74: {
+            prepareCheckStaters_.AddEntriesFrom(ref input, _repeated_prepareCheckStaters_codec);
             break;
           }
         }

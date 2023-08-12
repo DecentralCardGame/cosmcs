@@ -244,7 +244,7 @@ namespace Cosmos.Crypto.Ed25519 {
   }
 
   /// <summary>
-  /// Deprecated: PrivKey defines a ed25519 private key.
+  /// PrivKey defines a ed25519 private key.
   /// NOTE: ed25519 keys must not be used in SDK apps except in a tendermint validator context.
   /// </summary>
   public sealed partial class PrivKey : pb::IMessage<PrivKey>

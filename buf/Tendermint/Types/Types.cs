@@ -48,7 +48,7 @@ namespace Tendermint.Types {
             "YXBwX2hhc2gYCyABKAxSB2FwcEhhc2gSKgoRbGFzdF9yZXN1bHRzX2hhc2gY",
             "DCABKAxSD2xhc3RSZXN1bHRzSGFzaBIjCg1ldmlkZW5jZV9oYXNoGA0gASgM",
             "UgxldmlkZW5jZUhhc2gSKQoQcHJvcG9zZXJfYWRkcmVzcxgOIAEoDFIPcHJv",
-            "cG9zZXJBZGRyZXNzIhgKBERhdGESEAoDdHhzGAEgAygMUgN0eHMi6AIKBFZv",
+            "cG9zZXJBZGRyZXNzIhgKBERhdGESEAoDdHhzGAEgAygMUgN0eHMitwMKBFZv",
             "dGUSMwoEdHlwZRgBIAEoDjIfLnRlbmRlcm1pbnQudHlwZXMuU2lnbmVkTXNn",
             "VHlwZVIEdHlwZRIWCgZoZWlnaHQYAiABKANSBmhlaWdodBIUCgVyb3VuZBgD",
             "IAEoBVIFcm91bmQSRQoIYmxvY2tfaWQYBCABKAsyGS50ZW5kZXJtaW50LnR5",
@@ -56,61 +56,72 @@ namespace Tendermint.Types {
             "c3RhbXAYBSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQgjI3h8A",
             "kN8fAVIJdGltZXN0YW1wEisKEXZhbGlkYXRvcl9hZGRyZXNzGAYgASgMUhB2",
             "YWxpZGF0b3JBZGRyZXNzEicKD3ZhbGlkYXRvcl9pbmRleBgHIAEoBVIOdmFs",
-            "aWRhdG9ySW5kZXgSHAoJc2lnbmF0dXJlGAggASgMUglzaWduYXR1cmUiwAEK",
-            "BkNvbW1pdBIWCgZoZWlnaHQYASABKANSBmhlaWdodBIUCgVyb3VuZBgCIAEo",
-            "BVIFcm91bmQSRQoIYmxvY2tfaWQYAyABKAsyGS50ZW5kZXJtaW50LnR5cGVz",
-            "LkJsb2NrSURCD8jeHwDi3h8HQmxvY2tJRFIHYmxvY2tJZBJBCgpzaWduYXR1",
-            "cmVzGAQgAygLMhsudGVuZGVybWludC50eXBlcy5Db21taXRTaWdCBMjeHwBS",
-            "CnNpZ25hdHVyZXMi3QEKCUNvbW1pdFNpZxJBCg1ibG9ja19pZF9mbGFnGAEg",
-            "ASgOMh0udGVuZGVybWludC50eXBlcy5CbG9ja0lERmxhZ1ILYmxvY2tJZEZs",
-            "YWcSKwoRdmFsaWRhdG9yX2FkZHJlc3MYAiABKAxSEHZhbGlkYXRvckFkZHJl",
-            "c3MSQgoJdGltZXN0YW1wGAMgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVz",
-            "dGFtcEIIyN4fAJDfHwFSCXRpbWVzdGFtcBIcCglzaWduYXR1cmUYBCABKAxS",
-            "CXNpZ25hdHVyZSKzAgoIUHJvcG9zYWwSMwoEdHlwZRgBIAEoDjIfLnRlbmRl",
-            "cm1pbnQudHlwZXMuU2lnbmVkTXNnVHlwZVIEdHlwZRIWCgZoZWlnaHQYAiAB",
-            "KANSBmhlaWdodBIUCgVyb3VuZBgDIAEoBVIFcm91bmQSGwoJcG9sX3JvdW5k",
-            "GAQgASgFUghwb2xSb3VuZBJFCghibG9ja19pZBgFIAEoCzIZLnRlbmRlcm1p",
-            "bnQudHlwZXMuQmxvY2tJREIPyN4fAOLeHwdCbG9ja0lEUgdibG9ja0lkEkIK",
-            "CXRpbWVzdGFtcBgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBC",
-            "CMjeHwCQ3x8BUgl0aW1lc3RhbXASHAoJc2lnbmF0dXJlGAcgASgMUglzaWdu",
-            "YXR1cmUicgoMU2lnbmVkSGVhZGVyEjAKBmhlYWRlchgBIAEoCzIYLnRlbmRl",
-            "cm1pbnQudHlwZXMuSGVhZGVyUgZoZWFkZXISMAoGY29tbWl0GAIgASgLMhgu",
-            "dGVuZGVybWludC50eXBlcy5Db21taXRSBmNvbW1pdCKWAQoKTGlnaHRCbG9j",
-            "axJDCg1zaWduZWRfaGVhZGVyGAEgASgLMh4udGVuZGVybWludC50eXBlcy5T",
-            "aWduZWRIZWFkZXJSDHNpZ25lZEhlYWRlchJDCg12YWxpZGF0b3Jfc2V0GAIg",
-            "ASgLMh4udGVuZGVybWludC50eXBlcy5WYWxpZGF0b3JTZXRSDHZhbGlkYXRv",
-            "clNldCLCAQoJQmxvY2tNZXRhEkUKCGJsb2NrX2lkGAEgASgLMhkudGVuZGVy",
-            "bWludC50eXBlcy5CbG9ja0lEQg/I3h8A4t4fB0Jsb2NrSURSB2Jsb2NrSWQS",
-            "HQoKYmxvY2tfc2l6ZRgCIAEoA1IJYmxvY2tTaXplEjYKBmhlYWRlchgDIAEo",
-            "CzIYLnRlbmRlcm1pbnQudHlwZXMuSGVhZGVyQgTI3h8AUgZoZWFkZXISFwoH",
-            "bnVtX3R4cxgEIAEoA1IGbnVtVHhzImoKB1R4UHJvb2YSGwoJcm9vdF9oYXNo",
-            "GAEgASgMUghyb290SGFzaBISCgRkYXRhGAIgASgMUgRkYXRhEi4KBXByb29m",
-            "GAMgASgLMhgudGVuZGVybWludC5jcnlwdG8uUHJvb2ZSBXByb29mKtcBCgtC",
-            "bG9ja0lERmxhZxIxChVCTE9DS19JRF9GTEFHX1VOS05PV04QABoWip0gEkJs",
-            "b2NrSURGbGFnVW5rbm93bhIvChRCTE9DS19JRF9GTEFHX0FCU0VOVBABGhWK",
-            "nSARQmxvY2tJREZsYWdBYnNlbnQSLwoUQkxPQ0tfSURfRkxBR19DT01NSVQQ",
-            "AhoVip0gEUJsb2NrSURGbGFnQ29tbWl0EikKEUJMT0NLX0lEX0ZMQUdfTklM",
-            "EAMaEoqdIA5CbG9ja0lERmxhZ05pbBoIiKMeAKikHgEq1wEKDVNpZ25lZE1z",
-            "Z1R5cGUSLAoXU0lHTkVEX01TR19UWVBFX1VOS05PV04QABoPip0gC1Vua25v",
-            "d25UeXBlEiwKF1NJR05FRF9NU0dfVFlQRV9QUkVWT1RFEAEaD4qdIAtQcmV2",
-            "b3RlVHlwZRIwChlTSUdORURfTVNHX1RZUEVfUFJFQ09NTUlUEAIaEYqdIA1Q",
-            "cmVjb21taXRUeXBlEi4KGFNJR05FRF9NU0dfVFlQRV9QUk9QT1NBTBAgGhCK",
-            "nSAMUHJvcG9zYWxUeXBlGgiIox4AqKQeAUK4AQoUY29tLnRlbmRlcm1pbnQu",
-            "dHlwZXNCClR5cGVzUHJvdG9QAVozZ2l0aHViLmNvbS9jb21ldGJmdC9jb21l",
-            "dGJmdC9wcm90by90ZW5kZXJtaW50L3R5cGVzogIDVFRYqgIQVGVuZGVybWlu",
-            "dC5UeXBlc8oCEFRlbmRlcm1pbnRcVHlwZXPiAhxUZW5kZXJtaW50XFR5cGVz",
-            "XEdQQk1ldGFkYXRh6gIRVGVuZGVybWludDo6VHlwZXNiBnByb3RvMw=="));
+            "aWRhdG9ySW5kZXgSHAoJc2lnbmF0dXJlGAggASgMUglzaWduYXR1cmUSHAoJ",
+            "ZXh0ZW5zaW9uGAkgASgMUglleHRlbnNpb24SLwoTZXh0ZW5zaW9uX3NpZ25h",
+            "dHVyZRgKIAEoDFISZXh0ZW5zaW9uU2lnbmF0dXJlIsABCgZDb21taXQSFgoG",
+            "aGVpZ2h0GAEgASgDUgZoZWlnaHQSFAoFcm91bmQYAiABKAVSBXJvdW5kEkUK",
+            "CGJsb2NrX2lkGAMgASgLMhkudGVuZGVybWludC50eXBlcy5CbG9ja0lEQg/I",
+            "3h8A4t4fB0Jsb2NrSURSB2Jsb2NrSWQSQQoKc2lnbmF0dXJlcxgEIAMoCzIb",
+            "LnRlbmRlcm1pbnQudHlwZXMuQ29tbWl0U2lnQgTI3h8AUgpzaWduYXR1cmVz",
+            "It0BCglDb21taXRTaWcSQQoNYmxvY2tfaWRfZmxhZxgBIAEoDjIdLnRlbmRl",
+            "cm1pbnQudHlwZXMuQmxvY2tJREZsYWdSC2Jsb2NrSWRGbGFnEisKEXZhbGlk",
+            "YXRvcl9hZGRyZXNzGAIgASgMUhB2YWxpZGF0b3JBZGRyZXNzEkIKCXRpbWVz",
+            "dGFtcBgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCCMjeHwCQ",
+            "3x8BUgl0aW1lc3RhbXASHAoJc2lnbmF0dXJlGAQgASgMUglzaWduYXR1cmUi",
+            "4QEKDkV4dGVuZGVkQ29tbWl0EhYKBmhlaWdodBgBIAEoA1IGaGVpZ2h0EhQK",
+            "BXJvdW5kGAIgASgFUgVyb3VuZBJFCghibG9ja19pZBgDIAEoCzIZLnRlbmRl",
+            "cm1pbnQudHlwZXMuQmxvY2tJREIPyN4fAOLeHwdCbG9ja0lEUgdibG9ja0lk",
+            "EloKE2V4dGVuZGVkX3NpZ25hdHVyZXMYBCADKAsyIy50ZW5kZXJtaW50LnR5",
+            "cGVzLkV4dGVuZGVkQ29tbWl0U2lnQgTI3h8AUhJleHRlbmRlZFNpZ25hdHVy",
+            "ZXMitAIKEUV4dGVuZGVkQ29tbWl0U2lnEkEKDWJsb2NrX2lkX2ZsYWcYASAB",
+            "KA4yHS50ZW5kZXJtaW50LnR5cGVzLkJsb2NrSURGbGFnUgtibG9ja0lkRmxh",
+            "ZxIrChF2YWxpZGF0b3JfYWRkcmVzcxgCIAEoDFIQdmFsaWRhdG9yQWRkcmVz",
+            "cxJCCgl0aW1lc3RhbXAYAyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0",
+            "YW1wQgjI3h8AkN8fAVIJdGltZXN0YW1wEhwKCXNpZ25hdHVyZRgEIAEoDFIJ",
+            "c2lnbmF0dXJlEhwKCWV4dGVuc2lvbhgFIAEoDFIJZXh0ZW5zaW9uEi8KE2V4",
+            "dGVuc2lvbl9zaWduYXR1cmUYBiABKAxSEmV4dGVuc2lvblNpZ25hdHVyZSKz",
+            "AgoIUHJvcG9zYWwSMwoEdHlwZRgBIAEoDjIfLnRlbmRlcm1pbnQudHlwZXMu",
+            "U2lnbmVkTXNnVHlwZVIEdHlwZRIWCgZoZWlnaHQYAiABKANSBmhlaWdodBIU",
+            "CgVyb3VuZBgDIAEoBVIFcm91bmQSGwoJcG9sX3JvdW5kGAQgASgFUghwb2xS",
+            "b3VuZBJFCghibG9ja19pZBgFIAEoCzIZLnRlbmRlcm1pbnQudHlwZXMuQmxv",
+            "Y2tJREIPyN4fAOLeHwdCbG9ja0lEUgdibG9ja0lkEkIKCXRpbWVzdGFtcBgG",
+            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCCMjeHwCQ3x8BUgl0",
+            "aW1lc3RhbXASHAoJc2lnbmF0dXJlGAcgASgMUglzaWduYXR1cmUicgoMU2ln",
+            "bmVkSGVhZGVyEjAKBmhlYWRlchgBIAEoCzIYLnRlbmRlcm1pbnQudHlwZXMu",
+            "SGVhZGVyUgZoZWFkZXISMAoGY29tbWl0GAIgASgLMhgudGVuZGVybWludC50",
+            "eXBlcy5Db21taXRSBmNvbW1pdCKWAQoKTGlnaHRCbG9jaxJDCg1zaWduZWRf",
+            "aGVhZGVyGAEgASgLMh4udGVuZGVybWludC50eXBlcy5TaWduZWRIZWFkZXJS",
+            "DHNpZ25lZEhlYWRlchJDCg12YWxpZGF0b3Jfc2V0GAIgASgLMh4udGVuZGVy",
+            "bWludC50eXBlcy5WYWxpZGF0b3JTZXRSDHZhbGlkYXRvclNldCLCAQoJQmxv",
+            "Y2tNZXRhEkUKCGJsb2NrX2lkGAEgASgLMhkudGVuZGVybWludC50eXBlcy5C",
+            "bG9ja0lEQg/I3h8A4t4fB0Jsb2NrSURSB2Jsb2NrSWQSHQoKYmxvY2tfc2l6",
+            "ZRgCIAEoA1IJYmxvY2tTaXplEjYKBmhlYWRlchgDIAEoCzIYLnRlbmRlcm1p",
+            "bnQudHlwZXMuSGVhZGVyQgTI3h8AUgZoZWFkZXISFwoHbnVtX3R4cxgEIAEo",
+            "A1IGbnVtVHhzImoKB1R4UHJvb2YSGwoJcm9vdF9oYXNoGAEgASgMUghyb290",
+            "SGFzaBISCgRkYXRhGAIgASgMUgRkYXRhEi4KBXByb29mGAMgASgLMhgudGVu",
+            "ZGVybWludC5jcnlwdG8uUHJvb2ZSBXByb29mKtcBCg1TaWduZWRNc2dUeXBl",
+            "EiwKF1NJR05FRF9NU0dfVFlQRV9VTktOT1dOEAAaD4qdIAtVbmtub3duVHlw",
+            "ZRIsChdTSUdORURfTVNHX1RZUEVfUFJFVk9URRABGg+KnSALUHJldm90ZVR5",
+            "cGUSMAoZU0lHTkVEX01TR19UWVBFX1BSRUNPTU1JVBACGhGKnSANUHJlY29t",
+            "bWl0VHlwZRIuChhTSUdORURfTVNHX1RZUEVfUFJPUE9TQUwQIBoQip0gDFBy",
+            "b3Bvc2FsVHlwZRoIiKMeAKikHgFCuAEKFGNvbS50ZW5kZXJtaW50LnR5cGVz",
+            "QgpUeXBlc1Byb3RvUAFaM2dpdGh1Yi5jb20vY29tZXRiZnQvY29tZXRiZnQv",
+            "cHJvdG8vdGVuZGVybWludC90eXBlc6ICA1RUWKoCEFRlbmRlcm1pbnQuVHlw",
+            "ZXPKAhBUZW5kZXJtaW50XFR5cGVz4gIcVGVuZGVybWludFxUeXBlc1xHUEJN",
+            "ZXRhZGF0YeoCEVRlbmRlcm1pbnQ6OlR5cGVzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Tendermint.Crypto.ProofReflection.Descriptor, global::Tendermint.Version.TypesReflection.Descriptor, global::Tendermint.Types.ValidatorReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Tendermint.Types.BlockIDFlag), typeof(global::Tendermint.Types.SignedMsgType), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Tendermint.Types.SignedMsgType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Tendermint.Types.PartSetHeader), global::Tendermint.Types.PartSetHeader.Parser, new[]{ "Total", "Hash" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tendermint.Types.Part), global::Tendermint.Types.Part.Parser, new[]{ "Index", "Bytes", "Proof" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tendermint.Types.BlockID), global::Tendermint.Types.BlockID.Parser, new[]{ "Hash", "PartSetHeader" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tendermint.Types.Header), global::Tendermint.Types.Header.Parser, new[]{ "Version", "ChainId", "Height", "Time", "LastBlockId", "LastCommitHash", "DataHash", "ValidatorsHash", "NextValidatorsHash", "ConsensusHash", "AppHash", "LastResultsHash", "EvidenceHash", "ProposerAddress" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tendermint.Types.Data), global::Tendermint.Types.Data.Parser, new[]{ "Txs" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tendermint.Types.Vote), global::Tendermint.Types.Vote.Parser, new[]{ "Type", "Height", "Round", "BlockId", "Timestamp", "ValidatorAddress", "ValidatorIndex", "Signature" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tendermint.Types.Vote), global::Tendermint.Types.Vote.Parser, new[]{ "Type", "Height", "Round", "BlockId", "Timestamp", "ValidatorAddress", "ValidatorIndex", "Signature", "Extension", "ExtensionSignature" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tendermint.Types.Commit), global::Tendermint.Types.Commit.Parser, new[]{ "Height", "Round", "BlockId", "Signatures" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tendermint.Types.CommitSig), global::Tendermint.Types.CommitSig.Parser, new[]{ "BlockIdFlag", "ValidatorAddress", "Timestamp", "Signature" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tendermint.Types.ExtendedCommit), global::Tendermint.Types.ExtendedCommit.Parser, new[]{ "Height", "Round", "BlockId", "ExtendedSignatures" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tendermint.Types.ExtendedCommitSig), global::Tendermint.Types.ExtendedCommitSig.Parser, new[]{ "BlockIdFlag", "ValidatorAddress", "Timestamp", "Signature", "Extension", "ExtensionSignature" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tendermint.Types.Proposal), global::Tendermint.Types.Proposal.Parser, new[]{ "Type", "Height", "Round", "PolRound", "BlockId", "Timestamp", "Signature" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tendermint.Types.SignedHeader), global::Tendermint.Types.SignedHeader.Parser, new[]{ "Header", "Commit" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tendermint.Types.LightBlock), global::Tendermint.Types.LightBlock.Parser, new[]{ "SignedHeader", "ValidatorSet" }, null, null, null, null),
@@ -122,16 +133,6 @@ namespace Tendermint.Types {
 
   }
   #region Enums
-  /// <summary>
-  /// BlockIdFlag indicates which BlcokID the signature is for
-  /// </summary>
-  public enum BlockIDFlag {
-    [pbr::OriginalName("BLOCK_ID_FLAG_UNKNOWN")] Unknown = 0,
-    [pbr::OriginalName("BLOCK_ID_FLAG_ABSENT")] Absent = 1,
-    [pbr::OriginalName("BLOCK_ID_FLAG_COMMIT")] Commit = 2,
-    [pbr::OriginalName("BLOCK_ID_FLAG_NIL")] Nil = 3,
-  }
-
   /// <summary>
   /// SignedMsgType is a type of signed message in the consensus.
   /// </summary>
@@ -1810,7 +1811,7 @@ namespace Tendermint.Types {
   }
 
   /// <summary>
-  /// Vote represents a prevote, precommit, or commit vote from validators for
+  /// Vote represents a prevote or precommit vote from validators for
   /// consensus.
   /// </summary>
   public sealed partial class Vote : pb::IMessage<Vote>
@@ -1855,6 +1856,8 @@ namespace Tendermint.Types {
       validatorAddress_ = other.validatorAddress_;
       validatorIndex_ = other.validatorIndex_;
       signature_ = other.signature_;
+      extension_ = other.extension_;
+      extensionSignature_ = other.extensionSignature_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1954,12 +1957,49 @@ namespace Tendermint.Types {
     /// <summary>Field number for the "signature" field.</summary>
     public const int SignatureFieldNumber = 8;
     private pb::ByteString signature_ = pb::ByteString.Empty;
+    /// <summary>
+    /// Vote signature by the validator if they participated in consensus for the
+    /// associated block.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString Signature {
       get { return signature_; }
       set {
         signature_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "extension" field.</summary>
+    public const int ExtensionFieldNumber = 9;
+    private pb::ByteString extension_ = pb::ByteString.Empty;
+    /// <summary>
+    /// Vote extension provided by the application. Only valid for precommit
+    /// messages.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pb::ByteString Extension {
+      get { return extension_; }
+      set {
+        extension_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "extension_signature" field.</summary>
+    public const int ExtensionSignatureFieldNumber = 10;
+    private pb::ByteString extensionSignature_ = pb::ByteString.Empty;
+    /// <summary>
+    /// Vote extension signature by the validator if they participated in
+    /// consensus for the associated block.
+    /// Only valid for precommit messages.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pb::ByteString ExtensionSignature {
+      get { return extensionSignature_; }
+      set {
+        extensionSignature_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -1986,6 +2026,8 @@ namespace Tendermint.Types {
       if (ValidatorAddress != other.ValidatorAddress) return false;
       if (ValidatorIndex != other.ValidatorIndex) return false;
       if (Signature != other.Signature) return false;
+      if (Extension != other.Extension) return false;
+      if (ExtensionSignature != other.ExtensionSignature) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2001,6 +2043,8 @@ namespace Tendermint.Types {
       if (ValidatorAddress.Length != 0) hash ^= ValidatorAddress.GetHashCode();
       if (ValidatorIndex != 0) hash ^= ValidatorIndex.GetHashCode();
       if (Signature.Length != 0) hash ^= Signature.GetHashCode();
+      if (Extension.Length != 0) hash ^= Extension.GetHashCode();
+      if (ExtensionSignature.Length != 0) hash ^= ExtensionSignature.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2051,6 +2095,14 @@ namespace Tendermint.Types {
         output.WriteRawTag(66);
         output.WriteBytes(Signature);
       }
+      if (Extension.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteBytes(Extension);
+      }
+      if (ExtensionSignature.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteBytes(ExtensionSignature);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2093,6 +2145,14 @@ namespace Tendermint.Types {
         output.WriteRawTag(66);
         output.WriteBytes(Signature);
       }
+      if (Extension.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteBytes(Extension);
+      }
+      if (ExtensionSignature.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteBytes(ExtensionSignature);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2126,6 +2186,12 @@ namespace Tendermint.Types {
       }
       if (Signature.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeBytesSize(Signature);
+      }
+      if (Extension.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Extension);
+      }
+      if (ExtensionSignature.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(ExtensionSignature);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2168,6 +2234,12 @@ namespace Tendermint.Types {
       }
       if (other.Signature.Length != 0) {
         Signature = other.Signature;
+      }
+      if (other.Extension.Length != 0) {
+        Extension = other.Extension;
+      }
+      if (other.ExtensionSignature.Length != 0) {
+        ExtensionSignature = other.ExtensionSignature;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2222,6 +2294,14 @@ namespace Tendermint.Types {
             Signature = input.ReadBytes();
             break;
           }
+          case 74: {
+            Extension = input.ReadBytes();
+            break;
+          }
+          case 82: {
+            ExtensionSignature = input.ReadBytes();
+            break;
+          }
         }
       }
     #endif
@@ -2273,6 +2353,14 @@ namespace Tendermint.Types {
           }
           case 66: {
             Signature = input.ReadBytes();
+            break;
+          }
+          case 74: {
+            Extension = input.ReadBytes();
+            break;
+          }
+          case 82: {
+            ExtensionSignature = input.ReadBytes();
             break;
           }
         }
@@ -2895,6 +2983,698 @@ namespace Tendermint.Types {
 
   }
 
+  public sealed partial class ExtendedCommit : pb::IMessage<ExtendedCommit>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ExtendedCommit> _parser = new pb::MessageParser<ExtendedCommit>(() => new ExtendedCommit());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ExtendedCommit> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Tendermint.Types.TypesReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ExtendedCommit() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ExtendedCommit(ExtendedCommit other) : this() {
+      height_ = other.height_;
+      round_ = other.round_;
+      blockId_ = other.blockId_ != null ? other.blockId_.Clone() : null;
+      extendedSignatures_ = other.extendedSignatures_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ExtendedCommit Clone() {
+      return new ExtendedCommit(this);
+    }
+
+    /// <summary>Field number for the "height" field.</summary>
+    public const int HeightFieldNumber = 1;
+    private long height_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long Height {
+      get { return height_; }
+      set {
+        height_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "round" field.</summary>
+    public const int RoundFieldNumber = 2;
+    private int round_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Round {
+      get { return round_; }
+      set {
+        round_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "block_id" field.</summary>
+    public const int BlockIdFieldNumber = 3;
+    private global::Tendermint.Types.BlockID blockId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tendermint.Types.BlockID BlockId {
+      get { return blockId_; }
+      set {
+        blockId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "extended_signatures" field.</summary>
+    public const int ExtendedSignaturesFieldNumber = 4;
+    private static readonly pb::FieldCodec<global::Tendermint.Types.ExtendedCommitSig> _repeated_extendedSignatures_codec
+        = pb::FieldCodec.ForMessage(34, global::Tendermint.Types.ExtendedCommitSig.Parser);
+    private readonly pbc::RepeatedField<global::Tendermint.Types.ExtendedCommitSig> extendedSignatures_ = new pbc::RepeatedField<global::Tendermint.Types.ExtendedCommitSig>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Tendermint.Types.ExtendedCommitSig> ExtendedSignatures {
+      get { return extendedSignatures_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ExtendedCommit);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ExtendedCommit other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Height != other.Height) return false;
+      if (Round != other.Round) return false;
+      if (!object.Equals(BlockId, other.BlockId)) return false;
+      if(!extendedSignatures_.Equals(other.extendedSignatures_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Height != 0L) hash ^= Height.GetHashCode();
+      if (Round != 0) hash ^= Round.GetHashCode();
+      if (blockId_ != null) hash ^= BlockId.GetHashCode();
+      hash ^= extendedSignatures_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Height != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(Height);
+      }
+      if (Round != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Round);
+      }
+      if (blockId_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(BlockId);
+      }
+      extendedSignatures_.WriteTo(output, _repeated_extendedSignatures_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Height != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(Height);
+      }
+      if (Round != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Round);
+      }
+      if (blockId_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(BlockId);
+      }
+      extendedSignatures_.WriteTo(ref output, _repeated_extendedSignatures_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Height != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Height);
+      }
+      if (Round != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Round);
+      }
+      if (blockId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BlockId);
+      }
+      size += extendedSignatures_.CalculateSize(_repeated_extendedSignatures_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ExtendedCommit other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Height != 0L) {
+        Height = other.Height;
+      }
+      if (other.Round != 0) {
+        Round = other.Round;
+      }
+      if (other.blockId_ != null) {
+        if (blockId_ == null) {
+          BlockId = new global::Tendermint.Types.BlockID();
+        }
+        BlockId.MergeFrom(other.BlockId);
+      }
+      extendedSignatures_.Add(other.extendedSignatures_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Height = input.ReadInt64();
+            break;
+          }
+          case 16: {
+            Round = input.ReadInt32();
+            break;
+          }
+          case 26: {
+            if (blockId_ == null) {
+              BlockId = new global::Tendermint.Types.BlockID();
+            }
+            input.ReadMessage(BlockId);
+            break;
+          }
+          case 34: {
+            extendedSignatures_.AddEntriesFrom(input, _repeated_extendedSignatures_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Height = input.ReadInt64();
+            break;
+          }
+          case 16: {
+            Round = input.ReadInt32();
+            break;
+          }
+          case 26: {
+            if (blockId_ == null) {
+              BlockId = new global::Tendermint.Types.BlockID();
+            }
+            input.ReadMessage(BlockId);
+            break;
+          }
+          case 34: {
+            extendedSignatures_.AddEntriesFrom(ref input, _repeated_extendedSignatures_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// ExtendedCommitSig retains all the same fields as CommitSig but adds vote
+  /// extension-related fields. We use two signatures to ensure backwards compatibility.
+  /// That is the digest of the original signature is still the same in prior versions
+  /// </summary>
+  public sealed partial class ExtendedCommitSig : pb::IMessage<ExtendedCommitSig>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ExtendedCommitSig> _parser = new pb::MessageParser<ExtendedCommitSig>(() => new ExtendedCommitSig());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ExtendedCommitSig> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Tendermint.Types.TypesReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ExtendedCommitSig() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ExtendedCommitSig(ExtendedCommitSig other) : this() {
+      blockIdFlag_ = other.blockIdFlag_;
+      validatorAddress_ = other.validatorAddress_;
+      timestamp_ = other.timestamp_ != null ? other.timestamp_.Clone() : null;
+      signature_ = other.signature_;
+      extension_ = other.extension_;
+      extensionSignature_ = other.extensionSignature_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ExtendedCommitSig Clone() {
+      return new ExtendedCommitSig(this);
+    }
+
+    /// <summary>Field number for the "block_id_flag" field.</summary>
+    public const int BlockIdFlagFieldNumber = 1;
+    private global::Tendermint.Types.BlockIDFlag blockIdFlag_ = global::Tendermint.Types.BlockIDFlag.Unknown;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tendermint.Types.BlockIDFlag BlockIdFlag {
+      get { return blockIdFlag_; }
+      set {
+        blockIdFlag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "validator_address" field.</summary>
+    public const int ValidatorAddressFieldNumber = 2;
+    private pb::ByteString validatorAddress_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pb::ByteString ValidatorAddress {
+      get { return validatorAddress_; }
+      set {
+        validatorAddress_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "timestamp" field.</summary>
+    public const int TimestampFieldNumber = 3;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp timestamp_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp Timestamp {
+      get { return timestamp_; }
+      set {
+        timestamp_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "signature" field.</summary>
+    public const int SignatureFieldNumber = 4;
+    private pb::ByteString signature_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pb::ByteString Signature {
+      get { return signature_; }
+      set {
+        signature_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "extension" field.</summary>
+    public const int ExtensionFieldNumber = 5;
+    private pb::ByteString extension_ = pb::ByteString.Empty;
+    /// <summary>
+    /// Vote extension data
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pb::ByteString Extension {
+      get { return extension_; }
+      set {
+        extension_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "extension_signature" field.</summary>
+    public const int ExtensionSignatureFieldNumber = 6;
+    private pb::ByteString extensionSignature_ = pb::ByteString.Empty;
+    /// <summary>
+    /// Vote extension signature
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pb::ByteString ExtensionSignature {
+      get { return extensionSignature_; }
+      set {
+        extensionSignature_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ExtendedCommitSig);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ExtendedCommitSig other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (BlockIdFlag != other.BlockIdFlag) return false;
+      if (ValidatorAddress != other.ValidatorAddress) return false;
+      if (!object.Equals(Timestamp, other.Timestamp)) return false;
+      if (Signature != other.Signature) return false;
+      if (Extension != other.Extension) return false;
+      if (ExtensionSignature != other.ExtensionSignature) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (BlockIdFlag != global::Tendermint.Types.BlockIDFlag.Unknown) hash ^= BlockIdFlag.GetHashCode();
+      if (ValidatorAddress.Length != 0) hash ^= ValidatorAddress.GetHashCode();
+      if (timestamp_ != null) hash ^= Timestamp.GetHashCode();
+      if (Signature.Length != 0) hash ^= Signature.GetHashCode();
+      if (Extension.Length != 0) hash ^= Extension.GetHashCode();
+      if (ExtensionSignature.Length != 0) hash ^= ExtensionSignature.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (BlockIdFlag != global::Tendermint.Types.BlockIDFlag.Unknown) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) BlockIdFlag);
+      }
+      if (ValidatorAddress.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteBytes(ValidatorAddress);
+      }
+      if (timestamp_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Timestamp);
+      }
+      if (Signature.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteBytes(Signature);
+      }
+      if (Extension.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteBytes(Extension);
+      }
+      if (ExtensionSignature.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteBytes(ExtensionSignature);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (BlockIdFlag != global::Tendermint.Types.BlockIDFlag.Unknown) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) BlockIdFlag);
+      }
+      if (ValidatorAddress.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteBytes(ValidatorAddress);
+      }
+      if (timestamp_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Timestamp);
+      }
+      if (Signature.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteBytes(Signature);
+      }
+      if (Extension.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteBytes(Extension);
+      }
+      if (ExtensionSignature.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteBytes(ExtensionSignature);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (BlockIdFlag != global::Tendermint.Types.BlockIDFlag.Unknown) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) BlockIdFlag);
+      }
+      if (ValidatorAddress.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(ValidatorAddress);
+      }
+      if (timestamp_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Timestamp);
+      }
+      if (Signature.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Signature);
+      }
+      if (Extension.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Extension);
+      }
+      if (ExtensionSignature.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(ExtensionSignature);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ExtendedCommitSig other) {
+      if (other == null) {
+        return;
+      }
+      if (other.BlockIdFlag != global::Tendermint.Types.BlockIDFlag.Unknown) {
+        BlockIdFlag = other.BlockIdFlag;
+      }
+      if (other.ValidatorAddress.Length != 0) {
+        ValidatorAddress = other.ValidatorAddress;
+      }
+      if (other.timestamp_ != null) {
+        if (timestamp_ == null) {
+          Timestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        Timestamp.MergeFrom(other.Timestamp);
+      }
+      if (other.Signature.Length != 0) {
+        Signature = other.Signature;
+      }
+      if (other.Extension.Length != 0) {
+        Extension = other.Extension;
+      }
+      if (other.ExtensionSignature.Length != 0) {
+        ExtensionSignature = other.ExtensionSignature;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            BlockIdFlag = (global::Tendermint.Types.BlockIDFlag) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            ValidatorAddress = input.ReadBytes();
+            break;
+          }
+          case 26: {
+            if (timestamp_ == null) {
+              Timestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Timestamp);
+            break;
+          }
+          case 34: {
+            Signature = input.ReadBytes();
+            break;
+          }
+          case 42: {
+            Extension = input.ReadBytes();
+            break;
+          }
+          case 50: {
+            ExtensionSignature = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            BlockIdFlag = (global::Tendermint.Types.BlockIDFlag) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            ValidatorAddress = input.ReadBytes();
+            break;
+          }
+          case 26: {
+            if (timestamp_ == null) {
+              Timestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Timestamp);
+            break;
+          }
+          case 34: {
+            Signature = input.ReadBytes();
+            break;
+          }
+          case 42: {
+            Extension = input.ReadBytes();
+            break;
+          }
+          case 50: {
+            ExtensionSignature = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class Proposal : pb::IMessage<Proposal>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2909,7 +3689,7 @@ namespace Tendermint.Types {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tendermint.Types.TypesReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Tendermint.Types.TypesReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3338,7 +4118,7 @@ namespace Tendermint.Types {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tendermint.Types.TypesReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Tendermint.Types.TypesReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3582,7 +4362,7 @@ namespace Tendermint.Types {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tendermint.Types.TypesReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Tendermint.Types.TypesReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3826,7 +4606,7 @@ namespace Tendermint.Types {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tendermint.Types.TypesReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Tendermint.Types.TypesReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4147,7 +4927,7 @@ namespace Tendermint.Types {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tendermint.Types.TypesReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Tendermint.Types.TypesReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

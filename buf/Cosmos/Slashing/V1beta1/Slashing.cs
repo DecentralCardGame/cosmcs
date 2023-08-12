@@ -28,31 +28,32 @@ namespace Cosmos.Slashing.V1beta1 {
             "bW9zLnNsYXNoaW5nLnYxYmV0YTEaFGdvZ29wcm90by9nb2dvLnByb3RvGh5n",
             "b29nbGUvcHJvdG9idWYvZHVyYXRpb24ucHJvdG8aH2dvb2dsZS9wcm90b2J1",
             "Zi90aW1lc3RhbXAucHJvdG8aGWNvc21vc19wcm90by9jb3Ntb3MucHJvdG8a",
-            "EWFtaW5vL2FtaW5vLnByb3RvIrwCChRWYWxpZGF0b3JTaWduaW5nSW5mbxIy",
-            "CgdhZGRyZXNzGAEgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmdSB2Fk",
-            "ZHJlc3MSIQoMc3RhcnRfaGVpZ2h0GAIgASgDUgtzdGFydEhlaWdodBIhCgxp",
-            "bmRleF9vZmZzZXQYAyABKANSC2luZGV4T2Zmc2V0EkwKDGphaWxlZF91bnRp",
-            "bBgEIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCDcjeHwCQ3x8B",
-            "qOewKgFSC2phaWxlZFVudGlsEh4KCnRvbWJzdG9uZWQYBSABKAhSCnRvbWJz",
-            "dG9uZWQSMgoVbWlzc2VkX2Jsb2Nrc19jb3VudGVyGAYgASgDUhNtaXNzZWRC",
-            "bG9ja3NDb3VudGVyOgiYoB8A6KAfASKEBAoGUGFyYW1zEjAKFHNpZ25lZF9i",
-            "bG9ja3Nfd2luZG93GAEgASgDUhJzaWduZWRCbG9ja3NXaW5kb3cSZgoVbWlu",
-            "X3NpZ25lZF9wZXJfd2luZG93GAIgASgMQjPI3h8A2t4fJmdpdGh1Yi5jb20v",
-            "Y29zbW9zL2Nvc21vcy1zZGsvdHlwZXMuRGVjqOewKgFSEm1pblNpZ25lZFBl",
-            "cldpbmRvdxJeChZkb3dudGltZV9qYWlsX2R1cmF0aW9uGAMgASgLMhkuZ29v",
-            "Z2xlLnByb3RvYnVmLkR1cmF0aW9uQg3I3h8AmN8fAajnsCoBUhRkb3dudGlt",
-            "ZUphaWxEdXJhdGlvbhJwChpzbGFzaF9mcmFjdGlvbl9kb3VibGVfc2lnbhgE",
-            "IAEoDEIzyN4fANreHyZnaXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL3R5",
-            "cGVzLkRlY6jnsCoBUhdzbGFzaEZyYWN0aW9uRG91YmxlU2lnbhJrChdzbGFz",
-            "aF9mcmFjdGlvbl9kb3dudGltZRgFIAEoDEIzyN4fANreHyZnaXRodWIuY29t",
-            "L2Nvc21vcy9jb3Ntb3Mtc2RrL3R5cGVzLkRlY6jnsCoBUhVzbGFzaEZyYWN0",
-            "aW9uRG93bnRpbWU6IYrnsCocY29zbW9zLXNkay94L3NsYXNoaW5nL1BhcmFt",
-            "c0LdAQobY29tLmNvc21vcy5zbGFzaGluZy52MWJldGExQg1TbGFzaGluZ1By",
-            "b3RvUAFaLWdpdGh1Yi5jb20vY29zbW9zL2Nvc21vcy1zZGsveC9zbGFzaGlu",
-            "Zy90eXBlc6ICA0NTWKoCF0Nvc21vcy5TbGFzaGluZy5WMWJldGExygIXQ29z",
-            "bW9zXFNsYXNoaW5nXFYxYmV0YTHiAiNDb3Ntb3NcU2xhc2hpbmdcVjFiZXRh",
-            "MVxHUEJNZXRhZGF0YeoCGUNvc21vczo6U2xhc2hpbmc6OlYxYmV0YTGo4h4B",
-            "YgZwcm90bzM="));
+            "EWFtaW5vL2FtaW5vLnByb3RvIsECChRWYWxpZGF0b3JTaWduaW5nSW5mbxI7",
+            "CgdhZGRyZXNzGAEgASgJQiHStC0dY29zbW9zLkNvbnNlbnN1c0FkZHJlc3NT",
+            "dHJpbmdSB2FkZHJlc3MSIQoMc3RhcnRfaGVpZ2h0GAIgASgDUgtzdGFydEhl",
+            "aWdodBIhCgxpbmRleF9vZmZzZXQYAyABKANSC2luZGV4T2Zmc2V0EkwKDGph",
+            "aWxlZF91bnRpbBgEIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBC",
+            "DcjeHwCQ3x8BqOewKgFSC2phaWxlZFVudGlsEh4KCnRvbWJzdG9uZWQYBSAB",
+            "KAhSCnRvbWJzdG9uZWQSMgoVbWlzc2VkX2Jsb2Nrc19jb3VudGVyGAYgASgD",
+            "UhNtaXNzZWRCbG9ja3NDb3VudGVyOgTooB8BIsUECgZQYXJhbXMSMAoUc2ln",
+            "bmVkX2Jsb2Nrc193aW5kb3cYASABKANSEnNpZ25lZEJsb2Nrc1dpbmRvdxJ7",
+            "ChVtaW5fc2lnbmVkX3Blcl93aW5kb3cYAiABKAxCSMjeHwDa3h8mZ2l0aHVi",
+            "LmNvbS9jb3Ntb3MvY29zbW9zLXNkay90eXBlcy5EZWOa57AqEGNvc21vc19k",
+            "ZWNfYnl0ZXOo57AqAVISbWluU2lnbmVkUGVyV2luZG93El4KFmRvd250aW1l",
+            "X2phaWxfZHVyYXRpb24YAyABKAsyGS5nb29nbGUucHJvdG9idWYuRHVyYXRp",
+            "b25CDcjeHwCY3x8BqOewKgFSFGRvd250aW1lSmFpbER1cmF0aW9uEoUBChpz",
+            "bGFzaF9mcmFjdGlvbl9kb3VibGVfc2lnbhgEIAEoDEJIyN4fANreHyZnaXRo",
+            "dWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL3R5cGVzLkRlY5rnsCoQY29zbW9z",
+            "X2RlY19ieXRlc6jnsCoBUhdzbGFzaEZyYWN0aW9uRG91YmxlU2lnbhKAAQoX",
+            "c2xhc2hfZnJhY3Rpb25fZG93bnRpbWUYBSABKAxCSMjeHwDa3h8mZ2l0aHVi",
+            "LmNvbS9jb3Ntb3MvY29zbW9zLXNkay90eXBlcy5EZWOa57AqEGNvc21vc19k",
+            "ZWNfYnl0ZXOo57AqAVIVc2xhc2hGcmFjdGlvbkRvd250aW1lOiGK57AqHGNv",
+            "c21vcy1zZGsveC9zbGFzaGluZy9QYXJhbXNC3QEKG2NvbS5jb3Ntb3Muc2xh",
+            "c2hpbmcudjFiZXRhMUINU2xhc2hpbmdQcm90b1ABWi1naXRodWIuY29tL2Nv",
+            "c21vcy9jb3Ntb3Mtc2RrL3gvc2xhc2hpbmcvdHlwZXOiAgNDU1iqAhdDb3Nt",
+            "b3MuU2xhc2hpbmcuVjFiZXRhMcoCF0Nvc21vc1xTbGFzaGluZ1xWMWJldGEx",
+            "4gIjQ29zbW9zXFNsYXNoaW5nXFYxYmV0YTFcR1BCTWV0YWRhdGHqAhlDb3Nt",
+            "b3M6OlNsYXNoaW5nOjpWMWJldGExqOIeAWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::CosmosProto.CosmosReflection.Descriptor, global::Amino.AminoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -133,7 +134,7 @@ namespace Cosmos.Slashing.V1beta1 {
     public const int StartHeightFieldNumber = 2;
     private long startHeight_;
     /// <summary>
-    /// Height at which validator was first a candidate OR was unjailed
+    /// Height at which validator was first a candidate OR was un-jailed
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -148,9 +149,9 @@ namespace Cosmos.Slashing.V1beta1 {
     public const int IndexOffsetFieldNumber = 3;
     private long indexOffset_;
     /// <summary>
-    /// Index which is incremented each time the validator was a bonded
-    /// in a block and may have signed a precommit or not. This in conjunction with the
-    /// `SignedBlocksWindow` param determines the index in the `MissedBlocksBitArray`.
+    /// Index which is incremented every time a validator is bonded in a block and
+    /// _may_ have signed a pre-commit or not. This in conjunction with the
+    /// signed_blocks_window param determines the index in the missed block bitmap.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -180,8 +181,9 @@ namespace Cosmos.Slashing.V1beta1 {
     public const int TombstonedFieldNumber = 5;
     private bool tombstoned_;
     /// <summary>
-    /// Whether or not a validator has been tombstoned (killed out of validator set). It is set
-    /// once the validator commits an equivocation or for any other configured misbehiavor.
+    /// Whether or not a validator has been tombstoned (killed out of validator
+    /// set). It is set once the validator commits an equivocation or for any other
+    /// configured misbehavior.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -196,8 +198,8 @@ namespace Cosmos.Slashing.V1beta1 {
     public const int MissedBlocksCounterFieldNumber = 6;
     private long missedBlocksCounter_;
     /// <summary>
-    /// A counter kept to avoid unnecessary array reads.
-    /// Note that `Sum(MissedBlocksBitArray)` always equals `MissedBlocksCounter`.
+    /// A counter of missed (unsigned) blocks. It is used to avoid unnecessary
+    /// reads in the missed block bitmap.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

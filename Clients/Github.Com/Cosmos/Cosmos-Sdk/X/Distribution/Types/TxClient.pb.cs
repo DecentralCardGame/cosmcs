@@ -73,5 +73,15 @@ namespace Cosmos.Distribution.V1beta1 {
 			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgCommunityPoolSpendResponse>(r.Result, Cosmos.Distribution.V1beta1.MsgCommunityPoolSpendResponse.Parser));
 		}
 
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgDepositValidatorRewardsPoolResponse>> SendMsgDepositValidatorRewardsPool(Cosmos.Distribution.V1beta1.MsgDepositValidatorRewardsPool msg) {
+			return Client.BuildAndBroadcast(
+				new Any
+				{
+					Value = msg.ToByteString(),
+					TypeUrl = "/cosmos.distribution.v1beta1.MsgDepositValidatorRewardsPool"
+				}
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgDepositValidatorRewardsPoolResponse>(r.Result, Cosmos.Distribution.V1beta1.MsgDepositValidatorRewardsPoolResponse.Parser));
+		}
+
 	}
 }

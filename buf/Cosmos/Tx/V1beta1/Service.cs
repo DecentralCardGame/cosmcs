@@ -29,88 +29,88 @@ namespace Cosmos.Tx.V1beta1 {
             "L2Jhc2UvYWJjaS92MWJldGExL2FiY2kucHJvdG8aGmNvc21vcy90eC92MWJl",
             "dGExL3R4LnByb3RvGipjb3Ntb3MvYmFzZS9xdWVyeS92MWJldGExL3BhZ2lu",
             "YXRpb24ucHJvdG8aHHRlbmRlcm1pbnQvdHlwZXMvYmxvY2sucHJvdG8aHHRl",
-            "bmRlcm1pbnQvdHlwZXMvdHlwZXMucHJvdG8i2QEKEkdldFR4c0V2ZW50UmVx",
-            "dWVzdBIWCgZldmVudHMYASADKAlSBmV2ZW50cxJKCgpwYWdpbmF0aW9uGAIg",
-            "ASgLMiYuY29zbW9zLmJhc2UucXVlcnkudjFiZXRhMS5QYWdlUmVxdWVzdEIC",
-            "GAFSCnBhZ2luYXRpb24SNQoIb3JkZXJfYnkYAyABKA4yGi5jb3Ntb3MudHgu",
-            "djFiZXRhMS5PcmRlckJ5UgdvcmRlckJ5EhIKBHBhZ2UYBCABKARSBHBhZ2US",
-            "FAoFbGltaXQYBSABKARSBWxpbWl0IuoBChNHZXRUeHNFdmVudFJlc3BvbnNl",
-            "EicKA3R4cxgBIAMoCzIVLmNvc21vcy50eC52MWJldGExLlR4UgN0eHMSRwoM",
-            "dHhfcmVzcG9uc2VzGAIgAygLMiQuY29zbW9zLmJhc2UuYWJjaS52MWJldGEx",
-            "LlR4UmVzcG9uc2VSC3R4UmVzcG9uc2VzEksKCnBhZ2luYXRpb24YAyABKAsy",
-            "Jy5jb3Ntb3MuYmFzZS5xdWVyeS52MWJldGExLlBhZ2VSZXNwb25zZUICGAFS",
-            "CnBhZ2luYXRpb24SFAoFdG90YWwYBCABKARSBXRvdGFsImUKEkJyb2FkY2Fz",
-            "dFR4UmVxdWVzdBIZCgh0eF9ieXRlcxgBIAEoDFIHdHhCeXRlcxI0CgRtb2Rl",
-            "GAIgASgOMiAuY29zbW9zLnR4LnYxYmV0YTEuQnJvYWRjYXN0TW9kZVIEbW9k",
-            "ZSJcChNCcm9hZGNhc3RUeFJlc3BvbnNlEkUKC3R4X3Jlc3BvbnNlGAEgASgL",
-            "MiQuY29zbW9zLmJhc2UuYWJjaS52MWJldGExLlR4UmVzcG9uc2VSCnR4UmVz",
-            "cG9uc2UiVwoPU2ltdWxhdGVSZXF1ZXN0EikKAnR4GAEgASgLMhUuY29zbW9z",
-            "LnR4LnYxYmV0YTEuVHhCAhgBUgJ0eBIZCgh0eF9ieXRlcxgCIAEoDFIHdHhC",
-            "eXRlcyKKAQoQU2ltdWxhdGVSZXNwb25zZRI8CghnYXNfaW5mbxgBIAEoCzIh",
-            "LmNvc21vcy5iYXNlLmFiY2kudjFiZXRhMS5HYXNJbmZvUgdnYXNJbmZvEjgK",
-            "BnJlc3VsdBgCIAEoCzIgLmNvc21vcy5iYXNlLmFiY2kudjFiZXRhMS5SZXN1",
-            "bHRSBnJlc3VsdCIiCgxHZXRUeFJlcXVlc3QSEgoEaGFzaBgBIAEoCVIEaGFz",
-            "aCJ9Cg1HZXRUeFJlc3BvbnNlEiUKAnR4GAEgASgLMhUuY29zbW9zLnR4LnYx",
-            "YmV0YTEuVHhSAnR4EkUKC3R4X3Jlc3BvbnNlGAIgASgLMiQuY29zbW9zLmJh",
-            "c2UuYWJjaS52MWJldGExLlR4UmVzcG9uc2VSCnR4UmVzcG9uc2UieAoWR2V0",
-            "QmxvY2tXaXRoVHhzUmVxdWVzdBIWCgZoZWlnaHQYASABKANSBmhlaWdodBJG",
-            "CgpwYWdpbmF0aW9uGAIgASgLMiYuY29zbW9zLmJhc2UucXVlcnkudjFiZXRh",
-            "MS5QYWdlUmVxdWVzdFIKcGFnaW5hdGlvbiLwAQoXR2V0QmxvY2tXaXRoVHhz",
-            "UmVzcG9uc2USJwoDdHhzGAEgAygLMhUuY29zbW9zLnR4LnYxYmV0YTEuVHhS",
-            "A3R4cxI0CghibG9ja19pZBgCIAEoCzIZLnRlbmRlcm1pbnQudHlwZXMuQmxv",
-            "Y2tJRFIHYmxvY2tJZBItCgVibG9jaxgDIAEoCzIXLnRlbmRlcm1pbnQudHlw",
-            "ZXMuQmxvY2tSBWJsb2NrEkcKCnBhZ2luYXRpb24YBCABKAsyJy5jb3Ntb3Mu",
-            "YmFzZS5xdWVyeS52MWJldGExLlBhZ2VSZXNwb25zZVIKcGFnaW5hdGlvbiIs",
-            "Cg9UeERlY29kZVJlcXVlc3QSGQoIdHhfYnl0ZXMYASABKAxSB3R4Qnl0ZXMi",
-            "OQoQVHhEZWNvZGVSZXNwb25zZRIlCgJ0eBgBIAEoCzIVLmNvc21vcy50eC52",
-            "MWJldGExLlR4UgJ0eCI4Cg9UeEVuY29kZVJlcXVlc3QSJQoCdHgYASABKAsy",
-            "FS5jb3Ntb3MudHgudjFiZXRhMS5UeFICdHgiLQoQVHhFbmNvZGVSZXNwb25z",
-            "ZRIZCgh0eF9ieXRlcxgBIAEoDFIHdHhCeXRlcyI1ChRUeEVuY29kZUFtaW5v",
-            "UmVxdWVzdBIdCgphbWlub19qc29uGAEgASgJUglhbWlub0pzb24iOgoVVHhF",
-            "bmNvZGVBbWlub1Jlc3BvbnNlEiEKDGFtaW5vX2JpbmFyeRgBIAEoDFILYW1p",
-            "bm9CaW5hcnkiOQoUVHhEZWNvZGVBbWlub1JlcXVlc3QSIQoMYW1pbm9fYmlu",
-            "YXJ5GAEgASgMUgthbWlub0JpbmFyeSI2ChVUeERlY29kZUFtaW5vUmVzcG9u",
-            "c2USHQoKYW1pbm9fanNvbhgBIAEoCVIJYW1pbm9Kc29uKkgKB09yZGVyQnkS",
-            "GAoUT1JERVJfQllfVU5TUEVDSUZJRUQQABIQCgxPUkRFUl9CWV9BU0MQARIR",
-            "Cg1PUkRFUl9CWV9ERVNDEAIqgAEKDUJyb2FkY2FzdE1vZGUSHgoaQlJPQURD",
-            "QVNUX01PREVfVU5TUEVDSUZJRUQQABIcChRCUk9BRENBU1RfTU9ERV9CTE9D",
-            "SxABGgIIARIXChNCUk9BRENBU1RfTU9ERV9TWU5DEAISGAoUQlJPQURDQVNU",
-            "X01PREVfQVNZTkMQAzKqCQoHU2VydmljZRJ7CghTaW11bGF0ZRIiLmNvc21v",
-            "cy50eC52MWJldGExLlNpbXVsYXRlUmVxdWVzdBojLmNvc21vcy50eC52MWJl",
-            "dGExLlNpbXVsYXRlUmVzcG9uc2UiJoLT5JMCIDoBKiIbL2Nvc21vcy90eC92",
-            "MWJldGExL3NpbXVsYXRlEnEKBUdldFR4Eh8uY29zbW9zLnR4LnYxYmV0YTEu",
-            "R2V0VHhSZXF1ZXN0GiAuY29zbW9zLnR4LnYxYmV0YTEuR2V0VHhSZXNwb25z",
-            "ZSIlgtPkkwIfEh0vY29zbW9zL3R4L3YxYmV0YTEvdHhzL3toYXNofRJ/CgtC",
-            "cm9hZGNhc3RUeBIlLmNvc21vcy50eC52MWJldGExLkJyb2FkY2FzdFR4UmVx",
-            "dWVzdBomLmNvc21vcy50eC52MWJldGExLkJyb2FkY2FzdFR4UmVzcG9uc2Ui",
-            "IYLT5JMCGzoBKiIWL2Nvc21vcy90eC92MWJldGExL3R4cxJ8CgtHZXRUeHNF",
-            "dmVudBIlLmNvc21vcy50eC52MWJldGExLkdldFR4c0V2ZW50UmVxdWVzdBom",
-            "LmNvc21vcy50eC52MWJldGExLkdldFR4c0V2ZW50UmVzcG9uc2UiHoLT5JMC",
-            "GBIWL2Nvc21vcy90eC92MWJldGExL3R4cxKXAQoPR2V0QmxvY2tXaXRoVHhz",
-            "EikuY29zbW9zLnR4LnYxYmV0YTEuR2V0QmxvY2tXaXRoVHhzUmVxdWVzdBoq",
-            "LmNvc21vcy50eC52MWJldGExLkdldEJsb2NrV2l0aFR4c1Jlc3BvbnNlIi2C",
-            "0+STAicSJS9jb3Ntb3MvdHgvdjFiZXRhMS90eHMvYmxvY2sve2hlaWdodH0S",
-            "eQoIVHhEZWNvZGUSIi5jb3Ntb3MudHgudjFiZXRhMS5UeERlY29kZVJlcXVl",
-            "c3QaIy5jb3Ntb3MudHgudjFiZXRhMS5UeERlY29kZVJlc3BvbnNlIiSC0+ST",
-            "Ah46ASoiGS9jb3Ntb3MvdHgvdjFiZXRhMS9kZWNvZGUSeQoIVHhFbmNvZGUS",
-            "Ii5jb3Ntb3MudHgudjFiZXRhMS5UeEVuY29kZVJlcXVlc3QaIy5jb3Ntb3Mu",
-            "dHgudjFiZXRhMS5UeEVuY29kZVJlc3BvbnNlIiSC0+STAh46ASoiGS9jb3Nt",
-            "b3MvdHgvdjFiZXRhMS9lbmNvZGUSjgEKDVR4RW5jb2RlQW1pbm8SJy5jb3Nt",
-            "b3MudHgudjFiZXRhMS5UeEVuY29kZUFtaW5vUmVxdWVzdBooLmNvc21vcy50",
-            "eC52MWJldGExLlR4RW5jb2RlQW1pbm9SZXNwb25zZSIqgtPkkwIkOgEqIh8v",
-            "Y29zbW9zL3R4L3YxYmV0YTEvZW5jb2RlL2FtaW5vEo4BCg1UeERlY29kZUFt",
-            "aW5vEicuY29zbW9zLnR4LnYxYmV0YTEuVHhEZWNvZGVBbWlub1JlcXVlc3Qa",
-            "KC5jb3Ntb3MudHgudjFiZXRhMS5UeERlY29kZUFtaW5vUmVzcG9uc2UiKoLT",
-            "5JMCJDoBKiIfL2Nvc21vcy90eC92MWJldGExL2RlY29kZS9hbWlub0KyAQoV",
-            "Y29tLmNvc21vcy50eC52MWJldGExQgxTZXJ2aWNlUHJvdG9QAVolZ2l0aHVi",
-            "LmNvbS9jb3Ntb3MvY29zbW9zLXNkay90eXBlcy90eKICA0NUWKoCEUNvc21v",
-            "cy5UeC5WMWJldGExygIRQ29zbW9zXFR4XFYxYmV0YTHiAh1Db3Ntb3NcVHhc",
-            "VjFiZXRhMVxHUEJNZXRhZGF0YeoCE0Nvc21vczo6VHg6OlYxYmV0YTFiBnBy",
-            "b3RvMw=="));
+            "bmRlcm1pbnQvdHlwZXMvdHlwZXMucHJvdG8i8wEKEkdldFR4c0V2ZW50UmVx",
+            "dWVzdBIaCgZldmVudHMYASADKAlCAhgBUgZldmVudHMSSgoKcGFnaW5hdGlv",
+            "bhgCIAEoCzImLmNvc21vcy5iYXNlLnF1ZXJ5LnYxYmV0YTEuUGFnZVJlcXVl",
+            "c3RCAhgBUgpwYWdpbmF0aW9uEjUKCG9yZGVyX2J5GAMgASgOMhouY29zbW9z",
+            "LnR4LnYxYmV0YTEuT3JkZXJCeVIHb3JkZXJCeRISCgRwYWdlGAQgASgEUgRw",
+            "YWdlEhQKBWxpbWl0GAUgASgEUgVsaW1pdBIUCgVxdWVyeRgGIAEoCVIFcXVl",
+            "cnki6gEKE0dldFR4c0V2ZW50UmVzcG9uc2USJwoDdHhzGAEgAygLMhUuY29z",
+            "bW9zLnR4LnYxYmV0YTEuVHhSA3R4cxJHCgx0eF9yZXNwb25zZXMYAiADKAsy",
+            "JC5jb3Ntb3MuYmFzZS5hYmNpLnYxYmV0YTEuVHhSZXNwb25zZVILdHhSZXNw",
+            "b25zZXMSSwoKcGFnaW5hdGlvbhgDIAEoCzInLmNvc21vcy5iYXNlLnF1ZXJ5",
+            "LnYxYmV0YTEuUGFnZVJlc3BvbnNlQgIYAVIKcGFnaW5hdGlvbhIUCgV0b3Rh",
+            "bBgEIAEoBFIFdG90YWwiZQoSQnJvYWRjYXN0VHhSZXF1ZXN0EhkKCHR4X2J5",
+            "dGVzGAEgASgMUgd0eEJ5dGVzEjQKBG1vZGUYAiABKA4yIC5jb3Ntb3MudHgu",
+            "djFiZXRhMS5Ccm9hZGNhc3RNb2RlUgRtb2RlIlwKE0Jyb2FkY2FzdFR4UmVz",
+            "cG9uc2USRQoLdHhfcmVzcG9uc2UYASABKAsyJC5jb3Ntb3MuYmFzZS5hYmNp",
+            "LnYxYmV0YTEuVHhSZXNwb25zZVIKdHhSZXNwb25zZSJXCg9TaW11bGF0ZVJl",
+            "cXVlc3QSKQoCdHgYASABKAsyFS5jb3Ntb3MudHgudjFiZXRhMS5UeEICGAFS",
+            "AnR4EhkKCHR4X2J5dGVzGAIgASgMUgd0eEJ5dGVzIooBChBTaW11bGF0ZVJl",
+            "c3BvbnNlEjwKCGdhc19pbmZvGAEgASgLMiEuY29zbW9zLmJhc2UuYWJjaS52",
+            "MWJldGExLkdhc0luZm9SB2dhc0luZm8SOAoGcmVzdWx0GAIgASgLMiAuY29z",
+            "bW9zLmJhc2UuYWJjaS52MWJldGExLlJlc3VsdFIGcmVzdWx0IiIKDEdldFR4",
+            "UmVxdWVzdBISCgRoYXNoGAEgASgJUgRoYXNoIn0KDUdldFR4UmVzcG9uc2US",
+            "JQoCdHgYASABKAsyFS5jb3Ntb3MudHgudjFiZXRhMS5UeFICdHgSRQoLdHhf",
+            "cmVzcG9uc2UYAiABKAsyJC5jb3Ntb3MuYmFzZS5hYmNpLnYxYmV0YTEuVHhS",
+            "ZXNwb25zZVIKdHhSZXNwb25zZSJ4ChZHZXRCbG9ja1dpdGhUeHNSZXF1ZXN0",
+            "EhYKBmhlaWdodBgBIAEoA1IGaGVpZ2h0EkYKCnBhZ2luYXRpb24YAiABKAsy",
+            "Ji5jb3Ntb3MuYmFzZS5xdWVyeS52MWJldGExLlBhZ2VSZXF1ZXN0UgpwYWdp",
+            "bmF0aW9uIvABChdHZXRCbG9ja1dpdGhUeHNSZXNwb25zZRInCgN0eHMYASAD",
+            "KAsyFS5jb3Ntb3MudHgudjFiZXRhMS5UeFIDdHhzEjQKCGJsb2NrX2lkGAIg",
+            "ASgLMhkudGVuZGVybWludC50eXBlcy5CbG9ja0lEUgdibG9ja0lkEi0KBWJs",
+            "b2NrGAMgASgLMhcudGVuZGVybWludC50eXBlcy5CbG9ja1IFYmxvY2sSRwoK",
+            "cGFnaW5hdGlvbhgEIAEoCzInLmNvc21vcy5iYXNlLnF1ZXJ5LnYxYmV0YTEu",
+            "UGFnZVJlc3BvbnNlUgpwYWdpbmF0aW9uIiwKD1R4RGVjb2RlUmVxdWVzdBIZ",
+            "Cgh0eF9ieXRlcxgBIAEoDFIHdHhCeXRlcyI5ChBUeERlY29kZVJlc3BvbnNl",
+            "EiUKAnR4GAEgASgLMhUuY29zbW9zLnR4LnYxYmV0YTEuVHhSAnR4IjgKD1R4",
+            "RW5jb2RlUmVxdWVzdBIlCgJ0eBgBIAEoCzIVLmNvc21vcy50eC52MWJldGEx",
+            "LlR4UgJ0eCItChBUeEVuY29kZVJlc3BvbnNlEhkKCHR4X2J5dGVzGAEgASgM",
+            "Ugd0eEJ5dGVzIjUKFFR4RW5jb2RlQW1pbm9SZXF1ZXN0Eh0KCmFtaW5vX2pz",
+            "b24YASABKAlSCWFtaW5vSnNvbiI6ChVUeEVuY29kZUFtaW5vUmVzcG9uc2US",
+            "IQoMYW1pbm9fYmluYXJ5GAEgASgMUgthbWlub0JpbmFyeSI5ChRUeERlY29k",
+            "ZUFtaW5vUmVxdWVzdBIhCgxhbWlub19iaW5hcnkYASABKAxSC2FtaW5vQmlu",
+            "YXJ5IjYKFVR4RGVjb2RlQW1pbm9SZXNwb25zZRIdCgphbWlub19qc29uGAEg",
+            "ASgJUglhbWlub0pzb24qSAoHT3JkZXJCeRIYChRPUkRFUl9CWV9VTlNQRUNJ",
+            "RklFRBAAEhAKDE9SREVSX0JZX0FTQxABEhEKDU9SREVSX0JZX0RFU0MQAiqA",
+            "AQoNQnJvYWRjYXN0TW9kZRIeChpCUk9BRENBU1RfTU9ERV9VTlNQRUNJRklF",
+            "RBAAEhwKFEJST0FEQ0FTVF9NT0RFX0JMT0NLEAEaAggBEhcKE0JST0FEQ0FT",
+            "VF9NT0RFX1NZTkMQAhIYChRCUk9BRENBU1RfTU9ERV9BU1lOQxADMqoJCgdT",
+            "ZXJ2aWNlEnsKCFNpbXVsYXRlEiIuY29zbW9zLnR4LnYxYmV0YTEuU2ltdWxh",
+            "dGVSZXF1ZXN0GiMuY29zbW9zLnR4LnYxYmV0YTEuU2ltdWxhdGVSZXNwb25z",
+            "ZSImgtPkkwIgOgEqIhsvY29zbW9zL3R4L3YxYmV0YTEvc2ltdWxhdGUScQoF",
+            "R2V0VHgSHy5jb3Ntb3MudHgudjFiZXRhMS5HZXRUeFJlcXVlc3QaIC5jb3Nt",
+            "b3MudHgudjFiZXRhMS5HZXRUeFJlc3BvbnNlIiWC0+STAh8SHS9jb3Ntb3Mv",
+            "dHgvdjFiZXRhMS90eHMve2hhc2h9En8KC0Jyb2FkY2FzdFR4EiUuY29zbW9z",
+            "LnR4LnYxYmV0YTEuQnJvYWRjYXN0VHhSZXF1ZXN0GiYuY29zbW9zLnR4LnYx",
+            "YmV0YTEuQnJvYWRjYXN0VHhSZXNwb25zZSIhgtPkkwIbOgEqIhYvY29zbW9z",
+            "L3R4L3YxYmV0YTEvdHhzEnwKC0dldFR4c0V2ZW50EiUuY29zbW9zLnR4LnYx",
+            "YmV0YTEuR2V0VHhzRXZlbnRSZXF1ZXN0GiYuY29zbW9zLnR4LnYxYmV0YTEu",
+            "R2V0VHhzRXZlbnRSZXNwb25zZSIegtPkkwIYEhYvY29zbW9zL3R4L3YxYmV0",
+            "YTEvdHhzEpcBCg9HZXRCbG9ja1dpdGhUeHMSKS5jb3Ntb3MudHgudjFiZXRh",
+            "MS5HZXRCbG9ja1dpdGhUeHNSZXF1ZXN0GiouY29zbW9zLnR4LnYxYmV0YTEu",
+            "R2V0QmxvY2tXaXRoVHhzUmVzcG9uc2UiLYLT5JMCJxIlL2Nvc21vcy90eC92",
+            "MWJldGExL3R4cy9ibG9jay97aGVpZ2h0fRJ5CghUeERlY29kZRIiLmNvc21v",
+            "cy50eC52MWJldGExLlR4RGVjb2RlUmVxdWVzdBojLmNvc21vcy50eC52MWJl",
+            "dGExLlR4RGVjb2RlUmVzcG9uc2UiJILT5JMCHjoBKiIZL2Nvc21vcy90eC92",
+            "MWJldGExL2RlY29kZRJ5CghUeEVuY29kZRIiLmNvc21vcy50eC52MWJldGEx",
+            "LlR4RW5jb2RlUmVxdWVzdBojLmNvc21vcy50eC52MWJldGExLlR4RW5jb2Rl",
+            "UmVzcG9uc2UiJILT5JMCHjoBKiIZL2Nvc21vcy90eC92MWJldGExL2VuY29k",
+            "ZRKOAQoNVHhFbmNvZGVBbWlubxInLmNvc21vcy50eC52MWJldGExLlR4RW5j",
+            "b2RlQW1pbm9SZXF1ZXN0GiguY29zbW9zLnR4LnYxYmV0YTEuVHhFbmNvZGVB",
+            "bWlub1Jlc3BvbnNlIiqC0+STAiQ6ASoiHy9jb3Ntb3MvdHgvdjFiZXRhMS9l",
+            "bmNvZGUvYW1pbm8SjgEKDVR4RGVjb2RlQW1pbm8SJy5jb3Ntb3MudHgudjFi",
+            "ZXRhMS5UeERlY29kZUFtaW5vUmVxdWVzdBooLmNvc21vcy50eC52MWJldGEx",
+            "LlR4RGVjb2RlQW1pbm9SZXNwb25zZSIqgtPkkwIkOgEqIh8vY29zbW9zL3R4",
+            "L3YxYmV0YTEvZGVjb2RlL2FtaW5vQrIBChVjb20uY29zbW9zLnR4LnYxYmV0",
+            "YTFCDFNlcnZpY2VQcm90b1ABWiVnaXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mt",
+            "c2RrL3R5cGVzL3R4ogIDQ1RYqgIRQ29zbW9zLlR4LlYxYmV0YTHKAhFDb3Nt",
+            "b3NcVHhcVjFiZXRhMeICHUNvc21vc1xUeFxWMWJldGExXEdQQk1ldGFkYXRh",
+            "6gITQ29zbW9zOjpUeDo6VjFiZXRhMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Cosmos.Base.Abci.V1beta1.AbciReflection.Descriptor, global::Cosmos.Tx.V1beta1.TxReflection.Descriptor, global::Cosmos.Base.Query.V1beta1.PaginationReflection.Descriptor, global::Tendermint.Types.BlockReflection.Descriptor, global::Tendermint.Types.TypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Cosmos.Tx.V1beta1.OrderBy), typeof(global::Cosmos.Tx.V1beta1.BroadcastMode), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Tx.V1beta1.GetTxsEventRequest), global::Cosmos.Tx.V1beta1.GetTxsEventRequest.Parser, new[]{ "Events", "Pagination", "OrderBy", "Page", "Limit" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Tx.V1beta1.GetTxsEventRequest), global::Cosmos.Tx.V1beta1.GetTxsEventRequest.Parser, new[]{ "Events", "Pagination", "OrderBy", "Page", "Limit", "Query" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Tx.V1beta1.GetTxsEventResponse), global::Cosmos.Tx.V1beta1.GetTxsEventResponse.Parser, new[]{ "Txs", "TxResponses", "Pagination", "Total" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Tx.V1beta1.BroadcastTxRequest), global::Cosmos.Tx.V1beta1.BroadcastTxRequest.Parser, new[]{ "TxBytes", "Mode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Tx.V1beta1.BroadcastTxResponse), global::Cosmos.Tx.V1beta1.BroadcastTxResponse.Parser, new[]{ "TxResponse" }, null, null, null, null),
@@ -139,7 +139,8 @@ namespace Cosmos.Tx.V1beta1 {
   /// </summary>
   public enum OrderBy {
     /// <summary>
-    /// ORDER_BY_UNSPECIFIED specifies an unknown sorting order. OrderBy defaults to ASC in this case.
+    /// ORDER_BY_UNSPECIFIED specifies an unknown sorting order. OrderBy defaults
+    /// to ASC in this case.
     /// </summary>
     [pbr::OriginalName("ORDER_BY_UNSPECIFIED")] Unspecified = 0,
     /// <summary>
@@ -153,7 +154,8 @@ namespace Cosmos.Tx.V1beta1 {
   }
 
   /// <summary>
-  /// BroadcastMode specifies the broadcast mode for the TxService.Broadcast RPC method.
+  /// BroadcastMode specifies the broadcast mode for the TxService.Broadcast RPC
+  /// method.
   /// </summary>
   public enum BroadcastMode {
     /// <summary>
@@ -167,13 +169,13 @@ namespace Cosmos.Tx.V1beta1 {
     [global::System.ObsoleteAttribute]
     [pbr::OriginalName("BROADCAST_MODE_BLOCK")] Block = 1,
     /// <summary>
-    /// BROADCAST_MODE_SYNC defines a tx broadcasting mode where the client waits for
-    /// a CheckTx execution response only.
+    /// BROADCAST_MODE_SYNC defines a tx broadcasting mode where the client waits
+    /// for a CheckTx execution response only.
     /// </summary>
     [pbr::OriginalName("BROADCAST_MODE_SYNC")] Sync = 2,
     /// <summary>
-    /// BROADCAST_MODE_ASYNC defines a tx broadcasting mode where the client returns
-    /// immediately.
+    /// BROADCAST_MODE_ASYNC defines a tx broadcasting mode where the client
+    /// returns immediately.
     /// </summary>
     [pbr::OriginalName("BROADCAST_MODE_ASYNC")] Async = 3,
   }
@@ -224,6 +226,7 @@ namespace Cosmos.Tx.V1beta1 {
       orderBy_ = other.orderBy_;
       page_ = other.page_;
       limit_ = other.limit_;
+      query_ = other.query_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -240,7 +243,10 @@ namespace Cosmos.Tx.V1beta1 {
     private readonly pbc::RepeatedField<string> events_ = new pbc::RepeatedField<string>();
     /// <summary>
     /// events is the list of transaction event type.
+    /// Deprecated post v0.47.x: use query instead, which should contain a valid
+    /// events query.
     /// </summary>
+    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> Events {
@@ -280,7 +286,8 @@ namespace Cosmos.Tx.V1beta1 {
     public const int PageFieldNumber = 4;
     private ulong page_;
     /// <summary>
-    /// page is the page number to query, starts at 1. If not provided, will default to first page.
+    /// page is the page number to query, starts at 1. If not provided, will
+    /// default to first page.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -307,6 +314,24 @@ namespace Cosmos.Tx.V1beta1 {
       }
     }
 
+    /// <summary>Field number for the "query" field.</summary>
+    public const int QueryFieldNumber = 6;
+    private string query_ = "";
+    /// <summary>
+    /// query defines the transaction event query that is proxied to Tendermint's
+    /// TxSearch RPC method. The query must be valid.
+    ///
+    /// Since cosmos-sdk 0.50
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Query {
+      get { return query_; }
+      set {
+        query_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -327,6 +352,7 @@ namespace Cosmos.Tx.V1beta1 {
       if (OrderBy != other.OrderBy) return false;
       if (Page != other.Page) return false;
       if (Limit != other.Limit) return false;
+      if (Query != other.Query) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -339,6 +365,7 @@ namespace Cosmos.Tx.V1beta1 {
       if (OrderBy != global::Cosmos.Tx.V1beta1.OrderBy.Unspecified) hash ^= OrderBy.GetHashCode();
       if (Page != 0UL) hash ^= Page.GetHashCode();
       if (Limit != 0UL) hash ^= Limit.GetHashCode();
+      if (Query.Length != 0) hash ^= Query.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -374,6 +401,10 @@ namespace Cosmos.Tx.V1beta1 {
         output.WriteRawTag(40);
         output.WriteUInt64(Limit);
       }
+      if (Query.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(Query);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -401,6 +432,10 @@ namespace Cosmos.Tx.V1beta1 {
         output.WriteRawTag(40);
         output.WriteUInt64(Limit);
       }
+      if (Query.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(Query);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -423,6 +458,9 @@ namespace Cosmos.Tx.V1beta1 {
       }
       if (Limit != 0UL) {
         size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Limit);
+      }
+      if (Query.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Query);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -451,6 +489,9 @@ namespace Cosmos.Tx.V1beta1 {
       }
       if (other.Limit != 0UL) {
         Limit = other.Limit;
+      }
+      if (other.Query.Length != 0) {
+        Query = other.Query;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -490,6 +531,10 @@ namespace Cosmos.Tx.V1beta1 {
             Limit = input.ReadUInt64();
             break;
           }
+          case 50: {
+            Query = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -526,6 +571,10 @@ namespace Cosmos.Tx.V1beta1 {
           }
           case 40: {
             Limit = input.ReadUInt64();
+            break;
+          }
+          case 50: {
+            Query = input.ReadString();
             break;
           }
         }
@@ -2478,7 +2527,8 @@ namespace Cosmos.Tx.V1beta1 {
   }
 
   /// <summary>
-  /// GetBlockWithTxsResponse is the response type for the Service.GetBlockWithTxs method.
+  /// GetBlockWithTxsResponse is the response type for the Service.GetBlockWithTxs
+  /// method.
   ///
   /// Since: cosmos-sdk 0.45.2
   /// </summary>

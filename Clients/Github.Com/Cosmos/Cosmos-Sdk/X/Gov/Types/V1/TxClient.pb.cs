@@ -73,5 +73,15 @@ namespace Cosmos.Gov.V1 {
 			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgUpdateParamsResponse>(r.Result, Cosmos.Gov.V1.MsgUpdateParamsResponse.Parser));
 		}
 
+		public Task<Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgCancelProposalResponse>> SendMsgCancelProposal(Cosmos.Gov.V1.MsgCancelProposal msg) {
+			return Client.BuildAndBroadcast(
+				new Any
+				{
+					Value = msg.ToByteString(),
+					TypeUrl = "/cosmos.gov.v1.MsgCancelProposal"
+				}
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgCancelProposalResponse>(r.Result, Cosmos.Gov.V1.MsgCancelProposalResponse.Parser));
+		}
+
 	}
 }
