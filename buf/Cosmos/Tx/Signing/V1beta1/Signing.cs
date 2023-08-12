@@ -89,9 +89,7 @@ namespace Cosmos.Tx.Signing.V1beta1 {
     /// <summary>
     /// SIGN_MODE_TEXTUAL is a future signing mode that will verify some
     /// human-readable textual representation on top of the binary representation
-    /// from SIGN_MODE_DIRECT. It is currently experimental, and should be used
-    /// for testing purposes only, until Textual is fully released. Please follow
-    /// the tracking issue https://github.com/cosmos/cosmos-sdk/issues/11970.
+    /// from SIGN_MODE_DIRECT. It is currently not supported.
     /// </summary>
     [pbr::OriginalName("SIGN_MODE_TEXTUAL")] Textual = 2,
     /// <summary>

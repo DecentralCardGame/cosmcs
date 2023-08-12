@@ -35,7 +35,7 @@ namespace Cosmos.Gov.V1 {
             "C3Byb3Bvc2FsX2lkGAEgASgEUgpwcm9wb3NhbElkEjYKCWRlcG9zaXRvchgC",
             "IAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nUglkZXBvc2l0b3ISPAoG",
             "YW1vdW50GAMgAygLMhkuY29zbW9zLmJhc2UudjFiZXRhMS5Db2luQgnI3h8A",
-            "qOewKgFSBmFtb3VudCLfBQoIUHJvcG9zYWwSDgoCaWQYASABKARSAmlkEjAK",
+            "qOewKgFSBmFtb3VudCLBBQoIUHJvcG9zYWwSDgoCaWQYASABKARSAmlkEjAK",
             "CG1lc3NhZ2VzGAIgAygLMhQuZ29vZ2xlLnByb3RvYnVmLkFueVIIbWVzc2Fn",
             "ZXMSNQoGc3RhdHVzGAMgASgOMh0uY29zbW9zLmdvdi52MS5Qcm9wb3NhbFN0",
             "YXR1c1IGc3RhdHVzEkgKEmZpbmFsX3RhbGx5X3Jlc3VsdBgEIAEoCzIaLmNv",
@@ -51,72 +51,63 @@ namespace Cosmos.Gov.V1 {
             "bmRUaW1lEhoKCG1ldGFkYXRhGAogASgJUghtZXRhZGF0YRIUCgV0aXRsZRgL",
             "IAEoCVIFdGl0bGUSGAoHc3VtbWFyeRgMIAEoCVIHc3VtbWFyeRI0Cghwcm9w",
             "b3NlchgNIAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nUghwcm9wb3Nl",
-            "chIcCglleHBlZGl0ZWQYDiABKAhSCWV4cGVkaXRlZCLXAQoLVGFsbHlSZXN1",
-            "bHQSKwoJeWVzX2NvdW50GAEgASgJQg7StC0KY29zbW9zLkludFIIeWVzQ291",
-            "bnQSMwoNYWJzdGFpbl9jb3VudBgCIAEoCUIO0rQtCmNvc21vcy5JbnRSDGFi",
-            "c3RhaW5Db3VudBIpCghub19jb3VudBgDIAEoCUIO0rQtCmNvc21vcy5JbnRS",
-            "B25vQ291bnQSOwoSbm9fd2l0aF92ZXRvX2NvdW50GAQgASgJQg7StC0KY29z",
-            "bW9zLkludFIPbm9XaXRoVmV0b0NvdW50IrYBCgRWb3RlEh8KC3Byb3Bvc2Fs",
-            "X2lkGAEgASgEUgpwcm9wb3NhbElkEi4KBXZvdGVyGAIgASgJQhjStC0UY29z",
-            "bW9zLkFkZHJlc3NTdHJpbmdSBXZvdGVyEjsKB29wdGlvbnMYBCADKAsyIS5j",
-            "b3Ntb3MuZ292LnYxLldlaWdodGVkVm90ZU9wdGlvblIHb3B0aW9ucxIaCght",
-            "ZXRhZGF0YRgFIAEoCVIIbWV0YWRhdGFKBAgDEAQi3QEKDURlcG9zaXRQYXJh",
-            "bXMSWQoLbWluX2RlcG9zaXQYASADKAsyGS5jb3Ntb3MuYmFzZS52MWJldGEx",
-            "LkNvaW5CHcjeHwDq3h8VbWluX2RlcG9zaXQsb21pdGVtcHR5UgptaW5EZXBv",
-            "c2l0Em0KEm1heF9kZXBvc2l0X3BlcmlvZBgCIAEoCzIZLmdvb2dsZS5wcm90",
-            "b2J1Zi5EdXJhdGlvbkIk6t4fHG1heF9kZXBvc2l0X3BlcmlvZCxvbWl0ZW1w",
-            "dHmY3x8BUhBtYXhEZXBvc2l0UGVyaW9kOgIYASJYCgxWb3RpbmdQYXJhbXMS",
-            "RAoNdm90aW5nX3BlcmlvZBgBIAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJh",
-            "dGlvbkIEmN8fAVIMdm90aW5nUGVyaW9kOgIYASKeAQoLVGFsbHlQYXJhbXMS",
-            "JgoGcXVvcnVtGAEgASgJQg7StC0KY29zbW9zLkRlY1IGcXVvcnVtEiwKCXRo",
-            "cmVzaG9sZBgCIAEoCUIO0rQtCmNvc21vcy5EZWNSCXRocmVzaG9sZBI1Cg52",
-            "ZXRvX3RocmVzaG9sZBgDIAEoCUIO0rQtCmNvc21vcy5EZWNSDXZldG9UaHJl",
-            "c2hvbGQ6AhgBItMHCgZQYXJhbXMSRQoLbWluX2RlcG9zaXQYASADKAsyGS5j",
-            "b3Ntb3MuYmFzZS52MWJldGExLkNvaW5CCcjeHwCo57AqAVIKbWluRGVwb3Np",
-            "dBJNChJtYXhfZGVwb3NpdF9wZXJpb2QYAiABKAsyGS5nb29nbGUucHJvdG9i",
-            "dWYuRHVyYXRpb25CBJjfHwFSEG1heERlcG9zaXRQZXJpb2QSRAoNdm90aW5n",
-            "X3BlcmlvZBgDIAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJhdGlvbkIEmN8f",
-            "AVIMdm90aW5nUGVyaW9kEiYKBnF1b3J1bRgEIAEoCUIO0rQtCmNvc21vcy5E",
-            "ZWNSBnF1b3J1bRIsCgl0aHJlc2hvbGQYBSABKAlCDtK0LQpjb3Ntb3MuRGVj",
-            "Ugl0aHJlc2hvbGQSNQoOdmV0b190aHJlc2hvbGQYBiABKAlCDtK0LQpjb3Nt",
-            "b3MuRGVjUg12ZXRvVGhyZXNob2xkEkkKGW1pbl9pbml0aWFsX2RlcG9zaXRf",
-            "cmF0aW8YByABKAlCDtK0LQpjb3Ntb3MuRGVjUhZtaW5Jbml0aWFsRGVwb3Np",
-            "dFJhdGlvEkIKFXByb3Bvc2FsX2NhbmNlbF9yYXRpbxgIIAEoCUIO0rQtCmNv",
-            "c21vcy5EZWNSE3Byb3Bvc2FsQ2FuY2VsUmF0aW8SSgoUcHJvcG9zYWxfY2Fu",
-            "Y2VsX2Rlc3QYCSABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZ1IScHJv",
-            "cG9zYWxDYW5jZWxEZXN0ElcKF2V4cGVkaXRlZF92b3RpbmdfcGVyaW9kGAog",
-            "ASgLMhkuZ29vZ2xlLnByb3RvYnVmLkR1cmF0aW9uQgSY3x8BUhVleHBlZGl0",
-            "ZWRWb3RpbmdQZXJpb2QSPwoTZXhwZWRpdGVkX3RocmVzaG9sZBgLIAEoCUIO",
-            "0rQtCmNvc21vcy5EZWNSEmV4cGVkaXRlZFRocmVzaG9sZBJYChVleHBlZGl0",
-            "ZWRfbWluX2RlcG9zaXQYDCADKAsyGS5jb3Ntb3MuYmFzZS52MWJldGExLkNv",
-            "aW5CCcjeHwCo57AqAVITZXhwZWRpdGVkTWluRGVwb3NpdBIoChBidXJuX3Zv",
-            "dGVfcXVvcnVtGA0gASgIUg5idXJuVm90ZVF1b3J1bRJBCh1idXJuX3Byb3Bv",
-            "c2FsX2RlcG9zaXRfcHJldm90ZRgOIAEoCFIaYnVyblByb3Bvc2FsRGVwb3Np",
-            "dFByZXZvdGUSJAoOYnVybl92b3RlX3ZldG8YDyABKAhSDGJ1cm5Wb3RlVmV0",
-            "byqJAQoKVm90ZU9wdGlvbhIbChdWT1RFX09QVElPTl9VTlNQRUNJRklFRBAA",
-            "EhMKD1ZPVEVfT1BUSU9OX1lFUxABEhcKE1ZPVEVfT1BUSU9OX0FCU1RBSU4Q",
-            "AhISCg5WT1RFX09QVElPTl9OTxADEhwKGFZPVEVfT1BUSU9OX05PX1dJVEhf",
-            "VkVUTxAEKs4BCg5Qcm9wb3NhbFN0YXR1cxIfChtQUk9QT1NBTF9TVEFUVVNf",
-            "VU5TUEVDSUZJRUQQABIiCh5QUk9QT1NBTF9TVEFUVVNfREVQT1NJVF9QRVJJ",
-            "T0QQARIhCh1QUk9QT1NBTF9TVEFUVVNfVk9USU5HX1BFUklPRBACEhoKFlBS",
-            "T1BPU0FMX1NUQVRVU19QQVNTRUQQAxIcChhQUk9QT1NBTF9TVEFUVVNfUkVK",
-            "RUNURUQQBBIaChZQUk9QT1NBTF9TVEFUVVNfRkFJTEVEEAVCoAEKEWNvbS5j",
-            "b3Ntb3MuZ292LnYxQghHb3ZQcm90b1ABWitnaXRodWIuY29tL2Nvc21vcy9j",
-            "b3Ntb3Mtc2RrL3gvZ292L3R5cGVzL3YxogIDQ0dYqgINQ29zbW9zLkdvdi5W",
-            "McoCDUNvc21vc1xHb3ZcVjHiAhlDb3Ntb3NcR292XFYxXEdQQk1ldGFkYXRh",
-            "6gIPQ29zbW9zOjpHb3Y6OlYxYgZwcm90bzM="));
+            "ciLXAQoLVGFsbHlSZXN1bHQSKwoJeWVzX2NvdW50GAEgASgJQg7StC0KY29z",
+            "bW9zLkludFIIeWVzQ291bnQSMwoNYWJzdGFpbl9jb3VudBgCIAEoCUIO0rQt",
+            "CmNvc21vcy5JbnRSDGFic3RhaW5Db3VudBIpCghub19jb3VudBgDIAEoCUIO",
+            "0rQtCmNvc21vcy5JbnRSB25vQ291bnQSOwoSbm9fd2l0aF92ZXRvX2NvdW50",
+            "GAQgASgJQg7StC0KY29zbW9zLkludFIPbm9XaXRoVmV0b0NvdW50IrYBCgRW",
+            "b3RlEh8KC3Byb3Bvc2FsX2lkGAEgASgEUgpwcm9wb3NhbElkEi4KBXZvdGVy",
+            "GAIgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmdSBXZvdGVyEjsKB29w",
+            "dGlvbnMYBCADKAsyIS5jb3Ntb3MuZ292LnYxLldlaWdodGVkVm90ZU9wdGlv",
+            "blIHb3B0aW9ucxIaCghtZXRhZGF0YRgFIAEoCVIIbWV0YWRhdGFKBAgDEAQi",
+            "2QEKDURlcG9zaXRQYXJhbXMSWQoLbWluX2RlcG9zaXQYASADKAsyGS5jb3Nt",
+            "b3MuYmFzZS52MWJldGExLkNvaW5CHcjeHwDq3h8VbWluX2RlcG9zaXQsb21p",
+            "dGVtcHR5UgptaW5EZXBvc2l0Em0KEm1heF9kZXBvc2l0X3BlcmlvZBgCIAEo",
+            "CzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJhdGlvbkIk6t4fHG1heF9kZXBvc2l0",
+            "X3BlcmlvZCxvbWl0ZW1wdHmY3x8BUhBtYXhEZXBvc2l0UGVyaW9kIlQKDFZv",
+            "dGluZ1BhcmFtcxJECg12b3RpbmdfcGVyaW9kGAEgASgLMhkuZ29vZ2xlLnBy",
+            "b3RvYnVmLkR1cmF0aW9uQgSY3x8BUgx2b3RpbmdQZXJpb2QimgEKC1RhbGx5",
+            "UGFyYW1zEiYKBnF1b3J1bRgBIAEoCUIO0rQtCmNvc21vcy5EZWNSBnF1b3J1",
+            "bRIsCgl0aHJlc2hvbGQYAiABKAlCDtK0LQpjb3Ntb3MuRGVjUgl0aHJlc2hv",
+            "bGQSNQoOdmV0b190aHJlc2hvbGQYAyABKAlCDtK0LQpjb3Ntb3MuRGVjUg12",
+            "ZXRvVGhyZXNob2xkIs8ECgZQYXJhbXMSRQoLbWluX2RlcG9zaXQYASADKAsy",
+            "GS5jb3Ntb3MuYmFzZS52MWJldGExLkNvaW5CCcjeHwCo57AqAVIKbWluRGVw",
+            "b3NpdBJNChJtYXhfZGVwb3NpdF9wZXJpb2QYAiABKAsyGS5nb29nbGUucHJv",
+            "dG9idWYuRHVyYXRpb25CBJjfHwFSEG1heERlcG9zaXRQZXJpb2QSRAoNdm90",
+            "aW5nX3BlcmlvZBgDIAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJhdGlvbkIE",
+            "mN8fAVIMdm90aW5nUGVyaW9kEiYKBnF1b3J1bRgEIAEoCUIO0rQtCmNvc21v",
+            "cy5EZWNSBnF1b3J1bRIsCgl0aHJlc2hvbGQYBSABKAlCDtK0LQpjb3Ntb3Mu",
+            "RGVjUgl0aHJlc2hvbGQSNQoOdmV0b190aHJlc2hvbGQYBiABKAlCDtK0LQpj",
+            "b3Ntb3MuRGVjUg12ZXRvVGhyZXNob2xkEkkKGW1pbl9pbml0aWFsX2RlcG9z",
+            "aXRfcmF0aW8YByABKAlCDtK0LQpjb3Ntb3MuRGVjUhZtaW5Jbml0aWFsRGVw",
+            "b3NpdFJhdGlvEigKEGJ1cm5fdm90ZV9xdW9ydW0YDSABKAhSDmJ1cm5Wb3Rl",
+            "UXVvcnVtEkEKHWJ1cm5fcHJvcG9zYWxfZGVwb3NpdF9wcmV2b3RlGA4gASgI",
+            "UhpidXJuUHJvcG9zYWxEZXBvc2l0UHJldm90ZRIkCg5idXJuX3ZvdGVfdmV0",
+            "bxgPIAEoCFIMYnVyblZvdGVWZXRvKokBCgpWb3RlT3B0aW9uEhsKF1ZPVEVf",
+            "T1BUSU9OX1VOU1BFQ0lGSUVEEAASEwoPVk9URV9PUFRJT05fWUVTEAESFwoT",
+            "Vk9URV9PUFRJT05fQUJTVEFJThACEhIKDlZPVEVfT1BUSU9OX05PEAMSHAoY",
+            "Vk9URV9PUFRJT05fTk9fV0lUSF9WRVRPEAQqzgEKDlByb3Bvc2FsU3RhdHVz",
+            "Eh8KG1BST1BPU0FMX1NUQVRVU19VTlNQRUNJRklFRBAAEiIKHlBST1BPU0FM",
+            "X1NUQVRVU19ERVBPU0lUX1BFUklPRBABEiEKHVBST1BPU0FMX1NUQVRVU19W",
+            "T1RJTkdfUEVSSU9EEAISGgoWUFJPUE9TQUxfU1RBVFVTX1BBU1NFRBADEhwK",
+            "GFBST1BPU0FMX1NUQVRVU19SRUpFQ1RFRBAEEhoKFlBST1BPU0FMX1NUQVRV",
+            "U19GQUlMRUQQBUKgAQoRY29tLmNvc21vcy5nb3YudjFCCEdvdlByb3RvUAFa",
+            "K2dpdGh1Yi5jb20vY29zbW9zL2Nvc21vcy1zZGsveC9nb3YvdHlwZXMvdjGi",
+            "AgNDR1iqAg1Db3Ntb3MuR292LlYxygINQ29zbW9zXEdvdlxWMeICGUNvc21v",
+            "c1xHb3ZcVjFcR1BCTWV0YWRhdGHqAg9Db3Ntb3M6Okdvdjo6VjFiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Cosmos.Base.V1beta1.CoinReflection.Descriptor, global::Gogoproto.GogoReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::CosmosProto.CosmosReflection.Descriptor, global::Amino.AminoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Cosmos.Gov.V1.VoteOption), typeof(global::Cosmos.Gov.V1.ProposalStatus), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.WeightedVoteOption), global::Cosmos.Gov.V1.WeightedVoteOption.Parser, new[]{ "Option", "Weight" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.Deposit), global::Cosmos.Gov.V1.Deposit.Parser, new[]{ "ProposalId", "Depositor", "Amount" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.Proposal), global::Cosmos.Gov.V1.Proposal.Parser, new[]{ "Id", "Messages", "Status", "FinalTallyResult", "SubmitTime", "DepositEndTime", "TotalDeposit", "VotingStartTime", "VotingEndTime", "Metadata", "Title", "Summary", "Proposer", "Expedited" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.Proposal), global::Cosmos.Gov.V1.Proposal.Parser, new[]{ "Id", "Messages", "Status", "FinalTallyResult", "SubmitTime", "DepositEndTime", "TotalDeposit", "VotingStartTime", "VotingEndTime", "Metadata", "Title", "Summary", "Proposer" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.TallyResult), global::Cosmos.Gov.V1.TallyResult.Parser, new[]{ "YesCount", "AbstainCount", "NoCount", "NoWithVetoCount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.Vote), global::Cosmos.Gov.V1.Vote.Parser, new[]{ "ProposalId", "Voter", "Options", "Metadata" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.DepositParams), global::Cosmos.Gov.V1.DepositParams.Parser, new[]{ "MinDeposit", "MaxDepositPeriod" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.VotingParams), global::Cosmos.Gov.V1.VotingParams.Parser, new[]{ "VotingPeriod" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.TallyParams), global::Cosmos.Gov.V1.TallyParams.Parser, new[]{ "Quorum", "Threshold", "VetoThreshold" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.Params), global::Cosmos.Gov.V1.Params.Parser, new[]{ "MinDeposit", "MaxDepositPeriod", "VotingPeriod", "Quorum", "Threshold", "VetoThreshold", "MinInitialDepositRatio", "ProposalCancelRatio", "ProposalCancelDest", "ExpeditedVotingPeriod", "ExpeditedThreshold", "ExpeditedMinDeposit", "BurnVoteQuorum", "BurnProposalDepositPrevote", "BurnVoteVeto" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.Params), global::Cosmos.Gov.V1.Params.Parser, new[]{ "MinDeposit", "MaxDepositPeriod", "VotingPeriod", "Quorum", "Threshold", "VetoThreshold", "MinInitialDepositRatio", "BurnVoteQuorum", "BurnProposalDepositPrevote", "BurnVoteVeto" }, null, null, null, null)
           }));
     }
     #endregion
@@ -737,7 +728,6 @@ namespace Cosmos.Gov.V1 {
       title_ = other.title_;
       summary_ = other.summary_;
       proposer_ = other.proposer_;
-      expedited_ = other.expedited_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -887,7 +877,6 @@ namespace Cosmos.Gov.V1 {
     private string metadata_ = "";
     /// <summary>
     /// metadata is any arbitrary metadata attached to the proposal.
-    /// the recommended format of the metadata is to be found here: https://docs.cosmos.network/v0.47/modules/gov#proposal-3
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -936,7 +925,7 @@ namespace Cosmos.Gov.V1 {
     public const int ProposerFieldNumber = 13;
     private string proposer_ = "";
     /// <summary>
-    /// proposer is the address of the proposal sumbitter
+    /// Proposer is the address of the proposal sumbitter
     ///
     /// Since: cosmos-sdk 0.47
     /// </summary>
@@ -946,23 +935,6 @@ namespace Cosmos.Gov.V1 {
       get { return proposer_; }
       set {
         proposer_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "expedited" field.</summary>
-    public const int ExpeditedFieldNumber = 14;
-    private bool expedited_;
-    /// <summary>
-    /// expedited defines if the proposal is expedited
-    ///
-    /// Since: cosmos-sdk 0.50
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Expedited {
-      get { return expedited_; }
-      set {
-        expedited_ = value;
       }
     }
 
@@ -994,7 +966,6 @@ namespace Cosmos.Gov.V1 {
       if (Title != other.Title) return false;
       if (Summary != other.Summary) return false;
       if (Proposer != other.Proposer) return false;
-      if (Expedited != other.Expedited) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1015,7 +986,6 @@ namespace Cosmos.Gov.V1 {
       if (Title.Length != 0) hash ^= Title.GetHashCode();
       if (Summary.Length != 0) hash ^= Summary.GetHashCode();
       if (Proposer.Length != 0) hash ^= Proposer.GetHashCode();
-      if (Expedited != false) hash ^= Expedited.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1080,10 +1050,6 @@ namespace Cosmos.Gov.V1 {
         output.WriteRawTag(106);
         output.WriteString(Proposer);
       }
-      if (Expedited != false) {
-        output.WriteRawTag(112);
-        output.WriteBool(Expedited);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1140,10 +1106,6 @@ namespace Cosmos.Gov.V1 {
         output.WriteRawTag(106);
         output.WriteString(Proposer);
       }
-      if (Expedited != false) {
-        output.WriteRawTag(112);
-        output.WriteBool(Expedited);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1188,9 +1150,6 @@ namespace Cosmos.Gov.V1 {
       }
       if (Proposer.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Proposer);
-      }
-      if (Expedited != false) {
-        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1253,9 +1212,6 @@ namespace Cosmos.Gov.V1 {
       }
       if (other.Proposer.Length != 0) {
         Proposer = other.Proposer;
-      }
-      if (other.Expedited != false) {
-        Expedited = other.Expedited;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1339,10 +1295,6 @@ namespace Cosmos.Gov.V1 {
             Proposer = input.ReadString();
             break;
           }
-          case 112: {
-            Expedited = input.ReadBool();
-            break;
-          }
         }
       }
     #endif
@@ -1423,10 +1375,6 @@ namespace Cosmos.Gov.V1 {
           }
           case 106: {
             Proposer = input.ReadString();
-            break;
-          }
-          case 112: {
-            Expedited = input.ReadBool();
             break;
           }
         }
@@ -1850,8 +1798,7 @@ namespace Cosmos.Gov.V1 {
     public const int MetadataFieldNumber = 5;
     private string metadata_ = "";
     /// <summary>
-    /// metadata is any arbitrary metadata to attached to the vote.
-    /// the recommended format of the metadata is to be found here: https://docs.cosmos.network/v0.47/modules/gov#vote-5
+    /// metadata is any  arbitrary metadata to attached to the vote.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2060,7 +2007,6 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// DepositParams defines the params for deposits on governance proposals.
   /// </summary>
-  [global::System.ObsoleteAttribute]
   public sealed partial class DepositParams : pb::IMessage<DepositParams>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2295,7 +2241,6 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// VotingParams defines the params for voting on governance proposals.
   /// </summary>
-  [global::System.ObsoleteAttribute]
   public sealed partial class VotingParams : pb::IMessage<VotingParams>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2500,7 +2445,6 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// TallyParams defines the params for tallying votes on governance proposals.
   /// </summary>
-  [global::System.ObsoleteAttribute]
   public sealed partial class TallyParams : pb::IMessage<TallyParams>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2821,11 +2765,6 @@ namespace Cosmos.Gov.V1 {
       threshold_ = other.threshold_;
       vetoThreshold_ = other.vetoThreshold_;
       minInitialDepositRatio_ = other.minInitialDepositRatio_;
-      proposalCancelRatio_ = other.proposalCancelRatio_;
-      proposalCancelDest_ = other.proposalCancelDest_;
-      expeditedVotingPeriod_ = other.expeditedVotingPeriod_ != null ? other.expeditedVotingPeriod_.Clone() : null;
-      expeditedThreshold_ = other.expeditedThreshold_;
-      expeditedMinDeposit_ = other.expeditedMinDeposit_.Clone();
       burnVoteQuorum_ = other.burnVoteQuorum_;
       burnProposalDepositPrevote_ = other.burnProposalDepositPrevote_;
       burnVoteVeto_ = other.burnVoteVeto_;
@@ -2945,89 +2884,6 @@ namespace Cosmos.Gov.V1 {
       }
     }
 
-    /// <summary>Field number for the "proposal_cancel_ratio" field.</summary>
-    public const int ProposalCancelRatioFieldNumber = 8;
-    private string proposalCancelRatio_ = "";
-    /// <summary>
-    /// The cancel ratio which will not be returned back to the depositors when a proposal is cancelled.
-    ///
-    /// Since: cosmos-sdk 0.50
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string ProposalCancelRatio {
-      get { return proposalCancelRatio_; }
-      set {
-        proposalCancelRatio_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "proposal_cancel_dest" field.</summary>
-    public const int ProposalCancelDestFieldNumber = 9;
-    private string proposalCancelDest_ = "";
-    /// <summary>
-    /// The address which will receive (proposal_cancel_ratio * deposit) proposal deposits.
-    /// If empty, the (proposal_cancel_ratio * deposit) proposal deposits will be burned.
-    ///
-    /// Since: cosmos-sdk 0.50
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string ProposalCancelDest {
-      get { return proposalCancelDest_; }
-      set {
-        proposalCancelDest_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "expedited_voting_period" field.</summary>
-    public const int ExpeditedVotingPeriodFieldNumber = 10;
-    private global::Google.Protobuf.WellKnownTypes.Duration expeditedVotingPeriod_;
-    /// <summary>
-    /// Duration of the voting period of an expedited proposal.
-    ///
-    /// Since: cosmos-sdk 0.50
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Google.Protobuf.WellKnownTypes.Duration ExpeditedVotingPeriod {
-      get { return expeditedVotingPeriod_; }
-      set {
-        expeditedVotingPeriod_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "expedited_threshold" field.</summary>
-    public const int ExpeditedThresholdFieldNumber = 11;
-    private string expeditedThreshold_ = "";
-    /// <summary>
-    /// Minimum proportion of Yes votes for proposal to pass. Default value: 0.67.
-    ///
-    /// Since: cosmos-sdk 0.50
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string ExpeditedThreshold {
-      get { return expeditedThreshold_; }
-      set {
-        expeditedThreshold_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "expedited_min_deposit" field.</summary>
-    public const int ExpeditedMinDepositFieldNumber = 12;
-    private static readonly pb::FieldCodec<global::Cosmos.Base.V1beta1.Coin> _repeated_expeditedMinDeposit_codec
-        = pb::FieldCodec.ForMessage(98, global::Cosmos.Base.V1beta1.Coin.Parser);
-    private readonly pbc::RepeatedField<global::Cosmos.Base.V1beta1.Coin> expeditedMinDeposit_ = new pbc::RepeatedField<global::Cosmos.Base.V1beta1.Coin>();
-    /// <summary>
-    ///  Minimum expedited deposit for a proposal to enter voting period.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Cosmos.Base.V1beta1.Coin> ExpeditedMinDeposit {
-      get { return expeditedMinDeposit_; }
-    }
-
     /// <summary>Field number for the "burn_vote_quorum" field.</summary>
     public const int BurnVoteQuorumFieldNumber = 13;
     private bool burnVoteQuorum_;
@@ -3095,11 +2951,6 @@ namespace Cosmos.Gov.V1 {
       if (Threshold != other.Threshold) return false;
       if (VetoThreshold != other.VetoThreshold) return false;
       if (MinInitialDepositRatio != other.MinInitialDepositRatio) return false;
-      if (ProposalCancelRatio != other.ProposalCancelRatio) return false;
-      if (ProposalCancelDest != other.ProposalCancelDest) return false;
-      if (!object.Equals(ExpeditedVotingPeriod, other.ExpeditedVotingPeriod)) return false;
-      if (ExpeditedThreshold != other.ExpeditedThreshold) return false;
-      if(!expeditedMinDeposit_.Equals(other.expeditedMinDeposit_)) return false;
       if (BurnVoteQuorum != other.BurnVoteQuorum) return false;
       if (BurnProposalDepositPrevote != other.BurnProposalDepositPrevote) return false;
       if (BurnVoteVeto != other.BurnVoteVeto) return false;
@@ -3117,11 +2968,6 @@ namespace Cosmos.Gov.V1 {
       if (Threshold.Length != 0) hash ^= Threshold.GetHashCode();
       if (VetoThreshold.Length != 0) hash ^= VetoThreshold.GetHashCode();
       if (MinInitialDepositRatio.Length != 0) hash ^= MinInitialDepositRatio.GetHashCode();
-      if (ProposalCancelRatio.Length != 0) hash ^= ProposalCancelRatio.GetHashCode();
-      if (ProposalCancelDest.Length != 0) hash ^= ProposalCancelDest.GetHashCode();
-      if (expeditedVotingPeriod_ != null) hash ^= ExpeditedVotingPeriod.GetHashCode();
-      if (ExpeditedThreshold.Length != 0) hash ^= ExpeditedThreshold.GetHashCode();
-      hash ^= expeditedMinDeposit_.GetHashCode();
       if (BurnVoteQuorum != false) hash ^= BurnVoteQuorum.GetHashCode();
       if (BurnProposalDepositPrevote != false) hash ^= BurnProposalDepositPrevote.GetHashCode();
       if (BurnVoteVeto != false) hash ^= BurnVoteVeto.GetHashCode();
@@ -3168,23 +3014,6 @@ namespace Cosmos.Gov.V1 {
         output.WriteRawTag(58);
         output.WriteString(MinInitialDepositRatio);
       }
-      if (ProposalCancelRatio.Length != 0) {
-        output.WriteRawTag(66);
-        output.WriteString(ProposalCancelRatio);
-      }
-      if (ProposalCancelDest.Length != 0) {
-        output.WriteRawTag(74);
-        output.WriteString(ProposalCancelDest);
-      }
-      if (expeditedVotingPeriod_ != null) {
-        output.WriteRawTag(82);
-        output.WriteMessage(ExpeditedVotingPeriod);
-      }
-      if (ExpeditedThreshold.Length != 0) {
-        output.WriteRawTag(90);
-        output.WriteString(ExpeditedThreshold);
-      }
-      expeditedMinDeposit_.WriteTo(output, _repeated_expeditedMinDeposit_codec);
       if (BurnVoteQuorum != false) {
         output.WriteRawTag(104);
         output.WriteBool(BurnVoteQuorum);
@@ -3232,23 +3061,6 @@ namespace Cosmos.Gov.V1 {
         output.WriteRawTag(58);
         output.WriteString(MinInitialDepositRatio);
       }
-      if (ProposalCancelRatio.Length != 0) {
-        output.WriteRawTag(66);
-        output.WriteString(ProposalCancelRatio);
-      }
-      if (ProposalCancelDest.Length != 0) {
-        output.WriteRawTag(74);
-        output.WriteString(ProposalCancelDest);
-      }
-      if (expeditedVotingPeriod_ != null) {
-        output.WriteRawTag(82);
-        output.WriteMessage(ExpeditedVotingPeriod);
-      }
-      if (ExpeditedThreshold.Length != 0) {
-        output.WriteRawTag(90);
-        output.WriteString(ExpeditedThreshold);
-      }
-      expeditedMinDeposit_.WriteTo(ref output, _repeated_expeditedMinDeposit_codec);
       if (BurnVoteQuorum != false) {
         output.WriteRawTag(104);
         output.WriteBool(BurnVoteQuorum);
@@ -3290,19 +3102,6 @@ namespace Cosmos.Gov.V1 {
       if (MinInitialDepositRatio.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(MinInitialDepositRatio);
       }
-      if (ProposalCancelRatio.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ProposalCancelRatio);
-      }
-      if (ProposalCancelDest.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ProposalCancelDest);
-      }
-      if (expeditedVotingPeriod_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ExpeditedVotingPeriod);
-      }
-      if (ExpeditedThreshold.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ExpeditedThreshold);
-      }
-      size += expeditedMinDeposit_.CalculateSize(_repeated_expeditedMinDeposit_codec);
       if (BurnVoteQuorum != false) {
         size += 1 + 1;
       }
@@ -3349,22 +3148,6 @@ namespace Cosmos.Gov.V1 {
       if (other.MinInitialDepositRatio.Length != 0) {
         MinInitialDepositRatio = other.MinInitialDepositRatio;
       }
-      if (other.ProposalCancelRatio.Length != 0) {
-        ProposalCancelRatio = other.ProposalCancelRatio;
-      }
-      if (other.ProposalCancelDest.Length != 0) {
-        ProposalCancelDest = other.ProposalCancelDest;
-      }
-      if (other.expeditedVotingPeriod_ != null) {
-        if (expeditedVotingPeriod_ == null) {
-          ExpeditedVotingPeriod = new global::Google.Protobuf.WellKnownTypes.Duration();
-        }
-        ExpeditedVotingPeriod.MergeFrom(other.ExpeditedVotingPeriod);
-      }
-      if (other.ExpeditedThreshold.Length != 0) {
-        ExpeditedThreshold = other.ExpeditedThreshold;
-      }
-      expeditedMinDeposit_.Add(other.expeditedMinDeposit_);
       if (other.BurnVoteQuorum != false) {
         BurnVoteQuorum = other.BurnVoteQuorum;
       }
@@ -3421,29 +3204,6 @@ namespace Cosmos.Gov.V1 {
           }
           case 58: {
             MinInitialDepositRatio = input.ReadString();
-            break;
-          }
-          case 66: {
-            ProposalCancelRatio = input.ReadString();
-            break;
-          }
-          case 74: {
-            ProposalCancelDest = input.ReadString();
-            break;
-          }
-          case 82: {
-            if (expeditedVotingPeriod_ == null) {
-              ExpeditedVotingPeriod = new global::Google.Protobuf.WellKnownTypes.Duration();
-            }
-            input.ReadMessage(ExpeditedVotingPeriod);
-            break;
-          }
-          case 90: {
-            ExpeditedThreshold = input.ReadString();
-            break;
-          }
-          case 98: {
-            expeditedMinDeposit_.AddEntriesFrom(input, _repeated_expeditedMinDeposit_codec);
             break;
           }
           case 104: {
@@ -3505,29 +3265,6 @@ namespace Cosmos.Gov.V1 {
           }
           case 58: {
             MinInitialDepositRatio = input.ReadString();
-            break;
-          }
-          case 66: {
-            ProposalCancelRatio = input.ReadString();
-            break;
-          }
-          case 74: {
-            ProposalCancelDest = input.ReadString();
-            break;
-          }
-          case 82: {
-            if (expeditedVotingPeriod_ == null) {
-              ExpeditedVotingPeriod = new global::Google.Protobuf.WellKnownTypes.Duration();
-            }
-            input.ReadMessage(ExpeditedVotingPeriod);
-            break;
-          }
-          case 90: {
-            ExpeditedThreshold = input.ReadString();
-            break;
-          }
-          case 98: {
-            expeditedMinDeposit_.AddEntriesFrom(ref input, _repeated_expeditedMinDeposit_codec);
             break;
           }
           case 104: {

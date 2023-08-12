@@ -25,7 +25,7 @@ namespace Cosmos.Gov.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Chtjb3Ntb3MvZ292L3YxL2dlbmVzaXMucHJvdG8SDWNvc21vcy5nb3YudjEa",
-            "F2Nvc21vcy9nb3YvdjEvZ292LnByb3RvIvsDCgxHZW5lc2lzU3RhdGUSMAoU",
+            "F2Nvc21vcy9nb3YvdjEvZ292LnByb3RvItcDCgxHZW5lc2lzU3RhdGUSMAoU",
             "c3RhcnRpbmdfcHJvcG9zYWxfaWQYASABKARSEnN0YXJ0aW5nUHJvcG9zYWxJ",
             "ZBIyCghkZXBvc2l0cxgCIAMoCzIWLmNvc21vcy5nb3YudjEuRGVwb3NpdFII",
             "ZGVwb3NpdHMSKQoFdm90ZXMYAyADKAsyEy5jb3Ntb3MuZ292LnYxLlZvdGVS",
@@ -36,15 +36,14 @@ namespace Cosmos.Gov.V1 {
             "UGFyYW1zQgIYAVIMdm90aW5nUGFyYW1zEkEKDHRhbGx5X3BhcmFtcxgHIAEo",
             "CzIaLmNvc21vcy5nb3YudjEuVGFsbHlQYXJhbXNCAhgBUgt0YWxseVBhcmFt",
             "cxItCgZwYXJhbXMYCCABKAsyFS5jb3Ntb3MuZ292LnYxLlBhcmFtc1IGcGFy",
-            "YW1zEiIKDGNvbnN0aXR1dGlvbhgJIAEoCVIMY29uc3RpdHV0aW9uQqQBChFj",
-            "b20uY29zbW9zLmdvdi52MUIMR2VuZXNpc1Byb3RvUAFaK2dpdGh1Yi5jb20v",
-            "Y29zbW9zL2Nvc21vcy1zZGsveC9nb3YvdHlwZXMvdjGiAgNDR1iqAg1Db3Nt",
-            "b3MuR292LlYxygINQ29zbW9zXEdvdlxWMeICGUNvc21vc1xHb3ZcVjFcR1BC",
-            "TWV0YWRhdGHqAg9Db3Ntb3M6Okdvdjo6VjFiBnByb3RvMw=="));
+            "YW1zQqQBChFjb20uY29zbW9zLmdvdi52MUIMR2VuZXNpc1Byb3RvUAFaK2dp",
+            "dGh1Yi5jb20vY29zbW9zL2Nvc21vcy1zZGsveC9nb3YvdHlwZXMvdjGiAgND",
+            "R1iqAg1Db3Ntb3MuR292LlYxygINQ29zbW9zXEdvdlxWMeICGUNvc21vc1xH",
+            "b3ZcVjFcR1BCTWV0YWRhdGHqAg9Db3Ntb3M6Okdvdjo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Cosmos.Gov.V1.GovReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.GenesisState), global::Cosmos.Gov.V1.GenesisState.Parser, new[]{ "StartingProposalId", "Deposits", "Votes", "Proposals", "DepositParams", "VotingParams", "TallyParams", "Params", "Constitution" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.GenesisState), global::Cosmos.Gov.V1.GenesisState.Parser, new[]{ "StartingProposalId", "Deposits", "Votes", "Proposals", "DepositParams", "VotingParams", "TallyParams", "Params" }, null, null, null, null)
           }));
     }
     #endregion
@@ -96,7 +95,6 @@ namespace Cosmos.Gov.V1 {
       votingParams_ = other.votingParams_ != null ? other.votingParams_.Clone() : null;
       tallyParams_ = other.tallyParams_ != null ? other.tallyParams_.Clone() : null;
       params_ = other.params_ != null ? other.params_.Clone() : null;
-      constitution_ = other.constitution_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -231,26 +229,6 @@ namespace Cosmos.Gov.V1 {
       }
     }
 
-    /// <summary>Field number for the "constitution" field.</summary>
-    public const int ConstitutionFieldNumber = 9;
-    private string constitution_ = "";
-    /// <summary>
-    /// The constitution allows builders to lay a foundation and define purpose.
-    /// This is an immutable string set in genesis.
-    /// There are no amendments, to go outside of scope, just fork.
-    /// constitution is an immutable string in genesis for a chain builder to lay out their vision, ideas and ideals.
-    ///
-    /// Since: cosmos-sdk 0.50
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Constitution {
-      get { return constitution_; }
-      set {
-        constitution_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -274,7 +252,6 @@ namespace Cosmos.Gov.V1 {
       if (!object.Equals(VotingParams, other.VotingParams)) return false;
       if (!object.Equals(TallyParams, other.TallyParams)) return false;
       if (!object.Equals(Params, other.Params)) return false;
-      if (Constitution != other.Constitution) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -290,7 +267,6 @@ namespace Cosmos.Gov.V1 {
       if (votingParams_ != null) hash ^= VotingParams.GetHashCode();
       if (tallyParams_ != null) hash ^= TallyParams.GetHashCode();
       if (params_ != null) hash ^= Params.GetHashCode();
-      if (Constitution.Length != 0) hash ^= Constitution.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -332,10 +308,6 @@ namespace Cosmos.Gov.V1 {
         output.WriteRawTag(66);
         output.WriteMessage(Params);
       }
-      if (Constitution.Length != 0) {
-        output.WriteRawTag(74);
-        output.WriteString(Constitution);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -369,10 +341,6 @@ namespace Cosmos.Gov.V1 {
         output.WriteRawTag(66);
         output.WriteMessage(Params);
       }
-      if (Constitution.Length != 0) {
-        output.WriteRawTag(74);
-        output.WriteString(Constitution);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -400,9 +368,6 @@ namespace Cosmos.Gov.V1 {
       }
       if (params_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Params);
-      }
-      if (Constitution.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Constitution);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -445,9 +410,6 @@ namespace Cosmos.Gov.V1 {
           Params = new global::Cosmos.Gov.V1.Params();
         }
         Params.MergeFrom(other.Params);
-      }
-      if (other.Constitution.Length != 0) {
-        Constitution = other.Constitution;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -508,10 +470,6 @@ namespace Cosmos.Gov.V1 {
             input.ReadMessage(Params);
             break;
           }
-          case 74: {
-            Constitution = input.ReadString();
-            break;
-          }
         }
       }
     #endif
@@ -569,10 +527,6 @@ namespace Cosmos.Gov.V1 {
               Params = new global::Cosmos.Gov.V1.Params();
             }
             input.ReadMessage(Params);
-            break;
-          }
-          case 74: {
-            Constitution = input.ReadString();
             break;
           }
         }

@@ -60,12 +60,12 @@ namespace Cosmos.Upgrade.V1beta1 {
             "bW9kdWxlX3ZlcnNpb25zEpUBCglBdXRob3JpdHkSLS5jb3Ntb3MudXBncmFk",
             "ZS52MWJldGExLlF1ZXJ5QXV0aG9yaXR5UmVxdWVzdBouLmNvc21vcy51cGdy",
             "YWRlLnYxYmV0YTEuUXVlcnlBdXRob3JpdHlSZXNwb25zZSIpgtPkkwIjEiEv",
-            "Y29zbW9zL3VwZ3JhZGUvdjFiZXRhMS9hdXRob3JpdHlCwAEKGmNvbS5jb3Nt",
-            "b3MudXBncmFkZS52MWJldGExQgpRdWVyeVByb3RvUAFaHGNvc21vc3Nkay5p",
-            "by94L3VwZ3JhZGUvdHlwZXOiAgNDVViqAhZDb3Ntb3MuVXBncmFkZS5WMWJl",
-            "dGExygIWQ29zbW9zXFVwZ3JhZGVcVjFiZXRhMeICIkNvc21vc1xVcGdyYWRl",
-            "XFYxYmV0YTFcR1BCTWV0YWRhdGHqAhhDb3Ntb3M6OlVwZ3JhZGU6OlYxYmV0",
-            "YTFiBnByb3RvMw=="));
+            "Y29zbW9zL3VwZ3JhZGUvdjFiZXRhMS9hdXRob3JpdHlC0AEKGmNvbS5jb3Nt",
+            "b3MudXBncmFkZS52MWJldGExQgpRdWVyeVByb3RvUAFaLGdpdGh1Yi5jb20v",
+            "Y29zbW9zL2Nvc21vcy1zZGsveC91cGdyYWRlL3R5cGVzogIDQ1VYqgIWQ29z",
+            "bW9zLlVwZ3JhZGUuVjFiZXRhMcoCFkNvc21vc1xVcGdyYWRlXFYxYmV0YTHi",
+            "AiJDb3Ntb3NcVXBncmFkZVxWMWJldGExXEdQQk1ldGFkYXRh6gIYQ29zbW9z",
+            "OjpVcGdyYWRlOjpWMWJldGExYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Cosmos.Upgrade.V1beta1.UpgradeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
