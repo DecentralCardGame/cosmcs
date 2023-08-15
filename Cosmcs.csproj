@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <PackageId>Cosmcs</PackageId>
-        <Version>0.2.7-1</Version>
+        <Version>0.2.7</Version>
         <Authors>lxgr</Authors>
         <TargetFramework>netstandard2.1</TargetFramework>
         <PackageDescription>A C# client library for cosmos-sdk blockchains</PackageDescription>
@@ -22,6 +22,8 @@
     <PackageReference Include="Cryptography.ECDSA.Secp256k1" Version="1.1.3" />
     <PackageReference Include="DevHawk.RIPEMD160" Version="3.0.27" />
     <PackageReference Include="Google.Protobuf" Version="3.23.3" />
+    <PackageReference Include="Grpc.Core" Version="2.46.6" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.55.0" />
     <PackageReference Include="System.Text.Json" Version="7.0.3" />
   </ItemGroup>
 

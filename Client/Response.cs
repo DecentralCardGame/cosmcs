@@ -8,10 +8,10 @@ using Google.Protobuf;
 namespace Cosmcs.Client
 {
     public class ClientResponse<T>
-        where T : IMessage<T>, new()
+        where T : class, IMessage<T>, new()
     {
         public TxResponse RawResponse;
-        public T ResponseMessage;
+        public T? ResponseMessage;
 
         public ClientResponse(string value, MessageParser<T> parser)
         {
@@ -26,7 +26,10 @@ namespace Cosmcs.Client
             }
 
             var wrapped = TxMsgData.Parser.ParseFrom(ByteString.CopyFrom(Hex.HexToBytes(RawResponse.Data)));
-            ResponseMessage = parser.ParseFrom(wrapped.MsgResponses[0].Value);
+            if (wrapped.MsgResponses.Count > 0)
+            {
+                ResponseMessage = parser.ParseFrom(wrapped.MsgResponses[0].Value);
+            }
         }
     }
 
