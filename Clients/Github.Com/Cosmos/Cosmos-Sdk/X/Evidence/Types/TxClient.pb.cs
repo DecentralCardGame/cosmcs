@@ -20,7 +20,16 @@ namespace Cosmos.Evidence.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.evidence.v1beta1.MsgSubmitEvidence"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Evidence.V1beta1.MsgSubmitEvidenceResponse>(r.Result, Cosmos.Evidence.V1beta1.MsgSubmitEvidenceResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Evidence.V1beta1.MsgSubmitEvidenceResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Evidence.V1beta1.MsgSubmitEvidenceResponse.Parser
+			));
 		}
 
 	}

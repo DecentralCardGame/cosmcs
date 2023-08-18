@@ -1,6 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Text.Json;
 using Cosmos.Base.Abci.V1beta1;
 using Cryptography.ECDSA;
 using Google.Protobuf;
@@ -13,13 +11,9 @@ namespace Cosmcs.Client
         public TxResponse RawResponse;
         public T? ResponseMessage;
 
-        public ClientResponse(string value, MessageParser<T> parser)
+        public ClientResponse(TxResponse value, MessageParser<T> parser)
         {
-            RawResponse = TxResponse.Parser.ParseJson(
-                JsonSerializer.Serialize(
-                    JsonSerializer.Deserialize<Dictionary<string, object>>(value)!["tx_response"]
-                )
-            );
+            RawResponse = value;
             if (RawResponse.Code != 0)
             {
                 throw new MessageFailedException(RawResponse);

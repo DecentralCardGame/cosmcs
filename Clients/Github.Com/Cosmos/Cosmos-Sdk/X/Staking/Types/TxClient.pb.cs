@@ -20,7 +20,16 @@ namespace Cosmos.Staking.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.staking.v1beta1.MsgCreateValidator"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgCreateValidatorResponse>(r.Result, Cosmos.Staking.V1beta1.MsgCreateValidatorResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgCreateValidatorResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Staking.V1beta1.MsgCreateValidatorResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgEditValidatorResponse>> SendMsgEditValidator(Cosmos.Staking.V1beta1.MsgEditValidator msg) {
@@ -30,7 +39,16 @@ namespace Cosmos.Staking.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.staking.v1beta1.MsgEditValidator"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgEditValidatorResponse>(r.Result, Cosmos.Staking.V1beta1.MsgEditValidatorResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgEditValidatorResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Staking.V1beta1.MsgEditValidatorResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgDelegateResponse>> SendMsgDelegate(Cosmos.Staking.V1beta1.MsgDelegate msg) {
@@ -40,7 +58,16 @@ namespace Cosmos.Staking.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.staking.v1beta1.MsgDelegate"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgDelegateResponse>(r.Result, Cosmos.Staking.V1beta1.MsgDelegateResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgDelegateResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Staking.V1beta1.MsgDelegateResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgBeginRedelegateResponse>> SendMsgBeginRedelegate(Cosmos.Staking.V1beta1.MsgBeginRedelegate msg) {
@@ -50,7 +77,16 @@ namespace Cosmos.Staking.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.staking.v1beta1.MsgBeginRedelegate"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgBeginRedelegateResponse>(r.Result, Cosmos.Staking.V1beta1.MsgBeginRedelegateResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgBeginRedelegateResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Staking.V1beta1.MsgBeginRedelegateResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgUndelegateResponse>> SendMsgUndelegate(Cosmos.Staking.V1beta1.MsgUndelegate msg) {
@@ -60,7 +96,16 @@ namespace Cosmos.Staking.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.staking.v1beta1.MsgUndelegate"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgUndelegateResponse>(r.Result, Cosmos.Staking.V1beta1.MsgUndelegateResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgUndelegateResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Staking.V1beta1.MsgUndelegateResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgCancelUnbondingDelegationResponse>> SendMsgCancelUnbondingDelegation(Cosmos.Staking.V1beta1.MsgCancelUnbondingDelegation msg) {
@@ -70,7 +115,16 @@ namespace Cosmos.Staking.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.staking.v1beta1.MsgCancelUnbondingDelegation"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgCancelUnbondingDelegationResponse>(r.Result, Cosmos.Staking.V1beta1.MsgCancelUnbondingDelegationResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgCancelUnbondingDelegationResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Staking.V1beta1.MsgCancelUnbondingDelegationResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgUpdateParamsResponse>> SendMsgUpdateParams(Cosmos.Staking.V1beta1.MsgUpdateParams msg) {
@@ -80,7 +134,16 @@ namespace Cosmos.Staking.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.staking.v1beta1.MsgUpdateParams"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgUpdateParamsResponse>(r.Result, Cosmos.Staking.V1beta1.MsgUpdateParamsResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgUpdateParamsResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Staking.V1beta1.MsgUpdateParamsResponse.Parser
+			));
 		}
 
 	}

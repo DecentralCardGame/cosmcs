@@ -20,7 +20,16 @@ namespace Cosmos.Consensus.V1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.consensus.v1.MsgUpdateParams"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Consensus.V1.MsgUpdateParamsResponse>(r.Result, Cosmos.Consensus.V1.MsgUpdateParamsResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Consensus.V1.MsgUpdateParamsResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Consensus.V1.MsgUpdateParamsResponse.Parser
+			));
 		}
 
 	}

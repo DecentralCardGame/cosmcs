@@ -10,11 +10,12 @@ using Google.Protobuf.Reflection;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Net.Client;
 
+
 namespace Cosmcs.Client
 {
     public class EasyClient : IClient
     {
-        public DefaultBroadcaster Broadcaster { get; }
+        public GrpcBroadcaster Broadcaster { get; }
         public JsonFormatter Formatter { get; }
         public JsonParser Parser { get; }
         public PrivateKey PrivateKey { get; }
@@ -23,16 +24,18 @@ namespace Cosmcs.Client
         public string ChainId { get; }
         public GrpcChannel Channel { get; }
         public Cosmos.Auth.V1beta1.Query.QueryClient AuthClient { get; }
+        public Cosmos.Tx.V1beta1.Service.ServiceClient TxClient { get; }
 
-        public EasyClient(string baseUrl, string rpcUrl, string chainId, byte[] bytes, string prefix, TypeRegistry reg)
+        public EasyClient(string rpcUrl, string chainId, byte[] bytes, string prefix, TypeRegistry reg)
         {
             ChainId = chainId;
+            Channel = GrpcChannel.ForAddress(rpcUrl);
             Parser = new JsonParser(new JsonParser.Settings(20, reg));
             Formatter = new JsonFormatter(new JsonFormatter.Settings(true, reg));
-            Broadcaster = new DefaultBroadcaster(baseUrl, Formatter, Parser);
+            Broadcaster = new GrpcBroadcaster(Channel);
             PrivateKey = new PrivateKey(bytes);
-            Channel = GrpcChannel.ForAddress(rpcUrl);
             AuthClient = new Cosmos.Auth.V1beta1.Query.QueryClient(Channel);
+            TxClient = Broadcaster.TxClient;
             var pubkey = PrivateKey.PublicKey();
             AccoutAddress = pubkey.AccountId(prefix);
             var queriedBaseAccount = GetBaseAccount();
@@ -42,22 +45,31 @@ namespace Cosmcs.Client
             );
         }
 
-        public Cosmos.Auth.V1beta1.QueryAccountResponse QueryAccount(string addr)
+        public Task<Cosmos.Tx.V1beta1.GetTxResponse> QueryTx(string txHash)
         {
-            return AuthClient.Account(new Cosmos.Auth.V1beta1.QueryAccountRequest{Address = addr});
+            return TxClient.GetTxAsync(new Cosmos.Tx.V1beta1.GetTxRequest
+            {
+                Hash = txHash
+            }).ResponseAsync;
+        }
+
+        public Task<Cosmos.Auth.V1beta1.QueryAccountResponse> QueryAccount(string addr)
+        {
+            return AuthClient.AccountAsync(new Cosmos.Auth.V1beta1.QueryAccountRequest { Address = addr })
+                .ResponseAsync;
         }
 
         private BaseAccount GetBaseAccount()
         {
             var data = Cosmos.Auth.V1beta1.BaseAccount.Parser.ParseFrom(
-                QueryAccount(AccoutAddress.ToString()).Account.Value
+                QueryAccount(AccoutAddress.ToString()).Result.Account.Value
             );
             return BaseAccount.FromProto(
                 data
             );
         }
 
-        public Task<string> BuildAndBroadcast(Any msg)
+        public Task<Cosmos.Tx.V1beta1.BroadcastTxResponse> BuildAndBroadcast(Any msg)
         {
             var fee = new Fee(200_000);
             var body = new Builder().AddMsgs(new List<Any> { msg }).SetMemo("").Finish();
@@ -65,7 +77,7 @@ namespace Cosmcs.Client
                 new SignerInfo(PrivateKey.PublicKey().IntoSignerPublicKey(), BaseAccount.Sequence).AuthInfo(fee);
             var signDoc = new SignDoc(body, authInfo, ChainId, BaseAccount.AccountNumber);
             var txRaw = signDoc.Sign(PrivateKey);
-            return txRaw.BroadcastSync(Broadcaster).Result.ReadAsStringAsync();
+            return txRaw.BroadcastSync(Broadcaster);
         }
     }
 }

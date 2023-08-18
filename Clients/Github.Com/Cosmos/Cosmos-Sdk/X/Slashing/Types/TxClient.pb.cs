@@ -20,7 +20,16 @@ namespace Cosmos.Slashing.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.slashing.v1beta1.MsgUnjail"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Slashing.V1beta1.MsgUnjailResponse>(r.Result, Cosmos.Slashing.V1beta1.MsgUnjailResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Slashing.V1beta1.MsgUnjailResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Slashing.V1beta1.MsgUnjailResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Slashing.V1beta1.MsgUpdateParamsResponse>> SendMsgUpdateParams(Cosmos.Slashing.V1beta1.MsgUpdateParams msg) {
@@ -30,7 +39,16 @@ namespace Cosmos.Slashing.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.slashing.v1beta1.MsgUpdateParams"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Slashing.V1beta1.MsgUpdateParamsResponse>(r.Result, Cosmos.Slashing.V1beta1.MsgUpdateParamsResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Slashing.V1beta1.MsgUpdateParamsResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Slashing.V1beta1.MsgUpdateParamsResponse.Parser
+			));
 		}
 
 	}

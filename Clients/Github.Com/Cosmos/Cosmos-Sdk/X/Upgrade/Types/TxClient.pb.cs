@@ -20,7 +20,16 @@ namespace Cosmos.Upgrade.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Upgrade.V1beta1.MsgSoftwareUpgradeResponse>(r.Result, Cosmos.Upgrade.V1beta1.MsgSoftwareUpgradeResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Upgrade.V1beta1.MsgSoftwareUpgradeResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Upgrade.V1beta1.MsgSoftwareUpgradeResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Upgrade.V1beta1.MsgCancelUpgradeResponse>> SendMsgCancelUpgrade(Cosmos.Upgrade.V1beta1.MsgCancelUpgrade msg) {
@@ -30,7 +39,16 @@ namespace Cosmos.Upgrade.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.upgrade.v1beta1.MsgCancelUpgrade"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Upgrade.V1beta1.MsgCancelUpgradeResponse>(r.Result, Cosmos.Upgrade.V1beta1.MsgCancelUpgradeResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Upgrade.V1beta1.MsgCancelUpgradeResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Upgrade.V1beta1.MsgCancelUpgradeResponse.Parser
+			));
 		}
 
 	}

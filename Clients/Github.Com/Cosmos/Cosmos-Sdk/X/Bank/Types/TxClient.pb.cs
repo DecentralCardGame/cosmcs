@@ -20,7 +20,16 @@ namespace Cosmos.Bank.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.bank.v1beta1.MsgSend"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Bank.V1beta1.MsgSendResponse>(r.Result, Cosmos.Bank.V1beta1.MsgSendResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Bank.V1beta1.MsgSendResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Bank.V1beta1.MsgSendResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Bank.V1beta1.MsgMultiSendResponse>> SendMsgMultiSend(Cosmos.Bank.V1beta1.MsgMultiSend msg) {
@@ -30,7 +39,16 @@ namespace Cosmos.Bank.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.bank.v1beta1.MsgMultiSend"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Bank.V1beta1.MsgMultiSendResponse>(r.Result, Cosmos.Bank.V1beta1.MsgMultiSendResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Bank.V1beta1.MsgMultiSendResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Bank.V1beta1.MsgMultiSendResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Bank.V1beta1.MsgUpdateParamsResponse>> SendMsgUpdateParams(Cosmos.Bank.V1beta1.MsgUpdateParams msg) {
@@ -40,7 +58,16 @@ namespace Cosmos.Bank.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.bank.v1beta1.MsgUpdateParams"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Bank.V1beta1.MsgUpdateParamsResponse>(r.Result, Cosmos.Bank.V1beta1.MsgUpdateParamsResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Bank.V1beta1.MsgUpdateParamsResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Bank.V1beta1.MsgUpdateParamsResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Bank.V1beta1.MsgSetSendEnabledResponse>> SendMsgSetSendEnabled(Cosmos.Bank.V1beta1.MsgSetSendEnabled msg) {
@@ -50,7 +77,16 @@ namespace Cosmos.Bank.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.bank.v1beta1.MsgSetSendEnabled"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Bank.V1beta1.MsgSetSendEnabledResponse>(r.Result, Cosmos.Bank.V1beta1.MsgSetSendEnabledResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Bank.V1beta1.MsgSetSendEnabledResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Bank.V1beta1.MsgSetSendEnabledResponse.Parser
+			));
 		}
 
 	}

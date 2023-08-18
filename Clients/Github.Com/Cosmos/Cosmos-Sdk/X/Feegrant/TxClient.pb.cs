@@ -20,7 +20,16 @@ namespace Cosmos.Feegrant.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.feegrant.v1beta1.MsgGrantAllowance"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Feegrant.V1beta1.MsgGrantAllowanceResponse>(r.Result, Cosmos.Feegrant.V1beta1.MsgGrantAllowanceResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Feegrant.V1beta1.MsgGrantAllowanceResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Feegrant.V1beta1.MsgGrantAllowanceResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Feegrant.V1beta1.MsgRevokeAllowanceResponse>> SendMsgRevokeAllowance(Cosmos.Feegrant.V1beta1.MsgRevokeAllowance msg) {
@@ -30,7 +39,16 @@ namespace Cosmos.Feegrant.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.feegrant.v1beta1.MsgRevokeAllowance"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Feegrant.V1beta1.MsgRevokeAllowanceResponse>(r.Result, Cosmos.Feegrant.V1beta1.MsgRevokeAllowanceResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Feegrant.V1beta1.MsgRevokeAllowanceResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Feegrant.V1beta1.MsgRevokeAllowanceResponse.Parser
+			));
 		}
 
 	}

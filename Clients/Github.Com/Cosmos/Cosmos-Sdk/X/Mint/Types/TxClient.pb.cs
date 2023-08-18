@@ -20,7 +20,16 @@ namespace Cosmos.Mint.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.mint.v1beta1.MsgUpdateParams"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Mint.V1beta1.MsgUpdateParamsResponse>(r.Result, Cosmos.Mint.V1beta1.MsgUpdateParamsResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Mint.V1beta1.MsgUpdateParamsResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Mint.V1beta1.MsgUpdateParamsResponse.Parser
+			));
 		}
 
 	}

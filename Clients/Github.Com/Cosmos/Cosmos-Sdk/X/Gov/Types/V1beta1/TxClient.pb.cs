@@ -20,7 +20,16 @@ namespace Cosmos.Gov.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.gov.v1beta1.MsgSubmitProposal"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1beta1.MsgSubmitProposalResponse>(r.Result, Cosmos.Gov.V1beta1.MsgSubmitProposalResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1beta1.MsgSubmitProposalResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Gov.V1beta1.MsgSubmitProposalResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Gov.V1beta1.MsgVoteResponse>> SendMsgVote(Cosmos.Gov.V1beta1.MsgVote msg) {
@@ -30,7 +39,16 @@ namespace Cosmos.Gov.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.gov.v1beta1.MsgVote"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1beta1.MsgVoteResponse>(r.Result, Cosmos.Gov.V1beta1.MsgVoteResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1beta1.MsgVoteResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Gov.V1beta1.MsgVoteResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Gov.V1beta1.MsgVoteWeightedResponse>> SendMsgVoteWeighted(Cosmos.Gov.V1beta1.MsgVoteWeighted msg) {
@@ -40,7 +58,16 @@ namespace Cosmos.Gov.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.gov.v1beta1.MsgVoteWeighted"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1beta1.MsgVoteWeightedResponse>(r.Result, Cosmos.Gov.V1beta1.MsgVoteWeightedResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1beta1.MsgVoteWeightedResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Gov.V1beta1.MsgVoteWeightedResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Gov.V1beta1.MsgDepositResponse>> SendMsgDeposit(Cosmos.Gov.V1beta1.MsgDeposit msg) {
@@ -50,7 +77,16 @@ namespace Cosmos.Gov.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.gov.v1beta1.MsgDeposit"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1beta1.MsgDepositResponse>(r.Result, Cosmos.Gov.V1beta1.MsgDepositResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1beta1.MsgDepositResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Gov.V1beta1.MsgDepositResponse.Parser
+			));
 		}
 
 	}

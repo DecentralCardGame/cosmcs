@@ -20,7 +20,16 @@ namespace Cosmos.Nft.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.nft.v1beta1.MsgSend"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Nft.V1beta1.MsgSendResponse>(r.Result, Cosmos.Nft.V1beta1.MsgSendResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Nft.V1beta1.MsgSendResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Nft.V1beta1.MsgSendResponse.Parser
+			));
 		}
 
 	}

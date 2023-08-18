@@ -20,7 +20,16 @@ namespace Cosmos.Authz.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.authz.v1beta1.MsgGrant"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Authz.V1beta1.MsgGrantResponse>(r.Result, Cosmos.Authz.V1beta1.MsgGrantResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Authz.V1beta1.MsgGrantResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Authz.V1beta1.MsgGrantResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Authz.V1beta1.MsgExecResponse>> SendMsgExec(Cosmos.Authz.V1beta1.MsgExec msg) {
@@ -30,7 +39,16 @@ namespace Cosmos.Authz.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.authz.v1beta1.MsgExec"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Authz.V1beta1.MsgExecResponse>(r.Result, Cosmos.Authz.V1beta1.MsgExecResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Authz.V1beta1.MsgExecResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Authz.V1beta1.MsgExecResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Authz.V1beta1.MsgRevokeResponse>> SendMsgRevoke(Cosmos.Authz.V1beta1.MsgRevoke msg) {
@@ -40,7 +58,16 @@ namespace Cosmos.Authz.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.authz.v1beta1.MsgRevoke"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Authz.V1beta1.MsgRevokeResponse>(r.Result, Cosmos.Authz.V1beta1.MsgRevokeResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Authz.V1beta1.MsgRevokeResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Authz.V1beta1.MsgRevokeResponse.Parser
+			));
 		}
 
 	}

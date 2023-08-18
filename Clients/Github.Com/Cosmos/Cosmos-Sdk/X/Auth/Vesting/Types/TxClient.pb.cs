@@ -20,7 +20,16 @@ namespace Cosmos.Vesting.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.vesting.v1beta1.MsgCreateVestingAccount"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Vesting.V1beta1.MsgCreateVestingAccountResponse>(r.Result, Cosmos.Vesting.V1beta1.MsgCreateVestingAccountResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Vesting.V1beta1.MsgCreateVestingAccountResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Vesting.V1beta1.MsgCreateVestingAccountResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Vesting.V1beta1.MsgCreatePermanentLockedAccountResponse>> SendMsgCreatePermanentLockedAccount(Cosmos.Vesting.V1beta1.MsgCreatePermanentLockedAccount msg) {
@@ -30,7 +39,16 @@ namespace Cosmos.Vesting.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.vesting.v1beta1.MsgCreatePermanentLockedAccount"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Vesting.V1beta1.MsgCreatePermanentLockedAccountResponse>(r.Result, Cosmos.Vesting.V1beta1.MsgCreatePermanentLockedAccountResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Vesting.V1beta1.MsgCreatePermanentLockedAccountResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Vesting.V1beta1.MsgCreatePermanentLockedAccountResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Vesting.V1beta1.MsgCreatePeriodicVestingAccountResponse>> SendMsgCreatePeriodicVestingAccount(Cosmos.Vesting.V1beta1.MsgCreatePeriodicVestingAccount msg) {
@@ -40,7 +58,16 @@ namespace Cosmos.Vesting.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.vesting.v1beta1.MsgCreatePeriodicVestingAccount"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Vesting.V1beta1.MsgCreatePeriodicVestingAccountResponse>(r.Result, Cosmos.Vesting.V1beta1.MsgCreatePeriodicVestingAccountResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Vesting.V1beta1.MsgCreatePeriodicVestingAccountResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Vesting.V1beta1.MsgCreatePeriodicVestingAccountResponse.Parser
+			));
 		}
 
 	}

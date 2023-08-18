@@ -20,7 +20,16 @@ namespace Cosmos.Group.V1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgCreateGroup"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgCreateGroupResponse>(r.Result, Cosmos.Group.V1.MsgCreateGroupResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgCreateGroupResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Group.V1.MsgCreateGroupResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupMembersResponse>> SendMsgUpdateGroupMembers(Cosmos.Group.V1.MsgUpdateGroupMembers msg) {
@@ -30,7 +39,16 @@ namespace Cosmos.Group.V1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgUpdateGroupMembers"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupMembersResponse>(r.Result, Cosmos.Group.V1.MsgUpdateGroupMembersResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupMembersResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Group.V1.MsgUpdateGroupMembersResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupAdminResponse>> SendMsgUpdateGroupAdmin(Cosmos.Group.V1.MsgUpdateGroupAdmin msg) {
@@ -40,7 +58,16 @@ namespace Cosmos.Group.V1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgUpdateGroupAdmin"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupAdminResponse>(r.Result, Cosmos.Group.V1.MsgUpdateGroupAdminResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupAdminResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Group.V1.MsgUpdateGroupAdminResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupMetadataResponse>> SendMsgUpdateGroupMetadata(Cosmos.Group.V1.MsgUpdateGroupMetadata msg) {
@@ -50,7 +77,16 @@ namespace Cosmos.Group.V1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgUpdateGroupMetadata"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupMetadataResponse>(r.Result, Cosmos.Group.V1.MsgUpdateGroupMetadataResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupMetadataResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Group.V1.MsgUpdateGroupMetadataResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgCreateGroupPolicyResponse>> SendMsgCreateGroupPolicy(Cosmos.Group.V1.MsgCreateGroupPolicy msg) {
@@ -60,7 +96,16 @@ namespace Cosmos.Group.V1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgCreateGroupPolicy"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgCreateGroupPolicyResponse>(r.Result, Cosmos.Group.V1.MsgCreateGroupPolicyResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgCreateGroupPolicyResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Group.V1.MsgCreateGroupPolicyResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgCreateGroupWithPolicyResponse>> SendMsgCreateGroupWithPolicy(Cosmos.Group.V1.MsgCreateGroupWithPolicy msg) {
@@ -70,7 +115,16 @@ namespace Cosmos.Group.V1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgCreateGroupWithPolicy"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgCreateGroupWithPolicyResponse>(r.Result, Cosmos.Group.V1.MsgCreateGroupWithPolicyResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgCreateGroupWithPolicyResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Group.V1.MsgCreateGroupWithPolicyResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupPolicyAdminResponse>> SendMsgUpdateGroupPolicyAdmin(Cosmos.Group.V1.MsgUpdateGroupPolicyAdmin msg) {
@@ -80,7 +134,16 @@ namespace Cosmos.Group.V1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgUpdateGroupPolicyAdmin"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupPolicyAdminResponse>(r.Result, Cosmos.Group.V1.MsgUpdateGroupPolicyAdminResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupPolicyAdminResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Group.V1.MsgUpdateGroupPolicyAdminResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupPolicyDecisionPolicyResponse>> SendMsgUpdateGroupPolicyDecisionPolicy(Cosmos.Group.V1.MsgUpdateGroupPolicyDecisionPolicy msg) {
@@ -90,7 +153,16 @@ namespace Cosmos.Group.V1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgUpdateGroupPolicyDecisionPolicy"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupPolicyDecisionPolicyResponse>(r.Result, Cosmos.Group.V1.MsgUpdateGroupPolicyDecisionPolicyResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupPolicyDecisionPolicyResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Group.V1.MsgUpdateGroupPolicyDecisionPolicyResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupPolicyMetadataResponse>> SendMsgUpdateGroupPolicyMetadata(Cosmos.Group.V1.MsgUpdateGroupPolicyMetadata msg) {
@@ -100,7 +172,16 @@ namespace Cosmos.Group.V1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgUpdateGroupPolicyMetadata"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupPolicyMetadataResponse>(r.Result, Cosmos.Group.V1.MsgUpdateGroupPolicyMetadataResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupPolicyMetadataResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Group.V1.MsgUpdateGroupPolicyMetadataResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgSubmitProposalResponse>> SendMsgSubmitProposal(Cosmos.Group.V1.MsgSubmitProposal msg) {
@@ -110,7 +191,16 @@ namespace Cosmos.Group.V1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgSubmitProposal"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgSubmitProposalResponse>(r.Result, Cosmos.Group.V1.MsgSubmitProposalResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgSubmitProposalResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Group.V1.MsgSubmitProposalResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgWithdrawProposalResponse>> SendMsgWithdrawProposal(Cosmos.Group.V1.MsgWithdrawProposal msg) {
@@ -120,7 +210,16 @@ namespace Cosmos.Group.V1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgWithdrawProposal"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgWithdrawProposalResponse>(r.Result, Cosmos.Group.V1.MsgWithdrawProposalResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgWithdrawProposalResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Group.V1.MsgWithdrawProposalResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgVoteResponse>> SendMsgVote(Cosmos.Group.V1.MsgVote msg) {
@@ -130,7 +229,16 @@ namespace Cosmos.Group.V1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgVote"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgVoteResponse>(r.Result, Cosmos.Group.V1.MsgVoteResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgVoteResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Group.V1.MsgVoteResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgExecResponse>> SendMsgExec(Cosmos.Group.V1.MsgExec msg) {
@@ -140,7 +248,16 @@ namespace Cosmos.Group.V1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgExec"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgExecResponse>(r.Result, Cosmos.Group.V1.MsgExecResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgExecResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Group.V1.MsgExecResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgLeaveGroupResponse>> SendMsgLeaveGroup(Cosmos.Group.V1.MsgLeaveGroup msg) {
@@ -150,7 +267,16 @@ namespace Cosmos.Group.V1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.group.v1.MsgLeaveGroup"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgLeaveGroupResponse>(r.Result, Cosmos.Group.V1.MsgLeaveGroupResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgLeaveGroupResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Group.V1.MsgLeaveGroupResponse.Parser
+			));
 		}
 
 	}

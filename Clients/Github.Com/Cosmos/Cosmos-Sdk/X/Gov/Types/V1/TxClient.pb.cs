@@ -20,7 +20,16 @@ namespace Cosmos.Gov.V1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.gov.v1.MsgSubmitProposal"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgSubmitProposalResponse>(r.Result, Cosmos.Gov.V1.MsgSubmitProposalResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgSubmitProposalResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Gov.V1.MsgSubmitProposalResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgExecLegacyContentResponse>> SendMsgExecLegacyContent(Cosmos.Gov.V1.MsgExecLegacyContent msg) {
@@ -30,7 +39,16 @@ namespace Cosmos.Gov.V1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.gov.v1.MsgExecLegacyContent"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgExecLegacyContentResponse>(r.Result, Cosmos.Gov.V1.MsgExecLegacyContentResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgExecLegacyContentResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Gov.V1.MsgExecLegacyContentResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgVoteResponse>> SendMsgVote(Cosmos.Gov.V1.MsgVote msg) {
@@ -40,7 +58,16 @@ namespace Cosmos.Gov.V1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.gov.v1.MsgVote"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgVoteResponse>(r.Result, Cosmos.Gov.V1.MsgVoteResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgVoteResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Gov.V1.MsgVoteResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgVoteWeightedResponse>> SendMsgVoteWeighted(Cosmos.Gov.V1.MsgVoteWeighted msg) {
@@ -50,7 +77,16 @@ namespace Cosmos.Gov.V1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.gov.v1.MsgVoteWeighted"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgVoteWeightedResponse>(r.Result, Cosmos.Gov.V1.MsgVoteWeightedResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgVoteWeightedResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Gov.V1.MsgVoteWeightedResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgDepositResponse>> SendMsgDeposit(Cosmos.Gov.V1.MsgDeposit msg) {
@@ -60,7 +96,16 @@ namespace Cosmos.Gov.V1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.gov.v1.MsgDeposit"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgDepositResponse>(r.Result, Cosmos.Gov.V1.MsgDepositResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgDepositResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Gov.V1.MsgDepositResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgUpdateParamsResponse>> SendMsgUpdateParams(Cosmos.Gov.V1.MsgUpdateParams msg) {
@@ -70,7 +115,16 @@ namespace Cosmos.Gov.V1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.gov.v1.MsgUpdateParams"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgUpdateParamsResponse>(r.Result, Cosmos.Gov.V1.MsgUpdateParamsResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgUpdateParamsResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Gov.V1.MsgUpdateParamsResponse.Parser
+			));
 		}
 
 	}

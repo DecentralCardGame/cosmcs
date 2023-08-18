@@ -20,7 +20,16 @@ namespace Cosmos.Distribution.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.distribution.v1beta1.MsgSetWithdrawAddress"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgSetWithdrawAddressResponse>(r.Result, Cosmos.Distribution.V1beta1.MsgSetWithdrawAddressResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgSetWithdrawAddressResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Distribution.V1beta1.MsgSetWithdrawAddressResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgWithdrawDelegatorRewardResponse>> SendMsgWithdrawDelegatorReward(Cosmos.Distribution.V1beta1.MsgWithdrawDelegatorReward msg) {
@@ -30,7 +39,16 @@ namespace Cosmos.Distribution.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgWithdrawDelegatorRewardResponse>(r.Result, Cosmos.Distribution.V1beta1.MsgWithdrawDelegatorRewardResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgWithdrawDelegatorRewardResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Distribution.V1beta1.MsgWithdrawDelegatorRewardResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgWithdrawValidatorCommissionResponse>> SendMsgWithdrawValidatorCommission(Cosmos.Distribution.V1beta1.MsgWithdrawValidatorCommission msg) {
@@ -40,7 +58,16 @@ namespace Cosmos.Distribution.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.distribution.v1beta1.MsgWithdrawValidatorCommission"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgWithdrawValidatorCommissionResponse>(r.Result, Cosmos.Distribution.V1beta1.MsgWithdrawValidatorCommissionResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgWithdrawValidatorCommissionResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Distribution.V1beta1.MsgWithdrawValidatorCommissionResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgFundCommunityPoolResponse>> SendMsgFundCommunityPool(Cosmos.Distribution.V1beta1.MsgFundCommunityPool msg) {
@@ -50,7 +77,16 @@ namespace Cosmos.Distribution.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.distribution.v1beta1.MsgFundCommunityPool"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgFundCommunityPoolResponse>(r.Result, Cosmos.Distribution.V1beta1.MsgFundCommunityPoolResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgFundCommunityPoolResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Distribution.V1beta1.MsgFundCommunityPoolResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgUpdateParamsResponse>> SendMsgUpdateParams(Cosmos.Distribution.V1beta1.MsgUpdateParams msg) {
@@ -60,7 +96,16 @@ namespace Cosmos.Distribution.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.distribution.v1beta1.MsgUpdateParams"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgUpdateParamsResponse>(r.Result, Cosmos.Distribution.V1beta1.MsgUpdateParamsResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgUpdateParamsResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Distribution.V1beta1.MsgUpdateParamsResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgCommunityPoolSpendResponse>> SendMsgCommunityPoolSpend(Cosmos.Distribution.V1beta1.MsgCommunityPoolSpend msg) {
@@ -70,7 +115,16 @@ namespace Cosmos.Distribution.V1beta1 {
 					Value = msg.ToByteString(),
 					TypeUrl = "/cosmos.distribution.v1beta1.MsgCommunityPoolSpend"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgCommunityPoolSpendResponse>(r.Result, Cosmos.Distribution.V1beta1.MsgCommunityPoolSpendResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgCommunityPoolSpendResponse>(
+				r.Result.Result.TxResponse,
+				Cosmos.Distribution.V1beta1.MsgCommunityPoolSpendResponse.Parser
+			));
 		}
 
 	}
