@@ -26,10 +26,10 @@ namespace Cosmcs.Client
         public Cosmos.Auth.V1beta1.Query.QueryClient AuthClient { get; }
         public Cosmos.Tx.V1beta1.Service.ServiceClient TxClient { get; }
 
-        public EasyClient(string rpcUrl, string chainId, byte[] bytes, string prefix, TypeRegistry reg)
+        public EasyClient(string rpcUrl, string chainId, byte[] bytes, string prefix, TypeRegistry reg, EasyClientOptions? options = null)
         {
             ChainId = chainId;
-            Channel = GrpcChannel.ForAddress(rpcUrl);
+            Channel = GrpcChannel.ForAddress(rpcUrl, options?.GrpcChannelOptions ?? new GrpcChannelOptions());
             Parser = new JsonParser(new JsonParser.Settings(20, reg));
             Formatter = new JsonFormatter(new JsonFormatter.Settings(true, reg));
             Broadcaster = new GrpcBroadcaster(Channel);
