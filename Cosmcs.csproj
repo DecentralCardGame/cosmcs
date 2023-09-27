@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <PackageId>Cosmcs</PackageId>
-        <Version>0.3.2</Version>
+        <Version>0.4.0-rc1</Version>
         <Authors>lxgr</Authors>
         <TargetFramework>netstandard2.1</TargetFramework>
         <PackageDescription>A C# client library for cosmos-sdk blockchains</PackageDescription>
