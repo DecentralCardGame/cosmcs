@@ -21,7 +21,7 @@ namespace Cosmcs.Tx
             NonCriticalExtensionOptions = new List<Any>();
         }
 
-        public void AddMsgs(List<Any> msgs)
+        public void AddMsgs(Any[] msgs)
         {
             Messages.AddRange(msgs);
         }

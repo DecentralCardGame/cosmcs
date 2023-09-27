@@ -69,10 +69,10 @@ namespace Cosmcs.Client
             );
         }
 
-        public Task<Cosmos.Tx.V1beta1.BroadcastTxResponse> BuildAndBroadcast(Any msg)
+        public Task<Cosmos.Tx.V1beta1.BroadcastTxResponse> BuildAndBroadcast(Any[] msgs)
         {
             var fee = new Fee(200_000);
-            var body = new Builder().AddMsgs(new List<Any> { msg }).SetMemo("").Finish();
+            var body = new Builder().AddMsgs(msgs).SetMemo("").Finish();
             var authInfo =
                 new SignerInfo(PrivateKey.PublicKey().IntoSignerPublicKey(), BaseAccount.Sequence).AuthInfo(fee);
             var signDoc = new SignDoc(body, authInfo, ChainId, BaseAccount.AccountNumber);

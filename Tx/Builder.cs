@@ -7,7 +7,7 @@ namespace Cosmcs.Tx
     {
         private readonly Body _body = new Body();
 
-        public Builder AddMsgs(List<Any> msgs)
+        public Builder AddMsgs(Any[] msgs)
         {
             _body.AddMsgs(msgs);
             return this;
