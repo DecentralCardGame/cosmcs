@@ -26,12 +26,16 @@ namespace Cosmos.Feegrant.V1beta1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Feegrant.V1beta1.MsgGrantAllowanceResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Feegrant.V1beta1.MsgGrantAllowanceResponse.Parser
 			));
 		}
@@ -45,12 +49,16 @@ namespace Cosmos.Feegrant.V1beta1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Feegrant.V1beta1.MsgRevokeAllowanceResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Feegrant.V1beta1.MsgRevokeAllowanceResponse.Parser
 			));
 		}

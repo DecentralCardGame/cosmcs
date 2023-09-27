@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using Google.Protobuf.WellKnownTypes;
 
 namespace Cosmcs.Tx

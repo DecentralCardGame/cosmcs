@@ -26,12 +26,16 @@ namespace Cosmos.Vesting.V1beta1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Vesting.V1beta1.MsgCreateVestingAccountResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Vesting.V1beta1.MsgCreateVestingAccountResponse.Parser
 			));
 		}
@@ -45,12 +49,16 @@ namespace Cosmos.Vesting.V1beta1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Vesting.V1beta1.MsgCreatePermanentLockedAccountResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Vesting.V1beta1.MsgCreatePermanentLockedAccountResponse.Parser
 			));
 		}
@@ -64,12 +72,16 @@ namespace Cosmos.Vesting.V1beta1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Vesting.V1beta1.MsgCreatePeriodicVestingAccountResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Vesting.V1beta1.MsgCreatePeriodicVestingAccountResponse.Parser
 			));
 		}

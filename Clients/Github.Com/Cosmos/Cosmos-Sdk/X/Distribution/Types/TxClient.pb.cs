@@ -26,12 +26,16 @@ namespace Cosmos.Distribution.V1beta1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgSetWithdrawAddressResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Distribution.V1beta1.MsgSetWithdrawAddressResponse.Parser
 			));
 		}
@@ -45,12 +49,16 @@ namespace Cosmos.Distribution.V1beta1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgWithdrawDelegatorRewardResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Distribution.V1beta1.MsgWithdrawDelegatorRewardResponse.Parser
 			));
 		}
@@ -64,12 +72,16 @@ namespace Cosmos.Distribution.V1beta1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgWithdrawValidatorCommissionResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Distribution.V1beta1.MsgWithdrawValidatorCommissionResponse.Parser
 			));
 		}
@@ -83,12 +95,16 @@ namespace Cosmos.Distribution.V1beta1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgFundCommunityPoolResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Distribution.V1beta1.MsgFundCommunityPoolResponse.Parser
 			));
 		}
@@ -102,12 +118,16 @@ namespace Cosmos.Distribution.V1beta1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgUpdateParamsResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Distribution.V1beta1.MsgUpdateParamsResponse.Parser
 			));
 		}
@@ -121,12 +141,16 @@ namespace Cosmos.Distribution.V1beta1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgCommunityPoolSpendResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Distribution.V1beta1.MsgCommunityPoolSpendResponse.Parser
 			));
 		}

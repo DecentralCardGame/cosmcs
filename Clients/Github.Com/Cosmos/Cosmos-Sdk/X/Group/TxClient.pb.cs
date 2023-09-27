@@ -26,12 +26,16 @@ namespace Cosmos.Group.V1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgCreateGroupResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Group.V1.MsgCreateGroupResponse.Parser
 			));
 		}
@@ -45,12 +49,16 @@ namespace Cosmos.Group.V1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupMembersResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Group.V1.MsgUpdateGroupMembersResponse.Parser
 			));
 		}
@@ -64,12 +72,16 @@ namespace Cosmos.Group.V1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupAdminResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Group.V1.MsgUpdateGroupAdminResponse.Parser
 			));
 		}
@@ -83,12 +95,16 @@ namespace Cosmos.Group.V1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupMetadataResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Group.V1.MsgUpdateGroupMetadataResponse.Parser
 			));
 		}
@@ -102,12 +118,16 @@ namespace Cosmos.Group.V1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgCreateGroupPolicyResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Group.V1.MsgCreateGroupPolicyResponse.Parser
 			));
 		}
@@ -121,12 +141,16 @@ namespace Cosmos.Group.V1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgCreateGroupWithPolicyResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Group.V1.MsgCreateGroupWithPolicyResponse.Parser
 			));
 		}
@@ -140,12 +164,16 @@ namespace Cosmos.Group.V1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupPolicyAdminResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Group.V1.MsgUpdateGroupPolicyAdminResponse.Parser
 			));
 		}
@@ -159,12 +187,16 @@ namespace Cosmos.Group.V1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupPolicyDecisionPolicyResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Group.V1.MsgUpdateGroupPolicyDecisionPolicyResponse.Parser
 			));
 		}
@@ -178,12 +210,16 @@ namespace Cosmos.Group.V1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgUpdateGroupPolicyMetadataResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Group.V1.MsgUpdateGroupPolicyMetadataResponse.Parser
 			));
 		}
@@ -197,12 +233,16 @@ namespace Cosmos.Group.V1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgSubmitProposalResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Group.V1.MsgSubmitProposalResponse.Parser
 			));
 		}
@@ -216,12 +256,16 @@ namespace Cosmos.Group.V1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgWithdrawProposalResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Group.V1.MsgWithdrawProposalResponse.Parser
 			));
 		}
@@ -235,12 +279,16 @@ namespace Cosmos.Group.V1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgVoteResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Group.V1.MsgVoteResponse.Parser
 			));
 		}
@@ -254,12 +302,16 @@ namespace Cosmos.Group.V1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgExecResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Group.V1.MsgExecResponse.Parser
 			));
 		}
@@ -273,12 +325,16 @@ namespace Cosmos.Group.V1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Group.V1.MsgLeaveGroupResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Group.V1.MsgLeaveGroupResponse.Parser
 			));
 		}

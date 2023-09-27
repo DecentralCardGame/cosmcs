@@ -26,12 +26,16 @@ namespace Cosmos.Authz.V1beta1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Authz.V1beta1.MsgGrantResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Authz.V1beta1.MsgGrantResponse.Parser
 			));
 		}
@@ -45,12 +49,16 @@ namespace Cosmos.Authz.V1beta1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Authz.V1beta1.MsgExecResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Authz.V1beta1.MsgExecResponse.Parser
 			));
 		}
@@ -64,12 +72,16 @@ namespace Cosmos.Authz.V1beta1 {
 				}}
 			).ContinueWith(r =>
 			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
 				System.Threading.Thread.Sleep(10000);
-				return r.Result;
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Authz.V1beta1.MsgRevokeResponse>(
-				r.Result.Result.TxResponse,
+				r.Result,
 				Cosmos.Authz.V1beta1.MsgRevokeResponse.Parser
 			));
 		}
