@@ -21,7 +21,7 @@ namespace Cosmcs.Crypto
         {
             var proto = new Cosmos.Crypto.Multisig.LegacyAminoPubKey
             {
-                Threshold = _threshold,
+                Threshold = _threshold
             };
             proto.PublicKeys.Add(_publicKeys.Select(p => p.IntoProto()));
 

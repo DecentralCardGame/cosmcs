@@ -39,7 +39,7 @@ namespace Cosmcs.Broadcaster
                 Formatter.Format(new Cosmos.Tx.V1beta1.BroadcastTxRequest
                     {
                         TxBytes = ByteString.CopyFrom(bytes),
-                        Mode = mode,
+                        Mode = mode
                     }
                 )
             );

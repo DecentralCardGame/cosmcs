@@ -55,7 +55,7 @@ namespace Cosmcs.Tx
                 case SignerPublicKeyType.Any: return _any!;
                 case SignerPublicKeyType.LegacyAminoMultisig: return _legacyAminoMultisig!.IntoProto();
                 case SignerPublicKeyType.Single: return _single!.IntoProto();
-                default: throw new Exception("nene");
+                default: throw new Exception("unsupported SignerPublicKey type, please report");
             }
         }
 

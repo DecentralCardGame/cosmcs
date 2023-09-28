@@ -33,7 +33,7 @@ namespace Cosmcs.Tx
                 BodyBytes = ByteString.CopyFrom(BodyBytes),
                 AuthInfoBytes = ByteString.CopyFrom(AuthInfoBytes),
                 ChainId = ChainId,
-                AccountNumber = AccoutNumber,
+                AccountNumber = AccoutNumber
             };
         }
 
