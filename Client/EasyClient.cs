@@ -4,8 +4,6 @@ using Cosmcs.Base;
 using Cosmcs.Broadcaster;
 using Cosmcs.Crypto.Secp256k1;
 using Cosmcs.Tx;
-using Google.Protobuf;
-using Google.Protobuf.Reflection;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Net.Client;
 
@@ -15,8 +13,6 @@ namespace Cosmcs.Client
     public class EasyClient : IClient
     {
         public GrpcBroadcaster Broadcaster { get; }
-        public JsonFormatter Formatter { get; }
-        public JsonParser Parser { get; }
         public PrivateKey PrivateKey { get; }
         public BaseAccount BaseAccount { get; }
         public AccountId AccoutAddress { get; }
@@ -25,12 +21,10 @@ namespace Cosmcs.Client
         public Cosmos.Auth.V1beta1.Query.QueryClient AuthClient { get; }
         public Cosmos.Tx.V1beta1.Service.ServiceClient TxClient { get; }
 
-        public EasyClient(string rpcUrl, string chainId, byte[] bytes, string prefix, TypeRegistry reg, EasyClientOptions? options = null)
+        public EasyClient(string rpcUrl, string chainId, byte[] bytes, string prefix, EasyClientOptions? options = null)
         {
             ChainId = chainId;
             Channel = GrpcChannel.ForAddress(rpcUrl, options?.GrpcChannelOptions ?? new GrpcChannelOptions());
-            Parser = new JsonParser(new JsonParser.Settings(20, reg));
-            Formatter = new JsonFormatter(new JsonFormatter.Settings(true, reg));
             Broadcaster = new GrpcBroadcaster(Channel);
             PrivateKey = new PrivateKey(bytes);
             AuthClient = new Cosmos.Auth.V1beta1.Query.QueryClient(Channel);
