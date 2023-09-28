@@ -11,7 +11,7 @@ namespace Cosmcs.Crypto
     public enum PublicKeyType
     {
         Ed25519,
-        Secp256K1,
+        Secp256K1
     }
 
     public class PublicKey
@@ -86,7 +86,7 @@ namespace Cosmcs.Crypto
                     return Ed25519(Cosmos.Crypto.Ed25519.PubKey.Parser.ParseFrom(proto.Value).Key.ToByteArray());
                 case Secp256K1TypeUrl:
                     return Secp256K1(Cosmos.Crypto.Secp256k1.PubKey.Parser.ParseFrom(proto.Value).Key.ToByteArray());
-                default: throw new Exception("invalid typeUrl");
+                default: throw new Exception($"invalid typeUrl: {proto.TypeUrl}");
             }
         }
 

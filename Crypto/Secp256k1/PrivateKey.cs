@@ -19,7 +19,7 @@ namespace Cosmcs.Crypto.Secp256k1
 
         public byte[] Sign(byte[] bytes)
         {
-            return Secp256K1Manager.SignCompact(Sha256Manager.GetHash(bytes), _inner, out var _);
+            return Secp256K1Manager.SignCompact(Sha256Manager.GetHash(bytes), _inner, out _);
         }
 
         public static PrivateKey FromProto(Cosmos.Crypto.Secp256k1.PrivKey k)

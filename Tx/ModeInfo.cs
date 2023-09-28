@@ -71,7 +71,7 @@ namespace Cosmcs.Tx {
 				case ModeInfoMode.Multi:
 					proto.Multi = new Cosmos.Tx.V1beta1.ModeInfo.Types.Multi
 					{
-						Bitarray = _multiData!.Value.Bitarray.Get(),
+						Bitarray = _multiData!.Value.Bitarray.Get()
 					};
 					proto.Multi.ModeInfos.Add(_multiData.Value.ModeInfos.Select(m => m.IntoProto()));
 					break;
