@@ -8,7 +8,7 @@ namespace Cosmcs.Auth
         public AccountId AccountId { get; }
         public PublicKey? Pubkey { get; }
         public ulong AccountNumber { get; }
-        public ulong Sequence { get; }
+        public ulong Sequence { get; private set;}
 
         public BaseAccount(
             AccountId address,
@@ -21,6 +21,11 @@ namespace Cosmcs.Auth
             Pubkey = pubkey;
             AccountNumber = accountNumber;
             Sequence = sequence;
+        }
+
+        public void IncSequence()
+        {
+            this.Sequence += 1;
         }
 
         public Cosmos.Auth.V1beta1.BaseAccount IntoProto()
