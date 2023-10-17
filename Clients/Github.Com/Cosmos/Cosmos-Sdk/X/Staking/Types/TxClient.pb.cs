@@ -34,7 +34,7 @@ namespace Cosmos.Staking.V1beta1 {
 				{
 					return res.TxResponse;
 				}
-				System.Threading.Thread.Sleep(10000);
+				System.Threading.Thread.Sleep(13000);
 				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgCreateValidatorResponse>(
@@ -58,7 +58,7 @@ namespace Cosmos.Staking.V1beta1 {
 				{
 					return res.TxResponse;
 				}
-				System.Threading.Thread.Sleep(10000);
+				System.Threading.Thread.Sleep(13000);
 				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgEditValidatorResponse>(
@@ -82,7 +82,7 @@ namespace Cosmos.Staking.V1beta1 {
 				{
 					return res.TxResponse;
 				}
-				System.Threading.Thread.Sleep(10000);
+				System.Threading.Thread.Sleep(13000);
 				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgDelegateResponse>(
@@ -106,7 +106,7 @@ namespace Cosmos.Staking.V1beta1 {
 				{
 					return res.TxResponse;
 				}
-				System.Threading.Thread.Sleep(10000);
+				System.Threading.Thread.Sleep(13000);
 				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgBeginRedelegateResponse>(
@@ -130,7 +130,7 @@ namespace Cosmos.Staking.V1beta1 {
 				{
 					return res.TxResponse;
 				}
-				System.Threading.Thread.Sleep(10000);
+				System.Threading.Thread.Sleep(13000);
 				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgUndelegateResponse>(
@@ -154,7 +154,7 @@ namespace Cosmos.Staking.V1beta1 {
 				{
 					return res.TxResponse;
 				}
-				System.Threading.Thread.Sleep(10000);
+				System.Threading.Thread.Sleep(13000);
 				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgCancelUnbondingDelegationResponse>(
@@ -178,7 +178,7 @@ namespace Cosmos.Staking.V1beta1 {
 				{
 					return res.TxResponse;
 				}
-				System.Threading.Thread.Sleep(10000);
+				System.Threading.Thread.Sleep(13000);
 				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Staking.V1beta1.MsgUpdateParamsResponse>(

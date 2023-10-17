@@ -34,7 +34,7 @@ namespace Cosmos.Feegrant.V1beta1 {
 				{
 					return res.TxResponse;
 				}
-				System.Threading.Thread.Sleep(10000);
+				System.Threading.Thread.Sleep(13000);
 				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Feegrant.V1beta1.MsgGrantAllowanceResponse>(
@@ -58,7 +58,7 @@ namespace Cosmos.Feegrant.V1beta1 {
 				{
 					return res.TxResponse;
 				}
-				System.Threading.Thread.Sleep(10000);
+				System.Threading.Thread.Sleep(13000);
 				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Feegrant.V1beta1.MsgRevokeAllowanceResponse>(

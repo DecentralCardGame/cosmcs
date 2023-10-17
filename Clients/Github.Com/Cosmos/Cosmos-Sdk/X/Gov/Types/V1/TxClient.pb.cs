@@ -34,7 +34,7 @@ namespace Cosmos.Gov.V1 {
 				{
 					return res.TxResponse;
 				}
-				System.Threading.Thread.Sleep(10000);
+				System.Threading.Thread.Sleep(13000);
 				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgSubmitProposalResponse>(
@@ -58,7 +58,7 @@ namespace Cosmos.Gov.V1 {
 				{
 					return res.TxResponse;
 				}
-				System.Threading.Thread.Sleep(10000);
+				System.Threading.Thread.Sleep(13000);
 				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgExecLegacyContentResponse>(
@@ -82,7 +82,7 @@ namespace Cosmos.Gov.V1 {
 				{
 					return res.TxResponse;
 				}
-				System.Threading.Thread.Sleep(10000);
+				System.Threading.Thread.Sleep(13000);
 				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgVoteResponse>(
@@ -106,7 +106,7 @@ namespace Cosmos.Gov.V1 {
 				{
 					return res.TxResponse;
 				}
-				System.Threading.Thread.Sleep(10000);
+				System.Threading.Thread.Sleep(13000);
 				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgVoteWeightedResponse>(
@@ -130,7 +130,7 @@ namespace Cosmos.Gov.V1 {
 				{
 					return res.TxResponse;
 				}
-				System.Threading.Thread.Sleep(10000);
+				System.Threading.Thread.Sleep(13000);
 				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgDepositResponse>(
@@ -154,7 +154,7 @@ namespace Cosmos.Gov.V1 {
 				{
 					return res.TxResponse;
 				}
-				System.Threading.Thread.Sleep(10000);
+				System.Threading.Thread.Sleep(13000);
 				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Gov.V1.MsgUpdateParamsResponse>(

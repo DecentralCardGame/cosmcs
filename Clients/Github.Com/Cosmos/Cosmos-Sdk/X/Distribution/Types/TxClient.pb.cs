@@ -34,7 +34,7 @@ namespace Cosmos.Distribution.V1beta1 {
 				{
 					return res.TxResponse;
 				}
-				System.Threading.Thread.Sleep(10000);
+				System.Threading.Thread.Sleep(13000);
 				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgSetWithdrawAddressResponse>(
@@ -58,7 +58,7 @@ namespace Cosmos.Distribution.V1beta1 {
 				{
 					return res.TxResponse;
 				}
-				System.Threading.Thread.Sleep(10000);
+				System.Threading.Thread.Sleep(13000);
 				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgWithdrawDelegatorRewardResponse>(
@@ -82,7 +82,7 @@ namespace Cosmos.Distribution.V1beta1 {
 				{
 					return res.TxResponse;
 				}
-				System.Threading.Thread.Sleep(10000);
+				System.Threading.Thread.Sleep(13000);
 				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgWithdrawValidatorCommissionResponse>(
@@ -106,7 +106,7 @@ namespace Cosmos.Distribution.V1beta1 {
 				{
 					return res.TxResponse;
 				}
-				System.Threading.Thread.Sleep(10000);
+				System.Threading.Thread.Sleep(13000);
 				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgFundCommunityPoolResponse>(
@@ -130,7 +130,7 @@ namespace Cosmos.Distribution.V1beta1 {
 				{
 					return res.TxResponse;
 				}
-				System.Threading.Thread.Sleep(10000);
+				System.Threading.Thread.Sleep(13000);
 				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgUpdateParamsResponse>(
@@ -154,7 +154,7 @@ namespace Cosmos.Distribution.V1beta1 {
 				{
 					return res.TxResponse;
 				}
-				System.Threading.Thread.Sleep(10000);
+				System.Threading.Thread.Sleep(13000);
 				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgCommunityPoolSpendResponse>(

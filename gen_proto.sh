@@ -1,3 +1,4 @@
+rm -rf ./Buf ./Clients
 cd ./cosmos-sdk/proto
 
 buf generate --template ../../buf.gen.types.yaml --include-imports
@@ -9,5 +10,3 @@ for path in $paths; do
     buf generate --template ../../buf.gen.grpc.yaml -o $p $path
     echo $p
 done
-
-cd ../../
