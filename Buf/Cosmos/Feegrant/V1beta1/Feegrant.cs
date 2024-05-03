@@ -81,6 +81,7 @@ namespace Cosmos.Feegrant.V1beta1 {
   /// BasicAllowance implements Allowance with a one-time grant of coins
   /// that optionally expires. The grantee can use up to SpendLimit to cover fees.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BasicAllowance : pb::IMessage<BasicAllowance>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -317,6 +318,7 @@ namespace Cosmos.Feegrant.V1beta1 {
   /// PeriodicAllowance extends Allowance to allow for both a maximum cap,
   /// as well as a limit per time period.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PeriodicAllowance : pb::IMessage<PeriodicAllowance>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -681,6 +683,7 @@ namespace Cosmos.Feegrant.V1beta1 {
   /// <summary>
   /// AllowedMsgAllowance creates allowance only for specified message types.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AllowedMsgAllowance : pb::IMessage<AllowedMsgAllowance>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -914,6 +917,7 @@ namespace Cosmos.Feegrant.V1beta1 {
   /// <summary>
   /// Grant is stored in the KVStore to record a grant with full context
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Grant : pb::IMessage<Grant>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

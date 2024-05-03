@@ -51,6 +51,7 @@ namespace Cosmos.Base.Node.V1beta1 {
   /// <summary>
   /// ConfigRequest defines the request structure for the Config gRPC query.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ConfigRequest : pb::IMessage<ConfigRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -206,6 +207,7 @@ namespace Cosmos.Base.Node.V1beta1 {
   /// <summary>
   /// ConfigResponse defines the response structure for the Config gRPC query.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ConfigResponse : pb::IMessage<ConfigResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

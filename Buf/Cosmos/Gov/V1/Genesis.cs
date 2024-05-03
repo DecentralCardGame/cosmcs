@@ -53,6 +53,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// GenesisState defines the gov module's genesis state.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GenesisState : pb::IMessage<GenesisState>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

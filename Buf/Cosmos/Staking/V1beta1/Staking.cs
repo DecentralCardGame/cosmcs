@@ -246,6 +246,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// recent HistoricalInfo
   /// (`n` is set by the staking module's `historical_entries` parameter).
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class HistoricalInfo : pb::IMessage<HistoricalInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -474,6 +475,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// CommissionRates defines the initial commission rates to be used for creating
   /// a validator.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CommissionRates : pb::IMessage<CommissionRates>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -749,6 +751,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// Commission defines commission parameters for a given validator.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Commission : pb::IMessage<Commission>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1002,6 +1005,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// Description defines a validator description.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Description : pb::IMessage<Description>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1364,6 +1368,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// exchange rate. Voting power can be calculated as total bonded shares
   /// multiplied by exchange rate.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Validator : pb::IMessage<Validator>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2068,6 +2073,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// ValAddresses defines a repeated set of validator addresses.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ValAddresses : pb::IMessage<ValAddresses>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2251,6 +2257,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// It is intended to be used as a marshalable pointer. For example, a DVPair can
   /// be used to construct the key to getting an UnbondingDelegation from state.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DVPair : pb::IMessage<DVPair>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2480,6 +2487,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// DVPairs defines an array of DVPair objects.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DVPairs : pb::IMessage<DVPairs>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2664,6 +2672,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// example, a DVVTriplet can be used to construct the key to getting a
   /// Redelegation from state.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DVVTriplet : pb::IMessage<DVVTriplet>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2930,6 +2939,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// DVVTriplets defines an array of DVVTriplet objects.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DVVTriplets : pb::IMessage<DVVTriplets>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3113,6 +3123,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// owned by one delegator, and is associated with the voting power of one
   /// validator.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Delegation : pb::IMessage<Delegation>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3389,6 +3400,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// UnbondingDelegation stores all of a single delegator's unbonding bonds
   /// for a single validator in an time-ordered list.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class UnbondingDelegation : pb::IMessage<UnbondingDelegation>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3653,6 +3665,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// UnbondingDelegationEntry defines an unbonding object with relevant metadata.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class UnbondingDelegationEntry : pb::IMessage<UnbondingDelegationEntry>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4057,6 +4070,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// RedelegationEntry defines a redelegation object with relevant metadata.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RedelegationEntry : pb::IMessage<RedelegationEntry>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4462,6 +4476,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// Redelegation contains the list of a particular delegator's redelegating bonds
   /// from a particular source validator to a particular destination validator.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Redelegation : pb::IMessage<Redelegation>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4766,6 +4781,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// Params defines the parameters for the x/staking module.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Params : pb::IMessage<Params>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5171,6 +5187,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// DelegationResponse is equivalent to Delegation except that it contains a
   /// balance in addition to shares which is more suitable for client responses.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DelegationResponse : pb::IMessage<DelegationResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5420,6 +5437,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// contains a balance in addition to shares which is more suitable for client
   /// responses.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RedelegationEntryResponse : pb::IMessage<RedelegationEntryResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5660,6 +5678,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// contain a balance in addition to shares which is more suitable for client
   /// responses.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RedelegationResponse : pb::IMessage<RedelegationResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5888,6 +5907,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// Pool is used for tracking bonded and not-bonded token supply of the bond
   /// denomination.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Pool : pb::IMessage<Pool>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6118,6 +6138,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// ValidatorUpdates defines an array of abci.ValidatorUpdate objects.
   /// TODO: explore moving this to proto/cosmos/base to separate modules from tendermint dependence
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ValidatorUpdates : pb::IMessage<ValidatorUpdates>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

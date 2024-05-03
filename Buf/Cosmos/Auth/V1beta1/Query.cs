@@ -141,6 +141,7 @@ namespace Cosmos.Auth.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.43
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAccountsRequest : pb::IMessage<QueryAccountsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -347,6 +348,7 @@ namespace Cosmos.Auth.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.43
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAccountsResponse : pb::IMessage<QueryAccountsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -580,6 +582,7 @@ namespace Cosmos.Auth.V1beta1 {
   /// <summary>
   /// QueryAccountRequest is the request type for the Query/Account RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAccountRequest : pb::IMessage<QueryAccountRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -775,6 +778,7 @@ namespace Cosmos.Auth.V1beta1 {
   /// <summary>
   /// QueryAccountResponse is the response type for the Query/Account RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAccountResponse : pb::IMessage<QueryAccountResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -979,6 +983,7 @@ namespace Cosmos.Auth.V1beta1 {
   /// <summary>
   /// QueryParamsRequest is the request type for the Query/Params RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryParamsRequest : pb::IMessage<QueryParamsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1134,6 +1139,7 @@ namespace Cosmos.Auth.V1beta1 {
   /// <summary>
   /// QueryParamsResponse is the response type for the Query/Params RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryParamsResponse : pb::IMessage<QueryParamsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1340,6 +1346,7 @@ namespace Cosmos.Auth.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryModuleAccountsRequest : pb::IMessage<QueryModuleAccountsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1497,6 +1504,7 @@ namespace Cosmos.Auth.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryModuleAccountsResponse : pb::IMessage<QueryModuleAccountsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1678,6 +1686,7 @@ namespace Cosmos.Auth.V1beta1 {
   /// <summary>
   /// QueryModuleAccountByNameRequest is the request type for the Query/ModuleAccountByName RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryModuleAccountByNameRequest : pb::IMessage<QueryModuleAccountByNameRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1870,6 +1879,7 @@ namespace Cosmos.Auth.V1beta1 {
   /// <summary>
   /// QueryModuleAccountByNameResponse is the response type for the Query/ModuleAccountByName RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryModuleAccountByNameResponse : pb::IMessage<QueryModuleAccountByNameResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2073,6 +2083,7 @@ namespace Cosmos.Auth.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Bech32PrefixRequest : pb::IMessage<Bech32PrefixRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2230,6 +2241,7 @@ namespace Cosmos.Auth.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Bech32PrefixResponse : pb::IMessage<Bech32PrefixResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2424,6 +2436,7 @@ namespace Cosmos.Auth.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AddressBytesToStringRequest : pb::IMessage<AddressBytesToStringRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2618,6 +2631,7 @@ namespace Cosmos.Auth.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AddressBytesToStringResponse : pb::IMessage<AddressBytesToStringResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2812,6 +2826,7 @@ namespace Cosmos.Auth.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AddressStringToBytesRequest : pb::IMessage<AddressStringToBytesRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3006,6 +3021,7 @@ namespace Cosmos.Auth.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AddressStringToBytesResponse : pb::IMessage<AddressStringToBytesResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3200,6 +3216,7 @@ namespace Cosmos.Auth.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46.2
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAccountAddressByIDRequest : pb::IMessage<QueryAccountAddressByIDRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3444,6 +3461,7 @@ namespace Cosmos.Auth.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46.2
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAccountAddressByIDResponse : pb::IMessage<QueryAccountAddressByIDResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3638,6 +3656,7 @@ namespace Cosmos.Auth.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAccountInfoRequest : pb::IMessage<QueryAccountInfoRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3835,6 +3854,7 @@ namespace Cosmos.Auth.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAccountInfoResponse : pb::IMessage<QueryAccountInfoResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

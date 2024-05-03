@@ -106,6 +106,7 @@ namespace Cosmos.Gov.V1 {
   /// MsgSubmitProposal defines an sdk.Msg type that supports submitting arbitrary
   /// proposal Content.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSubmitProposal : pb::IMessage<MsgSubmitProposal>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -483,6 +484,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// MsgSubmitProposalResponse defines the Msg/SubmitProposal response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSubmitProposalResponse : pb::IMessage<MsgSubmitProposalResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -679,6 +681,7 @@ namespace Cosmos.Gov.V1 {
   /// MsgExecLegacyContent is used to wrap the legacy content field into a message.
   /// This ensures backwards compatibility with v1beta1.MsgSubmitProposal.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgExecLegacyContent : pb::IMessage<MsgExecLegacyContent>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -923,6 +926,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// MsgExecLegacyContentResponse defines the Msg/ExecLegacyContent response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgExecLegacyContentResponse : pb::IMessage<MsgExecLegacyContentResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1078,6 +1082,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// MsgVote defines a message to cast a vote.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgVote : pb::IMessage<MsgVote>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1393,6 +1398,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// MsgVoteResponse defines the Msg/Vote response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgVoteResponse : pb::IMessage<MsgVoteResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1548,6 +1554,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// MsgVoteWeighted defines a message to cast a vote.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgVoteWeighted : pb::IMessage<MsgVoteWeighted>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1852,6 +1859,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// MsgVoteWeightedResponse defines the Msg/VoteWeighted response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgVoteWeightedResponse : pb::IMessage<MsgVoteWeightedResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2007,6 +2015,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// MsgDeposit defines a message to submit a deposit to an existing proposal.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgDeposit : pb::IMessage<MsgDeposit>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2271,6 +2280,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// MsgDepositResponse defines the Msg/Deposit response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgDepositResponse : pb::IMessage<MsgDepositResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2428,6 +2438,7 @@ namespace Cosmos.Gov.V1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUpdateParams : pb::IMessage<MsgUpdateParams>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2677,6 +2688,7 @@ namespace Cosmos.Gov.V1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUpdateParamsResponse : pb::IMessage<MsgUpdateParamsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

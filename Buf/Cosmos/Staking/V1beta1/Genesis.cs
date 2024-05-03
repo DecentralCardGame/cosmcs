@@ -64,6 +64,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// GenesisState defines the staking module's genesis state.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GenesisState : pb::IMessage<GenesisState>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -492,6 +493,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// LastValidatorPower required for validator set update logic.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class LastValidatorPower : pb::IMessage<LastValidatorPower>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

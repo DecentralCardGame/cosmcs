@@ -185,6 +185,7 @@ namespace Cosmos.Tx.V1beta1 {
   /// GetTxsEventRequest is the request type for the Service.TxsByEvents
   /// RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetTxsEventRequest : pb::IMessage<GetTxsEventRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -539,6 +540,7 @@ namespace Cosmos.Tx.V1beta1 {
   /// GetTxsEventResponse is the response type for the Service.TxsByEvents
   /// RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetTxsEventResponse : pb::IMessage<GetTxsEventResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -844,6 +846,7 @@ namespace Cosmos.Tx.V1beta1 {
   /// BroadcastTxRequest is the request type for the Service.BroadcastTxRequest
   /// RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BroadcastTxRequest : pb::IMessage<BroadcastTxRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1077,6 +1080,7 @@ namespace Cosmos.Tx.V1beta1 {
   /// BroadcastTxResponse is the response type for the
   /// Service.BroadcastTx method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BroadcastTxResponse : pb::IMessage<BroadcastTxResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1282,6 +1286,7 @@ namespace Cosmos.Tx.V1beta1 {
   /// SimulateRequest is the request type for the Service.Simulate
   /// RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SimulateRequest : pb::IMessage<SimulateRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1531,6 +1536,7 @@ namespace Cosmos.Tx.V1beta1 {
   /// SimulateResponse is the response type for the
   /// Service.SimulateRPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SimulateResponse : pb::IMessage<SimulateResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1785,6 +1791,7 @@ namespace Cosmos.Tx.V1beta1 {
   /// GetTxRequest is the request type for the Service.GetTx
   /// RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetTxRequest : pb::IMessage<GetTxRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1980,6 +1987,7 @@ namespace Cosmos.Tx.V1beta1 {
   /// <summary>
   /// GetTxResponse is the response type for the Service.GetTx method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetTxResponse : pb::IMessage<GetTxResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2236,6 +2244,7 @@ namespace Cosmos.Tx.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.45.2
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetBlockWithTxsRequest : pb::IMessage<GetBlockWithTxsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2482,6 +2491,7 @@ namespace Cosmos.Tx.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.45.2
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetBlockWithTxsResponse : pb::IMessage<GetBlockWithTxsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2810,6 +2820,7 @@ namespace Cosmos.Tx.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TxDecodeRequest : pb::IMessage<TxDecodeRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3008,6 +3019,7 @@ namespace Cosmos.Tx.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TxDecodeResponse : pb::IMessage<TxDecodeResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3215,6 +3227,7 @@ namespace Cosmos.Tx.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TxEncodeRequest : pb::IMessage<TxEncodeRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3422,6 +3435,7 @@ namespace Cosmos.Tx.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TxEncodeResponse : pb::IMessage<TxEncodeResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3620,6 +3634,7 @@ namespace Cosmos.Tx.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TxEncodeAminoRequest : pb::IMessage<TxEncodeAminoRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3815,6 +3830,7 @@ namespace Cosmos.Tx.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TxEncodeAminoResponse : pb::IMessage<TxEncodeAminoResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4010,6 +4026,7 @@ namespace Cosmos.Tx.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TxDecodeAminoRequest : pb::IMessage<TxDecodeAminoRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4205,6 +4222,7 @@ namespace Cosmos.Tx.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TxDecodeAminoResponse : pb::IMessage<TxDecodeAminoResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

@@ -83,6 +83,7 @@ namespace Cosmos.Feegrant.V1beta1 {
   /// <summary>
   /// QueryAllowanceRequest is the request type for the Query/Allowance RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAllowanceRequest : pb::IMessage<QueryAllowanceRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -318,6 +319,7 @@ namespace Cosmos.Feegrant.V1beta1 {
   /// <summary>
   /// QueryAllowanceResponse is the response type for the Query/Allowance RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAllowanceResponse : pb::IMessage<QueryAllowanceResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -522,6 +524,7 @@ namespace Cosmos.Feegrant.V1beta1 {
   /// <summary>
   /// QueryAllowancesRequest is the request type for the Query/Allowances RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAllowancesRequest : pb::IMessage<QueryAllowancesRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -763,6 +766,7 @@ namespace Cosmos.Feegrant.V1beta1 {
   /// <summary>
   /// QueryAllowancesResponse is the response type for the Query/Allowances RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAllowancesResponse : pb::IMessage<QueryAllowancesResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -998,6 +1002,7 @@ namespace Cosmos.Feegrant.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAllowancesByGranterRequest : pb::IMessage<QueryAllowancesByGranterRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1241,6 +1246,7 @@ namespace Cosmos.Feegrant.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAllowancesByGranterResponse : pb::IMessage<QueryAllowancesByGranterResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

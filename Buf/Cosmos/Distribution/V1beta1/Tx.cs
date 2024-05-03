@@ -119,6 +119,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// MsgSetWithdrawAddress sets the withdraw address for
   /// a delegator (or validator self-delegation).
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSetWithdrawAddress : pb::IMessage<MsgSetWithdrawAddress>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -349,6 +350,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// MsgSetWithdrawAddressResponse defines the Msg/SetWithdrawAddress response
   /// type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSetWithdrawAddressResponse : pb::IMessage<MsgSetWithdrawAddressResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -505,6 +507,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// MsgWithdrawDelegatorReward represents delegation withdrawal to a delegator
   /// from a single validator.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgWithdrawDelegatorReward : pb::IMessage<MsgWithdrawDelegatorReward>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -735,6 +738,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// MsgWithdrawDelegatorRewardResponse defines the Msg/WithdrawDelegatorReward
   /// response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgWithdrawDelegatorRewardResponse : pb::IMessage<MsgWithdrawDelegatorRewardResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -920,6 +924,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// MsgWithdrawValidatorCommission withdraws the full commission to the validator
   /// address.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgWithdrawValidatorCommission : pb::IMessage<MsgWithdrawValidatorCommission>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1113,6 +1118,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// MsgWithdrawValidatorCommissionResponse defines the
   /// Msg/WithdrawValidatorCommission response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgWithdrawValidatorCommissionResponse : pb::IMessage<MsgWithdrawValidatorCommissionResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1298,6 +1304,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// MsgFundCommunityPool allows an account to directly
   /// fund the community pool.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgFundCommunityPool : pb::IMessage<MsgFundCommunityPool>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1516,6 +1523,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// <summary>
   /// MsgFundCommunityPoolResponse defines the Msg/FundCommunityPool response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgFundCommunityPoolResponse : pb::IMessage<MsgFundCommunityPoolResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1673,6 +1681,7 @@ namespace Cosmos.Distribution.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUpdateParams : pb::IMessage<MsgUpdateParams>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1922,6 +1931,7 @@ namespace Cosmos.Distribution.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUpdateParamsResponse : pb::IMessage<MsgUpdateParamsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2081,6 +2091,7 @@ namespace Cosmos.Distribution.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCommunityPoolSpend : pb::IMessage<MsgCommunityPoolSpend>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2342,6 +2353,7 @@ namespace Cosmos.Distribution.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCommunityPoolSpendResponse : pb::IMessage<MsgCommunityPoolSpendResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

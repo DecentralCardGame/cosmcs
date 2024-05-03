@@ -48,6 +48,7 @@ namespace Cosmos.Feegrant.V1beta1 {
   /// <summary>
   /// GenesisState contains a set of fee allowances, persisted from the store
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GenesisState : pb::IMessage<GenesisState>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

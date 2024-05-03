@@ -51,6 +51,7 @@ namespace Cosmos.Reflection.V1 {
   /// <summary>
   /// FileDescriptorsRequest is the Query/FileDescriptors request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class FileDescriptorsRequest : pb::IMessage<FileDescriptorsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -206,6 +207,7 @@ namespace Cosmos.Reflection.V1 {
   /// <summary>
   /// FileDescriptorsResponse is the Query/FileDescriptors response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class FileDescriptorsResponse : pb::IMessage<FileDescriptorsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

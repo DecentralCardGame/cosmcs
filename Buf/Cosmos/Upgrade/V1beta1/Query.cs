@@ -89,6 +89,7 @@ namespace Cosmos.Upgrade.V1beta1 {
   /// QueryCurrentPlanRequest is the request type for the Query/CurrentPlan RPC
   /// method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryCurrentPlanRequest : pb::IMessage<QueryCurrentPlanRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -245,6 +246,7 @@ namespace Cosmos.Upgrade.V1beta1 {
   /// QueryCurrentPlanResponse is the response type for the Query/CurrentPlan RPC
   /// method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryCurrentPlanResponse : pb::IMessage<QueryCurrentPlanResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -450,6 +452,7 @@ namespace Cosmos.Upgrade.V1beta1 {
   /// QueryCurrentPlanRequest is the request type for the Query/AppliedPlan RPC
   /// method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAppliedPlanRequest : pb::IMessage<QueryAppliedPlanRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -646,6 +649,7 @@ namespace Cosmos.Upgrade.V1beta1 {
   /// QueryAppliedPlanResponse is the response type for the Query/AppliedPlan RPC
   /// method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAppliedPlanResponse : pb::IMessage<QueryAppliedPlanResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -843,6 +847,7 @@ namespace Cosmos.Upgrade.V1beta1 {
   /// RPC method.
   /// </summary>
   [global::System.ObsoleteAttribute]
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryUpgradedConsensusStateRequest : pb::IMessage<QueryUpgradedConsensusStateRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1041,6 +1046,7 @@ namespace Cosmos.Upgrade.V1beta1 {
   /// RPC method.
   /// </summary>
   [global::System.ObsoleteAttribute]
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryUpgradedConsensusStateResponse : pb::IMessage<QueryUpgradedConsensusStateResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1239,6 +1245,7 @@ namespace Cosmos.Upgrade.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.43
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryModuleVersionsRequest : pb::IMessage<QueryModuleVersionsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1439,6 +1446,7 @@ namespace Cosmos.Upgrade.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.43
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryModuleVersionsResponse : pb::IMessage<QueryModuleVersionsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1625,6 +1633,7 @@ namespace Cosmos.Upgrade.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAuthorityRequest : pb::IMessage<QueryAuthorityRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1782,6 +1791,7 @@ namespace Cosmos.Upgrade.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAuthorityResponse : pb::IMessage<QueryAuthorityResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

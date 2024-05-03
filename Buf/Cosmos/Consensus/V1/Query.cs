@@ -51,6 +51,7 @@ namespace Cosmos.Consensus.V1 {
   /// <summary>
   /// QueryParamsRequest defines the request type for querying x/consensus parameters.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryParamsRequest : pb::IMessage<QueryParamsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -206,6 +207,7 @@ namespace Cosmos.Consensus.V1 {
   /// <summary>
   /// QueryParamsResponse defines the response type for querying x/consensus parameters.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryParamsResponse : pb::IMessage<QueryParamsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

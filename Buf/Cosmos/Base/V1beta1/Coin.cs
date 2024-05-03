@@ -57,6 +57,7 @@ namespace Cosmos.Base.V1beta1 {
   /// NOTE: The amount field is an Int which implements the custom method
   /// signatures required by gogoproto.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Coin : pb::IMessage<Coin>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -289,6 +290,7 @@ namespace Cosmos.Base.V1beta1 {
   /// NOTE: The amount field is an Dec which implements the custom method
   /// signatures required by gogoproto.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DecCoin : pb::IMessage<DecCoin>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -518,6 +520,7 @@ namespace Cosmos.Base.V1beta1 {
   /// <summary>
   /// IntProto defines a Protobuf wrapper around an Int object.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class IntProto : pb::IMessage<IntProto>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -710,6 +713,7 @@ namespace Cosmos.Base.V1beta1 {
   /// <summary>
   /// DecProto defines a Protobuf wrapper around a Dec object.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DecProto : pb::IMessage<DecProto>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

@@ -46,6 +46,7 @@ namespace Tendermint.Crypto {
   /// <summary>
   /// PublicKey defines the keys available for use with Validators
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PublicKey : pb::IMessage<PublicKey>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

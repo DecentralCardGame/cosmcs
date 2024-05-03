@@ -71,6 +71,7 @@ namespace Cosmos.Base.Tendermint.V1beta1 {
   /// Block is tendermint type Block, with the Header proposer address
   /// field converted to bech32 string.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Block : pb::IMessage<Block>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -410,6 +411,7 @@ namespace Cosmos.Base.Tendermint.V1beta1 {
   /// <summary>
   /// Header defines the structure of a Tendermint block header.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Header : pb::IMessage<Header>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

@@ -71,6 +71,7 @@ namespace Cosmos.Auth.V1beta1 {
   /// for basic account functionality. Any custom account type should extend this
   /// type for additional functionality (e.g. vesting).
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BaseAccount : pb::IMessage<BaseAccount>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -383,6 +384,7 @@ namespace Cosmos.Auth.V1beta1 {
   /// <summary>
   /// ModuleAccount defines an account for modules that holds coins on a pool.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ModuleAccount : pb::IMessage<ModuleAccount>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -649,6 +651,7 @@ namespace Cosmos.Auth.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ModuleCredential : pb::IMessage<ModuleCredential>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -874,6 +877,7 @@ namespace Cosmos.Auth.V1beta1 {
   /// <summary>
   /// Params defines the parameters for the auth module.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Params : pb::IMessage<Params>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

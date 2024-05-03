@@ -52,6 +52,7 @@ namespace Cosmos.Crypto.Multisig {
   /// which nests multiple public keys and a threshold,
   /// it uses legacy amino address rules.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class LegacyAminoPubKey : pb::IMessage<LegacyAminoPubKey>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

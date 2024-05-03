@@ -53,6 +53,7 @@ namespace Cosmos.Crypto.Secp256k1 {
   /// the x-coordinate. Otherwise the first byte is a 0x03.
   /// This prefix is followed with the x-coordinate.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PubKey : pb::IMessage<PubKey>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -245,6 +246,7 @@ namespace Cosmos.Crypto.Secp256k1 {
   /// <summary>
   /// PrivKey defines a secp256k1 private key.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PrivKey : pb::IMessage<PrivKey>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

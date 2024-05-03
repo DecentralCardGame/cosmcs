@@ -145,6 +145,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// MsgCreateValidator defines a SDK message for creating a new validator.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCreateValidator : pb::IMessage<MsgCreateValidator>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -595,6 +596,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// MsgCreateValidatorResponse defines the Msg/CreateValidator response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCreateValidatorResponse : pb::IMessage<MsgCreateValidatorResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -750,6 +752,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// MsgEditValidator defines a SDK message for editing an existing validator.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgEditValidator : pb::IMessage<MsgEditValidator>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1068,6 +1071,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// MsgEditValidatorResponse defines the Msg/EditValidator response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgEditValidatorResponse : pb::IMessage<MsgEditValidatorResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1224,6 +1228,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// MsgDelegate defines a SDK message for performing a delegation of coins
   /// from a delegator to a validator.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgDelegate : pb::IMessage<MsgDelegate>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1499,6 +1504,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// MsgDelegateResponse defines the Msg/Delegate response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgDelegateResponse : pb::IMessage<MsgDelegateResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1655,6 +1661,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// MsgBeginRedelegate defines a SDK message for performing a redelegation
   /// of coins from a delegator and source validator to a destination validator.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgBeginRedelegate : pb::IMessage<MsgBeginRedelegate>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1967,6 +1974,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// MsgBeginRedelegateResponse defines the Msg/BeginRedelegate response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgBeginRedelegateResponse : pb::IMessage<MsgBeginRedelegateResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2169,6 +2177,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// MsgUndelegate defines a SDK message for performing an undelegation from a
   /// delegate and a validator.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUndelegate : pb::IMessage<MsgUndelegate>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2444,6 +2453,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// MsgUndelegateResponse defines the Msg/Undelegate response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUndelegateResponse : pb::IMessage<MsgUndelegateResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2647,6 +2657,7 @@ namespace Cosmos.Staking.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCancelUnbondingDelegation : pb::IMessage<MsgCancelUnbondingDelegation>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2967,6 +2978,7 @@ namespace Cosmos.Staking.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCancelUnbondingDelegationResponse : pb::IMessage<MsgCancelUnbondingDelegationResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3124,6 +3136,7 @@ namespace Cosmos.Staking.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUpdateParams : pb::IMessage<MsgUpdateParams>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3373,6 +3386,7 @@ namespace Cosmos.Staking.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUpdateParamsResponse : pb::IMessage<MsgUpdateParamsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

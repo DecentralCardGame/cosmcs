@@ -78,6 +78,7 @@ namespace Cosmos.Autocli.V1 {
   /// <summary>
   /// ModuleOptions describes the CLI options for a Cosmos SDK module.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ModuleOptions : pb::IMessage<ModuleOptions>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -331,6 +332,7 @@ namespace Cosmos.Autocli.V1 {
   /// <summary>
   /// ServiceCommandDescriptor describes a CLI command based on a protobuf service.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ServiceCommandDescriptor : pb::IMessage<ServiceCommandDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -591,6 +593,7 @@ namespace Cosmos.Autocli.V1 {
   /// RpcCommandOptions specifies options for commands generated from protobuf
   /// rpc methods.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RpcCommandOptions : pb::IMessage<RpcCommandOptions>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1196,6 +1199,7 @@ namespace Cosmos.Autocli.V1 {
   /// kebab-case name of the field. Fields can be turned into positional arguments
   /// instead by using RpcCommandOptions.positional_args.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class FlagOptions : pb::IMessage<FlagOptions>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1671,6 +1675,7 @@ namespace Cosmos.Autocli.V1 {
   /// <summary>
   /// PositionalArgDescriptor describes a positional argument.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PositionalArgDescriptor : pb::IMessage<PositionalArgDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

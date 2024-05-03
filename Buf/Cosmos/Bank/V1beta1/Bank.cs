@@ -77,6 +77,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// <summary>
   /// Params defines the parameters for the bank module.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Params : pb::IMessage<Params>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -304,6 +305,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// SendEnabled maps coin denom to a send_enabled status (whether a denom is
   /// sendable).
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SendEnabled : pb::IMessage<SendEnabled>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -533,6 +535,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// <summary>
   /// Input models transaction input.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Input : pb::IMessage<Input>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -751,6 +754,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// <summary>
   /// Output models transaction outputs.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Output : pb::IMessage<Output>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -972,6 +976,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// This message is deprecated now that supply is indexed by denom.
   /// </summary>
   [global::System.ObsoleteAttribute]
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Supply : pb::IMessage<Supply>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1154,6 +1159,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// DenomUnit represents a struct that describes a given
   /// denomination unit of the basic token.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DenomUnit : pb::IMessage<DenomUnit>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1423,6 +1429,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// Metadata represents a struct that describes
   /// a basic token.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Metadata : pb::IMessage<Metadata>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

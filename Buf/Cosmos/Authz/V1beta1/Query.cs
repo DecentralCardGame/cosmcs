@@ -85,6 +85,7 @@ namespace Cosmos.Authz.V1beta1 {
   /// <summary>
   /// QueryGrantsRequest is the request type for the Query/Grants RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryGrantsRequest : pb::IMessage<QueryGrantsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -403,6 +404,7 @@ namespace Cosmos.Authz.V1beta1 {
   /// <summary>
   /// QueryGrantsResponse is the response type for the Query/Authorizations RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryGrantsResponse : pb::IMessage<QueryGrantsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -636,6 +638,7 @@ namespace Cosmos.Authz.V1beta1 {
   /// <summary>
   /// QueryGranterGrantsRequest is the request type for the Query/GranterGrants RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryGranterGrantsRequest : pb::IMessage<QueryGranterGrantsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -877,6 +880,7 @@ namespace Cosmos.Authz.V1beta1 {
   /// <summary>
   /// QueryGranterGrantsResponse is the response type for the Query/GranterGrants RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryGranterGrantsResponse : pb::IMessage<QueryGranterGrantsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1110,6 +1114,7 @@ namespace Cosmos.Authz.V1beta1 {
   /// <summary>
   /// QueryGranteeGrantsRequest is the request type for the Query/IssuedGrants RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryGranteeGrantsRequest : pb::IMessage<QueryGranteeGrantsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1351,6 +1356,7 @@ namespace Cosmos.Authz.V1beta1 {
   /// <summary>
   /// QueryGranteeGrantsResponse is the response type for the Query/GranteeGrants RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryGranteeGrantsResponse : pb::IMessage<QueryGranteeGrantsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

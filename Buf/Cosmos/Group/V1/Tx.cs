@@ -220,6 +220,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgCreateGroup is the Msg/CreateGroup request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCreateGroup : pb::IMessage<MsgCreateGroup>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -484,6 +485,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgCreateGroupResponse is the Msg/CreateGroup response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCreateGroupResponse : pb::IMessage<MsgCreateGroupResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -679,6 +681,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgUpdateGroupMembers is the Msg/UpdateGroupMembers request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUpdateGroupMembers : pb::IMessage<MsgUpdateGroupMembers>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -944,6 +947,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgUpdateGroupMembersResponse is the Msg/UpdateGroupMembers response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUpdateGroupMembersResponse : pb::IMessage<MsgUpdateGroupMembersResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1099,6 +1103,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgUpdateGroupAdmin is the Msg/UpdateGroupAdmin request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUpdateGroupAdmin : pb::IMessage<MsgUpdateGroupAdmin>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1374,6 +1379,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgUpdateGroupAdminResponse is the Msg/UpdateGroupAdmin response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUpdateGroupAdminResponse : pb::IMessage<MsgUpdateGroupAdminResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1529,6 +1535,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgUpdateGroupMetadata is the Msg/UpdateGroupMetadata request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUpdateGroupMetadata : pb::IMessage<MsgUpdateGroupMetadata>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1804,6 +1811,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgUpdateGroupMetadataResponse is the Msg/UpdateGroupMetadata response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUpdateGroupMetadataResponse : pb::IMessage<MsgUpdateGroupMetadataResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1959,6 +1967,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgCreateGroupPolicy is the Msg/CreateGroupPolicy request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCreateGroupPolicy : pb::IMessage<MsgCreateGroupPolicy>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2283,6 +2292,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgCreateGroupPolicyResponse is the Msg/CreateGroupPolicy response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCreateGroupPolicyResponse : pb::IMessage<MsgCreateGroupPolicyResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2478,6 +2488,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgUpdateGroupPolicyAdmin is the Msg/UpdateGroupPolicyAdmin request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUpdateGroupPolicyAdmin : pb::IMessage<MsgUpdateGroupPolicyAdmin>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2753,6 +2764,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgUpdateGroupPolicyAdminResponse is the Msg/UpdateGroupPolicyAdmin response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUpdateGroupPolicyAdminResponse : pb::IMessage<MsgUpdateGroupPolicyAdminResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2908,6 +2920,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgCreateGroupWithPolicy is the Msg/CreateGroupWithPolicy request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCreateGroupWithPolicy : pb::IMessage<MsgCreateGroupWithPolicy>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3302,6 +3315,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgCreateGroupWithPolicyResponse is the Msg/CreateGroupWithPolicy response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCreateGroupWithPolicyResponse : pb::IMessage<MsgCreateGroupWithPolicyResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3537,6 +3551,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgUpdateGroupPolicyDecisionPolicy is the Msg/UpdateGroupPolicyDecisionPolicy request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUpdateGroupPolicyDecisionPolicy : pb::IMessage<MsgUpdateGroupPolicyDecisionPolicy>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3821,6 +3836,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgUpdateGroupPolicyDecisionPolicyResponse is the Msg/UpdateGroupPolicyDecisionPolicy response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUpdateGroupPolicyDecisionPolicyResponse : pb::IMessage<MsgUpdateGroupPolicyDecisionPolicyResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3976,6 +3992,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgUpdateGroupPolicyMetadata is the Msg/UpdateGroupPolicyMetadata request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUpdateGroupPolicyMetadata : pb::IMessage<MsgUpdateGroupPolicyMetadata>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4251,6 +4268,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgUpdateGroupPolicyMetadataResponse is the Msg/UpdateGroupPolicyMetadata response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUpdateGroupPolicyMetadataResponse : pb::IMessage<MsgUpdateGroupPolicyMetadataResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4406,6 +4424,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgSubmitProposal is the Msg/SubmitProposal request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSubmitProposal : pb::IMessage<MsgSubmitProposal>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4826,6 +4845,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgSubmitProposalResponse is the Msg/SubmitProposal response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSubmitProposalResponse : pb::IMessage<MsgSubmitProposalResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5021,6 +5041,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgWithdrawProposal is the Msg/WithdrawProposal request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgWithdrawProposal : pb::IMessage<MsgWithdrawProposal>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5256,6 +5277,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgWithdrawProposalResponse is the Msg/WithdrawProposal response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgWithdrawProposalResponse : pb::IMessage<MsgWithdrawProposalResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5411,6 +5433,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgVote is the Msg/Vote request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgVote : pb::IMessage<MsgVote>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5767,6 +5790,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgVoteResponse is the Msg/Vote response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgVoteResponse : pb::IMessage<MsgVoteResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5922,6 +5946,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgExec is the Msg/Exec request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgExec : pb::IMessage<MsgExec>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6157,6 +6182,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgExecResponse is the Msg/Exec request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgExecResponse : pb::IMessage<MsgExecResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6352,6 +6378,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgLeaveGroup is the Msg/LeaveGroup request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgLeaveGroup : pb::IMessage<MsgLeaveGroup>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6587,6 +6614,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// MsgLeaveGroupResponse is the Msg/LeaveGroup response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgLeaveGroupResponse : pb::IMessage<MsgLeaveGroupResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

@@ -66,6 +66,7 @@ namespace Tendermint.Types {
 
   }
   #region Messages
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Evidence : pb::IMessage<Evidence>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -354,6 +355,7 @@ namespace Tendermint.Types {
   /// <summary>
   /// DuplicateVoteEvidence contains evidence of a validator signed two conflicting votes.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DuplicateVoteEvidence : pb::IMessage<DuplicateVoteEvidence>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -721,6 +723,7 @@ namespace Tendermint.Types {
   /// <summary>
   /// LightClientAttackEvidence contains evidence of a set of validators attempting to mislead a light client.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class LightClientAttackEvidence : pb::IMessage<LightClientAttackEvidence>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1065,6 +1068,7 @@ namespace Tendermint.Types {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EvidenceList : pb::IMessage<EvidenceList>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

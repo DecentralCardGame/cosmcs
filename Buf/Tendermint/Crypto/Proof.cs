@@ -53,6 +53,7 @@ namespace Tendermint.Crypto {
 
   }
   #region Messages
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Proof : pb::IMessage<Proof>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -342,6 +343,7 @@ namespace Tendermint.Crypto {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ValueOp : pb::IMessage<ValueOp>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -583,6 +585,7 @@ namespace Tendermint.Crypto {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DominoOp : pb::IMessage<DominoOp>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -851,6 +854,7 @@ namespace Tendermint.Crypto {
   /// The data could be arbitrary format, providing nessecary data
   /// for example neighbouring node hash
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ProofOp : pb::IMessage<ProofOp>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1117,6 +1121,7 @@ namespace Tendermint.Crypto {
   /// <summary>
   /// ProofOps is Merkle proof defined by the list of ProofOps
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ProofOps : pb::IMessage<ProofOps>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

@@ -60,6 +60,7 @@ namespace Cosmos.Crypto.Keyring.V1 {
   /// <summary>
   /// Record is used for representing a key in the keyring.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Record : pb::IMessage<Record>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -559,6 +560,7 @@ namespace Cosmos.Crypto.Keyring.V1 {
       /// Item is a keyring item stored in a keyring backend.
       /// Local item
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Local : pb::IMessage<Local>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -760,6 +762,7 @@ namespace Cosmos.Crypto.Keyring.V1 {
       /// <summary>
       /// Ledger item
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Ledger : pb::IMessage<Ledger>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -961,6 +964,7 @@ namespace Cosmos.Crypto.Keyring.V1 {
       /// <summary>
       /// Multi item
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Multi : pb::IMessage<Multi>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -1116,6 +1120,7 @@ namespace Cosmos.Crypto.Keyring.V1 {
       /// <summary>
       /// Offline item
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Offline : pb::IMessage<Offline>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage

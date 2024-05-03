@@ -107,6 +107,7 @@ namespace Cosmos.Tx.V1beta1 {
   /// <summary>
   /// Tx is the standard type used for broadcasting transactions.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Tx : pb::IMessage<Tx>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -396,6 +397,7 @@ namespace Cosmos.Tx.V1beta1 {
   /// the hash `sha256(serialize(tx: TxRaw))` becomes the "txhash", commonly used
   /// as the transaction ID.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TxRaw : pb::IMessage<TxRaw>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -664,6 +666,7 @@ namespace Cosmos.Tx.V1beta1 {
   /// <summary>
   /// SignDoc is the type used for generating sign bytes for SIGN_MODE_DIRECT.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SignDoc : pb::IMessage<SignDoc>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -986,6 +989,7 @@ namespace Cosmos.Tx.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SignDocDirectAux : pb::IMessage<SignDocDirectAux>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1407,6 +1411,7 @@ namespace Cosmos.Tx.V1beta1 {
   /// <summary>
   /// TxBody is the body of a transaction that all signers sign over.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TxBody : pb::IMessage<TxBody>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1743,6 +1748,7 @@ namespace Cosmos.Tx.V1beta1 {
   /// AuthInfo describes the fee and signer modes that are used to sign a
   /// transaction.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AuthInfo : pb::IMessage<AuthInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2037,6 +2043,7 @@ namespace Cosmos.Tx.V1beta1 {
   /// SignerInfo describes the public key and signing mode of a single top-level
   /// signer.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SignerInfo : pb::IMessage<SignerInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2335,6 +2342,7 @@ namespace Cosmos.Tx.V1beta1 {
   /// <summary>
   /// ModeInfo describes the signing mode of a single or nested multisig signer.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ModeInfo : pb::IMessage<ModeInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2634,6 +2642,7 @@ namespace Cosmos.Tx.V1beta1 {
       /// to allow for additional fields such as locale for SIGN_MODE_TEXTUAL in the
       /// future
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Single : pb::IMessage<Single>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -2829,6 +2838,7 @@ namespace Cosmos.Tx.V1beta1 {
       /// <summary>
       /// Multi is the mode info for a multisig public key
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Multi : pb::IMessage<Multi>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -3070,6 +3080,7 @@ namespace Cosmos.Tx.V1beta1 {
   /// gas to be used by the transaction. The ratio yields an effective "gasprice",
   /// which must be above some miminum to be accepted into the mempool.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Fee : pb::IMessage<Fee>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3381,6 +3392,7 @@ namespace Cosmos.Tx.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Tip : pb::IMessage<Tip>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3610,6 +3622,7 @@ namespace Cosmos.Tx.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AuxSignerData : pb::IMessage<AuxSignerData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

@@ -55,6 +55,7 @@ namespace Cosmos.Consensus.V1 {
   /// <summary>
   /// MsgUpdateParams is the Msg/UpdateParams request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUpdateParams : pb::IMessage<MsgUpdateParams>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -396,6 +397,7 @@ namespace Cosmos.Consensus.V1 {
   /// MsgUpdateParamsResponse defines the response structure for executing a
   /// MsgUpdateParams message.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUpdateParamsResponse : pb::IMessage<MsgUpdateParamsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

@@ -60,6 +60,7 @@ namespace Cosmos.App.V1alpha1 {
   /// that strive for the maximum ease of maintainability should be able to describe
   /// their state machine with a config object alone.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Config : pb::IMessage<Config>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -275,6 +276,7 @@ namespace Cosmos.App.V1alpha1 {
   /// <summary>
   /// ModuleConfig is a module configuration for an app.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ModuleConfig : pb::IMessage<ModuleConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -560,6 +562,7 @@ namespace Cosmos.App.V1alpha1 {
   /// <summary>
   /// GolangBinding is an explicit interface type to implementing type binding for dependency injection.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GolangBinding : pb::IMessage<GolangBinding>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

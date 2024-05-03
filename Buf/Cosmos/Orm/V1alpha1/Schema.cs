@@ -115,6 +115,7 @@ namespace Cosmos.Orm.V1alpha1 {
   /// <summary>
   /// ModuleSchemaDescriptor describe's a module's ORM schema.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ModuleSchemaDescriptor : pb::IMessage<ModuleSchemaDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -340,6 +341,7 @@ namespace Cosmos.Orm.V1alpha1 {
       /// <summary>
       /// FileEntry describes an ORM file used in a module.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class FileEntry : pb::IMessage<FileEntry>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage

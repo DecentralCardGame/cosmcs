@@ -114,6 +114,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// <summary>
   /// Params defines the set of params for the distribution module.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Params : pb::IMessage<Params>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -438,6 +439,7 @@ namespace Cosmos.Distribution.V1beta1 {
   ///  read that record)
   ///  + one per validator for the zeroeth period, set on initialization
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ValidatorHistoricalRewards : pb::IMessage<ValidatorHistoricalRewards>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -658,6 +660,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// period for a validator kept as a running counter and incremented
   /// each block as long as the validator's tokens remain constant.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ValidatorCurrentRewards : pb::IMessage<ValidatorCurrentRewards>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -877,6 +880,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// ValidatorAccumulatedCommission represents accumulated commission
   /// for a validator kept as a running counter, can be withdrawn at any time.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ValidatorAccumulatedCommission : pb::IMessage<ValidatorAccumulatedCommission>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1059,6 +1063,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// ValidatorOutstandingRewards represents outstanding (un-withdrawn) rewards
   /// for a validator inexpensive to track, allows simple sanity checks.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ValidatorOutstandingRewards : pb::IMessage<ValidatorOutstandingRewards>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1243,6 +1248,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// This is needed to calculate appropriate amount of staking tokens
   /// for delegations which are withdrawn after a slash has occurred.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ValidatorSlashEvent : pb::IMessage<ValidatorSlashEvent>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1472,6 +1478,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// <summary>
   /// ValidatorSlashEvents is a collection of ValidatorSlashEvent messages.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ValidatorSlashEvents : pb::IMessage<ValidatorSlashEvents>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1653,6 +1660,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// <summary>
   /// FeePool is the global fee pool for distribution.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class FeePool : pb::IMessage<FeePool>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1842,6 +1850,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// module via a v1 governance proposal.
   /// </summary>
   [global::System.ObsoleteAttribute]
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CommunityPoolSpendProposal : pb::IMessage<CommunityPoolSpendProposal>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2139,6 +2148,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// the delegators within the validator may be left with less than a full token,
   /// thus sdk.Dec is used.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DelegatorStartingInfo : pb::IMessage<DelegatorStartingInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2406,6 +2416,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// DelegationDelegatorReward represents the properties
   /// of a delegator's delegation reward.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DelegationDelegatorReward : pb::IMessage<DelegationDelegatorReward>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2625,6 +2636,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// CommunityPoolSpendProposalWithDeposit defines a CommunityPoolSpendProposal
   /// with a deposit
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CommunityPoolSpendProposalWithDeposit : pb::IMessage<CommunityPoolSpendProposalWithDeposit>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

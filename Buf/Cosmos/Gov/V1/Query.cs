@@ -128,6 +128,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// QueryProposalRequest is the request type for the Query/Proposal RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryProposalRequest : pb::IMessage<QueryProposalRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -323,6 +324,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// QueryProposalResponse is the response type for the Query/Proposal RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryProposalResponse : pb::IMessage<QueryProposalResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -527,6 +529,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// QueryProposalsRequest is the request type for the Query/Proposals RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryProposalsRequest : pb::IMessage<QueryProposalsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -852,6 +855,7 @@ namespace Cosmos.Gov.V1 {
   /// QueryProposalsResponse is the response type for the Query/Proposals RPC
   /// method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryProposalsResponse : pb::IMessage<QueryProposalsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1085,6 +1089,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// QueryVoteRequest is the request type for the Query/Vote RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryVoteRequest : pb::IMessage<QueryVoteRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1320,6 +1325,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// QueryVoteResponse is the response type for the Query/Vote RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryVoteResponse : pb::IMessage<QueryVoteResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1524,6 +1530,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// QueryVotesRequest is the request type for the Query/Votes RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryVotesRequest : pb::IMessage<QueryVotesRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1768,6 +1775,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// QueryVotesResponse is the response type for the Query/Votes RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryVotesResponse : pb::IMessage<QueryVotesResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2001,6 +2009,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// QueryParamsRequest is the request type for the Query/Params RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryParamsRequest : pb::IMessage<QueryParamsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2197,6 +2206,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// QueryParamsResponse is the response type for the Query/Params RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryParamsResponse : pb::IMessage<QueryParamsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2556,6 +2566,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// QueryDepositRequest is the request type for the Query/Deposit RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDepositRequest : pb::IMessage<QueryDepositRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2791,6 +2802,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// QueryDepositResponse is the response type for the Query/Deposit RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDepositResponse : pb::IMessage<QueryDepositResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2995,6 +3007,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// QueryDepositsRequest is the request type for the Query/Deposits RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDepositsRequest : pb::IMessage<QueryDepositsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3239,6 +3252,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// QueryDepositsResponse is the response type for the Query/Deposits RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDepositsResponse : pb::IMessage<QueryDepositsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3472,6 +3486,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// QueryTallyResultRequest is the request type for the Query/Tally RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryTallyResultRequest : pb::IMessage<QueryTallyResultRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3667,6 +3682,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// QueryTallyResultResponse is the response type for the Query/Tally RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryTallyResultResponse : pb::IMessage<QueryTallyResultResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

@@ -154,6 +154,7 @@ namespace Tendermint.Types {
   /// <summary>
   /// PartsetHeader
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PartSetHeader : pb::IMessage<PartSetHeader>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -380,6 +381,7 @@ namespace Tendermint.Types {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Part : pb::IMessage<Part>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -655,6 +657,7 @@ namespace Tendermint.Types {
   /// <summary>
   /// BlockID
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BlockID : pb::IMessage<BlockID>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -893,6 +896,7 @@ namespace Tendermint.Types {
   /// <summary>
   /// Header defines the structure of a block header.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Header : pb::IMessage<Header>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1626,6 +1630,7 @@ namespace Tendermint.Types {
   /// <summary>
   /// Data contains the set of transactions included in the block
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Data : pb::IMessage<Data>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1813,6 +1818,7 @@ namespace Tendermint.Types {
   /// Vote represents a prevote, precommit, or commit vote from validators for
   /// consensus.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Vote : pb::IMessage<Vote>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2285,6 +2291,7 @@ namespace Tendermint.Types {
   /// <summary>
   /// Commit contains the evidence that a block was committed by a set of validators.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Commit : pb::IMessage<Commit>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2586,6 +2593,7 @@ namespace Tendermint.Types {
   /// <summary>
   /// CommitSig is a part of the Vote included in a Commit.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CommitSig : pb::IMessage<CommitSig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2895,6 +2903,7 @@ namespace Tendermint.Types {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Proposal : pb::IMessage<Proposal>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3324,6 +3333,7 @@ namespace Tendermint.Types {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SignedHeader : pb::IMessage<SignedHeader>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3568,6 +3578,7 @@ namespace Tendermint.Types {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class LightBlock : pb::IMessage<LightBlock>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3812,6 +3823,7 @@ namespace Tendermint.Types {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BlockMeta : pb::IMessage<BlockMeta>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4133,6 +4145,7 @@ namespace Tendermint.Types {
   /// <summary>
   /// TxProof represents a Merkle proof of the presence of a transaction in the Merkle tree.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TxProof : pb::IMessage<TxProof>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

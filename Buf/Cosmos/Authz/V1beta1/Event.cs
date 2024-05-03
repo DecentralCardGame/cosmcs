@@ -52,6 +52,7 @@ namespace Cosmos.Authz.V1beta1 {
   /// <summary>
   /// EventGrant is emitted on Msg/Grant
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventGrant : pb::IMessage<EventGrant>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -327,6 +328,7 @@ namespace Cosmos.Authz.V1beta1 {
   /// <summary>
   /// EventRevoke is emitted on Msg/Revoke
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventRevoke : pb::IMessage<EventRevoke>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

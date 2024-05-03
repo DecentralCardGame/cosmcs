@@ -48,6 +48,7 @@ namespace Cosmos.Crypto.Hd.V1 {
   /// <summary>
   /// BIP44Params is used as path field in ledger item in Record.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BIP44Params : pb::IMessage<BIP44Params>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

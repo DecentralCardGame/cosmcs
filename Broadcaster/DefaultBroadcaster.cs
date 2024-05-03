@@ -2,6 +2,7 @@ using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using Cosmos.Tx.V1beta1;
 using Google.Protobuf;
 
 namespace Cosmcs.Broadcaster
@@ -47,6 +48,11 @@ namespace Cosmcs.Broadcaster
                 new Uri($"{BaseUrl}cosmos/tx/v1beta1/txs"),
                 content
             ).ContinueWith(r => r.Result.Content);
+        }
+
+        public Task<SimulateResponse> Simulate(byte[] bytes)
+        {
+            throw new NotImplementedException("Simulation is not planned for the default broadcaster");
         }
     }
 }

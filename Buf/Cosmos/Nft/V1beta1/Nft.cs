@@ -52,6 +52,7 @@ namespace Cosmos.Nft.V1beta1 {
   /// <summary>
   /// Class defines the class of the nft type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Class : pb::IMessage<Class>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -496,6 +497,7 @@ namespace Cosmos.Nft.V1beta1 {
   /// <summary>
   /// NFT defines the NFT.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class NFT : pb::IMessage<NFT>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

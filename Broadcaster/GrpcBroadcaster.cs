@@ -22,5 +22,13 @@ namespace Cosmcs.Broadcaster
                 Mode = mode
             }).ResponseAsync;
         }
+
+        public Task<SimulateResponse> Simulate(byte[] bytes)
+        {
+            return TxClient.SimulateAsync(new SimulateRequest
+            {
+                TxBytes = ByteString.CopyFrom(bytes),
+            }).ResponseAsync;
+        }
     }
 }

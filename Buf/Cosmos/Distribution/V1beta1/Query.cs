@@ -182,6 +182,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// <summary>
   /// QueryParamsRequest is the request type for the Query/Params RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryParamsRequest : pb::IMessage<QueryParamsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -337,6 +338,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// <summary>
   /// QueryParamsResponse is the response type for the Query/Params RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryParamsResponse : pb::IMessage<QueryParamsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -541,6 +543,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// <summary>
   /// QueryValidatorDistributionInfoRequest is the request type for the Query/ValidatorDistributionInfo RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryValidatorDistributionInfoRequest : pb::IMessage<QueryValidatorDistributionInfoRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -736,6 +739,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// <summary>
   /// QueryValidatorDistributionInfoResponse is the response type for the Query/ValidatorDistributionInfo RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryValidatorDistributionInfoResponse : pb::IMessage<QueryValidatorDistributionInfoResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -990,6 +994,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// QueryValidatorOutstandingRewardsRequest is the request type for the
   /// Query/ValidatorOutstandingRewards RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryValidatorOutstandingRewardsRequest : pb::IMessage<QueryValidatorOutstandingRewardsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1186,6 +1191,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// QueryValidatorOutstandingRewardsResponse is the response type for the
   /// Query/ValidatorOutstandingRewards RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryValidatorOutstandingRewardsResponse : pb::IMessage<QueryValidatorOutstandingRewardsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1388,6 +1394,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// QueryValidatorCommissionRequest is the request type for the
   /// Query/ValidatorCommission RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryValidatorCommissionRequest : pb::IMessage<QueryValidatorCommissionRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1584,6 +1591,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// QueryValidatorCommissionResponse is the response type for the
   /// Query/ValidatorCommission RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryValidatorCommissionResponse : pb::IMessage<QueryValidatorCommissionResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1789,6 +1797,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// QueryValidatorSlashesRequest is the request type for the
   /// Query/ValidatorSlashes RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryValidatorSlashesRequest : pb::IMessage<QueryValidatorSlashesRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2114,6 +2123,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// QueryValidatorSlashesResponse is the response type for the
   /// Query/ValidatorSlashes RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryValidatorSlashesResponse : pb::IMessage<QueryValidatorSlashesResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2348,6 +2358,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// QueryDelegationRewardsRequest is the request type for the
   /// Query/DelegationRewards RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDelegationRewardsRequest : pb::IMessage<QueryDelegationRewardsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2584,6 +2595,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// QueryDelegationRewardsResponse is the response type for the
   /// Query/DelegationRewards RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDelegationRewardsResponse : pb::IMessage<QueryDelegationRewardsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2769,6 +2781,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// QueryDelegationTotalRewardsRequest is the request type for the
   /// Query/DelegationTotalRewards RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDelegationTotalRewardsRequest : pb::IMessage<QueryDelegationTotalRewardsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2965,6 +2978,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// QueryDelegationTotalRewardsResponse is the response type for the
   /// Query/DelegationTotalRewards RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDelegationTotalRewardsResponse : pb::IMessage<QueryDelegationTotalRewardsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3179,6 +3193,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// QueryDelegatorValidatorsRequest is the request type for the
   /// Query/DelegatorValidators RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDelegatorValidatorsRequest : pb::IMessage<QueryDelegatorValidatorsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3375,6 +3390,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// QueryDelegatorValidatorsResponse is the response type for the
   /// Query/DelegatorValidators RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDelegatorValidatorsResponse : pb::IMessage<QueryDelegatorValidatorsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3560,6 +3576,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// QueryDelegatorWithdrawAddressRequest is the request type for the
   /// Query/DelegatorWithdrawAddress RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDelegatorWithdrawAddressRequest : pb::IMessage<QueryDelegatorWithdrawAddressRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3756,6 +3773,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// QueryDelegatorWithdrawAddressResponse is the response type for the
   /// Query/DelegatorWithdrawAddress RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDelegatorWithdrawAddressResponse : pb::IMessage<QueryDelegatorWithdrawAddressResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3952,6 +3970,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// QueryCommunityPoolRequest is the request type for the Query/CommunityPool RPC
   /// method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryCommunityPoolRequest : pb::IMessage<QueryCommunityPoolRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4108,6 +4127,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// QueryCommunityPoolResponse is the response type for the Query/CommunityPool
   /// RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryCommunityPoolResponse : pb::IMessage<QueryCommunityPoolResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

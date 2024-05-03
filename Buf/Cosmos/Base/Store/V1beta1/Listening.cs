@@ -67,6 +67,7 @@ namespace Cosmos.Base.Store.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.43
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class StoreKVPair : pb::IMessage<StoreKVPair>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -377,6 +378,7 @@ namespace Cosmos.Base.Store.V1beta1 {
   /// BlockMetadata contains all the abci event data of a block
   /// the file streamer dump them into files together with the state changes.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BlockMetadata : pb::IMessage<BlockMetadata>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -791,6 +793,7 @@ namespace Cosmos.Base.Store.V1beta1 {
       /// <summary>
       /// DeliverTx encapulate deliver tx request and response.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class DeliverTx : pb::IMessage<DeliverTx>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage

@@ -47,6 +47,7 @@ namespace Cosmos.Base.Kv.V1beta1 {
   /// <summary>
   /// Pairs defines a repeated slice of Pair objects.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Pairs : pb::IMessage<Pairs>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -228,6 +229,7 @@ namespace Cosmos.Base.Kv.V1beta1 {
   /// <summary>
   /// Pair defines a key/value bytes tuple.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Pair : pb::IMessage<Pair>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

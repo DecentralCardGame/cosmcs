@@ -52,6 +52,7 @@ namespace Cosmos.Crypto.Multisig.V1beta1 {
   /// See cosmos.tx.v1betata1.ModeInfo.Multi for how to specify which signers
   /// signed and with which modes.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MultiSignature : pb::IMessage<MultiSignature>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -236,6 +237,7 @@ namespace Cosmos.Crypto.Multisig.V1beta1 {
   /// space after proto encoding.
   /// This is not thread safe, and is not intended for concurrent usage.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CompactBitArray : pb::IMessage<CompactBitArray>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

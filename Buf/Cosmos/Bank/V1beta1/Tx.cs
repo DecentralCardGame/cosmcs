@@ -84,6 +84,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// <summary>
   /// MsgSend represents a message to send coins from one account to another.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSend : pb::IMessage<MsgSend>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -339,6 +340,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// <summary>
   /// MsgSendResponse defines the Msg/Send response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSendResponse : pb::IMessage<MsgSendResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -494,6 +496,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// <summary>
   /// MsgMultiSend represents an arbitrary multi-in, multi-out send message.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgMultiSend : pb::IMessage<MsgMultiSend>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -705,6 +708,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// <summary>
   /// MsgMultiSendResponse defines the Msg/MultiSend response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgMultiSendResponse : pb::IMessage<MsgMultiSendResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -862,6 +866,7 @@ namespace Cosmos.Bank.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUpdateParams : pb::IMessage<MsgUpdateParams>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1111,6 +1116,7 @@ namespace Cosmos.Bank.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgUpdateParamsResponse : pb::IMessage<MsgUpdateParamsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1272,6 +1278,7 @@ namespace Cosmos.Bank.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSetSendEnabled : pb::IMessage<MsgSetSendEnabled>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1527,6 +1534,7 @@ namespace Cosmos.Bank.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSetSendEnabledResponse : pb::IMessage<MsgSetSendEnabledResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

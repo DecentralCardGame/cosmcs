@@ -60,6 +60,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// <summary>
   /// GenesisState defines the bank module's genesis state.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GenesisState : pb::IMessage<GenesisState>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -384,6 +385,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// Balance defines an account address and balance pair used in the bank module's
   /// genesis state.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Balance : pb::IMessage<Balance>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

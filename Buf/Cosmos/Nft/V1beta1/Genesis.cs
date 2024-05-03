@@ -49,6 +49,7 @@ namespace Cosmos.Nft.V1beta1 {
   /// <summary>
   /// GenesisState defines the nft module's genesis state.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GenesisState : pb::IMessage<GenesisState>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -262,6 +263,7 @@ namespace Cosmos.Nft.V1beta1 {
   /// <summary>
   /// Entry Defines all nft owned by a person
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Entry : pb::IMessage<Entry>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

@@ -66,6 +66,7 @@ namespace Cosmos.Feegrant.V1beta1 {
   /// MsgGrantAllowance adds permission for Grantee to spend up to Allowance
   /// of fees from the account of Granter.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgGrantAllowance : pb::IMessage<MsgGrantAllowance>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -350,6 +351,7 @@ namespace Cosmos.Feegrant.V1beta1 {
   /// <summary>
   /// MsgGrantAllowanceResponse defines the Msg/GrantAllowanceResponse response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgGrantAllowanceResponse : pb::IMessage<MsgGrantAllowanceResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -505,6 +507,7 @@ namespace Cosmos.Feegrant.V1beta1 {
   /// <summary>
   /// MsgRevokeAllowance removes any existing Allowance from Granter to Grantee.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgRevokeAllowance : pb::IMessage<MsgRevokeAllowance>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -740,6 +743,7 @@ namespace Cosmos.Feegrant.V1beta1 {
   /// <summary>
   /// MsgRevokeAllowanceResponse defines the Msg/RevokeAllowanceResponse response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgRevokeAllowanceResponse : pb::IMessage<MsgRevokeAllowanceResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

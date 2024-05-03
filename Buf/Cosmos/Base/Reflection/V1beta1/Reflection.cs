@@ -65,6 +65,7 @@ namespace Cosmos.Base.Reflection.V1beta1 {
   /// <summary>
   /// ListAllInterfacesRequest is the request type of the ListAllInterfaces RPC.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ListAllInterfacesRequest : pb::IMessage<ListAllInterfacesRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -220,6 +221,7 @@ namespace Cosmos.Base.Reflection.V1beta1 {
   /// <summary>
   /// ListAllInterfacesResponse is the response type of the ListAllInterfaces RPC.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ListAllInterfacesResponse : pb::IMessage<ListAllInterfacesResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -405,6 +407,7 @@ namespace Cosmos.Base.Reflection.V1beta1 {
   /// ListImplementationsRequest is the request type of the ListImplementations
   /// RPC.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ListImplementationsRequest : pb::IMessage<ListImplementationsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -601,6 +604,7 @@ namespace Cosmos.Base.Reflection.V1beta1 {
   /// ListImplementationsResponse is the response type of the ListImplementations
   /// RPC.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ListImplementationsResponse : pb::IMessage<ListImplementationsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

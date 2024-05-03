@@ -71,6 +71,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// EventCreateGroup is an event emitted when a group is created.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventCreateGroup : pb::IMessage<EventCreateGroup>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -266,6 +267,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// EventUpdateGroup is an event emitted when a group is updated.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventUpdateGroup : pb::IMessage<EventUpdateGroup>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -461,6 +463,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// EventCreateGroupPolicy is an event emitted when a group policy is created.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventCreateGroupPolicy : pb::IMessage<EventCreateGroupPolicy>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -656,6 +659,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// EventUpdateGroupPolicy is an event emitted when a group policy is updated.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventUpdateGroupPolicy : pb::IMessage<EventUpdateGroupPolicy>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -851,6 +855,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// EventSubmitProposal is an event emitted when a proposal is created.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventSubmitProposal : pb::IMessage<EventSubmitProposal>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1046,6 +1051,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// EventWithdrawProposal is an event emitted when a proposal is withdrawn.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventWithdrawProposal : pb::IMessage<EventWithdrawProposal>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1241,6 +1247,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// EventVote is an event emitted when a voter votes on a proposal.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventVote : pb::IMessage<EventVote>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1436,6 +1443,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// EventExec is an event emitted when a proposal is executed.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventExec : pb::IMessage<EventExec>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1711,6 +1719,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// EventLeaveGroup is an event emitted when group member leaves the group.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventLeaveGroup : pb::IMessage<EventLeaveGroup>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1946,6 +1955,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// EventProposalPruned is an event emitted when a proposal is pruned.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventProposalPruned : pb::IMessage<EventProposalPruned>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

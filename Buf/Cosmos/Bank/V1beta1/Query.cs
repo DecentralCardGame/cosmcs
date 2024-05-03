@@ -175,6 +175,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// <summary>
   /// QueryBalanceRequest is the request type for the Query/Balance RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryBalanceRequest : pb::IMessage<QueryBalanceRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -410,6 +411,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// <summary>
   /// QueryBalanceResponse is the response type for the Query/Balance RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryBalanceResponse : pb::IMessage<QueryBalanceResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -614,6 +616,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// <summary>
   /// QueryBalanceRequest is the request type for the Query/AllBalances RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAllBalancesRequest : pb::IMessage<QueryAllBalancesRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -859,6 +862,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// QueryAllBalancesResponse is the response type for the Query/AllBalances RPC
   /// method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAllBalancesResponse : pb::IMessage<QueryAllBalancesResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1095,6 +1099,7 @@ namespace Cosmos.Bank.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QuerySpendableBalancesRequest : pb::IMessage<QuerySpendableBalancesRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1342,6 +1347,7 @@ namespace Cosmos.Bank.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QuerySpendableBalancesResponse : pb::IMessage<QuerySpendableBalancesResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1578,6 +1584,7 @@ namespace Cosmos.Bank.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QuerySpendableBalanceByDenomRequest : pb::IMessage<QuerySpendableBalanceByDenomRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1816,6 +1823,7 @@ namespace Cosmos.Bank.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QuerySpendableBalanceByDenomResponse : pb::IMessage<QuerySpendableBalanceByDenomResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2021,6 +2029,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// QueryTotalSupplyRequest is the request type for the Query/TotalSupply RPC
   /// method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryTotalSupplyRequest : pb::IMessage<QueryTotalSupplyRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2228,6 +2237,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// QueryTotalSupplyResponse is the response type for the Query/TotalSupply RPC
   /// method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryTotalSupplyResponse : pb::IMessage<QueryTotalSupplyResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2463,6 +2473,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// <summary>
   /// QuerySupplyOfRequest is the request type for the Query/SupplyOf RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QuerySupplyOfRequest : pb::IMessage<QuerySupplyOfRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2658,6 +2669,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// <summary>
   /// QuerySupplyOfResponse is the response type for the Query/SupplyOf RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QuerySupplyOfResponse : pb::IMessage<QuerySupplyOfResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2862,6 +2874,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// <summary>
   /// QueryParamsRequest defines the request type for querying x/bank parameters.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryParamsRequest : pb::IMessage<QueryParamsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3017,6 +3030,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// <summary>
   /// QueryParamsResponse defines the response type for querying x/bank parameters.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryParamsResponse : pb::IMessage<QueryParamsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3218,6 +3232,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// <summary>
   /// QueryDenomsMetadataRequest is the request type for the Query/DenomsMetadata RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDenomsMetadataRequest : pb::IMessage<QueryDenomsMetadataRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3423,6 +3438,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// QueryDenomsMetadataResponse is the response type for the Query/DenomsMetadata RPC
   /// method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDenomsMetadataResponse : pb::IMessage<QueryDenomsMetadataResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3656,6 +3672,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// <summary>
   /// QueryDenomMetadataRequest is the request type for the Query/DenomMetadata RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDenomMetadataRequest : pb::IMessage<QueryDenomMetadataRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3852,6 +3869,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// QueryDenomMetadataResponse is the response type for the Query/DenomMetadata RPC
   /// method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDenomMetadataResponse : pb::IMessage<QueryDenomMetadataResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4058,6 +4076,7 @@ namespace Cosmos.Bank.V1beta1 {
   /// which queries for a paginated set of all account holders of a particular
   /// denomination.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDenomOwnersRequest : pb::IMessage<QueryDenomOwnersRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4306,6 +4325,7 @@ namespace Cosmos.Bank.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DenomOwner : pb::IMessage<DenomOwner>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4552,6 +4572,7 @@ namespace Cosmos.Bank.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDenomOwnersResponse : pb::IMessage<QueryDenomOwnersResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4784,6 +4805,7 @@ namespace Cosmos.Bank.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QuerySendEnabledRequest : pb::IMessage<QuerySendEnabledRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5020,6 +5042,7 @@ namespace Cosmos.Bank.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QuerySendEnabledResponse : pb::IMessage<QuerySendEnabledResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

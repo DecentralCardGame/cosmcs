@@ -92,6 +92,7 @@ namespace Cosmos.Base.Abci.V1beta1 {
   /// TxResponse defines a structure containing relevant tx data and metadata. The
   /// tags are stringified and the log is JSON decoded.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TxResponse : pb::IMessage<TxResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -762,6 +763,7 @@ namespace Cosmos.Base.Abci.V1beta1 {
   /// <summary>
   /// ABCIMessageLog defines a structure containing an indexed tx ABCI message log.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ABCIMessageLog : pb::IMessage<ABCIMessageLog>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1022,6 +1024,7 @@ namespace Cosmos.Base.Abci.V1beta1 {
   /// StringEvent defines en Event object wrapper where all the attributes
   /// contain key/value pairs that are strings instead of raw bytes.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class StringEvent : pb::IMessage<StringEvent>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1241,6 +1244,7 @@ namespace Cosmos.Base.Abci.V1beta1 {
   /// Attribute defines an attribute wrapper where the key and value are
   /// strings instead of raw bytes.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Attribute : pb::IMessage<Attribute>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1470,6 +1474,7 @@ namespace Cosmos.Base.Abci.V1beta1 {
   /// <summary>
   /// GasInfo defines tx execution gas context.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GasInfo : pb::IMessage<GasInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1705,6 +1710,7 @@ namespace Cosmos.Base.Abci.V1beta1 {
   /// <summary>
   /// Result is the union of ResponseFormat and ResponseCheckTx.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Result : pb::IMessage<Result>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2006,6 +2012,7 @@ namespace Cosmos.Base.Abci.V1beta1 {
   /// SimulationResponse defines the response generated when a transaction is
   /// successfully simulated.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SimulationResponse : pb::IMessage<SimulationResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2255,6 +2262,7 @@ namespace Cosmos.Base.Abci.V1beta1 {
   /// execution.
   /// </summary>
   [global::System.ObsoleteAttribute]
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgData : pb::IMessage<MsgData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2485,6 +2493,7 @@ namespace Cosmos.Base.Abci.V1beta1 {
   /// TxMsgData defines a list of MsgData. A transaction will have a MsgData object
   /// for each message.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TxMsgData : pb::IMessage<TxMsgData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2701,6 +2710,7 @@ namespace Cosmos.Base.Abci.V1beta1 {
   /// <summary>
   /// SearchTxsResult defines a structure for querying txs pageable
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SearchTxsResult : pb::IMessage<SearchTxsResult>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
