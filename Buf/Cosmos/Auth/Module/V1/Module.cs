@@ -51,6 +51,7 @@ namespace Cosmos.Auth.Module.V1 {
   /// <summary>
   /// Module is the config object for the auth module.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Module : pb::IMessage<Module>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -315,6 +316,7 @@ namespace Cosmos.Auth.Module.V1 {
   /// <summary>
   /// ModuleAccountPermission represents permissions for a module account.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ModuleAccountPermission : pb::IMessage<ModuleAccountPermission>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

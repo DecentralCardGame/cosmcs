@@ -64,6 +64,7 @@ namespace Cosmos.Authz.V1beta1 {
   /// GenericAuthorization gives the grantee unrestricted permissions to execute
   /// the provided method on behalf of the granter's account.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GenericAuthorization : pb::IMessage<GenericAuthorization>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -260,6 +261,7 @@ namespace Cosmos.Authz.V1beta1 {
   /// Grant gives permissions to execute
   /// the provide method with expiration time.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Grant : pb::IMessage<Grant>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -513,6 +515,7 @@ namespace Cosmos.Authz.V1beta1 {
   /// GrantAuthorization extends a grant with both the addresses of the grantee and granter.
   /// It is used in genesis.proto and query.proto
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GrantAuthorization : pb::IMessage<GrantAuthorization>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -834,6 +837,7 @@ namespace Cosmos.Authz.V1beta1 {
   /// <summary>
   /// GrantQueueItem contains the list of TypeURL of a sdk.Msg.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GrantQueueItem : pb::IMessage<GrantQueueItem>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

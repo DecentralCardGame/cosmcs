@@ -127,6 +127,7 @@ namespace Cosmos.Tx.Signing.V1beta1 {
   /// <summary>
   /// SignatureDescriptors wraps multiple SignatureDescriptor's.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SignatureDescriptors : pb::IMessage<SignatureDescriptors>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -314,6 +315,7 @@ namespace Cosmos.Tx.Signing.V1beta1 {
   /// signature itself. It is primarily used for coordinating signatures between
   /// clients.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SignatureDescriptor : pb::IMessage<SignatureDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -609,6 +611,7 @@ namespace Cosmos.Tx.Signing.V1beta1 {
       /// <summary>
       /// Data represents signature data
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Data : pb::IMessage<Data>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -906,6 +909,7 @@ namespace Cosmos.Tx.Signing.V1beta1 {
           /// <summary>
           /// Single is the signature data for a single signer
           /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
           public sealed partial class Single : pb::IMessage<Single>
           #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
               , pb::IBufferMessage
@@ -1141,6 +1145,7 @@ namespace Cosmos.Tx.Signing.V1beta1 {
           /// <summary>
           /// Multi is the signature data for a multisig public key
           /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
           public sealed partial class Multi : pb::IMessage<Multi>
           #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
               , pb::IBufferMessage

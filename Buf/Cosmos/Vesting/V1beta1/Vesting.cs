@@ -86,6 +86,7 @@ namespace Cosmos.Vesting.V1beta1 {
   /// BaseVestingAccount implements the VestingAccount interface. It contains all
   /// the necessary fields needed for any vesting account implementation.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BaseVestingAccount : pb::IMessage<BaseVestingAccount>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -406,6 +407,7 @@ namespace Cosmos.Vesting.V1beta1 {
   /// ContinuousVestingAccount implements the VestingAccount interface. It
   /// continuously vests by unlocking coins linearly with respect to time.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ContinuousVestingAccount : pb::IMessage<ContinuousVestingAccount>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -649,6 +651,7 @@ namespace Cosmos.Vesting.V1beta1 {
   /// coins after a specific time, but non prior. In other words, it keeps them
   /// locked until a specified time.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DelayedVestingAccount : pb::IMessage<DelayedVestingAccount>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -850,6 +853,7 @@ namespace Cosmos.Vesting.V1beta1 {
   /// <summary>
   /// Period defines a length of time and amount of coins that will vest.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Period : pb::IMessage<Period>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1072,6 +1076,7 @@ namespace Cosmos.Vesting.V1beta1 {
   /// PeriodicVestingAccount implements the VestingAccount interface. It
   /// periodically vests by unlocking coins during each specified period.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PeriodicVestingAccount : pb::IMessage<PeriodicVestingAccount>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1340,6 +1345,7 @@ namespace Cosmos.Vesting.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.43
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PermanentLockedAccount : pb::IMessage<PermanentLockedAccount>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

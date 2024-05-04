@@ -66,6 +66,7 @@ namespace Tendermint.Types {
   /// ConsensusParams contains consensus critical parameters that determine the
   /// validity of blocks.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ConsensusParams : pb::IMessage<ConsensusParams>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -405,6 +406,7 @@ namespace Tendermint.Types {
   /// <summary>
   /// BlockParams contains limits on the block size.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BlockParams : pb::IMessage<BlockParams>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -642,6 +644,7 @@ namespace Tendermint.Types {
   /// <summary>
   /// EvidenceParams determine how we handle evidence of malfeasance.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EvidenceParams : pb::IMessage<EvidenceParams>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -936,6 +939,7 @@ namespace Tendermint.Types {
   /// ValidatorParams restrict the public key types validators can use.
   /// NOTE: uses ABCI pubkey naming, not Amino names.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ValidatorParams : pb::IMessage<ValidatorParams>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1117,6 +1121,7 @@ namespace Tendermint.Types {
   /// <summary>
   /// VersionParams contains the ABCI application version.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class VersionParams : pb::IMessage<VersionParams>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1311,6 +1316,7 @@ namespace Tendermint.Types {
   ///
   /// It is hashed into the Header.ConsensusHash.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class HashedParams : pb::IMessage<HashedParams>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

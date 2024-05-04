@@ -56,6 +56,7 @@ namespace Cosmos.Base.Query.V1beta1 {
   ///          PageRequest pagination = 2;
   ///  }
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PageRequest : pb::IMessage<PageRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -427,6 +428,7 @@ namespace Cosmos.Base.Query.V1beta1 {
   ///          PageResponse page = 2;
   ///  }
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PageResponse : pb::IMessage<PageResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

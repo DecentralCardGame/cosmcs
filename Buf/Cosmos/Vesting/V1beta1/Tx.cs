@@ -88,6 +88,7 @@ namespace Cosmos.Vesting.V1beta1 {
   /// MsgCreateVestingAccount defines a message that enables creating a vesting
   /// account.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCreateVestingAccount : pb::IMessage<MsgCreateVestingAccount>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -420,6 +421,7 @@ namespace Cosmos.Vesting.V1beta1 {
   /// <summary>
   /// MsgCreateVestingAccountResponse defines the Msg/CreateVestingAccount response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCreateVestingAccountResponse : pb::IMessage<MsgCreateVestingAccountResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -578,6 +580,7 @@ namespace Cosmos.Vesting.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCreatePermanentLockedAccount : pb::IMessage<MsgCreatePermanentLockedAccount>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -835,6 +838,7 @@ namespace Cosmos.Vesting.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCreatePermanentLockedAccountResponse : pb::IMessage<MsgCreatePermanentLockedAccountResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -993,6 +997,7 @@ namespace Cosmos.Vesting.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCreatePeriodicVestingAccount : pb::IMessage<MsgCreatePeriodicVestingAccount>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1291,6 +1296,7 @@ namespace Cosmos.Vesting.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCreatePeriodicVestingAccountResponse : pb::IMessage<MsgCreatePeriodicVestingAccountResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

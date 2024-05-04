@@ -68,6 +68,7 @@ namespace Cosmos.Slashing.V1beta1 {
   /// ValidatorSigningInfo defines a validator's signing info for monitoring their
   /// liveness activity.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ValidatorSigningInfo : pb::IMessage<ValidatorSigningInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -473,6 +474,7 @@ namespace Cosmos.Slashing.V1beta1 {
   /// <summary>
   /// Params represents the parameters used for by the slashing module.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Params : pb::IMessage<Params>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

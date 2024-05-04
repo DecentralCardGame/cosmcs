@@ -62,6 +62,7 @@ namespace Cosmos.Mint.V1beta1 {
   /// <summary>
   /// Minter represents the minting state.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Minter : pb::IMessage<Minter>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -297,6 +298,7 @@ namespace Cosmos.Mint.V1beta1 {
   /// <summary>
   /// Params defines the parameters for the x/mint module.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Params : pb::IMessage<Params>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

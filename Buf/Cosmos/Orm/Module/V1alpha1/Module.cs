@@ -47,6 +47,7 @@ namespace Cosmos.Orm.Module.V1alpha1 {
   /// module-scoped DB's. In the future it may provide gRPC services for interacting
   /// with ORM data.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Module : pb::IMessage<Module>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

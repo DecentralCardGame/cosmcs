@@ -234,6 +234,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// QueryValidatorsRequest is request type for Query/Validators RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryValidatorsRequest : pb::IMessage<QueryValidatorsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -478,6 +479,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// QueryValidatorsResponse is response type for the Query/Validators RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryValidatorsResponse : pb::IMessage<QueryValidatorsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -711,6 +713,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// QueryValidatorRequest is response type for the Query/Validator RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryValidatorRequest : pb::IMessage<QueryValidatorRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -906,6 +909,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// QueryValidatorResponse is response type for the Query/Validator RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryValidatorResponse : pb::IMessage<QueryValidatorResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1111,6 +1115,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// QueryValidatorDelegationsRequest is request type for the
   /// Query/ValidatorDelegations RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryValidatorDelegationsRequest : pb::IMessage<QueryValidatorDelegationsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1356,6 +1361,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// QueryValidatorDelegationsResponse is response type for the
   /// Query/ValidatorDelegations RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryValidatorDelegationsResponse : pb::IMessage<QueryValidatorDelegationsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1587,6 +1593,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// QueryValidatorUnbondingDelegationsRequest is required type for the
   /// Query/ValidatorUnbondingDelegations RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryValidatorUnbondingDelegationsRequest : pb::IMessage<QueryValidatorUnbondingDelegationsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1832,6 +1839,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// QueryValidatorUnbondingDelegationsResponse is response type for the
   /// Query/ValidatorUnbondingDelegations RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryValidatorUnbondingDelegationsResponse : pb::IMessage<QueryValidatorUnbondingDelegationsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2062,6 +2070,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// QueryDelegationRequest is request type for the Query/Delegation RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDelegationRequest : pb::IMessage<QueryDelegationRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2297,6 +2306,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// QueryDelegationResponse is response type for the Query/Delegation RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDelegationResponse : pb::IMessage<QueryDelegationResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2502,6 +2512,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// QueryUnbondingDelegationRequest is request type for the
   /// Query/UnbondingDelegation RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryUnbondingDelegationRequest : pb::IMessage<QueryUnbondingDelegationRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2738,6 +2749,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// QueryDelegationResponse is response type for the Query/UnbondingDelegation
   /// RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryUnbondingDelegationResponse : pb::IMessage<QueryUnbondingDelegationResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2943,6 +2955,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// QueryDelegatorDelegationsRequest is request type for the
   /// Query/DelegatorDelegations RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDelegatorDelegationsRequest : pb::IMessage<QueryDelegatorDelegationsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3188,6 +3201,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// QueryDelegatorDelegationsResponse is response type for the
   /// Query/DelegatorDelegations RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDelegatorDelegationsResponse : pb::IMessage<QueryDelegatorDelegationsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3422,6 +3436,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// QueryDelegatorUnbondingDelegationsRequest is request type for the
   /// Query/DelegatorUnbondingDelegations RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDelegatorUnbondingDelegationsRequest : pb::IMessage<QueryDelegatorUnbondingDelegationsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3667,6 +3682,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// QueryUnbondingDelegatorDelegationsResponse is response type for the
   /// Query/UnbondingDelegatorDelegations RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDelegatorUnbondingDelegationsResponse : pb::IMessage<QueryDelegatorUnbondingDelegationsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3898,6 +3914,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// QueryRedelegationsRequest is request type for the Query/Redelegations RPC
   /// method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryRedelegationsRequest : pb::IMessage<QueryRedelegationsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4223,6 +4240,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// QueryRedelegationsResponse is response type for the Query/Redelegations RPC
   /// method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryRedelegationsResponse : pb::IMessage<QueryRedelegationsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4454,6 +4472,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// QueryDelegatorValidatorsRequest is request type for the
   /// Query/DelegatorValidators RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDelegatorValidatorsRequest : pb::IMessage<QueryDelegatorValidatorsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4699,6 +4718,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// QueryDelegatorValidatorsResponse is response type for the
   /// Query/DelegatorValidators RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDelegatorValidatorsResponse : pb::IMessage<QueryDelegatorValidatorsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4933,6 +4953,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// QueryDelegatorValidatorRequest is request type for the
   /// Query/DelegatorValidator RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDelegatorValidatorRequest : pb::IMessage<QueryDelegatorValidatorRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5169,6 +5190,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// QueryDelegatorValidatorResponse response type for the
   /// Query/DelegatorValidator RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryDelegatorValidatorResponse : pb::IMessage<QueryDelegatorValidatorResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5374,6 +5396,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// QueryHistoricalInfoRequest is request type for the Query/HistoricalInfo RPC
   /// method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryHistoricalInfoRequest : pb::IMessage<QueryHistoricalInfoRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5570,6 +5593,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// QueryHistoricalInfoResponse is response type for the Query/HistoricalInfo RPC
   /// method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryHistoricalInfoResponse : pb::IMessage<QueryHistoricalInfoResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5774,6 +5798,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// QueryPoolRequest is request type for the Query/Pool RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryPoolRequest : pb::IMessage<QueryPoolRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5929,6 +5954,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// QueryPoolResponse is response type for the Query/Pool RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryPoolResponse : pb::IMessage<QueryPoolResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6133,6 +6159,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// QueryParamsRequest is request type for the Query/Params RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryParamsRequest : pb::IMessage<QueryParamsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6288,6 +6315,7 @@ namespace Cosmos.Staking.V1beta1 {
   /// <summary>
   /// QueryParamsResponse is response type for the Query/Params RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryParamsResponse : pb::IMessage<QueryParamsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

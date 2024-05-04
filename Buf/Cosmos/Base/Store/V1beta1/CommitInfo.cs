@@ -56,6 +56,7 @@ namespace Cosmos.Base.Store.V1beta1 {
   /// CommitInfo defines commit information used by the multi-store when committing
   /// a version/height.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CommitInfo : pb::IMessage<CommitInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -321,6 +322,7 @@ namespace Cosmos.Base.Store.V1beta1 {
   /// StoreInfo defines store-specific commit information. It contains a reference
   /// between a store name and the commit ID.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class StoreInfo : pb::IMessage<StoreInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -560,6 +562,7 @@ namespace Cosmos.Base.Store.V1beta1 {
   /// CommitID defines the commitment information when a specific store is
   /// committed.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CommitID : pb::IMessage<CommitID>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

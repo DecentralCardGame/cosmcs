@@ -57,6 +57,7 @@ namespace Cosmos.Evidence.V1beta1 {
   /// MsgSubmitEvidence represents a message that supports submitting arbitrary
   /// Evidence of misbehavior such as equivocation or counterfactual signing.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSubmitEvidence : pb::IMessage<MsgSubmitEvidence>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -301,6 +302,7 @@ namespace Cosmos.Evidence.V1beta1 {
   /// <summary>
   /// MsgSubmitEvidenceResponse defines the Msg/SubmitEvidence response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSubmitEvidenceResponse : pb::IMessage<MsgSubmitEvidenceResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

@@ -91,6 +91,7 @@ namespace Cosmos.Staking.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.43
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class StakeAuthorization : pb::IMessage<StakeAuthorization>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -479,6 +480,7 @@ namespace Cosmos.Staking.V1beta1 {
       /// <summary>
       /// Validators defines list of validator addresses.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Validators : pb::IMessage<Validators>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage

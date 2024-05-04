@@ -202,6 +202,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryGroupInfoRequest is the Query/GroupInfo request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryGroupInfoRequest : pb::IMessage<QueryGroupInfoRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -397,6 +398,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryGroupInfoResponse is the Query/GroupInfo response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryGroupInfoResponse : pb::IMessage<QueryGroupInfoResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -601,6 +603,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryGroupPolicyInfoRequest is the Query/GroupPolicyInfo request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryGroupPolicyInfoRequest : pb::IMessage<QueryGroupPolicyInfoRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -796,6 +799,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryGroupPolicyInfoResponse is the Query/GroupPolicyInfo response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryGroupPolicyInfoResponse : pb::IMessage<QueryGroupPolicyInfoResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1000,6 +1004,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryGroupMembersRequest is the Query/GroupMembers request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryGroupMembersRequest : pb::IMessage<QueryGroupMembersRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1244,6 +1249,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryGroupMembersResponse is the Query/GroupMembersResponse response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryGroupMembersResponse : pb::IMessage<QueryGroupMembersResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1477,6 +1483,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryGroupsByAdminRequest is the Query/GroupsByAdmin request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryGroupsByAdminRequest : pb::IMessage<QueryGroupsByAdminRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1721,6 +1728,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryGroupsByAdminResponse is the Query/GroupsByAdminResponse response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryGroupsByAdminResponse : pb::IMessage<QueryGroupsByAdminResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1954,6 +1962,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryGroupPoliciesByGroupRequest is the Query/GroupPoliciesByGroup request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryGroupPoliciesByGroupRequest : pb::IMessage<QueryGroupPoliciesByGroupRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2198,6 +2207,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryGroupPoliciesByGroupResponse is the Query/GroupPoliciesByGroup response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryGroupPoliciesByGroupResponse : pb::IMessage<QueryGroupPoliciesByGroupResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2431,6 +2441,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryGroupPoliciesByAdminRequest is the Query/GroupPoliciesByAdmin request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryGroupPoliciesByAdminRequest : pb::IMessage<QueryGroupPoliciesByAdminRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2675,6 +2686,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryGroupPoliciesByAdminResponse is the Query/GroupPoliciesByAdmin response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryGroupPoliciesByAdminResponse : pb::IMessage<QueryGroupPoliciesByAdminResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2908,6 +2920,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryProposalRequest is the Query/Proposal request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryProposalRequest : pb::IMessage<QueryProposalRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3103,6 +3116,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryProposalResponse is the Query/Proposal response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryProposalResponse : pb::IMessage<QueryProposalResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3307,6 +3321,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryProposalsByGroupPolicyRequest is the Query/ProposalByGroupPolicy request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryProposalsByGroupPolicyRequest : pb::IMessage<QueryProposalsByGroupPolicyRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3551,6 +3566,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryProposalsByGroupPolicyResponse is the Query/ProposalByGroupPolicy response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryProposalsByGroupPolicyResponse : pb::IMessage<QueryProposalsByGroupPolicyResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3784,6 +3800,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryVoteByProposalVoterRequest is the Query/VoteByProposalVoter request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryVoteByProposalVoterRequest : pb::IMessage<QueryVoteByProposalVoterRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4019,6 +4036,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryVoteByProposalVoterResponse is the Query/VoteByProposalVoter response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryVoteByProposalVoterResponse : pb::IMessage<QueryVoteByProposalVoterResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4223,6 +4241,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryVotesByProposalRequest is the Query/VotesByProposal request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryVotesByProposalRequest : pb::IMessage<QueryVotesByProposalRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4467,6 +4486,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryVotesByProposalResponse is the Query/VotesByProposal response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryVotesByProposalResponse : pb::IMessage<QueryVotesByProposalResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4700,6 +4720,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryVotesByVoterRequest is the Query/VotesByVoter request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryVotesByVoterRequest : pb::IMessage<QueryVotesByVoterRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4944,6 +4965,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryVotesByVoterResponse is the Query/VotesByVoter response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryVotesByVoterResponse : pb::IMessage<QueryVotesByVoterResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5177,6 +5199,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryGroupsByMemberRequest is the Query/GroupsByMember request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryGroupsByMemberRequest : pb::IMessage<QueryGroupsByMemberRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5421,6 +5444,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryGroupsByMemberResponse is the Query/GroupsByMember response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryGroupsByMemberResponse : pb::IMessage<QueryGroupsByMemberResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5654,6 +5678,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryTallyResultRequest is the Query/TallyResult request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryTallyResultRequest : pb::IMessage<QueryTallyResultRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5849,6 +5874,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// QueryTallyResultResponse is the Query/TallyResult response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryTallyResultResponse : pb::IMessage<QueryTallyResultResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6055,6 +6081,7 @@ namespace Cosmos.Group.V1 {
   ///
   /// Since: cosmos-sdk 0.47.1
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryGroupsRequest : pb::IMessage<QueryGroupsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6261,6 +6288,7 @@ namespace Cosmos.Group.V1 {
   ///
   /// Since: cosmos-sdk 0.47.1
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryGroupsResponse : pb::IMessage<QueryGroupsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

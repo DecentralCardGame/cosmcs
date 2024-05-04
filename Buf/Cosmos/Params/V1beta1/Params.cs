@@ -54,6 +54,7 @@ namespace Cosmos.Params.V1beta1 {
   /// <summary>
   /// ParameterChangeProposal defines a proposal to change one or more parameters.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ParameterChangeProposal : pb::IMessage<ParameterChangeProposal>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -310,6 +311,7 @@ namespace Cosmos.Params.V1beta1 {
   /// ParamChange defines an individual parameter change, for use in
   /// ParameterChangeProposal.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ParamChange : pb::IMessage<ParamChange>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

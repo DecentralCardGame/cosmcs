@@ -155,6 +155,7 @@ namespace Cosmos.Base.Tendermint.V1beta1 {
   /// <summary>
   /// GetValidatorSetByHeightRequest is the request type for the Query/GetValidatorSetByHeight RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetValidatorSetByHeightRequest : pb::IMessage<GetValidatorSetByHeightRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -396,6 +397,7 @@ namespace Cosmos.Base.Tendermint.V1beta1 {
   /// <summary>
   /// GetValidatorSetByHeightResponse is the response type for the Query/GetValidatorSetByHeight RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetValidatorSetByHeightResponse : pb::IMessage<GetValidatorSetByHeightResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -663,6 +665,7 @@ namespace Cosmos.Base.Tendermint.V1beta1 {
   /// <summary>
   /// GetLatestValidatorSetRequest is the request type for the Query/GetValidatorSetByHeight RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetLatestValidatorSetRequest : pb::IMessage<GetLatestValidatorSetRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -867,6 +870,7 @@ namespace Cosmos.Base.Tendermint.V1beta1 {
   /// <summary>
   /// GetLatestValidatorSetResponse is the response type for the Query/GetValidatorSetByHeight RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetLatestValidatorSetResponse : pb::IMessage<GetLatestValidatorSetResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1134,6 +1138,7 @@ namespace Cosmos.Base.Tendermint.V1beta1 {
   /// <summary>
   /// Validator is the type for the validator-set.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Validator : pb::IMessage<Validator>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1446,6 +1451,7 @@ namespace Cosmos.Base.Tendermint.V1beta1 {
   /// <summary>
   /// GetBlockByHeightRequest is the request type for the Query/GetBlockByHeight RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetBlockByHeightRequest : pb::IMessage<GetBlockByHeightRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1638,6 +1644,7 @@ namespace Cosmos.Base.Tendermint.V1beta1 {
   /// <summary>
   /// GetBlockByHeightResponse is the response type for the Query/GetBlockByHeight RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetBlockByHeightResponse : pb::IMessage<GetBlockByHeightResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1937,6 +1944,7 @@ namespace Cosmos.Base.Tendermint.V1beta1 {
   /// <summary>
   /// GetLatestBlockRequest is the request type for the Query/GetLatestBlock RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetLatestBlockRequest : pb::IMessage<GetLatestBlockRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2092,6 +2100,7 @@ namespace Cosmos.Base.Tendermint.V1beta1 {
   /// <summary>
   /// GetLatestBlockResponse is the response type for the Query/GetLatestBlock RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetLatestBlockResponse : pb::IMessage<GetLatestBlockResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2391,6 +2400,7 @@ namespace Cosmos.Base.Tendermint.V1beta1 {
   /// <summary>
   /// GetSyncingRequest is the request type for the Query/GetSyncing RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetSyncingRequest : pb::IMessage<GetSyncingRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2546,6 +2556,7 @@ namespace Cosmos.Base.Tendermint.V1beta1 {
   /// <summary>
   /// GetSyncingResponse is the response type for the Query/GetSyncing RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetSyncingResponse : pb::IMessage<GetSyncingResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2738,6 +2749,7 @@ namespace Cosmos.Base.Tendermint.V1beta1 {
   /// <summary>
   /// GetNodeInfoRequest is the request type for the Query/GetNodeInfo RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetNodeInfoRequest : pb::IMessage<GetNodeInfoRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2893,6 +2905,7 @@ namespace Cosmos.Base.Tendermint.V1beta1 {
   /// <summary>
   /// GetNodeInfoResponse is the response type for the Query/GetNodeInfo RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetNodeInfoResponse : pb::IMessage<GetNodeInfoResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3140,6 +3153,7 @@ namespace Cosmos.Base.Tendermint.V1beta1 {
   /// <summary>
   /// VersionInfo is the type for the GetNodeInfoResponse message.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class VersionInfo : pb::IMessage<VersionInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3583,6 +3597,7 @@ namespace Cosmos.Base.Tendermint.V1beta1 {
   /// <summary>
   /// Module is the type for VersionInfo
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Module : pb::IMessage<Module>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3858,6 +3873,7 @@ namespace Cosmos.Base.Tendermint.V1beta1 {
   /// <summary>
   /// ABCIQueryRequest defines the request structure for the ABCIQuery gRPC query.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ABCIQueryRequest : pb::IMessage<ABCIQueryRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4164,6 +4180,7 @@ namespace Cosmos.Base.Tendermint.V1beta1 {
   /// Note: This type is a duplicate of the ResponseQuery proto type defined in
   /// Tendermint.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ABCIQueryResponse : pb::IMessage<ABCIQueryResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4671,6 +4688,7 @@ namespace Cosmos.Base.Tendermint.V1beta1 {
   ///
   /// Note: This type is a duplicate of the ProofOp proto type defined in Tendermint.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ProofOp : pb::IMessage<ProofOp>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4939,6 +4957,7 @@ namespace Cosmos.Base.Tendermint.V1beta1 {
   ///
   /// Note: This type is a duplicate of the ProofOps proto type defined in Tendermint.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ProofOps : pb::IMessage<ProofOps>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

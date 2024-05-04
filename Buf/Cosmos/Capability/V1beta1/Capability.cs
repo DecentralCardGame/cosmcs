@@ -53,6 +53,7 @@ namespace Cosmos.Capability.V1beta1 {
   /// Capability defines an implementation of an object capability. The index
   /// provided to a Capability must be globally unique.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Capability : pb::IMessage<Capability>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -246,6 +247,7 @@ namespace Cosmos.Capability.V1beta1 {
   /// Owner defines a single capability owner. An owner is defined by the name of
   /// capability and the module name.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Owner : pb::IMessage<Owner>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -476,6 +478,7 @@ namespace Cosmos.Capability.V1beta1 {
   /// CapabilityOwners defines a set of owners of a single Capability. The set of
   /// owners must be unique.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CapabilityOwners : pb::IMessage<CapabilityOwners>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

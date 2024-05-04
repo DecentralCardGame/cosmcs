@@ -48,6 +48,7 @@ namespace Cosmos.App.V1alpha1 {
   /// <summary>
   /// QueryConfigRequest is the Query/Config request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryConfigRequest : pb::IMessage<QueryConfigRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -203,6 +204,7 @@ namespace Cosmos.App.V1alpha1 {
   /// <summary>
   /// QueryConfigRequest is the Query/Config response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryConfigResponse : pb::IMessage<QueryConfigResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

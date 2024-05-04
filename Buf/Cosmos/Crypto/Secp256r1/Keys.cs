@@ -48,6 +48,7 @@ namespace Cosmos.Crypto.Secp256r1 {
   /// <summary>
   /// PubKey defines a secp256r1 ECDSA public key.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PubKey : pb::IMessage<PubKey>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -244,6 +245,7 @@ namespace Cosmos.Crypto.Secp256r1 {
   /// <summary>
   /// PrivKey defines a secp256r1 ECDSA private key.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PrivKey : pb::IMessage<PrivKey>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

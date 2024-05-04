@@ -70,6 +70,7 @@ namespace Cosmos.Mint.V1beta1 {
   /// <summary>
   /// QueryParamsRequest is the request type for the Query/Params RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryParamsRequest : pb::IMessage<QueryParamsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -225,6 +226,7 @@ namespace Cosmos.Mint.V1beta1 {
   /// <summary>
   /// QueryParamsResponse is the response type for the Query/Params RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryParamsResponse : pb::IMessage<QueryParamsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -429,6 +431,7 @@ namespace Cosmos.Mint.V1beta1 {
   /// <summary>
   /// QueryInflationRequest is the request type for the Query/Inflation RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryInflationRequest : pb::IMessage<QueryInflationRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -585,6 +588,7 @@ namespace Cosmos.Mint.V1beta1 {
   /// QueryInflationResponse is the response type for the Query/Inflation RPC
   /// method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryInflationResponse : pb::IMessage<QueryInflationResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -781,6 +785,7 @@ namespace Cosmos.Mint.V1beta1 {
   /// QueryAnnualProvisionsRequest is the request type for the
   /// Query/AnnualProvisions RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAnnualProvisionsRequest : pb::IMessage<QueryAnnualProvisionsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -937,6 +942,7 @@ namespace Cosmos.Mint.V1beta1 {
   /// QueryAnnualProvisionsResponse is the response type for the
   /// Query/AnnualProvisions RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAnnualProvisionsResponse : pb::IMessage<QueryAnnualProvisionsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

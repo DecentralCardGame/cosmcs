@@ -53,6 +53,7 @@ namespace Cosmos.Capability.V1beta1 {
   /// <summary>
   /// GenesisOwners defines the capability owners with their corresponding index.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GenesisOwners : pb::IMessage<GenesisOwners>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -297,6 +298,7 @@ namespace Cosmos.Capability.V1beta1 {
   /// <summary>
   /// GenesisState defines the capability module's genesis state.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GenesisState : pb::IMessage<GenesisState>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

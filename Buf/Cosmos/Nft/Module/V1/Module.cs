@@ -44,6 +44,7 @@ namespace Cosmos.Nft.Module.V1 {
   /// <summary>
   /// Module is the config object of the nft module.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Module : pb::IMessage<Module>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

@@ -78,6 +78,7 @@ namespace Cosmos.Slashing.V1beta1 {
   /// <summary>
   /// QueryParamsRequest is the request type for the Query/Params RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryParamsRequest : pb::IMessage<QueryParamsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -233,6 +234,7 @@ namespace Cosmos.Slashing.V1beta1 {
   /// <summary>
   /// QueryParamsResponse is the response type for the Query/Params RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryParamsResponse : pb::IMessage<QueryParamsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -435,6 +437,7 @@ namespace Cosmos.Slashing.V1beta1 {
   /// QuerySigningInfoRequest is the request type for the Query/SigningInfo RPC
   /// method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QuerySigningInfoRequest : pb::IMessage<QuerySigningInfoRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -631,6 +634,7 @@ namespace Cosmos.Slashing.V1beta1 {
   /// QuerySigningInfoResponse is the response type for the Query/SigningInfo RPC
   /// method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QuerySigningInfoResponse : pb::IMessage<QuerySigningInfoResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -836,6 +840,7 @@ namespace Cosmos.Slashing.V1beta1 {
   /// QuerySigningInfosRequest is the request type for the Query/SigningInfos RPC
   /// method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QuerySigningInfosRequest : pb::IMessage<QuerySigningInfosRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1038,6 +1043,7 @@ namespace Cosmos.Slashing.V1beta1 {
   /// QuerySigningInfosResponse is the response type for the Query/SigningInfos RPC
   /// method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QuerySigningInfosResponse : pb::IMessage<QuerySigningInfosResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

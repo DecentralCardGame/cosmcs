@@ -54,6 +54,7 @@ namespace Cosmos.Crypto.Ed25519 {
   /// ADR-28. Nevertheless, you will like to use ed25519 in app user level
   /// then you must create a new proto message and follow ADR-28 for Address construction.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PubKey : pb::IMessage<PubKey>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -247,6 +248,7 @@ namespace Cosmos.Crypto.Ed25519 {
   /// Deprecated: PrivKey defines a ed25519 private key.
   /// NOTE: ed25519 keys must not be used in SDK apps except in a tendermint validator context.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PrivKey : pb::IMessage<PrivKey>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

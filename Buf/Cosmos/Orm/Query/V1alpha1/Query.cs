@@ -80,6 +80,7 @@ namespace Cosmos.Orm.Query.V1alpha1 {
   /// <summary>
   /// GetRequest is the Query/Get request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetRequest : pb::IMessage<GetRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -348,6 +349,7 @@ namespace Cosmos.Orm.Query.V1alpha1 {
   /// <summary>
   /// GetResponse is the Query/Get response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetResponse : pb::IMessage<GetResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -553,6 +555,7 @@ namespace Cosmos.Orm.Query.V1alpha1 {
   /// <summary>
   /// ListRequest is the Query/List request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ListRequest : pb::IMessage<ListRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -980,6 +983,7 @@ namespace Cosmos.Orm.Query.V1alpha1 {
       /// <summary>
       /// Prefix specifies the arguments to a prefix query.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Prefix : pb::IMessage<Prefix>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -1166,6 +1170,7 @@ namespace Cosmos.Orm.Query.V1alpha1 {
       /// <summary>
       /// Range specifies the arguments to a range query.
       /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class Range : pb::IMessage<Range>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           , pb::IBufferMessage
@@ -1388,6 +1393,7 @@ namespace Cosmos.Orm.Query.V1alpha1 {
   /// <summary>
   /// ListResponse is the Query/List response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ListResponse : pb::IMessage<ListResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1621,6 +1627,7 @@ namespace Cosmos.Orm.Query.V1alpha1 {
   /// <summary>
   /// IndexValue represents the value of a field in an ORM index expression.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class IndexValue : pb::IMessage<IndexValue>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

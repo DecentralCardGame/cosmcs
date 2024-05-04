@@ -73,6 +73,7 @@ namespace Cosmos.Authz.V1beta1 {
   /// MsgGrant is a request type for Grant method. It declares authorization to the grantee
   /// on behalf of the granter with the provided expiration time.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgGrant : pb::IMessage<MsgGrant>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -348,6 +349,7 @@ namespace Cosmos.Authz.V1beta1 {
   /// <summary>
   /// MsgExecResponse defines the Msg/MsgExecResponse response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgExecResponse : pb::IMessage<MsgExecResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -531,6 +533,7 @@ namespace Cosmos.Authz.V1beta1 {
   /// authorizations granted to the grantee. Each message should have only
   /// one signer corresponding to the granter of the authorization.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgExec : pb::IMessage<MsgExec>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -754,6 +757,7 @@ namespace Cosmos.Authz.V1beta1 {
   /// <summary>
   /// MsgGrantResponse defines the Msg/MsgGrant response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgGrantResponse : pb::IMessage<MsgGrantResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -910,6 +914,7 @@ namespace Cosmos.Authz.V1beta1 {
   /// MsgRevoke revokes any authorization with the provided sdk.Msg type on the
   /// granter's account with that has been granted to the grantee.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgRevoke : pb::IMessage<MsgRevoke>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1176,6 +1181,7 @@ namespace Cosmos.Authz.V1beta1 {
   /// <summary>
   /// MsgRevokeResponse defines the Msg/MsgRevokeResponse response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgRevokeResponse : pb::IMessage<MsgRevokeResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

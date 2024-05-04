@@ -67,6 +67,7 @@ namespace Cosmos.Evidence.V1beta1 {
   /// <summary>
   /// QueryEvidenceRequest is the request type for the Query/Evidence RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryEvidenceRequest : pb::IMessage<QueryEvidenceRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -306,6 +307,7 @@ namespace Cosmos.Evidence.V1beta1 {
   /// <summary>
   /// QueryEvidenceResponse is the response type for the Query/Evidence RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryEvidenceResponse : pb::IMessage<QueryEvidenceResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -511,6 +513,7 @@ namespace Cosmos.Evidence.V1beta1 {
   /// QueryEvidenceRequest is the request type for the Query/AllEvidence RPC
   /// method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAllEvidenceRequest : pb::IMessage<QueryAllEvidenceRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -716,6 +719,7 @@ namespace Cosmos.Evidence.V1beta1 {
   /// QueryAllEvidenceResponse is the response type for the Query/AllEvidence RPC
   /// method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryAllEvidenceResponse : pb::IMessage<QueryAllEvidenceResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

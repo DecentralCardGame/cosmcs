@@ -46,6 +46,7 @@ namespace Cosmos.Tx.Config.V1 {
   /// <summary>
   /// Config is the config object of the x/auth/tx package.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Config : pb::IMessage<Config>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

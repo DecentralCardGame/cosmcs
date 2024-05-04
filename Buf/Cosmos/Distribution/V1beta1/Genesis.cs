@@ -120,6 +120,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// withdrawn to by default this struct is only used at genesis to feed in
   /// default withdraw addresses.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DelegatorWithdrawInfo : pb::IMessage<DelegatorWithdrawInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -355,6 +356,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// <summary>
   /// ValidatorOutstandingRewardsRecord is used for import/export via genesis json.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ValidatorOutstandingRewardsRecord : pb::IMessage<ValidatorOutstandingRewardsRecord>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -580,6 +582,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// ValidatorAccumulatedCommissionRecord is used for import / export via genesis
   /// json.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ValidatorAccumulatedCommissionRecord : pb::IMessage<ValidatorAccumulatedCommissionRecord>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -825,6 +828,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// ValidatorHistoricalRewardsRecord is used for import / export via genesis
   /// json.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ValidatorHistoricalRewardsRecord : pb::IMessage<ValidatorHistoricalRewardsRecord>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1109,6 +1113,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// <summary>
   /// ValidatorCurrentRewardsRecord is used for import / export via genesis json.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ValidatorCurrentRewardsRecord : pb::IMessage<ValidatorCurrentRewardsRecord>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1353,6 +1358,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// <summary>
   /// DelegatorStartingInfoRecord used for import / export via genesis json.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DelegatorStartingInfoRecord : pb::IMessage<DelegatorStartingInfoRecord>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1637,6 +1643,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// <summary>
   /// ValidatorSlashEventRecord is used for import / export via genesis json.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ValidatorSlashEventRecord : pb::IMessage<ValidatorSlashEventRecord>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1961,6 +1968,7 @@ namespace Cosmos.Distribution.V1beta1 {
   /// <summary>
   /// GenesisState defines the distribution module's genesis state.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GenesisState : pb::IMessage<GenesisState>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

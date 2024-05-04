@@ -74,6 +74,7 @@ namespace Cosmos.Orm.V1 {
   /// <summary>
   /// TableDescriptor describes an ORM table.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TableDescriptor : pb::IMessage<TableDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -349,6 +350,7 @@ namespace Cosmos.Orm.V1 {
   /// <summary>
   /// PrimaryKeyDescriptor describes a table primary key.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PrimaryKeyDescriptor : pb::IMessage<PrimaryKeyDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -615,6 +617,7 @@ namespace Cosmos.Orm.V1 {
   /// <summary>
   /// PrimaryKeyDescriptor describes a table secondary index.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SecondaryIndexDescriptor : pb::IMessage<SecondaryIndexDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -900,6 +903,7 @@ namespace Cosmos.Orm.V1 {
   /// <summary>
   /// TableDescriptor describes an ORM singleton table which has at most one instance.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SingletonDescriptor : pb::IMessage<SingletonDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

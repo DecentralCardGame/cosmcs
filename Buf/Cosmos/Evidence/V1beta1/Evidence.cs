@@ -53,6 +53,7 @@ namespace Cosmos.Evidence.V1beta1 {
   /// Equivocation implements the Evidence interface and defines evidence of double
   /// signing misbehavior.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Equivocation : pb::IMessage<Equivocation>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

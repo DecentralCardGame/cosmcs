@@ -66,6 +66,7 @@ namespace Cosmos.Upgrade.V1beta1 {
   /// <summary>
   /// Plan specifies information about a planned upgrade and when it should occur.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Plan : pb::IMessage<Plan>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -456,6 +457,7 @@ namespace Cosmos.Upgrade.V1beta1 {
   /// proposals, see MsgSoftwareUpgrade.
   /// </summary>
   [global::System.ObsoleteAttribute]
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SoftwareUpgradeProposal : pb::IMessage<SoftwareUpgradeProposal>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -744,6 +746,7 @@ namespace Cosmos.Upgrade.V1beta1 {
   /// proposals, see MsgCancelUpgrade.
   /// </summary>
   [global::System.ObsoleteAttribute]
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CancelSoftwareUpgradeProposal : pb::IMessage<CancelSoftwareUpgradeProposal>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -981,6 +984,7 @@ namespace Cosmos.Upgrade.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.43
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ModuleVersion : pb::IMessage<ModuleVersion>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

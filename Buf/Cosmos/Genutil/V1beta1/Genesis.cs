@@ -47,6 +47,7 @@ namespace Cosmos.Genutil.V1beta1 {
   /// <summary>
   /// GenesisState defines the raw genesis transaction in JSON.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GenesisState : pb::IMessage<GenesisState>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

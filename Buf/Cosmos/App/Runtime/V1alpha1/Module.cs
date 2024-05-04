@@ -55,6 +55,7 @@ namespace Cosmos.App.Runtime.V1alpha1 {
   /// <summary>
   /// Module is the config object for the runtime module.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Module : pb::IMessage<Module>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -405,6 +406,7 @@ namespace Cosmos.App.Runtime.V1alpha1 {
   /// StoreKeyConfig may be supplied to override the default module store key, which
   /// is the module name.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class StoreKeyConfig : pb::IMessage<StoreKeyConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

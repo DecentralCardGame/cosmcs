@@ -51,6 +51,7 @@ namespace Cosmos.Nft.V1beta1 {
   /// <summary>
   /// EventSend is emitted on Msg/Send
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventSend : pb::IMessage<EventSend>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -366,6 +367,7 @@ namespace Cosmos.Nft.V1beta1 {
   /// <summary>
   /// EventMint is emitted on Mint
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventMint : pb::IMessage<EventMint>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -641,6 +643,7 @@ namespace Cosmos.Nft.V1beta1 {
   /// <summary>
   /// EventBurn is emitted on Burn
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventBurn : pb::IMessage<EventBurn>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

@@ -118,6 +118,7 @@ namespace CosmosProto {
   /// InterfaceDescriptor describes an interface type to be used with
   /// accepts_interface and implements_interface and declared by declare_interface.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class InterfaceDescriptor : pb::IMessage<InterfaceDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -363,6 +364,7 @@ namespace CosmosProto {
   /// valid syntactical representation for a given semantic meaning,
   /// i.e. the encoding should be deterministic.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ScalarDescriptor : pb::IMessage<ScalarDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

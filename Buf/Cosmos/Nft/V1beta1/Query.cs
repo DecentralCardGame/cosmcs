@@ -104,6 +104,7 @@ namespace Cosmos.Nft.V1beta1 {
   /// <summary>
   /// QueryBalanceRequest is the request type for the Query/Balance RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryBalanceRequest : pb::IMessage<QueryBalanceRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -339,6 +340,7 @@ namespace Cosmos.Nft.V1beta1 {
   /// <summary>
   /// QueryBalanceResponse is the response type for the Query/Balance RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryBalanceResponse : pb::IMessage<QueryBalanceResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -534,6 +536,7 @@ namespace Cosmos.Nft.V1beta1 {
   /// <summary>
   /// QueryOwnerRequest is the request type for the Query/Owner RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryOwnerRequest : pb::IMessage<QueryOwnerRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -769,6 +772,7 @@ namespace Cosmos.Nft.V1beta1 {
   /// <summary>
   /// QueryOwnerResponse is the response type for the Query/Owner RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryOwnerResponse : pb::IMessage<QueryOwnerResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -964,6 +968,7 @@ namespace Cosmos.Nft.V1beta1 {
   /// <summary>
   /// QuerySupplyRequest is the request type for the Query/Supply RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QuerySupplyRequest : pb::IMessage<QuerySupplyRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1159,6 +1164,7 @@ namespace Cosmos.Nft.V1beta1 {
   /// <summary>
   /// QuerySupplyResponse is the response type for the Query/Supply RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QuerySupplyResponse : pb::IMessage<QuerySupplyResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1354,6 +1360,7 @@ namespace Cosmos.Nft.V1beta1 {
   /// <summary>
   /// QueryNFTstRequest is the request type for the Query/NFTs RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryNFTsRequest : pb::IMessage<QueryNFTsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1638,6 +1645,7 @@ namespace Cosmos.Nft.V1beta1 {
   /// <summary>
   /// QueryNFTsResponse is the response type for the Query/NFTs RPC methods
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryNFTsResponse : pb::IMessage<QueryNFTsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1871,6 +1879,7 @@ namespace Cosmos.Nft.V1beta1 {
   /// <summary>
   /// QueryNFTRequest is the request type for the Query/NFT RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryNFTRequest : pb::IMessage<QueryNFTRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2106,6 +2115,7 @@ namespace Cosmos.Nft.V1beta1 {
   /// <summary>
   /// QueryNFTResponse is the response type for the Query/NFT RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryNFTResponse : pb::IMessage<QueryNFTResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2310,6 +2320,7 @@ namespace Cosmos.Nft.V1beta1 {
   /// <summary>
   /// QueryClassRequest is the request type for the Query/Class RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryClassRequest : pb::IMessage<QueryClassRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2505,6 +2516,7 @@ namespace Cosmos.Nft.V1beta1 {
   /// <summary>
   /// QueryClassResponse is the response type for the Query/Class RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryClassResponse : pb::IMessage<QueryClassResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2709,6 +2721,7 @@ namespace Cosmos.Nft.V1beta1 {
   /// <summary>
   /// QueryClassesRequest is the request type for the Query/Classes RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryClassesRequest : pb::IMessage<QueryClassesRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2913,6 +2926,7 @@ namespace Cosmos.Nft.V1beta1 {
   /// <summary>
   /// QueryClassesResponse is the response type for the Query/Classes RPC method
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryClassesResponse : pb::IMessage<QueryClassesResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

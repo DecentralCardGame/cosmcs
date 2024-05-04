@@ -51,6 +51,7 @@ namespace Cosmos.Nft.V1beta1 {
   /// <summary>
   /// MsgSend represents a message to send a nft from one account to another account.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSend : pb::IMessage<MsgSend>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -366,6 +367,7 @@ namespace Cosmos.Nft.V1beta1 {
   /// <summary>
   /// MsgSendResponse defines the Msg/Send response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSendResponse : pb::IMessage<MsgSendResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

@@ -164,6 +164,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// <summary>
   /// AppDescriptor describes a cosmos-sdk based application
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AppDescriptor : pb::IMessage<AppDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -614,6 +615,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// <summary>
   /// TxDescriptor describes the accepted transaction type
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TxDescriptor : pb::IMessage<TxDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -841,6 +843,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// AuthnDescriptor provides information on how to sign transactions without relying
   /// on the online RPCs GetTxMetadata and CombineUnsignedTxAndSignatures
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AuthnDescriptor : pb::IMessage<AuthnDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1028,6 +1031,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// to sign a message given a SigningModeDescriptor, but it's better to think about
   /// this another time
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SigningModeDescriptor : pb::IMessage<SigningModeDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1304,6 +1308,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// <summary>
   /// ChainDescriptor describes chain information of the application
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ChainDescriptor : pb::IMessage<ChainDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1499,6 +1504,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// <summary>
   /// CodecDescriptor describes the registered interfaces and provides metadata information on the types
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CodecDescriptor : pb::IMessage<CodecDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1683,6 +1689,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// <summary>
   /// InterfaceDescriptor describes the implementation of an interface
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class InterfaceDescriptor : pb::IMessage<InterfaceDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1937,6 +1944,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// <summary>
   /// InterfaceImplementerDescriptor describes an interface implementer
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class InterfaceImplementerDescriptor : pb::IMessage<InterfaceImplementerDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2176,6 +2184,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// InterfaceAcceptingMessageDescriptor describes a protobuf message which contains
   /// an interface represented as a google.protobuf.Any
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class InterfaceAcceptingMessageDescriptor : pb::IMessage<InterfaceAcceptingMessageDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2402,6 +2411,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// <summary>
   /// ConfigurationDescriptor contains metadata information on the sdk.Config
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ConfigurationDescriptor : pb::IMessage<ConfigurationDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2597,6 +2607,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// <summary>
   /// MsgDescriptor describes a cosmos-sdk message that can be delivered with a transaction
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgDescriptor : pb::IMessage<MsgDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2792,6 +2803,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// <summary>
   /// GetAuthnDescriptorRequest is the request used for the GetAuthnDescriptor RPC
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetAuthnDescriptorRequest : pb::IMessage<GetAuthnDescriptorRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2947,6 +2959,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// <summary>
   /// GetAuthnDescriptorResponse is the response returned by the GetAuthnDescriptor RPC
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetAuthnDescriptorResponse : pb::IMessage<GetAuthnDescriptorResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3151,6 +3164,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// <summary>
   /// GetChainDescriptorRequest is the request used for the GetChainDescriptor RPC
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetChainDescriptorRequest : pb::IMessage<GetChainDescriptorRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3306,6 +3320,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// <summary>
   /// GetChainDescriptorResponse is the response returned by the GetChainDescriptor RPC
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetChainDescriptorResponse : pb::IMessage<GetChainDescriptorResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3510,6 +3525,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// <summary>
   /// GetCodecDescriptorRequest is the request used for the GetCodecDescriptor RPC
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetCodecDescriptorRequest : pb::IMessage<GetCodecDescriptorRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3665,6 +3681,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// <summary>
   /// GetCodecDescriptorResponse is the response returned by the GetCodecDescriptor RPC
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetCodecDescriptorResponse : pb::IMessage<GetCodecDescriptorResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3869,6 +3886,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// <summary>
   /// GetConfigurationDescriptorRequest is the request used for the GetConfigurationDescriptor RPC
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetConfigurationDescriptorRequest : pb::IMessage<GetConfigurationDescriptorRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4024,6 +4042,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// <summary>
   /// GetConfigurationDescriptorResponse is the response returned by the GetConfigurationDescriptor RPC
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetConfigurationDescriptorResponse : pb::IMessage<GetConfigurationDescriptorResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4228,6 +4247,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// <summary>
   /// GetQueryServicesDescriptorRequest is the request used for the GetQueryServicesDescriptor RPC
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetQueryServicesDescriptorRequest : pb::IMessage<GetQueryServicesDescriptorRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4383,6 +4403,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// <summary>
   /// GetQueryServicesDescriptorResponse is the response returned by the GetQueryServicesDescriptor RPC
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetQueryServicesDescriptorResponse : pb::IMessage<GetQueryServicesDescriptorResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4587,6 +4608,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// <summary>
   /// GetTxDescriptorRequest is the request used for the GetTxDescriptor RPC
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetTxDescriptorRequest : pb::IMessage<GetTxDescriptorRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4742,6 +4764,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// <summary>
   /// GetTxDescriptorResponse is the response returned by the GetTxDescriptor RPC
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetTxDescriptorResponse : pb::IMessage<GetTxDescriptorResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4947,6 +4970,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// <summary>
   /// QueryServicesDescriptor contains the list of cosmos-sdk queriable services
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryServicesDescriptor : pb::IMessage<QueryServicesDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5131,6 +5155,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// <summary>
   /// QueryServiceDescriptor describes a cosmos-sdk queryable service
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryServiceDescriptor : pb::IMessage<QueryServiceDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5397,6 +5422,7 @@ namespace Cosmos.Base.Reflection.V2alpha1 {
   /// no other info is provided beside method name and tendermint queryable path
   /// because it would be redundant with the grpc reflection service
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryMethodDescriptor : pb::IMessage<QueryMethodDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

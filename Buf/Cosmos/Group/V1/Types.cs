@@ -217,6 +217,7 @@ namespace Cosmos.Group.V1 {
   /// Member represents a group member with an account address,
   /// non-zero weight, metadata and added_at timestamp.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Member : pb::IMessage<Member>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -543,6 +544,7 @@ namespace Cosmos.Group.V1 {
   /// Contrary to `Member`, it doesn't have any `added_at` field
   /// since this field cannot be set as part of requests.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MemberRequest : pb::IMessage<MemberRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -823,6 +825,7 @@ namespace Cosmos.Group.V1 {
   /// 2. The voting and execution periods of the proposal respect the parameters
   ///    given by `windows`.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ThresholdDecisionPolicy : pb::IMessage<ThresholdDecisionPolicy>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1073,6 +1076,7 @@ namespace Cosmos.Group.V1 {
   /// 2. The voting and execution periods of the proposal respect the parameters
   ///    given by `windows`.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PercentageDecisionPolicy : pb::IMessage<PercentageDecisionPolicy>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1318,6 +1322,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// DecisionPolicyWindows defines the different windows for voting and execution.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DecisionPolicyWindows : pb::IMessage<DecisionPolicyWindows>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1582,6 +1587,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// GroupInfo represents the high-level on-chain information for a group.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GroupInfo : pb::IMessage<GroupInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1989,6 +1995,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// GroupMember represents the relationship between a group and a member.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GroupMember : pb::IMessage<GroupMember>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2233,6 +2240,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// GroupPolicyInfo represents the high-level on-chain information for a group policy.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GroupPolicyInfo : pb::IMessage<GroupPolicyInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2692,6 +2700,7 @@ namespace Cosmos.Group.V1 {
   /// A proposal consists of a set of `sdk.Msg`s that will be executed if the proposal
   /// passes as well as some optional metadata associated with the proposal.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Proposal : pb::IMessage<Proposal>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3429,6 +3438,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// TallyResult represents the sum of weighted votes for each vote option.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TallyResult : pb::IMessage<TallyResult>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3744,6 +3754,7 @@ namespace Cosmos.Group.V1 {
   /// <summary>
   /// Vote represents a vote for a proposal.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Vote : pb::IMessage<Vote>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

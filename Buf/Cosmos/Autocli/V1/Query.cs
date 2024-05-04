@@ -53,6 +53,7 @@ namespace Cosmos.Autocli.V1 {
   /// <summary>
   /// AppOptionsRequest is the RemoteInfoService/AppOptions request type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AppOptionsRequest : pb::IMessage<AppOptionsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -208,6 +209,7 @@ namespace Cosmos.Autocli.V1 {
   /// <summary>
   /// AppOptionsResponse is the RemoteInfoService/AppOptions response type.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AppOptionsResponse : pb::IMessage<AppOptionsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

@@ -49,6 +49,7 @@ namespace Tendermint.Version {
   /// This information is included in ResponseInfo. The App.Protocol can be
   /// updated in ResponseEndBlock.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class App : pb::IMessage<App>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -280,6 +281,7 @@ namespace Tendermint.Version {
   /// including all blockchain data structures and the rules of the application's
   /// state transition machine.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Consensus : pb::IMessage<Consensus>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

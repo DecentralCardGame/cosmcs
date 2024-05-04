@@ -69,6 +69,7 @@ namespace Cosmos.App.V1alpha1 {
   /// <summary>
   /// ModuleDescriptor describes an app module.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ModuleDescriptor : pb::IMessage<ModuleDescriptor>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -333,6 +334,7 @@ namespace Cosmos.App.V1alpha1 {
   /// <summary>
   /// PackageReference is a reference to a protobuf package used by a module.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PackageReference : pb::IMessage<PackageReference>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -603,6 +605,7 @@ namespace Cosmos.App.V1alpha1 {
   /// MigrateFromInfo is information on a module version that a newer module
   /// can migrate from.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MigrateFromInfo : pb::IMessage<MigrateFromInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

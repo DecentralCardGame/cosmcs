@@ -181,6 +181,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// WeightedVoteOption defines a unit of vote for vote split.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class WeightedVoteOption : pb::IMessage<WeightedVoteOption>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -417,6 +418,7 @@ namespace Cosmos.Gov.V1 {
   /// Deposit defines an amount deposited by an account address to an active
   /// proposal.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Deposit : pb::IMessage<Deposit>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -681,6 +683,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// Proposal defines the core field members of a governance proposal.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Proposal : pb::IMessage<Proposal>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1387,6 +1390,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// TallyResult defines a standard tally for a governance proposal.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TallyResult : pb::IMessage<TallyResult>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1703,6 +1707,7 @@ namespace Cosmos.Gov.V1 {
   /// Vote defines a vote on a governance proposal.
   /// A Vote consists of a proposal ID, the voter, and the vote option.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Vote : pb::IMessage<Vote>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2007,6 +2012,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// DepositParams defines the params for deposits on governance proposals.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DepositParams : pb::IMessage<DepositParams>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2241,6 +2247,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// VotingParams defines the params for voting on governance proposals.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class VotingParams : pb::IMessage<VotingParams>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2445,6 +2452,7 @@ namespace Cosmos.Gov.V1 {
   /// <summary>
   /// TallyParams defines the params for tallying votes on governance proposals.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TallyParams : pb::IMessage<TallyParams>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2724,6 +2732,7 @@ namespace Cosmos.Gov.V1 {
   ///
   /// Since: cosmos-sdk 0.47
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Params : pb::IMessage<Params>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

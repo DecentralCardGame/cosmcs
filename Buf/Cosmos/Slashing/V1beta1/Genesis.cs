@@ -64,6 +64,7 @@ namespace Cosmos.Slashing.V1beta1 {
   /// <summary>
   /// GenesisState defines the slashing module's genesis state.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GenesisState : pb::IMessage<GenesisState>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -328,6 +329,7 @@ namespace Cosmos.Slashing.V1beta1 {
   /// <summary>
   /// SigningInfo stores validator signing info of corresponding address.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SigningInfo : pb::IMessage<SigningInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -573,6 +575,7 @@ namespace Cosmos.Slashing.V1beta1 {
   /// ValidatorMissedBlocks contains array of missed blocks of corresponding
   /// address.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ValidatorMissedBlocks : pb::IMessage<ValidatorMissedBlocks>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -797,6 +800,7 @@ namespace Cosmos.Slashing.V1beta1 {
   /// <summary>
   /// MissedBlock contains height and missed status as boolean.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MissedBlock : pb::IMessage<MissedBlock>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
