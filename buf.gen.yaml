@@ -1,0 +1,14 @@
+version: v1
+managed:
+    enabled: true
+    go_package_prefix:
+        default: github.com/cosmos/cosmos-sdk
+plugins:
+    - plugin: cosmosCsharp
+      out: ../../Buf
+    - plugin: buf.build/protocolbuffers/csharp
+      out: ../../Buf
+      opt: file_extension=.pb.cs,base_namespace=
+    - plugin: buf.build/grpc/csharp
+      out: ../../Buf
+      opt: no_server,file_suffix=Grpc.pb.cs,base_namespace=
