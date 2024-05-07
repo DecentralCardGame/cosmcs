@@ -66,11 +66,23 @@ namespace Cosmcs.Client
         {
             var body = new Builder().AddMsgs(msgs).SetMemo("").Finish();
             var authInfo =
-                new SignerInfo(PrivateKey.PublicKey().IntoSignerPublicKey(), BaseAccount.Sequence).AuthInfo(fee ?? new Fee(400_000));
+                new SignerInfo(PrivateKey.PublicKey().IntoSignerPublicKey(), BaseAccount.Sequence).AuthInfo(
+                    fee ?? new Fee(400_000));
             var signDoc = new SignDoc(body, authInfo, ChainId, BaseAccount.AccountNumber);
             var txRaw = signDoc.Sign(PrivateKey);
             BaseAccount.IncSequence();
             return txRaw.BroadcastSync(Broadcaster);
+        }
+
+        public Task<Cosmos.Tx.V1beta1.SimulateResponse> BuildAndSimulate(Any[] msgs)
+        {
+            var body = new Builder().AddMsgs(msgs).SetMemo("").Finish();
+            var authInfo =
+                new SignerInfo(PrivateKey.PublicKey().IntoSignerPublicKey(), BaseAccount.Sequence).AuthInfo(
+                    new Fee(0));
+            var signDoc = new SignDoc(body, authInfo, ChainId, BaseAccount.AccountNumber);
+            var txRaw = signDoc.Sign(PrivateKey);
+            return txRaw.Simulate(Broadcaster);
         }
     }
 }
