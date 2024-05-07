@@ -16,12 +16,12 @@ namespace Cosmos.Auth.V1beta1 {
 	public class MsgClient {
 		public IClient Client { get; }
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public MsgClient (IClient client) {
 			Client = client;
 		}
         
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
         public Task<Cosmcs.Client.ClientResponse<Cosmos.Auth.V1beta1.MsgUpdateParamsResponse>> SendMsgUpdateParams(Cosmos.Auth.V1beta1.MsgUpdateParams msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
@@ -46,7 +46,7 @@ namespace Cosmos.Auth.V1beta1 {
 			));
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgUpdateParams(Cosmos.Auth.V1beta1.MsgUpdateParams msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -57,7 +57,7 @@ namespace Cosmos.Auth.V1beta1 {
 			);
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Auth.V1beta1.MsgUpdateParamsResponse>> SimulateAndSendMsgUpdateParams(Cosmos.Auth.V1beta1.MsgUpdateParams msg) {
 			return SimulateMsgUpdateParams(msg).ContinueWith(r => {
 				return SendMsgUpdateParams(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;

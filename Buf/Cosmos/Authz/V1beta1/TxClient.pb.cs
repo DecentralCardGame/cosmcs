@@ -16,12 +16,12 @@ namespace Cosmos.Authz.V1beta1 {
 	public class MsgClient {
 		public IClient Client { get; }
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public MsgClient (IClient client) {
 			Client = client;
 		}
         
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
         public Task<Cosmcs.Client.ClientResponse<Cosmos.Authz.V1beta1.MsgGrantResponse>> SendMsgGrant(Cosmos.Authz.V1beta1.MsgGrant msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
@@ -46,7 +46,7 @@ namespace Cosmos.Authz.V1beta1 {
 			));
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgGrant(Cosmos.Authz.V1beta1.MsgGrant msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -57,14 +57,14 @@ namespace Cosmos.Authz.V1beta1 {
 			);
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Authz.V1beta1.MsgGrantResponse>> SimulateAndSendMsgGrant(Cosmos.Authz.V1beta1.MsgGrant msg) {
 			return SimulateMsgGrant(msg).ContinueWith(r => {
 				return SendMsgGrant(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
         public Task<Cosmcs.Client.ClientResponse<Cosmos.Authz.V1beta1.MsgExecResponse>> SendMsgExec(Cosmos.Authz.V1beta1.MsgExec msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
@@ -89,7 +89,7 @@ namespace Cosmos.Authz.V1beta1 {
 			));
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgExec(Cosmos.Authz.V1beta1.MsgExec msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -100,14 +100,14 @@ namespace Cosmos.Authz.V1beta1 {
 			);
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Authz.V1beta1.MsgExecResponse>> SimulateAndSendMsgExec(Cosmos.Authz.V1beta1.MsgExec msg) {
 			return SimulateMsgExec(msg).ContinueWith(r => {
 				return SendMsgExec(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
         public Task<Cosmcs.Client.ClientResponse<Cosmos.Authz.V1beta1.MsgRevokeResponse>> SendMsgRevoke(Cosmos.Authz.V1beta1.MsgRevoke msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
@@ -132,7 +132,7 @@ namespace Cosmos.Authz.V1beta1 {
 			));
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgRevoke(Cosmos.Authz.V1beta1.MsgRevoke msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -143,7 +143,7 @@ namespace Cosmos.Authz.V1beta1 {
 			);
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Authz.V1beta1.MsgRevokeResponse>> SimulateAndSendMsgRevoke(Cosmos.Authz.V1beta1.MsgRevoke msg) {
 			return SimulateMsgRevoke(msg).ContinueWith(r => {
 				return SendMsgRevoke(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;

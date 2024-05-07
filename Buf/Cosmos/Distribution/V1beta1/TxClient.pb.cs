@@ -16,12 +16,12 @@ namespace Cosmos.Distribution.V1beta1 {
 	public class MsgClient {
 		public IClient Client { get; }
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public MsgClient (IClient client) {
 			Client = client;
 		}
         
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
         public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgSetWithdrawAddressResponse>> SendMsgSetWithdrawAddress(Cosmos.Distribution.V1beta1.MsgSetWithdrawAddress msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
@@ -46,7 +46,7 @@ namespace Cosmos.Distribution.V1beta1 {
 			));
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgSetWithdrawAddress(Cosmos.Distribution.V1beta1.MsgSetWithdrawAddress msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -57,14 +57,14 @@ namespace Cosmos.Distribution.V1beta1 {
 			);
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgSetWithdrawAddressResponse>> SimulateAndSendMsgSetWithdrawAddress(Cosmos.Distribution.V1beta1.MsgSetWithdrawAddress msg) {
 			return SimulateMsgSetWithdrawAddress(msg).ContinueWith(r => {
 				return SendMsgSetWithdrawAddress(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
         public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgWithdrawDelegatorRewardResponse>> SendMsgWithdrawDelegatorReward(Cosmos.Distribution.V1beta1.MsgWithdrawDelegatorReward msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
@@ -89,7 +89,7 @@ namespace Cosmos.Distribution.V1beta1 {
 			));
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgWithdrawDelegatorReward(Cosmos.Distribution.V1beta1.MsgWithdrawDelegatorReward msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -100,14 +100,14 @@ namespace Cosmos.Distribution.V1beta1 {
 			);
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgWithdrawDelegatorRewardResponse>> SimulateAndSendMsgWithdrawDelegatorReward(Cosmos.Distribution.V1beta1.MsgWithdrawDelegatorReward msg) {
 			return SimulateMsgWithdrawDelegatorReward(msg).ContinueWith(r => {
 				return SendMsgWithdrawDelegatorReward(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
         public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgWithdrawValidatorCommissionResponse>> SendMsgWithdrawValidatorCommission(Cosmos.Distribution.V1beta1.MsgWithdrawValidatorCommission msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
@@ -132,7 +132,7 @@ namespace Cosmos.Distribution.V1beta1 {
 			));
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgWithdrawValidatorCommission(Cosmos.Distribution.V1beta1.MsgWithdrawValidatorCommission msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -143,14 +143,14 @@ namespace Cosmos.Distribution.V1beta1 {
 			);
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgWithdrawValidatorCommissionResponse>> SimulateAndSendMsgWithdrawValidatorCommission(Cosmos.Distribution.V1beta1.MsgWithdrawValidatorCommission msg) {
 			return SimulateMsgWithdrawValidatorCommission(msg).ContinueWith(r => {
 				return SendMsgWithdrawValidatorCommission(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
         public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgFundCommunityPoolResponse>> SendMsgFundCommunityPool(Cosmos.Distribution.V1beta1.MsgFundCommunityPool msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
@@ -175,7 +175,7 @@ namespace Cosmos.Distribution.V1beta1 {
 			));
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgFundCommunityPool(Cosmos.Distribution.V1beta1.MsgFundCommunityPool msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -186,14 +186,14 @@ namespace Cosmos.Distribution.V1beta1 {
 			);
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgFundCommunityPoolResponse>> SimulateAndSendMsgFundCommunityPool(Cosmos.Distribution.V1beta1.MsgFundCommunityPool msg) {
 			return SimulateMsgFundCommunityPool(msg).ContinueWith(r => {
 				return SendMsgFundCommunityPool(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
         public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgUpdateParamsResponse>> SendMsgUpdateParams(Cosmos.Distribution.V1beta1.MsgUpdateParams msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
@@ -218,7 +218,7 @@ namespace Cosmos.Distribution.V1beta1 {
 			));
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgUpdateParams(Cosmos.Distribution.V1beta1.MsgUpdateParams msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -229,14 +229,14 @@ namespace Cosmos.Distribution.V1beta1 {
 			);
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgUpdateParamsResponse>> SimulateAndSendMsgUpdateParams(Cosmos.Distribution.V1beta1.MsgUpdateParams msg) {
 			return SimulateMsgUpdateParams(msg).ContinueWith(r => {
 				return SendMsgUpdateParams(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
         public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgCommunityPoolSpendResponse>> SendMsgCommunityPoolSpend(Cosmos.Distribution.V1beta1.MsgCommunityPoolSpend msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
@@ -261,7 +261,7 @@ namespace Cosmos.Distribution.V1beta1 {
 			));
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgCommunityPoolSpend(Cosmos.Distribution.V1beta1.MsgCommunityPoolSpend msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -272,7 +272,7 @@ namespace Cosmos.Distribution.V1beta1 {
 			);
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Distribution.V1beta1.MsgCommunityPoolSpendResponse>> SimulateAndSendMsgCommunityPoolSpend(Cosmos.Distribution.V1beta1.MsgCommunityPoolSpend msg) {
 			return SimulateMsgCommunityPoolSpend(msg).ContinueWith(r => {
 				return SendMsgCommunityPoolSpend(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;

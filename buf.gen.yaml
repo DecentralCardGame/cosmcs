@@ -4,7 +4,7 @@ managed:
     go_package_prefix:
         default: github.com/cosmos/cosmos-sdk
 plugins:
-    - plugin: cosmosCsharp
+    - plugin: cosmos-csharp
       out: ../../Buf
     - plugin: buf.build/protocolbuffers/csharp
       out: ../../Buf

@@ -16,12 +16,12 @@ namespace Cosmos.Vesting.V1beta1 {
 	public class MsgClient {
 		public IClient Client { get; }
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public MsgClient (IClient client) {
 			Client = client;
 		}
         
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
         public Task<Cosmcs.Client.ClientResponse<Cosmos.Vesting.V1beta1.MsgCreateVestingAccountResponse>> SendMsgCreateVestingAccount(Cosmos.Vesting.V1beta1.MsgCreateVestingAccount msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
@@ -46,7 +46,7 @@ namespace Cosmos.Vesting.V1beta1 {
 			));
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgCreateVestingAccount(Cosmos.Vesting.V1beta1.MsgCreateVestingAccount msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -57,14 +57,14 @@ namespace Cosmos.Vesting.V1beta1 {
 			);
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Vesting.V1beta1.MsgCreateVestingAccountResponse>> SimulateAndSendMsgCreateVestingAccount(Cosmos.Vesting.V1beta1.MsgCreateVestingAccount msg) {
 			return SimulateMsgCreateVestingAccount(msg).ContinueWith(r => {
 				return SendMsgCreateVestingAccount(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
         public Task<Cosmcs.Client.ClientResponse<Cosmos.Vesting.V1beta1.MsgCreatePermanentLockedAccountResponse>> SendMsgCreatePermanentLockedAccount(Cosmos.Vesting.V1beta1.MsgCreatePermanentLockedAccount msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
@@ -89,7 +89,7 @@ namespace Cosmos.Vesting.V1beta1 {
 			));
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgCreatePermanentLockedAccount(Cosmos.Vesting.V1beta1.MsgCreatePermanentLockedAccount msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -100,14 +100,14 @@ namespace Cosmos.Vesting.V1beta1 {
 			);
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Vesting.V1beta1.MsgCreatePermanentLockedAccountResponse>> SimulateAndSendMsgCreatePermanentLockedAccount(Cosmos.Vesting.V1beta1.MsgCreatePermanentLockedAccount msg) {
 			return SimulateMsgCreatePermanentLockedAccount(msg).ContinueWith(r => {
 				return SendMsgCreatePermanentLockedAccount(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
         public Task<Cosmcs.Client.ClientResponse<Cosmos.Vesting.V1beta1.MsgCreatePeriodicVestingAccountResponse>> SendMsgCreatePeriodicVestingAccount(Cosmos.Vesting.V1beta1.MsgCreatePeriodicVestingAccount msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
@@ -132,7 +132,7 @@ namespace Cosmos.Vesting.V1beta1 {
 			));
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgCreatePeriodicVestingAccount(Cosmos.Vesting.V1beta1.MsgCreatePeriodicVestingAccount msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -143,7 +143,7 @@ namespace Cosmos.Vesting.V1beta1 {
 			);
 		}
 
-		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<Cosmos.Vesting.V1beta1.MsgCreatePeriodicVestingAccountResponse>> SimulateAndSendMsgCreatePeriodicVestingAccount(Cosmos.Vesting.V1beta1.MsgCreatePeriodicVestingAccount msg) {
 			return SimulateMsgCreatePeriodicVestingAccount(msg).ContinueWith(r => {
 				return SendMsgCreatePeriodicVestingAccount(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
