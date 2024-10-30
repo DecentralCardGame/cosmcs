@@ -5,7 +5,6 @@ using Cosmcs.Broadcaster;
 using Cosmcs.Crypto.Secp256k1;
 using Cosmcs.Tx;
 using Google.Protobuf.WellKnownTypes;
-using Grpc.Net.Client;
 
 
 namespace Cosmcs.Client
@@ -17,17 +16,15 @@ namespace Cosmcs.Client
         public BaseAccount BaseAccount { get; }
         public AccountId AccoutAddress { get; }
         public string ChainId { get; }
-        public GrpcChannel Channel { get; }
-        public Cosmos.Auth.V1beta1.Query.QueryClient AuthClient { get; }
+        public QueryClient QueryClient { get; }
         public Cosmos.Tx.V1beta1.Service.ServiceClient TxClient { get; }
 
-        public EasyClient(string rpcUrl, string chainId, byte[] bytes, string prefix, EasyClientOptions? options = null)
+        public EasyClient(QueryClient queryClient, string chainId, byte[] bytes, string prefix)
         {
             ChainId = chainId;
-            Channel = GrpcChannel.ForAddress(rpcUrl, options?.GrpcChannelOptions ?? new GrpcChannelOptions());
-            Broadcaster = new GrpcBroadcaster(Channel);
+            QueryClient = queryClient;
+            Broadcaster = new GrpcBroadcaster(queryClient.Channel);
             PrivateKey = new PrivateKey(bytes);
-            AuthClient = new Cosmos.Auth.V1beta1.Query.QueryClient(Channel);
             TxClient = Broadcaster.TxClient;
             var pubkey = PrivateKey.PublicKey();
             AccoutAddress = pubkey.AccountId(prefix);
@@ -48,7 +45,7 @@ namespace Cosmcs.Client
 
         public Task<Cosmos.Auth.V1beta1.QueryAccountResponse> QueryAccount(string addr)
         {
-            return AuthClient.AccountAsync(new Cosmos.Auth.V1beta1.QueryAccountRequest { Address = addr })
+            return QueryClient.AuthClient.AccountAsync(new Cosmos.Auth.V1beta1.QueryAccountRequest { Address = addr })
                 .ResponseAsync;
         }
 

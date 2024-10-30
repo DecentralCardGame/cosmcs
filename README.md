@@ -14,7 +14,7 @@ dotnet build
 ### With `EasyClient`
 `Cosmcs.Client.EasyClient` is an easy to use client object
 
-```c#
+```csharp
 var rpcUrl = "http://localhost:9090";
 var chainId = "mychain1";
 var prefix = "cosmos";
@@ -26,7 +26,8 @@ byte[] privateKey = new byte[32]
     51, 43, 217, 82, 136, 182, 245,
     189, 104, 186, 17
 };  // Place byte privateKey here
-var ec = new EasyClient(rpcUrl, chainId, privateKey, "cosmos");
+var queryClient = new QueryClient(rpcUrl);
+var ec = new EasyClient(queryClient, chainId, privateKey, "cosmos");
 // Using pregenerated routes
 var authzTxClient = new Cosmos.Authz.V1beta1.MsgClient(ec);
 // Using pregenerated queries
@@ -37,15 +38,13 @@ var authzQueryClient = new Cosmos.Authz.V1beta1.Query.QueryClient(ec.Channel);
 Due to Unity's lack of support for HTTP/2.0 and the fact that gRPC exclusively utilizes HTTP/2.0, specific options must be provided when initializing `EasyClient`. This adjustment allows the internal gRPC channel to utilize gRPC-Web, which is compatible with HTTP/1.x.
 Cosmos blockchains start a grpc server on port `9090` and a grpc-web server on port `9091`.
 
-```c#
+```csharp
 // ...
 var rpcUrl = "http://localhost:9091";
-var options = new EasyClientOptions{
-    GrpcChannelOptions = new GrpcChannelOptions{
-        HttpHandler = new GrpcWebHandler(GrpcWebMode.GrpcWeb, new HttpClientHandler())
-    }
-};
-var ec = new EasyClient(rpcUrl, chainId, privateKey, "cosmos", options);
+var queryClient = new QueryClient(rpcUrl, new GrpcChannelOptions{
+    HttpHandler = new GrpcWebHandler(GrpcWebMode.GrpcWeb, new HttpClientHandler())
+});
+var ec = new EasyClient(queryClient, chainId, privateKey, "cosmos", options);
 // ...
 ```
 
