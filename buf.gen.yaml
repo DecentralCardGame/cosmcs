@@ -7,10 +7,15 @@ managed:
       value: github.com/cosmos/cosmos-sdk
 plugins:
   - local: protoc-gen-cosmos-csharp
-    out: ../../Buf
+    out: ./Buf
   - remote: buf.build/protocolbuffers/csharp
-    out: ../../Buf
+    out: ./Buf
     opt: file_extension=.pb.cs,base_namespace=
   - remote: buf.build/grpc/csharp
-    out: ../../Buf
+    out: ./Buf
     opt: no_server,file_suffix=Grpc.pb.cs,base_namespace=
+inputs:
+  - git_repo: https://github.com/cosmos/cosmos-sdk.git
+    tag: v0.50.11
+    subdir: proto
+    depth: 30
