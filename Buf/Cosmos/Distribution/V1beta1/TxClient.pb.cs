@@ -364,6 +364,63 @@ namespace Cosmos.Distribution.V1beta1 {
 			});
 		}
         
+        /// <summary>
+      	/// SendMsgDepositValidatorRewardsPool sends a MsgDepositValidatorRewardsPool transaction to the blockchain and waits
+      	/// for a response.
+      	/// </summary>
+      	/// <param name="msg">The MsgDepositValidatorRewardsPool message that should be send.</param>
+      	/// <param name="fee">The fees that will be paid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<MsgDepositValidatorRewardsPoolResponse>> SendMsgDepositValidatorRewardsPool(MsgDepositValidatorRewardsPool msg, Cosmcs.Tx.Fee? fee = null) {
+			return Client.BuildAndBroadcast(new Any[] {
+				new Any
+				{
+					Value = msg.ToByteString(),
+					TypeUrl = "/cosmos.distribution.v1beta1.MsgDepositValidatorRewardsPool"
+				}},
+				fee
+			).ContinueWith(r =>
+			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
+				System.Threading.Thread.Sleep(13000);
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
+			})
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<MsgDepositValidatorRewardsPoolResponse>(
+				r.Result,
+				MsgDepositValidatorRewardsPoolResponse.Parser
+			));
+		}
+
+		/// <summary>
+      	/// SimulateMsgDepositValidatorRewardsPool simulates a MsgDepositValidatorRewardsPool transaction on the blockchain.
+      	/// </summary>
+      	/// <param name="msg">The MsgDepositValidatorRewardsPool message that should be simulated.</param>
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgDepositValidatorRewardsPool(MsgDepositValidatorRewardsPool msg) {
+			return Client.BuildAndSimulate(new Any[] {
+				new Any
+				{
+					Value = msg.ToByteString(),
+					TypeUrl = "/cosmos.distribution.v1beta1.MsgDepositValidatorRewardsPool"
+				}}
+			);
+		}
+
+		/// <summary>
+      	/// SimulateAndSendMsgDepositValidatorRewardsPool simulates, estimates fees and then sends a DepositValidatorRewardsPool transaction to the blockchain.
+      	/// </summary>
+      	/// <param name="msg">The MsgDepositValidatorRewardsPool message that should be send.</param>
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+		public Task<Cosmcs.Client.ClientResponse<MsgDepositValidatorRewardsPoolResponse>> SimulateAndSendMsgDepositValidatorRewardsPool(MsgDepositValidatorRewardsPool msg) {
+			return SimulateMsgDepositValidatorRewardsPool(msg).ContinueWith(r => {
+				return SendMsgDepositValidatorRewardsPool(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+			});
+		}
+        
 	}
 	
 }

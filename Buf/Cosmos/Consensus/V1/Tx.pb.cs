@@ -25,26 +25,29 @@ namespace Cosmos.Consensus.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Chxjb3Ntb3MvY29uc2Vuc3VzL3YxL3R4LnByb3RvEhNjb3Ntb3MuY29uc2Vu",
-            "c3VzLnYxGhljb3Ntb3NfcHJvdG8vY29zbW9zLnByb3RvGhdjb3Ntb3MvbXNn",
-            "L3YxL21zZy5wcm90bxoddGVuZGVybWludC90eXBlcy9wYXJhbXMucHJvdG8i",
-            "jQIKD01zZ1VwZGF0ZVBhcmFtcxI2CglhdXRob3JpdHkYASABKAlCGNK0LRRj",
-            "b3Ntb3MuQWRkcmVzc1N0cmluZ1IJYXV0aG9yaXR5EjMKBWJsb2NrGAIgASgL",
-            "Mh0udGVuZGVybWludC50eXBlcy5CbG9ja1BhcmFtc1IFYmxvY2sSPAoIZXZp",
-            "ZGVuY2UYAyABKAsyIC50ZW5kZXJtaW50LnR5cGVzLkV2aWRlbmNlUGFyYW1z",
-            "UghldmlkZW5jZRI/Cgl2YWxpZGF0b3IYBCABKAsyIS50ZW5kZXJtaW50LnR5",
-            "cGVzLlZhbGlkYXRvclBhcmFtc1IJdmFsaWRhdG9yOg6C57AqCWF1dGhvcml0",
-            "eSIZChdNc2dVcGRhdGVQYXJhbXNSZXNwb25zZTJpCgNNc2cSYgoMVXBkYXRl",
-            "UGFyYW1zEiQuY29zbW9zLmNvbnNlbnN1cy52MS5Nc2dVcGRhdGVQYXJhbXMa",
-            "LC5jb3Ntb3MuY29uc2Vuc3VzLnYxLk1zZ1VwZGF0ZVBhcmFtc1Jlc3BvbnNl",
-            "Qs4BChdjb20uY29zbW9zLmNvbnNlbnN1cy52MUIHVHhQcm90b1ABWjxnaXRo",
-            "dWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL2Nvc21vcy9jb25zZW5zdXMvdjE7",
-            "Y29uc2Vuc3VzdjGiAgNDQ1iqAhNDb3Ntb3MuQ29uc2Vuc3VzLlYxygITQ29z",
-            "bW9zXENvbnNlbnN1c1xWMeICH0Nvc21vc1xDb25zZW5zdXNcVjFcR1BCTWV0",
-            "YWRhdGHqAhVDb3Ntb3M6OkNvbnNlbnN1czo6VjFiBnByb3RvMw=="));
+            "c3VzLnYxGhFhbWluby9hbWluby5wcm90bxoZY29zbW9zX3Byb3RvL2Nvc21v",
+            "cy5wcm90bxoXY29zbW9zL21zZy92MS9tc2cucHJvdG8aHXRlbmRlcm1pbnQv",
+            "dHlwZXMvcGFyYW1zLnByb3RvIuoCCg9Nc2dVcGRhdGVQYXJhbXMSNgoJYXV0",
+            "aG9yaXR5GAEgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmdSCWF1dGhv",
+            "cml0eRIzCgVibG9jaxgCIAEoCzIdLnRlbmRlcm1pbnQudHlwZXMuQmxvY2tQ",
+            "YXJhbXNSBWJsb2NrEjwKCGV2aWRlbmNlGAMgASgLMiAudGVuZGVybWludC50",
+            "eXBlcy5FdmlkZW5jZVBhcmFtc1IIZXZpZGVuY2USPwoJdmFsaWRhdG9yGAQg",
+            "ASgLMiEudGVuZGVybWludC50eXBlcy5WYWxpZGF0b3JQYXJhbXNSCXZhbGlk",
+            "YXRvchIwCgRhYmNpGAUgASgLMhwudGVuZGVybWludC50eXBlcy5BQkNJUGFy",
+            "YW1zUgRhYmNpOjmC57AqCWF1dGhvcml0eYrnsComY29zbW9zLXNkay94L2Nv",
+            "bnNlbnN1cy9Nc2dVcGRhdGVQYXJhbXMiGQoXTXNnVXBkYXRlUGFyYW1zUmVz",
+            "cG9uc2UycAoDTXNnEmIKDFVwZGF0ZVBhcmFtcxIkLmNvc21vcy5jb25zZW5z",
+            "dXMudjEuTXNnVXBkYXRlUGFyYW1zGiwuY29zbW9zLmNvbnNlbnN1cy52MS5N",
+            "c2dVcGRhdGVQYXJhbXNSZXNwb25zZRoFgOewKgFCzgEKF2NvbS5jb3Ntb3Mu",
+            "Y29uc2Vuc3VzLnYxQgdUeFByb3RvUAFaPGdpdGh1Yi5jb20vY29zbW9zL2Nv",
+            "c21vcy1zZGsvY29zbW9zL2NvbnNlbnN1cy92MTtjb25zZW5zdXN2MaICA0ND",
+            "WKoCE0Nvc21vcy5Db25zZW5zdXMuVjHKAhNDb3Ntb3NcQ29uc2Vuc3VzXFYx",
+            "4gIfQ29zbW9zXENvbnNlbnN1c1xWMVxHUEJNZXRhZGF0YeoCFUNvc21vczo6",
+            "Q29uc2Vuc3VzOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::CosmosProto.CosmosReflection.Descriptor, global::Cosmos.Msg.V1.MsgReflection.Descriptor, global::Tendermint.Types.ParamsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Amino.AminoReflection.Descriptor, global::CosmosProto.CosmosReflection.Descriptor, global::Cosmos.Msg.V1.MsgReflection.Descriptor, global::Tendermint.Types.ParamsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Consensus.V1.MsgUpdateParams), global::Cosmos.Consensus.V1.MsgUpdateParams.Parser, new[]{ "Authority", "Block", "Evidence", "Validator" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Consensus.V1.MsgUpdateParams), global::Cosmos.Consensus.V1.MsgUpdateParams.Parser, new[]{ "Authority", "Block", "Evidence", "Validator", "Abci" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Consensus.V1.MsgUpdateParamsResponse), global::Cosmos.Consensus.V1.MsgUpdateParamsResponse.Parser, null, null, null, null, null)
           }));
     }
@@ -94,6 +97,7 @@ namespace Cosmos.Consensus.V1 {
       block_ = other.block_ != null ? other.block_.Clone() : null;
       evidence_ = other.evidence_ != null ? other.evidence_.Clone() : null;
       validator_ = other.validator_ != null ? other.validator_.Clone() : null;
+      abci_ = other.abci_ != null ? other.abci_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -161,6 +165,21 @@ namespace Cosmos.Consensus.V1 {
       }
     }
 
+    /// <summary>Field number for the "abci" field.</summary>
+    public const int AbciFieldNumber = 5;
+    private global::Tendermint.Types.ABCIParams abci_;
+    /// <summary>
+    /// Since: cosmos-sdk 0.50
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tendermint.Types.ABCIParams Abci {
+      get { return abci_; }
+      set {
+        abci_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -180,6 +199,7 @@ namespace Cosmos.Consensus.V1 {
       if (!object.Equals(Block, other.Block)) return false;
       if (!object.Equals(Evidence, other.Evidence)) return false;
       if (!object.Equals(Validator, other.Validator)) return false;
+      if (!object.Equals(Abci, other.Abci)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -191,6 +211,7 @@ namespace Cosmos.Consensus.V1 {
       if (block_ != null) hash ^= Block.GetHashCode();
       if (evidence_ != null) hash ^= Evidence.GetHashCode();
       if (validator_ != null) hash ^= Validator.GetHashCode();
+      if (abci_ != null) hash ^= Abci.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -225,6 +246,10 @@ namespace Cosmos.Consensus.V1 {
         output.WriteRawTag(34);
         output.WriteMessage(Validator);
       }
+      if (abci_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(Abci);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -251,6 +276,10 @@ namespace Cosmos.Consensus.V1 {
         output.WriteRawTag(34);
         output.WriteMessage(Validator);
       }
+      if (abci_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(Abci);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -272,6 +301,9 @@ namespace Cosmos.Consensus.V1 {
       }
       if (validator_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Validator);
+      }
+      if (abci_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Abci);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -306,6 +338,12 @@ namespace Cosmos.Consensus.V1 {
         }
         Validator.MergeFrom(other.Validator);
       }
+      if (other.abci_ != null) {
+        if (abci_ == null) {
+          Abci = new global::Tendermint.Types.ABCIParams();
+        }
+        Abci.MergeFrom(other.Abci);
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -317,7 +355,11 @@ namespace Cosmos.Consensus.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -346,6 +388,13 @@ namespace Cosmos.Consensus.V1 {
             input.ReadMessage(Validator);
             break;
           }
+          case 42: {
+            if (abci_ == null) {
+              Abci = new global::Tendermint.Types.ABCIParams();
+            }
+            input.ReadMessage(Abci);
+            break;
+          }
         }
       }
     #endif
@@ -357,7 +406,11 @@ namespace Cosmos.Consensus.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -384,6 +437,13 @@ namespace Cosmos.Consensus.V1 {
               Validator = new global::Tendermint.Types.ValidatorParams();
             }
             input.ReadMessage(Validator);
+            break;
+          }
+          case 42: {
+            if (abci_ == null) {
+              Abci = new global::Tendermint.Types.ABCIParams();
+            }
+            input.ReadMessage(Abci);
             break;
           }
         }
@@ -524,7 +584,11 @@ namespace Cosmos.Consensus.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -539,7 +603,11 @@ namespace Cosmos.Consensus.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

@@ -52,6 +52,10 @@ namespace Cosmos.Base.Node.V1beta1 {
     static readonly grpc::Marshaller<global::Cosmos.Base.Node.V1beta1.ConfigRequest> __Marshaller_cosmos_base_node_v1beta1_ConfigRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Cosmos.Base.Node.V1beta1.ConfigRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Cosmos.Base.Node.V1beta1.ConfigResponse> __Marshaller_cosmos_base_node_v1beta1_ConfigResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Cosmos.Base.Node.V1beta1.ConfigResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Cosmos.Base.Node.V1beta1.StatusRequest> __Marshaller_cosmos_base_node_v1beta1_StatusRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Cosmos.Base.Node.V1beta1.StatusRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Cosmos.Base.Node.V1beta1.StatusResponse> __Marshaller_cosmos_base_node_v1beta1_StatusResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Cosmos.Base.Node.V1beta1.StatusResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Cosmos.Base.Node.V1beta1.ConfigRequest, global::Cosmos.Base.Node.V1beta1.ConfigResponse> __Method_Config = new grpc::Method<global::Cosmos.Base.Node.V1beta1.ConfigRequest, global::Cosmos.Base.Node.V1beta1.ConfigResponse>(
@@ -60,6 +64,14 @@ namespace Cosmos.Base.Node.V1beta1 {
         "Config",
         __Marshaller_cosmos_base_node_v1beta1_ConfigRequest,
         __Marshaller_cosmos_base_node_v1beta1_ConfigResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Cosmos.Base.Node.V1beta1.StatusRequest, global::Cosmos.Base.Node.V1beta1.StatusResponse> __Method_Status = new grpc::Method<global::Cosmos.Base.Node.V1beta1.StatusRequest, global::Cosmos.Base.Node.V1beta1.StatusResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "Status",
+        __Marshaller_cosmos_base_node_v1beta1_StatusRequest,
+        __Marshaller_cosmos_base_node_v1beta1_StatusResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -141,6 +153,54 @@ namespace Cosmos.Base.Node.V1beta1 {
       public virtual grpc::AsyncUnaryCall<global::Cosmos.Base.Node.V1beta1.ConfigResponse> ConfigAsync(global::Cosmos.Base.Node.V1beta1.ConfigRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Config, null, options, request);
+      }
+      /// <summary>
+      /// Status queries for the node status.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Cosmos.Base.Node.V1beta1.StatusResponse Status(global::Cosmos.Base.Node.V1beta1.StatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return Status(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Status queries for the node status.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Cosmos.Base.Node.V1beta1.StatusResponse Status(global::Cosmos.Base.Node.V1beta1.StatusRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_Status, null, options, request);
+      }
+      /// <summary>
+      /// Status queries for the node status.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Cosmos.Base.Node.V1beta1.StatusResponse> StatusAsync(global::Cosmos.Base.Node.V1beta1.StatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return StatusAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Status queries for the node status.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Cosmos.Base.Node.V1beta1.StatusResponse> StatusAsync(global::Cosmos.Base.Node.V1beta1.StatusRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_Status, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]

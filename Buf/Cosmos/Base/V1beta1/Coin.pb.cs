@@ -26,19 +26,21 @@ namespace Cosmos.Base.V1beta1 {
           string.Concat(
             "Ch5jb3Ntb3MvYmFzZS92MWJldGExL2NvaW4ucHJvdG8SE2Nvc21vcy5iYXNl",
             "LnYxYmV0YTEaFGdvZ29wcm90by9nb2dvLnByb3RvGhljb3Ntb3NfcHJvdG8v",
-            "Y29zbW9zLnByb3RvGhFhbWluby9hbWluby5wcm90byJaCgRDb2luEhQKBWRl",
-            "bm9tGAEgASgJUgVkZW5vbRI2CgZhbW91bnQYAiABKAlCHsjeHwDa3h8DSW50",
-            "0rQtCmNvc21vcy5JbnSo57AqAVIGYW1vdW50OgTooB8BIlgKB0RlY0NvaW4S",
-            "FAoFZGVub20YASABKAlSBWRlbm9tEjEKBmFtb3VudBgCIAEoCUIZyN4fANre",
-            "HwNEZWPStC0KY29zbW9zLkRlY1IGYW1vdW50OgTooB8BIjcKCEludFByb3Rv",
-            "EisKA2ludBgBIAEoCUIZyN4fANreHwNJbnTStC0KY29zbW9zLkludFIDaW50",
-            "IjcKCERlY1Byb3RvEisKA2RlYxgBIAEoCUIZyN4fANreHwNEZWPStC0KY29z",
-            "bW9zLkRlY1IDZGVjQtgBChdjb20uY29zbW9zLmJhc2UudjFiZXRhMUIJQ29p",
-            "blByb3RvUAFaPGdpdGh1Yi5jb20vY29zbW9zL2Nvc21vcy1zZGsvY29zbW9z",
-            "L2Jhc2UvdjFiZXRhMTtiYXNldjFiZXRhMaICA0NCWKoCE0Nvc21vcy5CYXNl",
-            "LlYxYmV0YTHKAhNDb3Ntb3NcQmFzZVxWMWJldGEx4gIfQ29zbW9zXEJhc2Vc",
-            "VjFiZXRhMVxHUEJNZXRhZGF0YeoCFUNvc21vczo6QmFzZTo6VjFiZXRhMdjh",
-            "HgCA4h4AYgZwcm90bzM="));
+            "Y29zbW9zLnByb3RvGhFhbWluby9hbWluby5wcm90byJsCgRDb2luEhQKBWRl",
+            "bm9tGAEgASgJUgVkZW5vbRJICgZhbW91bnQYAiABKAlCMMjeHwDa3h8VY29z",
+            "bW9zc2RrLmlvL21hdGguSW500rQtCmNvc21vcy5JbnSo57AqAVIGYW1vdW50",
+            "OgTooB8BInAKB0RlY0NvaW4SFAoFZGVub20YASABKAlSBWRlbm9tEkkKBmFt",
+            "b3VudBgCIAEoCUIxyN4fANreHxtjb3Ntb3NzZGsuaW8vbWF0aC5MZWdhY3lE",
+            "ZWPStC0KY29zbW9zLkRlY1IGYW1vdW50OgTooB8BIkkKCEludFByb3RvEj0K",
+            "A2ludBgBIAEoCUIryN4fANreHxVjb3Ntb3NzZGsuaW8vbWF0aC5JbnTStC0K",
+            "Y29zbW9zLkludFIDaW50Ik8KCERlY1Byb3RvEkMKA2RlYxgBIAEoCUIxyN4f",
+            "ANreHxtjb3Ntb3NzZGsuaW8vbWF0aC5MZWdhY3lEZWPStC0KY29zbW9zLkRl",
+            "Y1IDZGVjQtgBChdjb20uY29zbW9zLmJhc2UudjFiZXRhMUIJQ29pblByb3Rv",
+            "UAFaPGdpdGh1Yi5jb20vY29zbW9zL2Nvc21vcy1zZGsvY29zbW9zL2Jhc2Uv",
+            "djFiZXRhMTtiYXNldjFiZXRhMaICA0NCWKoCE0Nvc21vcy5CYXNlLlYxYmV0",
+            "YTHKAhNDb3Ntb3NcQmFzZVxWMWJldGEx4gIfQ29zbW9zXEJhc2VcVjFiZXRh",
+            "MVxHUEJNZXRhZGF0YeoCFUNvc21vczo6QmFzZTo6VjFiZXRhMdjhHgCA4h4A",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::CosmosProto.CosmosReflection.Descriptor, global::Amino.AminoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -243,7 +245,11 @@ namespace Cosmos.Base.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -266,7 +272,11 @@ namespace Cosmos.Base.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -476,7 +486,11 @@ namespace Cosmos.Base.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -499,7 +513,11 @@ namespace Cosmos.Base.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -520,6 +538,7 @@ namespace Cosmos.Base.V1beta1 {
 
   /// <summary>
   /// IntProto defines a Protobuf wrapper around an Int object.
+  /// Deprecated: Prefer to use math.Int directly. It supports binary Marshal and Unmarshal.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class IntProto : pb::IMessage<IntProto>
@@ -677,7 +696,11 @@ namespace Cosmos.Base.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -696,7 +719,11 @@ namespace Cosmos.Base.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -713,6 +740,7 @@ namespace Cosmos.Base.V1beta1 {
 
   /// <summary>
   /// DecProto defines a Protobuf wrapper around a Dec object.
+  /// Deprecated: Prefer to use math.LegacyDec directly. It supports binary Marshal and Unmarshal.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DecProto : pb::IMessage<DecProto>
@@ -870,7 +898,11 @@ namespace Cosmos.Base.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -889,7 +921,11 @@ namespace Cosmos.Base.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

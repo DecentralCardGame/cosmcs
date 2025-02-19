@@ -26,19 +26,21 @@ namespace Cosmos.Staking.Module.V1 {
           string.Concat(
             "CiVjb3Ntb3Mvc3Rha2luZy9tb2R1bGUvdjEvbW9kdWxlLnByb3RvEhhjb3Nt",
             "b3Muc3Rha2luZy5tb2R1bGUudjEaIGNvc21vcy9hcHAvdjFhbHBoYTEvbW9k",
-            "dWxlLnByb3RvIncKBk1vZHVsZRIfCgtob29rc19vcmRlchgBIAMoCVIKaG9v",
-            "a3NPcmRlchIcCglhdXRob3JpdHkYAiABKAlSCWF1dGhvcml0eTouusCW2gEo",
-            "CiZnaXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL3gvc3Rha2luZ0LuAQoc",
-            "Y29tLmNvc21vcy5zdGFraW5nLm1vZHVsZS52MUILTW9kdWxlUHJvdG9QAVo+",
-            "Z2l0aHViLmNvbS9jb3Ntb3MvY29zbW9zLXNkay9jb3Ntb3Mvc3Rha2luZy9t",
-            "b2R1bGUvdjE7bW9kdWxldjGiAgNDU02qAhhDb3Ntb3MuU3Rha2luZy5Nb2R1",
-            "bGUuVjHKAhhDb3Ntb3NcU3Rha2luZ1xNb2R1bGVcVjHiAiRDb3Ntb3NcU3Rh",
-            "a2luZ1xNb2R1bGVcVjFcR1BCTWV0YWRhdGHqAhtDb3Ntb3M6OlN0YWtpbmc6",
-            "Ok1vZHVsZTo6VjFiBnByb3RvMw=="));
+            "dWxlLnByb3RvIucBCgZNb2R1bGUSHwoLaG9va3Nfb3JkZXIYASADKAlSCmhv",
+            "b2tzT3JkZXISHAoJYXV0aG9yaXR5GAIgASgJUglhdXRob3JpdHkSNgoXYmVj",
+            "aDMyX3ByZWZpeF92YWxpZGF0b3IYAyABKAlSFWJlY2gzMlByZWZpeFZhbGlk",
+            "YXRvchI2ChdiZWNoMzJfcHJlZml4X2NvbnNlbnN1cxgEIAEoCVIVYmVjaDMy",
+            "UHJlZml4Q29uc2Vuc3VzOi66wJbaASgKJmdpdGh1Yi5jb20vY29zbW9zL2Nv",
+            "c21vcy1zZGsveC9zdGFraW5nQu4BChxjb20uY29zbW9zLnN0YWtpbmcubW9k",
+            "dWxlLnYxQgtNb2R1bGVQcm90b1ABWj5naXRodWIuY29tL2Nvc21vcy9jb3Nt",
+            "b3Mtc2RrL2Nvc21vcy9zdGFraW5nL21vZHVsZS92MTttb2R1bGV2MaICA0NT",
+            "TaoCGENvc21vcy5TdGFraW5nLk1vZHVsZS5WMcoCGENvc21vc1xTdGFraW5n",
+            "XE1vZHVsZVxWMeICJENvc21vc1xTdGFraW5nXE1vZHVsZVxWMVxHUEJNZXRh",
+            "ZGF0YeoCG0Nvc21vczo6U3Rha2luZzo6TW9kdWxlOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Cosmos.App.V1alpha1.ModuleReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Staking.Module.V1.Module), global::Cosmos.Staking.Module.V1.Module.Parser, new[]{ "HooksOrder", "Authority" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Staking.Module.V1.Module), global::Cosmos.Staking.Module.V1.Module.Parser, new[]{ "HooksOrder", "Authority", "Bech32PrefixValidator", "Bech32PrefixConsensus" }, null, null, null, null)
           }));
     }
     #endregion
@@ -85,6 +87,8 @@ namespace Cosmos.Staking.Module.V1 {
     public Module(Module other) : this() {
       hooksOrder_ = other.hooksOrder_.Clone();
       authority_ = other.authority_;
+      bech32PrefixValidator_ = other.bech32PrefixValidator_;
+      bech32PrefixConsensus_ = other.bech32PrefixConsensus_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -125,6 +129,36 @@ namespace Cosmos.Staking.Module.V1 {
       }
     }
 
+    /// <summary>Field number for the "bech32_prefix_validator" field.</summary>
+    public const int Bech32PrefixValidatorFieldNumber = 3;
+    private string bech32PrefixValidator_ = "";
+    /// <summary>
+    /// bech32_prefix_validator is the bech32 validator prefix for the app.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Bech32PrefixValidator {
+      get { return bech32PrefixValidator_; }
+      set {
+        bech32PrefixValidator_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "bech32_prefix_consensus" field.</summary>
+    public const int Bech32PrefixConsensusFieldNumber = 4;
+    private string bech32PrefixConsensus_ = "";
+    /// <summary>
+    /// bech32_prefix_consensus is the bech32 consensus node prefix for the app.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Bech32PrefixConsensus {
+      get { return bech32PrefixConsensus_; }
+      set {
+        bech32PrefixConsensus_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -142,6 +176,8 @@ namespace Cosmos.Staking.Module.V1 {
       }
       if(!hooksOrder_.Equals(other.hooksOrder_)) return false;
       if (Authority != other.Authority) return false;
+      if (Bech32PrefixValidator != other.Bech32PrefixValidator) return false;
+      if (Bech32PrefixConsensus != other.Bech32PrefixConsensus) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -151,6 +187,8 @@ namespace Cosmos.Staking.Module.V1 {
       int hash = 1;
       hash ^= hooksOrder_.GetHashCode();
       if (Authority.Length != 0) hash ^= Authority.GetHashCode();
+      if (Bech32PrefixValidator.Length != 0) hash ^= Bech32PrefixValidator.GetHashCode();
+      if (Bech32PrefixConsensus.Length != 0) hash ^= Bech32PrefixConsensus.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -174,6 +212,14 @@ namespace Cosmos.Staking.Module.V1 {
         output.WriteRawTag(18);
         output.WriteString(Authority);
       }
+      if (Bech32PrefixValidator.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Bech32PrefixValidator);
+      }
+      if (Bech32PrefixConsensus.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Bech32PrefixConsensus);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -189,6 +235,14 @@ namespace Cosmos.Staking.Module.V1 {
         output.WriteRawTag(18);
         output.WriteString(Authority);
       }
+      if (Bech32PrefixValidator.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Bech32PrefixValidator);
+      }
+      if (Bech32PrefixConsensus.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Bech32PrefixConsensus);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -202,6 +256,12 @@ namespace Cosmos.Staking.Module.V1 {
       size += hooksOrder_.CalculateSize(_repeated_hooksOrder_codec);
       if (Authority.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Authority);
+      }
+      if (Bech32PrefixValidator.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Bech32PrefixValidator);
+      }
+      if (Bech32PrefixConsensus.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Bech32PrefixConsensus);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -219,6 +279,12 @@ namespace Cosmos.Staking.Module.V1 {
       if (other.Authority.Length != 0) {
         Authority = other.Authority;
       }
+      if (other.Bech32PrefixValidator.Length != 0) {
+        Bech32PrefixValidator = other.Bech32PrefixValidator;
+      }
+      if (other.Bech32PrefixConsensus.Length != 0) {
+        Bech32PrefixConsensus = other.Bech32PrefixConsensus;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -230,7 +296,11 @@ namespace Cosmos.Staking.Module.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -240,6 +310,14 @@ namespace Cosmos.Staking.Module.V1 {
           }
           case 18: {
             Authority = input.ReadString();
+            break;
+          }
+          case 26: {
+            Bech32PrefixValidator = input.ReadString();
+            break;
+          }
+          case 34: {
+            Bech32PrefixConsensus = input.ReadString();
             break;
           }
         }
@@ -253,7 +331,11 @@ namespace Cosmos.Staking.Module.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -263,6 +345,14 @@ namespace Cosmos.Staking.Module.V1 {
           }
           case 18: {
             Authority = input.ReadString();
+            break;
+          }
+          case 26: {
+            Bech32PrefixValidator = input.ReadString();
+            break;
+          }
+          case 34: {
+            Bech32PrefixConsensus = input.ReadString();
             break;
           }
         }

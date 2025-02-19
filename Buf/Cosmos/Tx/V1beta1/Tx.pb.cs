@@ -25,66 +25,68 @@ namespace Cosmos.Tx.V1beta1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Chpjb3Ntb3MvdHgvdjFiZXRhMS90eC5wcm90bxIRY29zbW9zLnR4LnYxYmV0",
-            "YTEaFGdvZ29wcm90by9nb2dvLnByb3RvGi1jb3Ntb3MvY3J5cHRvL211bHRp",
-            "c2lnL3YxYmV0YTEvbXVsdGlzaWcucHJvdG8aHmNvc21vcy9iYXNlL3YxYmV0",
-            "YTEvY29pbi5wcm90bxonY29zbW9zL3R4L3NpZ25pbmcvdjFiZXRhMS9zaWdu",
-            "aW5nLnByb3RvGhlnb29nbGUvcHJvdG9idWYvYW55LnByb3RvGhljb3Ntb3Nf",
-            "cHJvdG8vY29zbW9zLnByb3RvIo0BCgJUeBItCgRib2R5GAEgASgLMhkuY29z",
-            "bW9zLnR4LnYxYmV0YTEuVHhCb2R5UgRib2R5EjgKCWF1dGhfaW5mbxgCIAEo",
-            "CzIbLmNvc21vcy50eC52MWJldGExLkF1dGhJbmZvUghhdXRoSW5mbxIeCgpz",
-            "aWduYXR1cmVzGAMgAygMUgpzaWduYXR1cmVzIm4KBVR4UmF3Eh0KCmJvZHlf",
-            "Ynl0ZXMYASABKAxSCWJvZHlCeXRlcxImCg9hdXRoX2luZm9fYnl0ZXMYAiAB",
-            "KAxSDWF1dGhJbmZvQnl0ZXMSHgoKc2lnbmF0dXJlcxgDIAMoDFIKc2lnbmF0",
-            "dXJlcyKSAQoHU2lnbkRvYxIdCgpib2R5X2J5dGVzGAEgASgMUglib2R5Qnl0",
-            "ZXMSJgoPYXV0aF9pbmZvX2J5dGVzGAIgASgMUg1hdXRoSW5mb0J5dGVzEhkK",
-            "CGNoYWluX2lkGAMgASgJUgdjaGFpbklkEiUKDmFjY291bnRfbnVtYmVyGAQg",
-            "ASgEUg1hY2NvdW50TnVtYmVyIu4BChBTaWduRG9jRGlyZWN0QXV4Eh0KCmJv",
-            "ZHlfYnl0ZXMYASABKAxSCWJvZHlCeXRlcxIzCgpwdWJsaWNfa2V5GAIgASgL",
-            "MhQuZ29vZ2xlLnByb3RvYnVmLkFueVIJcHVibGljS2V5EhkKCGNoYWluX2lk",
-            "GAMgASgJUgdjaGFpbklkEiUKDmFjY291bnRfbnVtYmVyGAQgASgEUg1hY2Nv",
-            "dW50TnVtYmVyEhoKCHNlcXVlbmNlGAUgASgEUghzZXF1ZW5jZRIoCgN0aXAY",
-            "BiABKAsyFi5jb3Ntb3MudHgudjFiZXRhMS5UaXBSA3RpcCKVAgoGVHhCb2R5",
-            "EjAKCG1lc3NhZ2VzGAEgAygLMhQuZ29vZ2xlLnByb3RvYnVmLkFueVIIbWVz",
-            "c2FnZXMSEgoEbWVtbxgCIAEoCVIEbWVtbxIlCg50aW1lb3V0X2hlaWdodBgD",
-            "IAEoBFINdGltZW91dEhlaWdodBJCChFleHRlbnNpb25fb3B0aW9ucxj/ByAD",
-            "KAsyFC5nb29nbGUucHJvdG9idWYuQW55UhBleHRlbnNpb25PcHRpb25zEloK",
-            "Hm5vbl9jcml0aWNhbF9leHRlbnNpb25fb3B0aW9ucxj/DyADKAsyFC5nb29n",
-            "bGUucHJvdG9idWYuQW55Uhtub25Dcml0aWNhbEV4dGVuc2lvbk9wdGlvbnMi",
-            "oAEKCEF1dGhJbmZvEkAKDHNpZ25lcl9pbmZvcxgBIAMoCzIdLmNvc21vcy50",
-            "eC52MWJldGExLlNpZ25lckluZm9SC3NpZ25lckluZm9zEigKA2ZlZRgCIAEo",
-            "CzIWLmNvc21vcy50eC52MWJldGExLkZlZVIDZmVlEigKA3RpcBgDIAEoCzIW",
-            "LmNvc21vcy50eC52MWJldGExLlRpcFIDdGlwIpcBCgpTaWduZXJJbmZvEjMK",
-            "CnB1YmxpY19rZXkYASABKAsyFC5nb29nbGUucHJvdG9idWYuQW55UglwdWJs",
-            "aWNLZXkSOAoJbW9kZV9pbmZvGAIgASgLMhsuY29zbW9zLnR4LnYxYmV0YTEu",
-            "TW9kZUluZm9SCG1vZGVJbmZvEhoKCHNlcXVlbmNlGAMgASgEUghzZXF1ZW5j",
-            "ZSLgAgoITW9kZUluZm8SPAoGc2luZ2xlGAEgASgLMiIuY29zbW9zLnR4LnYx",
-            "YmV0YTEuTW9kZUluZm8uU2luZ2xlSABSBnNpbmdsZRI5CgVtdWx0aRgCIAEo",
-            "CzIhLmNvc21vcy50eC52MWJldGExLk1vZGVJbmZvLk11bHRpSABSBW11bHRp",
-            "GkEKBlNpbmdsZRI3CgRtb2RlGAEgASgOMiMuY29zbW9zLnR4LnNpZ25pbmcu",
-            "djFiZXRhMS5TaWduTW9kZVIEbW9kZRqQAQoFTXVsdGkSSwoIYml0YXJyYXkY",
-            "ASABKAsyLy5jb3Ntb3MuY3J5cHRvLm11bHRpc2lnLnYxYmV0YTEuQ29tcGFj",
-            "dEJpdEFycmF5UghiaXRhcnJheRI6Cgptb2RlX2luZm9zGAIgAygLMhsuY29z",
-            "bW9zLnR4LnYxYmV0YTEuTW9kZUluZm9SCW1vZGVJbmZvc0IFCgNzdW0i6wEK",
-            "A0ZlZRJjCgZhbW91bnQYASADKAsyGS5jb3Ntb3MuYmFzZS52MWJldGExLkNv",
-            "aW5CMMjeHwCq3x8oZ2l0aHViLmNvbS9jb3Ntb3MvY29zbW9zLXNkay90eXBl",
-            "cy5Db2luc1IGYW1vdW50EhsKCWdhc19saW1pdBgCIAEoBFIIZ2FzTGltaXQS",
-            "LgoFcGF5ZXIYAyABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZ1IFcGF5",
-            "ZXISMgoHZ3JhbnRlchgEIAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5n",
-            "UgdncmFudGVyIpwBCgNUaXASYwoGYW1vdW50GAEgAygLMhkuY29zbW9zLmJh",
-            "c2UudjFiZXRhMS5Db2luQjDI3h8Aqt8fKGdpdGh1Yi5jb20vY29zbW9zL2Nv",
-            "c21vcy1zZGsvdHlwZXMuQ29pbnNSBmFtb3VudBIwCgZ0aXBwZXIYAiABKAlC",
-            "GNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZ1IGdGlwcGVyIs4BCg1BdXhTaWdu",
-            "ZXJEYXRhEjIKB2FkZHJlc3MYASABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0",
-            "cmluZ1IHYWRkcmVzcxI+CghzaWduX2RvYxgCIAEoCzIjLmNvc21vcy50eC52",
-            "MWJldGExLlNpZ25Eb2NEaXJlY3RBdXhSB3NpZ25Eb2MSNwoEbW9kZRgDIAEo",
-            "DjIjLmNvc21vcy50eC5zaWduaW5nLnYxYmV0YTEuU2lnbk1vZGVSBG1vZGUS",
-            "EAoDc2lnGAQgASgMUgNzaWdCwAEKFWNvbS5jb3Ntb3MudHgudjFiZXRhMUIH",
-            "VHhQcm90b1ABWjhnaXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL2Nvc21v",
-            "cy90eC92MWJldGExO3R4djFiZXRhMaICA0NUWKoCEUNvc21vcy5UeC5WMWJl",
-            "dGExygIRQ29zbW9zXFR4XFYxYmV0YTHiAh1Db3Ntb3NcVHhcVjFiZXRhMVxH",
-            "UEJNZXRhZGF0YeoCE0Nvc21vczo6VHg6OlYxYmV0YTFiBnByb3RvMw=="));
+            "YTEaEWFtaW5vL2FtaW5vLnByb3RvGhRnb2dvcHJvdG8vZ29nby5wcm90bxot",
+            "Y29zbW9zL2NyeXB0by9tdWx0aXNpZy92MWJldGExL211bHRpc2lnLnByb3Rv",
+            "Gh5jb3Ntb3MvYmFzZS92MWJldGExL2NvaW4ucHJvdG8aJ2Nvc21vcy90eC9z",
+            "aWduaW5nL3YxYmV0YTEvc2lnbmluZy5wcm90bxoZZ29vZ2xlL3Byb3RvYnVm",
+            "L2FueS5wcm90bxoZY29zbW9zX3Byb3RvL2Nvc21vcy5wcm90byKNAQoCVHgS",
+            "LQoEYm9keRgBIAEoCzIZLmNvc21vcy50eC52MWJldGExLlR4Qm9keVIEYm9k",
+            "eRI4CglhdXRoX2luZm8YAiABKAsyGy5jb3Ntb3MudHgudjFiZXRhMS5BdXRo",
+            "SW5mb1IIYXV0aEluZm8SHgoKc2lnbmF0dXJlcxgDIAMoDFIKc2lnbmF0dXJl",
+            "cyJuCgVUeFJhdxIdCgpib2R5X2J5dGVzGAEgASgMUglib2R5Qnl0ZXMSJgoP",
+            "YXV0aF9pbmZvX2J5dGVzGAIgASgMUg1hdXRoSW5mb0J5dGVzEh4KCnNpZ25h",
+            "dHVyZXMYAyADKAxSCnNpZ25hdHVyZXMikgEKB1NpZ25Eb2MSHQoKYm9keV9i",
+            "eXRlcxgBIAEoDFIJYm9keUJ5dGVzEiYKD2F1dGhfaW5mb19ieXRlcxgCIAEo",
+            "DFINYXV0aEluZm9CeXRlcxIZCghjaGFpbl9pZBgDIAEoCVIHY2hhaW5JZBIl",
+            "Cg5hY2NvdW50X251bWJlchgEIAEoBFINYWNjb3VudE51bWJlciLyAQoQU2ln",
+            "bkRvY0RpcmVjdEF1eBIdCgpib2R5X2J5dGVzGAEgASgMUglib2R5Qnl0ZXMS",
+            "MwoKcHVibGljX2tleRgCIAEoCzIULmdvb2dsZS5wcm90b2J1Zi5BbnlSCXB1",
+            "YmxpY0tleRIZCghjaGFpbl9pZBgDIAEoCVIHY2hhaW5JZBIlCg5hY2NvdW50",
+            "X251bWJlchgEIAEoBFINYWNjb3VudE51bWJlchIaCghzZXF1ZW5jZRgFIAEo",
+            "BFIIc2VxdWVuY2USLAoDdGlwGAYgASgLMhYuY29zbW9zLnR4LnYxYmV0YTEu",
+            "VGlwQgIYAVIDdGlwIpUCCgZUeEJvZHkSMAoIbWVzc2FnZXMYASADKAsyFC5n",
+            "b29nbGUucHJvdG9idWYuQW55UghtZXNzYWdlcxISCgRtZW1vGAIgASgJUgRt",
+            "ZW1vEiUKDnRpbWVvdXRfaGVpZ2h0GAMgASgEUg10aW1lb3V0SGVpZ2h0EkIK",
+            "EWV4dGVuc2lvbl9vcHRpb25zGP8HIAMoCzIULmdvb2dsZS5wcm90b2J1Zi5B",
+            "bnlSEGV4dGVuc2lvbk9wdGlvbnMSWgoebm9uX2NyaXRpY2FsX2V4dGVuc2lv",
+            "bl9vcHRpb25zGP8PIAMoCzIULmdvb2dsZS5wcm90b2J1Zi5BbnlSG25vbkNy",
+            "aXRpY2FsRXh0ZW5zaW9uT3B0aW9ucyKkAQoIQXV0aEluZm8SQAoMc2lnbmVy",
+            "X2luZm9zGAEgAygLMh0uY29zbW9zLnR4LnYxYmV0YTEuU2lnbmVySW5mb1IL",
+            "c2lnbmVySW5mb3MSKAoDZmVlGAIgASgLMhYuY29zbW9zLnR4LnYxYmV0YTEu",
+            "RmVlUgNmZWUSLAoDdGlwGAMgASgLMhYuY29zbW9zLnR4LnYxYmV0YTEuVGlw",
+            "QgIYAVIDdGlwIpcBCgpTaWduZXJJbmZvEjMKCnB1YmxpY19rZXkYASABKAsy",
+            "FC5nb29nbGUucHJvdG9idWYuQW55UglwdWJsaWNLZXkSOAoJbW9kZV9pbmZv",
+            "GAIgASgLMhsuY29zbW9zLnR4LnYxYmV0YTEuTW9kZUluZm9SCG1vZGVJbmZv",
+            "EhoKCHNlcXVlbmNlGAMgASgEUghzZXF1ZW5jZSLgAgoITW9kZUluZm8SPAoG",
+            "c2luZ2xlGAEgASgLMiIuY29zbW9zLnR4LnYxYmV0YTEuTW9kZUluZm8uU2lu",
+            "Z2xlSABSBnNpbmdsZRI5CgVtdWx0aRgCIAEoCzIhLmNvc21vcy50eC52MWJl",
+            "dGExLk1vZGVJbmZvLk11bHRpSABSBW11bHRpGkEKBlNpbmdsZRI3CgRtb2Rl",
+            "GAEgASgOMiMuY29zbW9zLnR4LnNpZ25pbmcudjFiZXRhMS5TaWduTW9kZVIE",
+            "bW9kZRqQAQoFTXVsdGkSSwoIYml0YXJyYXkYASABKAsyLy5jb3Ntb3MuY3J5",
+            "cHRvLm11bHRpc2lnLnYxYmV0YTEuQ29tcGFjdEJpdEFycmF5UghiaXRhcnJh",
+            "eRI6Cgptb2RlX2luZm9zGAIgAygLMhsuY29zbW9zLnR4LnYxYmV0YTEuTW9k",
+            "ZUluZm9SCW1vZGVJbmZvc0IFCgNzdW0igQIKA0ZlZRJ5CgZhbW91bnQYASAD",
+            "KAsyGS5jb3Ntb3MuYmFzZS52MWJldGExLkNvaW5CRsjeHwCq3x8oZ2l0aHVi",
+            "LmNvbS9jb3Ntb3MvY29zbW9zLXNkay90eXBlcy5Db2luc5rnsCoMbGVnYWN5",
+            "X2NvaW5zqOewKgFSBmFtb3VudBIbCglnYXNfbGltaXQYAiABKARSCGdhc0xp",
+            "bWl0Ei4KBXBheWVyGAMgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmdS",
+            "BXBheWVyEjIKB2dyYW50ZXIYBCABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0",
+            "cmluZ1IHZ3JhbnRlciK2AQoDVGlwEnkKBmFtb3VudBgBIAMoCzIZLmNvc21v",
+            "cy5iYXNlLnYxYmV0YTEuQ29pbkJGyN4fAKrfHyhnaXRodWIuY29tL2Nvc21v",
+            "cy9jb3Ntb3Mtc2RrL3R5cGVzLkNvaW5zmuewKgxsZWdhY3lfY29pbnOo57Aq",
+            "AVIGYW1vdW50EjAKBnRpcHBlchgCIAEoCUIY0rQtFGNvc21vcy5BZGRyZXNz",
+            "U3RyaW5nUgZ0aXBwZXI6AhgBIs4BCg1BdXhTaWduZXJEYXRhEjIKB2FkZHJl",
+            "c3MYASABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZ1IHYWRkcmVzcxI+",
+            "CghzaWduX2RvYxgCIAEoCzIjLmNvc21vcy50eC52MWJldGExLlNpZ25Eb2NE",
+            "aXJlY3RBdXhSB3NpZ25Eb2MSNwoEbW9kZRgDIAEoDjIjLmNvc21vcy50eC5z",
+            "aWduaW5nLnYxYmV0YTEuU2lnbk1vZGVSBG1vZGUSEAoDc2lnGAQgASgMUgNz",
+            "aWdCwAEKFWNvbS5jb3Ntb3MudHgudjFiZXRhMUIHVHhQcm90b1ABWjhnaXRo",
+            "dWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL2Nvc21vcy90eC92MWJldGExO3R4",
+            "djFiZXRhMaICA0NUWKoCEUNvc21vcy5UeC5WMWJldGExygIRQ29zbW9zXFR4",
+            "XFYxYmV0YTHiAh1Db3Ntb3NcVHhcVjFiZXRhMVxHUEJNZXRhZGF0YeoCE0Nv",
+            "c21vczo6VHg6OlYxYmV0YTFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::Cosmos.Crypto.Multisig.V1beta1.MultisigReflection.Descriptor, global::Cosmos.Base.V1beta1.CoinReflection.Descriptor, global::Cosmos.Tx.Signing.V1beta1.SigningReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, global::CosmosProto.CosmosReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Amino.AminoReflection.Descriptor, global::Gogoproto.GogoReflection.Descriptor, global::Cosmos.Crypto.Multisig.V1beta1.MultisigReflection.Descriptor, global::Cosmos.Base.V1beta1.CoinReflection.Descriptor, global::Cosmos.Tx.Signing.V1beta1.SigningReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, global::CosmosProto.CosmosReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Tx.V1beta1.Tx), global::Cosmos.Tx.V1beta1.Tx.Parser, new[]{ "Body", "AuthInfo", "Signatures" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Tx.V1beta1.TxRaw), global::Cosmos.Tx.V1beta1.TxRaw.Parser, new[]{ "BodyBytes", "AuthInfoBytes", "Signatures" }, null, null, null, null),
@@ -328,7 +330,11 @@ namespace Cosmos.Tx.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -361,7 +367,11 @@ namespace Cosmos.Tx.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -613,7 +623,11 @@ namespace Cosmos.Tx.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -640,7 +654,11 @@ namespace Cosmos.Tx.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -925,7 +943,11 @@ namespace Cosmos.Tx.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -956,7 +978,11 @@ namespace Cosmos.Tx.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1121,13 +1147,9 @@ namespace Cosmos.Tx.V1beta1 {
     public const int TipFieldNumber = 6;
     private global::Cosmos.Tx.V1beta1.Tip tip_;
     /// <summary>
-    /// Tip is the optional tip used for transactions fees paid in another denom.
-    /// It should be left empty if the signer is not the tipper for this
-    /// transaction.
-    ///
-    /// This field is ignored if the chain didn't enable tips, i.e. didn't add the
-    /// `TipDecorator` in its posthandler.
+    /// tips have been depreacted and should not be used
     /// </summary>
+    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Cosmos.Tx.V1beta1.Tip Tip {
@@ -1322,7 +1344,11 @@ namespace Cosmos.Tx.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1367,7 +1393,11 @@ namespace Cosmos.Tx.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1678,7 +1708,11 @@ namespace Cosmos.Tx.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1713,7 +1747,11 @@ namespace Cosmos.Tx.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1841,6 +1879,7 @@ namespace Cosmos.Tx.V1beta1 {
     ///
     /// Since: cosmos-sdk 0.46
     /// </summary>
+    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Cosmos.Tx.V1beta1.Tip Tip {
@@ -1977,7 +2016,11 @@ namespace Cosmos.Tx.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -2010,7 +2053,11 @@ namespace Cosmos.Tx.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -2277,7 +2324,11 @@ namespace Cosmos.Tx.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -2310,7 +2361,11 @@ namespace Cosmos.Tx.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -2572,7 +2627,11 @@ namespace Cosmos.Tx.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -2605,7 +2664,11 @@ namespace Cosmos.Tx.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -2801,7 +2864,11 @@ namespace Cosmos.Tx.V1beta1 {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -2820,7 +2887,11 @@ namespace Cosmos.Tx.V1beta1 {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -3022,7 +3093,11 @@ namespace Cosmos.Tx.V1beta1 {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -3048,7 +3123,11 @@ namespace Cosmos.Tx.V1beta1 {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -3329,7 +3408,11 @@ namespace Cosmos.Tx.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -3360,7 +3443,11 @@ namespace Cosmos.Tx.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -3392,6 +3479,7 @@ namespace Cosmos.Tx.V1beta1 {
   ///
   /// Since: cosmos-sdk 0.46
   /// </summary>
+  [global::System.ObsoleteAttribute]
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Tip : pb::IMessage<Tip>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -3572,7 +3660,11 @@ namespace Cosmos.Tx.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -3595,7 +3687,11 @@ namespace Cosmos.Tx.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -3884,7 +3980,11 @@ namespace Cosmos.Tx.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -3918,7 +4018,11 @@ namespace Cosmos.Tx.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

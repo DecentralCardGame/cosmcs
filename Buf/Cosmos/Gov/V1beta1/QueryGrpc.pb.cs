@@ -419,7 +419,7 @@ namespace Cosmos.Gov.V1beta1 {
         return CallInvoker.AsyncUnaryCall(__Method_Params, null, options, request);
       }
       /// <summary>
-      /// Deposit queries single deposit information based proposalID, depositAddr.
+      /// Deposit queries single deposit information based on proposalID, depositor address.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -432,7 +432,7 @@ namespace Cosmos.Gov.V1beta1 {
         return Deposit(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Deposit queries single deposit information based proposalID, depositAddr.
+      /// Deposit queries single deposit information based on proposalID, depositor address.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -443,7 +443,7 @@ namespace Cosmos.Gov.V1beta1 {
         return CallInvoker.BlockingUnaryCall(__Method_Deposit, null, options, request);
       }
       /// <summary>
-      /// Deposit queries single deposit information based proposalID, depositAddr.
+      /// Deposit queries single deposit information based on proposalID, depositor address.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -456,7 +456,7 @@ namespace Cosmos.Gov.V1beta1 {
         return DepositAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Deposit queries single deposit information based proposalID, depositAddr.
+      /// Deposit queries single deposit information based on proposalID, depositor address.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

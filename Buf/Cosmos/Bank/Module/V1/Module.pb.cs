@@ -26,19 +26,20 @@ namespace Cosmos.Bank.Module.V1 {
           string.Concat(
             "CiJjb3Ntb3MvYmFuay9tb2R1bGUvdjEvbW9kdWxlLnByb3RvEhVjb3Ntb3Mu",
             "YmFuay5tb2R1bGUudjEaIGNvc21vcy9hcHAvdjFhbHBoYTEvbW9kdWxlLnBy",
-            "b3RvIpwBCgZNb2R1bGUSRwogYmxvY2tlZF9tb2R1bGVfYWNjb3VudHNfb3Zl",
+            "b3RvIssBCgZNb2R1bGUSRwogYmxvY2tlZF9tb2R1bGVfYWNjb3VudHNfb3Zl",
             "cnJpZGUYASADKAlSHWJsb2NrZWRNb2R1bGVBY2NvdW50c092ZXJyaWRlEhwK",
-            "CWF1dGhvcml0eRgCIAEoCVIJYXV0aG9yaXR5Oiu6wJbaASUKI2dpdGh1Yi5j",
-            "b20vY29zbW9zL2Nvc21vcy1zZGsveC9iYW5rQtwBChljb20uY29zbW9zLmJh",
-            "bmsubW9kdWxlLnYxQgtNb2R1bGVQcm90b1ABWjtnaXRodWIuY29tL2Nvc21v",
-            "cy9jb3Ntb3Mtc2RrL2Nvc21vcy9iYW5rL21vZHVsZS92MTttb2R1bGV2MaIC",
-            "A0NCTaoCFUNvc21vcy5CYW5rLk1vZHVsZS5WMcoCFUNvc21vc1xCYW5rXE1v",
-            "ZHVsZVxWMeICIUNvc21vc1xCYW5rXE1vZHVsZVxWMVxHUEJNZXRhZGF0YeoC",
-            "GENvc21vczo6QmFuazo6TW9kdWxlOjpWMWIGcHJvdG8z"));
+            "CWF1dGhvcml0eRgCIAEoCVIJYXV0aG9yaXR5Ei0KEnJlc3RyaWN0aW9uc19v",
+            "cmRlchgDIAMoCVIRcmVzdHJpY3Rpb25zT3JkZXI6K7rAltoBJQojZ2l0aHVi",
+            "LmNvbS9jb3Ntb3MvY29zbW9zLXNkay94L2JhbmtC3AEKGWNvbS5jb3Ntb3Mu",
+            "YmFuay5tb2R1bGUudjFCC01vZHVsZVByb3RvUAFaO2dpdGh1Yi5jb20vY29z",
+            "bW9zL2Nvc21vcy1zZGsvY29zbW9zL2JhbmsvbW9kdWxlL3YxO21vZHVsZXYx",
+            "ogIDQ0JNqgIVQ29zbW9zLkJhbmsuTW9kdWxlLlYxygIVQ29zbW9zXEJhbmtc",
+            "TW9kdWxlXFYx4gIhQ29zbW9zXEJhbmtcTW9kdWxlXFYxXEdQQk1ldGFkYXRh",
+            "6gIYQ29zbW9zOjpCYW5rOjpNb2R1bGU6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Cosmos.App.V1alpha1.ModuleReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Bank.Module.V1.Module), global::Cosmos.Bank.Module.V1.Module.Parser, new[]{ "BlockedModuleAccountsOverride", "Authority" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Bank.Module.V1.Module), global::Cosmos.Bank.Module.V1.Module.Parser, new[]{ "BlockedModuleAccountsOverride", "Authority", "RestrictionsOrder" }, null, null, null, null)
           }));
     }
     #endregion
@@ -85,6 +86,7 @@ namespace Cosmos.Bank.Module.V1 {
     public Module(Module other) : this() {
       blockedModuleAccountsOverride_ = other.blockedModuleAccountsOverride_.Clone();
       authority_ = other.authority_;
+      restrictionsOrder_ = other.restrictionsOrder_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -100,8 +102,8 @@ namespace Cosmos.Bank.Module.V1 {
         = pb::FieldCodec.ForString(10);
     private readonly pbc::RepeatedField<string> blockedModuleAccountsOverride_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// blocked_module_accounts configures exceptional module accounts which should be blocked from receiving funds.
-    /// If left empty it defaults to the list of account names supplied in the auth module configuration as
+    /// blocked_module_accounts_override configures exceptional module accounts which should be blocked from receiving
+    /// funds. If left empty it defaults to the list of account names supplied in the auth module configuration as
     /// module_account_permissions
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -125,6 +127,23 @@ namespace Cosmos.Bank.Module.V1 {
       }
     }
 
+    /// <summary>Field number for the "restrictions_order" field.</summary>
+    public const int RestrictionsOrderFieldNumber = 3;
+    private static readonly pb::FieldCodec<string> _repeated_restrictionsOrder_codec
+        = pb::FieldCodec.ForString(26);
+    private readonly pbc::RepeatedField<string> restrictionsOrder_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// restrictions_order specifies the order of send restrictions and should be
+    /// a list of module names which provide a send restriction instance. If no
+    /// order is provided, then restrictions will be applied in alphabetical order
+    /// of module names.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<string> RestrictionsOrder {
+      get { return restrictionsOrder_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -142,6 +161,7 @@ namespace Cosmos.Bank.Module.V1 {
       }
       if(!blockedModuleAccountsOverride_.Equals(other.blockedModuleAccountsOverride_)) return false;
       if (Authority != other.Authority) return false;
+      if(!restrictionsOrder_.Equals(other.restrictionsOrder_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -151,6 +171,7 @@ namespace Cosmos.Bank.Module.V1 {
       int hash = 1;
       hash ^= blockedModuleAccountsOverride_.GetHashCode();
       if (Authority.Length != 0) hash ^= Authority.GetHashCode();
+      hash ^= restrictionsOrder_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -174,6 +195,7 @@ namespace Cosmos.Bank.Module.V1 {
         output.WriteRawTag(18);
         output.WriteString(Authority);
       }
+      restrictionsOrder_.WriteTo(output, _repeated_restrictionsOrder_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -189,6 +211,7 @@ namespace Cosmos.Bank.Module.V1 {
         output.WriteRawTag(18);
         output.WriteString(Authority);
       }
+      restrictionsOrder_.WriteTo(ref output, _repeated_restrictionsOrder_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -203,6 +226,7 @@ namespace Cosmos.Bank.Module.V1 {
       if (Authority.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Authority);
       }
+      size += restrictionsOrder_.CalculateSize(_repeated_restrictionsOrder_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -219,6 +243,7 @@ namespace Cosmos.Bank.Module.V1 {
       if (other.Authority.Length != 0) {
         Authority = other.Authority;
       }
+      restrictionsOrder_.Add(other.restrictionsOrder_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -230,7 +255,11 @@ namespace Cosmos.Bank.Module.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -240,6 +269,10 @@ namespace Cosmos.Bank.Module.V1 {
           }
           case 18: {
             Authority = input.ReadString();
+            break;
+          }
+          case 26: {
+            restrictionsOrder_.AddEntriesFrom(input, _repeated_restrictionsOrder_codec);
             break;
           }
         }
@@ -253,7 +286,11 @@ namespace Cosmos.Bank.Module.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -263,6 +300,10 @@ namespace Cosmos.Bank.Module.V1 {
           }
           case 18: {
             Authority = input.ReadString();
+            break;
+          }
+          case 26: {
+            restrictionsOrder_.AddEntriesFrom(ref input, _repeated_restrictionsOrder_codec);
             break;
           }
         }

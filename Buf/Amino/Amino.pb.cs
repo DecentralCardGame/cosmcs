@@ -32,13 +32,14 @@ namespace Amino {
             "LkZpZWxkT3B0aW9ucxjzjKYFIAEoCVIIZW5jb2Rpbmc6PwoKZmllbGRfbmFt",
             "ZRIdLmdvb2dsZS5wcm90b2J1Zi5GaWVsZE9wdGlvbnMY9IymBSABKAlSCWZp",
             "ZWxkTmFtZTpHCg5kb250X29taXRlbXB0eRIdLmdvb2dsZS5wcm90b2J1Zi5G",
-            "aWVsZE9wdGlvbnMY9YymBSABKAhSDWRvbnRPbWl0ZW1wdHlCbwoJY29tLmFt",
-            "aW5vQgpBbWlub1Byb3RvUAFaImdpdGh1Yi5jb20vY29zbW9zL2Nvc21vcy1z",
-            "ZGsvYW1pbm+iAgNBWFiqAgVBbWlub8oCBUFtaW5v4gIRQW1pbm9cR1BCTWV0",
-            "YWRhdGHqAgVBbWlub2IGcHJvdG8z"));
+            "aWVsZE9wdGlvbnMY9YymBSABKAhSDWRvbnRPbWl0ZW1wdHk6PwoKb25lb2Zf",
+            "bmFtZRIdLmdvb2dsZS5wcm90b2J1Zi5GaWVsZE9wdGlvbnMY9oymBSABKAlS",
+            "CW9uZW9mTmFtZUJvCgljb20uYW1pbm9CCkFtaW5vUHJvdG9QAVoiZ2l0aHVi",
+            "LmNvbS9jb3Ntb3MvY29zbW9zLXNkay9hbWlub6ICA0FYWKoCBUFtaW5vygIF",
+            "QW1pbm/iAhFBbWlub1xHUEJNZXRhZGF0YeoCBUFtaW5vYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pb::Extension[] { AminoExtensions.Name, AminoExtensions.MessageEncoding, AminoExtensions.Encoding, AminoExtensions.FieldName, AminoExtensions.DontOmitempty }, null));
+          new pbr::GeneratedClrTypeInfo(null, new pb::Extension[] { AminoExtensions.Name, AminoExtensions.MessageEncoding, AminoExtensions.Encoding, AminoExtensions.FieldName, AminoExtensions.DontOmitempty, AminoExtensions.OneofName }, null));
     }
     #endregion
 
@@ -121,6 +122,13 @@ namespace Amino {
     /// </summary>
     public static readonly pb::Extension<global::Google.Protobuf.Reflection.FieldOptions, bool> DontOmitempty =
       new pb::Extension<global::Google.Protobuf.Reflection.FieldOptions, bool>(11110005, pb::FieldCodec.ForBool(88880040, false));
+    /// <summary>
+    /// oneof_name sets the type name for the given field oneof field.  This is used
+    /// by the Amino JSON encoder to encode the type of the oneof field, and must be the same string in
+    /// the RegisterConcrete() method usage used to register the concrete type.
+    /// </summary>
+    public static readonly pb::Extension<global::Google.Protobuf.Reflection.FieldOptions, string> OneofName =
+      new pb::Extension<global::Google.Protobuf.Reflection.FieldOptions, string>(11110006, pb::FieldCodec.ForString(88880050, ""));
   }
 
 }

@@ -28,31 +28,31 @@ namespace Cosmos.Slashing.V1beta1 {
             "bW9zLnNsYXNoaW5nLnYxYmV0YTEaFGdvZ29wcm90by9nb2dvLnByb3RvGh5n",
             "b29nbGUvcHJvdG9idWYvZHVyYXRpb24ucHJvdG8aH2dvb2dsZS9wcm90b2J1",
             "Zi90aW1lc3RhbXAucHJvdG8aGWNvc21vc19wcm90by9jb3Ntb3MucHJvdG8a",
-            "EWFtaW5vL2FtaW5vLnByb3RvIrwCChRWYWxpZGF0b3JTaWduaW5nSW5mbxIy",
-            "CgdhZGRyZXNzGAEgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmdSB2Fk",
-            "ZHJlc3MSIQoMc3RhcnRfaGVpZ2h0GAIgASgDUgtzdGFydEhlaWdodBIhCgxp",
-            "bmRleF9vZmZzZXQYAyABKANSC2luZGV4T2Zmc2V0EkwKDGphaWxlZF91bnRp",
-            "bBgEIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCDcjeHwCQ3x8B",
-            "qOewKgFSC2phaWxlZFVudGlsEh4KCnRvbWJzdG9uZWQYBSABKAhSCnRvbWJz",
-            "dG9uZWQSMgoVbWlzc2VkX2Jsb2Nrc19jb3VudGVyGAYgASgDUhNtaXNzZWRC",
-            "bG9ja3NDb3VudGVyOgiYoB8A6KAfASKEBAoGUGFyYW1zEjAKFHNpZ25lZF9i",
-            "bG9ja3Nfd2luZG93GAEgASgDUhJzaWduZWRCbG9ja3NXaW5kb3cSZgoVbWlu",
-            "X3NpZ25lZF9wZXJfd2luZG93GAIgASgMQjPI3h8A2t4fJmdpdGh1Yi5jb20v",
-            "Y29zbW9zL2Nvc21vcy1zZGsvdHlwZXMuRGVjqOewKgFSEm1pblNpZ25lZFBl",
-            "cldpbmRvdxJeChZkb3dudGltZV9qYWlsX2R1cmF0aW9uGAMgASgLMhkuZ29v",
-            "Z2xlLnByb3RvYnVmLkR1cmF0aW9uQg3I3h8AmN8fAajnsCoBUhRkb3dudGlt",
-            "ZUphaWxEdXJhdGlvbhJwChpzbGFzaF9mcmFjdGlvbl9kb3VibGVfc2lnbhgE",
-            "IAEoDEIzyN4fANreHyZnaXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL3R5",
-            "cGVzLkRlY6jnsCoBUhdzbGFzaEZyYWN0aW9uRG91YmxlU2lnbhJrChdzbGFz",
-            "aF9mcmFjdGlvbl9kb3dudGltZRgFIAEoDEIzyN4fANreHyZnaXRodWIuY29t",
-            "L2Nvc21vcy9jb3Ntb3Mtc2RrL3R5cGVzLkRlY6jnsCoBUhVzbGFzaEZyYWN0",
-            "aW9uRG93bnRpbWU6IYrnsCocY29zbW9zLXNkay94L3NsYXNoaW5nL1BhcmFt",
-            "c0L0AQobY29tLmNvc21vcy5zbGFzaGluZy52MWJldGExQg1TbGFzaGluZ1By",
-            "b3RvUAFaRGdpdGh1Yi5jb20vY29zbW9zL2Nvc21vcy1zZGsvY29zbW9zL3Ns",
-            "YXNoaW5nL3YxYmV0YTE7c2xhc2hpbmd2MWJldGExogIDQ1NYqgIXQ29zbW9z",
-            "LlNsYXNoaW5nLlYxYmV0YTHKAhdDb3Ntb3NcU2xhc2hpbmdcVjFiZXRhMeIC",
-            "I0Nvc21vc1xTbGFzaGluZ1xWMWJldGExXEdQQk1ldGFkYXRh6gIZQ29zbW9z",
-            "OjpTbGFzaGluZzo6VjFiZXRhMajiHgFiBnByb3RvMw=="));
+            "EWFtaW5vL2FtaW5vLnByb3RvIsECChRWYWxpZGF0b3JTaWduaW5nSW5mbxI7",
+            "CgdhZGRyZXNzGAEgASgJQiHStC0dY29zbW9zLkNvbnNlbnN1c0FkZHJlc3NT",
+            "dHJpbmdSB2FkZHJlc3MSIQoMc3RhcnRfaGVpZ2h0GAIgASgDUgtzdGFydEhl",
+            "aWdodBIhCgxpbmRleF9vZmZzZXQYAyABKANSC2luZGV4T2Zmc2V0EkwKDGph",
+            "aWxlZF91bnRpbBgEIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBC",
+            "DcjeHwCQ3x8BqOewKgFSC2phaWxlZFVudGlsEh4KCnRvbWJzdG9uZWQYBSAB",
+            "KAhSCnRvbWJzdG9uZWQSMgoVbWlzc2VkX2Jsb2Nrc19jb3VudGVyGAYgASgD",
+            "UhNtaXNzZWRCbG9ja3NDb3VudGVyOgTooB8BIo0ECgZQYXJhbXMSMAoUc2ln",
+            "bmVkX2Jsb2Nrc193aW5kb3cYASABKANSEnNpZ25lZEJsb2Nrc1dpbmRvdxJp",
+            "ChVtaW5fc2lnbmVkX3Blcl93aW5kb3cYAiABKAxCNsjeHwDa3h8bY29zbW9z",
+            "c2RrLmlvL21hdGguTGVnYWN5RGVj0rQtCmNvc21vcy5EZWOo57AqAVISbWlu",
+            "U2lnbmVkUGVyV2luZG93El4KFmRvd250aW1lX2phaWxfZHVyYXRpb24YAyAB",
+            "KAsyGS5nb29nbGUucHJvdG9idWYuRHVyYXRpb25CDcjeHwCY3x8BqOewKgFS",
+            "FGRvd250aW1lSmFpbER1cmF0aW9uEnMKGnNsYXNoX2ZyYWN0aW9uX2RvdWJs",
+            "ZV9zaWduGAQgASgMQjbI3h8A2t4fG2Nvc21vc3Nkay5pby9tYXRoLkxlZ2Fj",
+            "eURlY9K0LQpjb3Ntb3MuRGVjqOewKgFSF3NsYXNoRnJhY3Rpb25Eb3VibGVT",
+            "aWduEm4KF3NsYXNoX2ZyYWN0aW9uX2Rvd250aW1lGAUgASgMQjbI3h8A2t4f",
+            "G2Nvc21vc3Nkay5pby9tYXRoLkxlZ2FjeURlY9K0LQpjb3Ntb3MuRGVjqOew",
+            "KgFSFXNsYXNoRnJhY3Rpb25Eb3dudGltZTohiuewKhxjb3Ntb3Mtc2RrL3gv",
+            "c2xhc2hpbmcvUGFyYW1zQvQBChtjb20uY29zbW9zLnNsYXNoaW5nLnYxYmV0",
+            "YTFCDVNsYXNoaW5nUHJvdG9QAVpEZ2l0aHViLmNvbS9jb3Ntb3MvY29zbW9z",
+            "LXNkay9jb3Ntb3Mvc2xhc2hpbmcvdjFiZXRhMTtzbGFzaGluZ3YxYmV0YTGi",
+            "AgNDU1iqAhdDb3Ntb3MuU2xhc2hpbmcuVjFiZXRhMcoCF0Nvc21vc1xTbGFz",
+            "aGluZ1xWMWJldGEx4gIjQ29zbW9zXFNsYXNoaW5nXFYxYmV0YTFcR1BCTWV0",
+            "YWRhdGHqAhlDb3Ntb3M6OlNsYXNoaW5nOjpWMWJldGExqOIeAWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::CosmosProto.CosmosReflection.Descriptor, global::Amino.AminoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -134,7 +134,7 @@ namespace Cosmos.Slashing.V1beta1 {
     public const int StartHeightFieldNumber = 2;
     private long startHeight_;
     /// <summary>
-    /// Height at which validator was first a candidate OR was unjailed
+    /// Height at which validator was first a candidate OR was un-jailed
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -149,9 +149,9 @@ namespace Cosmos.Slashing.V1beta1 {
     public const int IndexOffsetFieldNumber = 3;
     private long indexOffset_;
     /// <summary>
-    /// Index which is incremented each time the validator was a bonded
-    /// in a block and may have signed a precommit or not. This in conjunction with the
-    /// `SignedBlocksWindow` param determines the index in the `MissedBlocksBitArray`.
+    /// Index which is incremented every time a validator is bonded in a block and
+    /// _may_ have signed a pre-commit or not. This in conjunction with the
+    /// signed_blocks_window param determines the index in the missed block bitmap.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -181,8 +181,9 @@ namespace Cosmos.Slashing.V1beta1 {
     public const int TombstonedFieldNumber = 5;
     private bool tombstoned_;
     /// <summary>
-    /// Whether or not a validator has been tombstoned (killed out of validator set). It is set
-    /// once the validator commits an equivocation or for any other configured misbehiavor.
+    /// Whether or not a validator has been tombstoned (killed out of validator
+    /// set). It is set once the validator commits an equivocation or for any other
+    /// configured misbehavior.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -197,8 +198,8 @@ namespace Cosmos.Slashing.V1beta1 {
     public const int MissedBlocksCounterFieldNumber = 6;
     private long missedBlocksCounter_;
     /// <summary>
-    /// A counter kept to avoid unnecessary array reads.
-    /// Note that `Sum(MissedBlocksBitArray)` always equals `MissedBlocksCounter`.
+    /// A counter of missed (unsigned) blocks. It is used to avoid unnecessary
+    /// reads in the missed block bitmap.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -391,7 +392,11 @@ namespace Cosmos.Slashing.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -433,7 +438,11 @@ namespace Cosmos.Slashing.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -749,7 +758,11 @@ namespace Cosmos.Slashing.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -787,7 +800,11 @@ namespace Cosmos.Slashing.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

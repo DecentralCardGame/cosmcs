@@ -97,7 +97,7 @@ namespace Cosmos.Consensus.V1 {
       }
 
       /// <summary>
-      /// Params queries the parameters of x/consensus_param module.
+      /// Params queries the parameters of x/consensus module.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -110,7 +110,7 @@ namespace Cosmos.Consensus.V1 {
         return Params(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Params queries the parameters of x/consensus_param module.
+      /// Params queries the parameters of x/consensus module.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -121,7 +121,7 @@ namespace Cosmos.Consensus.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_Params, null, options, request);
       }
       /// <summary>
-      /// Params queries the parameters of x/consensus_param module.
+      /// Params queries the parameters of x/consensus module.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -134,7 +134,7 @@ namespace Cosmos.Consensus.V1 {
         return ParamsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Params queries the parameters of x/consensus_param module.
+      /// Params queries the parameters of x/consensus module.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

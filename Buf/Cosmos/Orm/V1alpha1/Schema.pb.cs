@@ -32,18 +32,17 @@ namespace Cosmos.Orm.V1alpha1 {
             "Zml4GogBCglGaWxlRW50cnkSDgoCaWQYASABKA1SAmlkEiYKD3Byb3RvX2Zp",
             "bGVfbmFtZRgCIAEoCVINcHJvdG9GaWxlTmFtZRJDCgxzdG9yYWdlX3R5cGUY",
             "AyABKA4yIC5jb3Ntb3Mub3JtLnYxYWxwaGExLlN0b3JhZ2VUeXBlUgtzdG9y",
-            "YWdlVHlwZSqdAQoLU3RvcmFnZVR5cGUSJAogU1RPUkFHRV9UWVBFX0RFRkFV",
-            "TFRfVU5TUEVDSUZJRUQQABIXChNTVE9SQUdFX1RZUEVfTUVNT1JZEAESGgoW",
-            "U1RPUkFHRV9UWVBFX1RSQU5TSUVOVBACEhYKElNUT1JBR0VfVFlQRV9JTkRF",
-            "WBADEhsKF1NUT1JBR0VfVFlQRV9DT01NSVRNRU5UEAQ6dAoNbW9kdWxlX3Nj",
-            "aGVtYRIfLmdvb2dsZS5wcm90b2J1Zi5NZXNzYWdlT3B0aW9ucxjws+oxIAEo",
-            "CzIrLmNvc21vcy5vcm0udjFhbHBoYTEuTW9kdWxlU2NoZW1hRGVzY3JpcHRv",
-            "clIMbW9kdWxlU2NoZW1hQtIBChdjb20uY29zbW9zLm9ybS52MWFscGhhMUIL",
-            "U2NoZW1hUHJvdG9QAVo8Z2l0aHViLmNvbS9jb3Ntb3MvY29zbW9zLXNkay9j",
-            "b3Ntb3Mvb3JtL3YxYWxwaGExO29ybXYxYWxwaGExogIDQ09YqgITQ29zbW9z",
-            "Lk9ybS5WMWFscGhhMcoCE0Nvc21vc1xPcm1cVjFhbHBoYTHiAh9Db3Ntb3Nc",
-            "T3JtXFYxYWxwaGExXEdQQk1ldGFkYXRh6gIVQ29zbW9zOjpPcm06OlYxYWxw",
-            "aGExYgZwcm90bzM="));
+            "YWdlVHlwZSpoCgtTdG9yYWdlVHlwZRIkCiBTVE9SQUdFX1RZUEVfREVGQVVM",
+            "VF9VTlNQRUNJRklFRBAAEhcKE1NUT1JBR0VfVFlQRV9NRU1PUlkQARIaChZT",
+            "VE9SQUdFX1RZUEVfVFJBTlNJRU5UEAI6dAoNbW9kdWxlX3NjaGVtYRIfLmdv",
+            "b2dsZS5wcm90b2J1Zi5NZXNzYWdlT3B0aW9ucxjws+oxIAEoCzIrLmNvc21v",
+            "cy5vcm0udjFhbHBoYTEuTW9kdWxlU2NoZW1hRGVzY3JpcHRvclIMbW9kdWxl",
+            "U2NoZW1hQtIBChdjb20uY29zbW9zLm9ybS52MWFscGhhMUILU2NoZW1hUHJv",
+            "dG9QAVo8Z2l0aHViLmNvbS9jb3Ntb3MvY29zbW9zLXNkay9jb3Ntb3Mvb3Jt",
+            "L3YxYWxwaGExO29ybXYxYWxwaGExogIDQ09YqgITQ29zbW9zLk9ybS5WMWFs",
+            "cGhhMcoCE0Nvc21vc1xPcm1cVjFhbHBoYTHiAh9Db3Ntb3NcT3JtXFYxYWxw",
+            "aGExXEdQQk1ldGFkYXRh6gIVQ29zbW9zOjpPcm06OlYxYWxwaGExYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Cosmos.Orm.V1alpha1.StorageType), }, new pb::Extension[] { SchemaExtensions.ModuleSchema }, new pbr::GeneratedClrTypeInfo[] {
@@ -71,11 +70,8 @@ namespace Cosmos.Orm.V1alpha1 {
   /// </summary>
   public enum StorageType {
     /// <summary>
-    /// STORAGE_TYPE_DEFAULT_UNSPECIFIED indicates the persistent
-    /// KV-storage where primary key entries are stored in merkle-tree
-    /// backed commitment storage and indexes and seqs are stored in
-    /// fast index storage. Note that the Cosmos SDK before store/v2alpha1
-    /// does not support this.
+    /// STORAGE_TYPE_DEFAULT_UNSPECIFIED indicates the persistent storage where all
+    /// data is stored in the regular Merkle-tree backed KV-store.
     /// </summary>
     [pbr::OriginalName("STORAGE_TYPE_DEFAULT_UNSPECIFIED")] DefaultUnspecified = 0,
     /// <summary>
@@ -92,23 +88,6 @@ namespace Cosmos.Orm.V1alpha1 {
     /// state from JSON.
     /// </summary>
     [pbr::OriginalName("STORAGE_TYPE_TRANSIENT")] Transient = 2,
-    /// <summary>
-    /// STORAGE_TYPE_INDEX indicates persistent storage which is not backed
-    /// by a merkle-tree and won't affect the app hash. Note that the Cosmos SDK
-    /// before store/v2alpha1 does not support this.
-    /// </summary>
-    [pbr::OriginalName("STORAGE_TYPE_INDEX")] Index = 3,
-    /// <summary>
-    /// STORAGE_TYPE_INDEX indicates persistent storage which is backed by
-    /// a merkle-tree. With this type of storage, both primary and index keys
-    /// will affect the app hash and this is generally less efficient
-    /// than using STORAGE_TYPE_DEFAULT_UNSPECIFIED which separates index
-    /// keys into index storage. Note that modules built with the
-    /// Cosmos SDK before store/v2alpha1 must specify STORAGE_TYPE_COMMITMENT
-    /// instead of STORAGE_TYPE_DEFAULT_UNSPECIFIED or STORAGE_TYPE_INDEX
-    /// because this is the only type of persistent storage available.
-    /// </summary>
-    [pbr::OriginalName("STORAGE_TYPE_COMMITMENT")] Commitment = 4,
   }
 
   #endregion
@@ -295,7 +274,11 @@ namespace Cosmos.Orm.V1alpha1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -318,7 +301,11 @@ namespace Cosmos.Orm.V1alpha1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -571,7 +558,11 @@ namespace Cosmos.Orm.V1alpha1 {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -598,7 +589,11 @@ namespace Cosmos.Orm.V1alpha1 {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;

@@ -28,63 +28,75 @@ namespace Cosmos.Gov.V1 {
             "b3MvYmFzZS92MWJldGExL2NvaW4ucHJvdG8aF2Nvc21vcy9nb3YvdjEvZ292",
             "LnByb3RvGhRnb2dvcHJvdG8vZ29nby5wcm90bxoZY29zbW9zX3Byb3RvL2Nv",
             "c21vcy5wcm90bxoZZ29vZ2xlL3Byb3RvYnVmL2FueS5wcm90bxoXY29zbW9z",
-            "L21zZy92MS9tc2cucHJvdG8aEWFtaW5vL2FtaW5vLnByb3RvIskCChFNc2dT",
-            "dWJtaXRQcm9wb3NhbBIwCghtZXNzYWdlcxgBIAMoCzIULmdvb2dsZS5wcm90",
-            "b2J1Zi5BbnlSCG1lc3NhZ2VzEk0KD2luaXRpYWxfZGVwb3NpdBgCIAMoCzIZ",
-            "LmNvc21vcy5iYXNlLnYxYmV0YTEuQ29pbkIJyN4fAKjnsCoBUg5pbml0aWFs",
-            "RGVwb3NpdBI0Cghwcm9wb3NlchgDIAEoCUIY0rQtFGNvc21vcy5BZGRyZXNz",
-            "U3RyaW5nUghwcm9wb3NlchIaCghtZXRhZGF0YRgEIAEoCVIIbWV0YWRhdGES",
-            "FAoFdGl0bGUYBSABKAlSBXRpdGxlEhgKB3N1bW1hcnkYBiABKAlSB3N1bW1h",
-            "cnk6MYLnsCoIcHJvcG9zZXKK57AqH2Nvc21vcy1zZGsvdjEvTXNnU3VibWl0",
-            "UHJvcG9zYWwiPAoZTXNnU3VibWl0UHJvcG9zYWxSZXNwb25zZRIfCgtwcm9w",
-            "b3NhbF9pZBgBIAEoBFIKcHJvcG9zYWxJZCK7AQoUTXNnRXhlY0xlZ2FjeUNv",
-            "bnRlbnQSTgoHY29udGVudBgBIAEoCzIULmdvb2dsZS5wcm90b2J1Zi5BbnlC",
-            "Hsq0LRpjb3Ntb3MuZ292LnYxYmV0YTEuQ29udGVudFIHY29udGVudBIcCglh",
-            "dXRob3JpdHkYAiABKAlSCWF1dGhvcml0eTo1guewKglhdXRob3JpdHmK57Aq",
-            "ImNvc21vcy1zZGsvdjEvTXNnRXhlY0xlZ2FjeUNvbnRlbnQiHgocTXNnRXhl",
-            "Y0xlZ2FjeUNvbnRlbnRSZXNwb25zZSLlAQoHTXNnVm90ZRI1Cgtwcm9wb3Nh",
-            "bF9pZBgBIAEoBEIU6t4fC3Byb3Bvc2FsX2lkqOewKgFSCnByb3Bvc2FsSWQS",
-            "LgoFdm90ZXIYAiABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZ1IFdm90",
-            "ZXISMQoGb3B0aW9uGAMgASgOMhkuY29zbW9zLmdvdi52MS5Wb3RlT3B0aW9u",
-            "UgZvcHRpb24SGgoIbWV0YWRhdGEYBCABKAlSCG1ldGFkYXRhOiSC57AqBXZv",
-            "dGVyiuewKhVjb3Ntb3Mtc2RrL3YxL01zZ1ZvdGUiEQoPTXNnVm90ZVJlc3Bv",
-            "bnNlIv8BCg9Nc2dWb3RlV2VpZ2h0ZWQSNQoLcHJvcG9zYWxfaWQYASABKARC",
-            "FOreHwtwcm9wb3NhbF9pZKjnsCoBUgpwcm9wb3NhbElkEi4KBXZvdGVyGAIg",
-            "ASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmdSBXZvdGVyEjsKB29wdGlv",
-            "bnMYAyADKAsyIS5jb3Ntb3MuZ292LnYxLldlaWdodGVkVm90ZU9wdGlvblIH",
-            "b3B0aW9ucxIaCghtZXRhZGF0YRgEIAEoCVIIbWV0YWRhdGE6LILnsCoFdm90",
-            "ZXKK57AqHWNvc21vcy1zZGsvdjEvTXNnVm90ZVdlaWdodGVkIhkKF01zZ1Zv",
-            "dGVXZWlnaHRlZFJlc3BvbnNlIuYBCgpNc2dEZXBvc2l0EjUKC3Byb3Bvc2Fs",
-            "X2lkGAEgASgEQhTq3h8LcHJvcG9zYWxfaWSo57AqAVIKcHJvcG9zYWxJZBI2",
-            "CglkZXBvc2l0b3IYAiABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZ1IJ",
-            "ZGVwb3NpdG9yEjwKBmFtb3VudBgDIAMoCzIZLmNvc21vcy5iYXNlLnYxYmV0",
-            "YTEuQ29pbkIJyN4fAKjnsCoBUgZhbW91bnQ6K4LnsCoJZGVwb3NpdG9yiuew",
-            "Khhjb3Ntb3Mtc2RrL3YxL01zZ0RlcG9zaXQiFAoSTXNnRGVwb3NpdFJlc3Bv",
-            "bnNlIrsBCg9Nc2dVcGRhdGVQYXJhbXMSNgoJYXV0aG9yaXR5GAEgASgJQhjS",
-            "tC0UY29zbW9zLkFkZHJlc3NTdHJpbmdSCWF1dGhvcml0eRI4CgZwYXJhbXMY",
-            "AiABKAsyFS5jb3Ntb3MuZ292LnYxLlBhcmFtc0IJyN4fAKjnsCoBUgZwYXJh",
-            "bXM6NoLnsCoJYXV0aG9yaXR5iuewKiNjb3Ntb3Mtc2RrL3gvZ292L3YxL01z",
-            "Z1VwZGF0ZVBhcmFtcyIZChdNc2dVcGRhdGVQYXJhbXNSZXNwb25zZTKKBAoD",
-            "TXNnElwKDlN1Ym1pdFByb3Bvc2FsEiAuY29zbW9zLmdvdi52MS5Nc2dTdWJt",
-            "aXRQcm9wb3NhbBooLmNvc21vcy5nb3YudjEuTXNnU3VibWl0UHJvcG9zYWxS",
-            "ZXNwb25zZRJlChFFeGVjTGVnYWN5Q29udGVudBIjLmNvc21vcy5nb3YudjEu",
-            "TXNnRXhlY0xlZ2FjeUNvbnRlbnQaKy5jb3Ntb3MuZ292LnYxLk1zZ0V4ZWNM",
-            "ZWdhY3lDb250ZW50UmVzcG9uc2USPgoEVm90ZRIWLmNvc21vcy5nb3YudjEu",
-            "TXNnVm90ZRoeLmNvc21vcy5nb3YudjEuTXNnVm90ZVJlc3BvbnNlElYKDFZv",
-            "dGVXZWlnaHRlZBIeLmNvc21vcy5nb3YudjEuTXNnVm90ZVdlaWdodGVkGiYu",
-            "Y29zbW9zLmdvdi52MS5Nc2dWb3RlV2VpZ2h0ZWRSZXNwb25zZRJHCgdEZXBv",
-            "c2l0EhkuY29zbW9zLmdvdi52MS5Nc2dEZXBvc2l0GiEuY29zbW9zLmdvdi52",
-            "MS5Nc2dEZXBvc2l0UmVzcG9uc2USVgoMVXBkYXRlUGFyYW1zEh4uY29zbW9z",
-            "Lmdvdi52MS5Nc2dVcGRhdGVQYXJhbXMaJi5jb3Ntb3MuZ292LnYxLk1zZ1Vw",
-            "ZGF0ZVBhcmFtc1Jlc3BvbnNlGgWA57AqAUKkAQoRY29tLmNvc21vcy5nb3Yu",
-            "djFCB1R4UHJvdG9QAVowZ2l0aHViLmNvbS9jb3Ntb3MvY29zbW9zLXNkay9j",
-            "b3Ntb3MvZ292L3YxO2dvdnYxogIDQ0dYqgINQ29zbW9zLkdvdi5WMcoCDUNv",
-            "c21vc1xHb3ZcVjHiAhlDb3Ntb3NcR292XFYxXEdQQk1ldGFkYXRh6gIPQ29z",
-            "bW9zOjpHb3Y6OlYxYgZwcm90bzM="));
+            "L21zZy92MS9tc2cucHJvdG8aEWFtaW5vL2FtaW5vLnByb3RvGh9nb29nbGUv",
+            "cHJvdG9idWYvdGltZXN0YW1wLnByb3RvIqUDChFNc2dTdWJtaXRQcm9wb3Nh",
+            "bBIwCghtZXNzYWdlcxgBIAMoCzIULmdvb2dsZS5wcm90b2J1Zi5BbnlSCG1l",
+            "c3NhZ2VzEooBCg9pbml0aWFsX2RlcG9zaXQYAiADKAsyGS5jb3Ntb3MuYmFz",
+            "ZS52MWJldGExLkNvaW5CRsjeHwCq3x8oZ2l0aHViLmNvbS9jb3Ntb3MvY29z",
+            "bW9zLXNkay90eXBlcy5Db2luc5rnsCoMbGVnYWN5X2NvaW5zqOewKgFSDmlu",
+            "aXRpYWxEZXBvc2l0EjQKCHByb3Bvc2VyGAMgASgJQhjStC0UY29zbW9zLkFk",
+            "ZHJlc3NTdHJpbmdSCHByb3Bvc2VyEhoKCG1ldGFkYXRhGAQgASgJUghtZXRh",
+            "ZGF0YRIUCgV0aXRsZRgFIAEoCVIFdGl0bGUSGAoHc3VtbWFyeRgGIAEoCVIH",
+            "c3VtbWFyeRIcCglleHBlZGl0ZWQYByABKAhSCWV4cGVkaXRlZDoxguewKghw",
+            "cm9wb3NlcornsCofY29zbW9zLXNkay92MS9Nc2dTdWJtaXRQcm9wb3NhbCI8",
+            "ChlNc2dTdWJtaXRQcm9wb3NhbFJlc3BvbnNlEh8KC3Byb3Bvc2FsX2lkGAEg",
+            "ASgEUgpwcm9wb3NhbElkIrsBChRNc2dFeGVjTGVnYWN5Q29udGVudBJOCgdj",
+            "b250ZW50GAEgASgLMhQuZ29vZ2xlLnByb3RvYnVmLkFueUIeyrQtGmNvc21v",
+            "cy5nb3YudjFiZXRhMS5Db250ZW50Ugdjb250ZW50EhwKCWF1dGhvcml0eRgC",
+            "IAEoCVIJYXV0aG9yaXR5OjWC57AqCWF1dGhvcml0eYrnsCoiY29zbW9zLXNk",
+            "ay92MS9Nc2dFeGVjTGVnYWN5Q29udGVudCIeChxNc2dFeGVjTGVnYWN5Q29u",
+            "dGVudFJlc3BvbnNlIuUBCgdNc2dWb3RlEjUKC3Byb3Bvc2FsX2lkGAEgASgE",
+            "QhTq3h8LcHJvcG9zYWxfaWSo57AqAVIKcHJvcG9zYWxJZBIuCgV2b3RlchgC",
+            "IAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nUgV2b3RlchIxCgZvcHRp",
+            "b24YAyABKA4yGS5jb3Ntb3MuZ292LnYxLlZvdGVPcHRpb25SBm9wdGlvbhIa",
+            "CghtZXRhZGF0YRgEIAEoCVIIbWV0YWRhdGE6JILnsCoFdm90ZXKK57AqFWNv",
+            "c21vcy1zZGsvdjEvTXNnVm90ZSIRCg9Nc2dWb3RlUmVzcG9uc2Ui/wEKD01z",
+            "Z1ZvdGVXZWlnaHRlZBI1Cgtwcm9wb3NhbF9pZBgBIAEoBEIU6t4fC3Byb3Bv",
+            "c2FsX2lkqOewKgFSCnByb3Bvc2FsSWQSLgoFdm90ZXIYAiABKAlCGNK0LRRj",
+            "b3Ntb3MuQWRkcmVzc1N0cmluZ1IFdm90ZXISOwoHb3B0aW9ucxgDIAMoCzIh",
+            "LmNvc21vcy5nb3YudjEuV2VpZ2h0ZWRWb3RlT3B0aW9uUgdvcHRpb25zEhoK",
+            "CG1ldGFkYXRhGAQgASgJUghtZXRhZGF0YTosguewKgV2b3RlcornsCodY29z",
+            "bW9zLXNkay92MS9Nc2dWb3RlV2VpZ2h0ZWQiGQoXTXNnVm90ZVdlaWdodGVk",
+            "UmVzcG9uc2Ui5gEKCk1zZ0RlcG9zaXQSNQoLcHJvcG9zYWxfaWQYASABKARC",
+            "FOreHwtwcm9wb3NhbF9pZKjnsCoBUgpwcm9wb3NhbElkEjYKCWRlcG9zaXRv",
+            "chgCIAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nUglkZXBvc2l0b3IS",
+            "PAoGYW1vdW50GAMgAygLMhkuY29zbW9zLmJhc2UudjFiZXRhMS5Db2luQgnI",
+            "3h8AqOewKgFSBmFtb3VudDorguewKglkZXBvc2l0b3KK57AqGGNvc21vcy1z",
+            "ZGsvdjEvTXNnRGVwb3NpdCIUChJNc2dEZXBvc2l0UmVzcG9uc2UiuwEKD01z",
+            "Z1VwZGF0ZVBhcmFtcxI2CglhdXRob3JpdHkYASABKAlCGNK0LRRjb3Ntb3Mu",
+            "QWRkcmVzc1N0cmluZ1IJYXV0aG9yaXR5EjgKBnBhcmFtcxgCIAEoCzIVLmNv",
+            "c21vcy5nb3YudjEuUGFyYW1zQgnI3h8AqOewKgFSBnBhcmFtczo2guewKglh",
+            "dXRob3JpdHmK57AqI2Nvc21vcy1zZGsveC9nb3YvdjEvTXNnVXBkYXRlUGFy",
+            "YW1zIhkKF01zZ1VwZGF0ZVBhcmFtc1Jlc3BvbnNlIooBChFNc2dDYW5jZWxQ",
+            "cm9wb3NhbBIwCgtwcm9wb3NhbF9pZBgBIAEoBEIP6t4fC3Byb3Bvc2FsX2lk",
+            "Ugpwcm9wb3NhbElkEjQKCHByb3Bvc2VyGAIgASgJQhjStC0UY29zbW9zLkFk",
+            "ZHJlc3NTdHJpbmdSCHByb3Bvc2VyOg2C57AqCHByb3Bvc2VyIsEBChlNc2dD",
+            "YW5jZWxQcm9wb3NhbFJlc3BvbnNlEjAKC3Byb3Bvc2FsX2lkGAEgASgEQg/q",
+            "3h8LcHJvcG9zYWxfaWRSCnByb3Bvc2FsSWQSSQoNY2FuY2VsZWRfdGltZRgC",
+            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCCMjeHwCQ3x8BUgxj",
+            "YW5jZWxlZFRpbWUSJwoPY2FuY2VsZWRfaGVpZ2h0GAMgASgEUg5jYW5jZWxl",
+            "ZEhlaWdodDLoBAoDTXNnElwKDlN1Ym1pdFByb3Bvc2FsEiAuY29zbW9zLmdv",
+            "di52MS5Nc2dTdWJtaXRQcm9wb3NhbBooLmNvc21vcy5nb3YudjEuTXNnU3Vi",
+            "bWl0UHJvcG9zYWxSZXNwb25zZRJlChFFeGVjTGVnYWN5Q29udGVudBIjLmNv",
+            "c21vcy5nb3YudjEuTXNnRXhlY0xlZ2FjeUNvbnRlbnQaKy5jb3Ntb3MuZ292",
+            "LnYxLk1zZ0V4ZWNMZWdhY3lDb250ZW50UmVzcG9uc2USPgoEVm90ZRIWLmNv",
+            "c21vcy5nb3YudjEuTXNnVm90ZRoeLmNvc21vcy5nb3YudjEuTXNnVm90ZVJl",
+            "c3BvbnNlElYKDFZvdGVXZWlnaHRlZBIeLmNvc21vcy5nb3YudjEuTXNnVm90",
+            "ZVdlaWdodGVkGiYuY29zbW9zLmdvdi52MS5Nc2dWb3RlV2VpZ2h0ZWRSZXNw",
+            "b25zZRJHCgdEZXBvc2l0EhkuY29zbW9zLmdvdi52MS5Nc2dEZXBvc2l0GiEu",
+            "Y29zbW9zLmdvdi52MS5Nc2dEZXBvc2l0UmVzcG9uc2USVgoMVXBkYXRlUGFy",
+            "YW1zEh4uY29zbW9zLmdvdi52MS5Nc2dVcGRhdGVQYXJhbXMaJi5jb3Ntb3Mu",
+            "Z292LnYxLk1zZ1VwZGF0ZVBhcmFtc1Jlc3BvbnNlElwKDkNhbmNlbFByb3Bv",
+            "c2FsEiAuY29zbW9zLmdvdi52MS5Nc2dDYW5jZWxQcm9wb3NhbBooLmNvc21v",
+            "cy5nb3YudjEuTXNnQ2FuY2VsUHJvcG9zYWxSZXNwb25zZRoFgOewKgFCpAEK",
+            "EWNvbS5jb3Ntb3MuZ292LnYxQgdUeFByb3RvUAFaMGdpdGh1Yi5jb20vY29z",
+            "bW9zL2Nvc21vcy1zZGsvY29zbW9zL2dvdi92MTtnb3Z2MaICA0NHWKoCDUNv",
+            "c21vcy5Hb3YuVjHKAg1Db3Ntb3NcR292XFYx4gIZQ29zbW9zXEdvdlxWMVxH",
+            "UEJNZXRhZGF0YeoCD0Nvc21vczo6R292OjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Cosmos.Base.V1beta1.CoinReflection.Descriptor, global::Cosmos.Gov.V1.GovReflection.Descriptor, global::Gogoproto.GogoReflection.Descriptor, global::CosmosProto.CosmosReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, global::Cosmos.Msg.V1.MsgReflection.Descriptor, global::Amino.AminoReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Cosmos.Base.V1beta1.CoinReflection.Descriptor, global::Cosmos.Gov.V1.GovReflection.Descriptor, global::Gogoproto.GogoReflection.Descriptor, global::CosmosProto.CosmosReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, global::Cosmos.Msg.V1.MsgReflection.Descriptor, global::Amino.AminoReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.MsgSubmitProposal), global::Cosmos.Gov.V1.MsgSubmitProposal.Parser, new[]{ "Messages", "InitialDeposit", "Proposer", "Metadata", "Title", "Summary" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.MsgSubmitProposal), global::Cosmos.Gov.V1.MsgSubmitProposal.Parser, new[]{ "Messages", "InitialDeposit", "Proposer", "Metadata", "Title", "Summary", "Expedited" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.MsgSubmitProposalResponse), global::Cosmos.Gov.V1.MsgSubmitProposalResponse.Parser, new[]{ "ProposalId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.MsgExecLegacyContent), global::Cosmos.Gov.V1.MsgExecLegacyContent.Parser, new[]{ "Content", "Authority" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.MsgExecLegacyContentResponse), global::Cosmos.Gov.V1.MsgExecLegacyContentResponse.Parser, null, null, null, null, null),
@@ -95,7 +107,9 @@ namespace Cosmos.Gov.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.MsgDeposit), global::Cosmos.Gov.V1.MsgDeposit.Parser, new[]{ "ProposalId", "Depositor", "Amount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.MsgDepositResponse), global::Cosmos.Gov.V1.MsgDepositResponse.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.MsgUpdateParams), global::Cosmos.Gov.V1.MsgUpdateParams.Parser, new[]{ "Authority", "Params" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.MsgUpdateParamsResponse), global::Cosmos.Gov.V1.MsgUpdateParamsResponse.Parser, null, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.MsgUpdateParamsResponse), global::Cosmos.Gov.V1.MsgUpdateParamsResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.MsgCancelProposal), global::Cosmos.Gov.V1.MsgCancelProposal.Parser, new[]{ "ProposalId", "Proposer" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Gov.V1.MsgCancelProposalResponse), global::Cosmos.Gov.V1.MsgCancelProposalResponse.Parser, new[]{ "ProposalId", "CanceledTime", "CanceledHeight" }, null, null, null, null)
           }));
     }
     #endregion
@@ -147,6 +161,7 @@ namespace Cosmos.Gov.V1 {
       metadata_ = other.metadata_;
       title_ = other.title_;
       summary_ = other.summary_;
+      expedited_ = other.expedited_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -248,6 +263,23 @@ namespace Cosmos.Gov.V1 {
       }
     }
 
+    /// <summary>Field number for the "expedited" field.</summary>
+    public const int ExpeditedFieldNumber = 7;
+    private bool expedited_;
+    /// <summary>
+    /// expedited defines if the proposal is expedited or not
+    ///
+    /// Since: cosmos-sdk 0.50
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Expedited {
+      get { return expedited_; }
+      set {
+        expedited_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -269,6 +301,7 @@ namespace Cosmos.Gov.V1 {
       if (Metadata != other.Metadata) return false;
       if (Title != other.Title) return false;
       if (Summary != other.Summary) return false;
+      if (Expedited != other.Expedited) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -282,6 +315,7 @@ namespace Cosmos.Gov.V1 {
       if (Metadata.Length != 0) hash ^= Metadata.GetHashCode();
       if (Title.Length != 0) hash ^= Title.GetHashCode();
       if (Summary.Length != 0) hash ^= Summary.GetHashCode();
+      if (Expedited != false) hash ^= Expedited.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -318,6 +352,10 @@ namespace Cosmos.Gov.V1 {
         output.WriteRawTag(50);
         output.WriteString(Summary);
       }
+      if (Expedited != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(Expedited);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -346,6 +384,10 @@ namespace Cosmos.Gov.V1 {
         output.WriteRawTag(50);
         output.WriteString(Summary);
       }
+      if (Expedited != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(Expedited);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -369,6 +411,9 @@ namespace Cosmos.Gov.V1 {
       }
       if (Summary.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Summary);
+      }
+      if (Expedited != false) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -396,6 +441,9 @@ namespace Cosmos.Gov.V1 {
       if (other.Summary.Length != 0) {
         Summary = other.Summary;
       }
+      if (other.Expedited != false) {
+        Expedited = other.Expedited;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -407,7 +455,11 @@ namespace Cosmos.Gov.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -435,6 +487,10 @@ namespace Cosmos.Gov.V1 {
             Summary = input.ReadString();
             break;
           }
+          case 56: {
+            Expedited = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -446,7 +502,11 @@ namespace Cosmos.Gov.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -472,6 +532,10 @@ namespace Cosmos.Gov.V1 {
           }
           case 50: {
             Summary = input.ReadString();
+            break;
+          }
+          case 56: {
+            Expedited = input.ReadBool();
             break;
           }
         }
@@ -643,7 +707,11 @@ namespace Cosmos.Gov.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -662,7 +730,11 @@ namespace Cosmos.Gov.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -875,7 +947,11 @@ namespace Cosmos.Gov.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -901,7 +977,11 @@ namespace Cosmos.Gov.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1053,7 +1133,11 @@ namespace Cosmos.Gov.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1068,7 +1152,11 @@ namespace Cosmos.Gov.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1337,7 +1425,11 @@ namespace Cosmos.Gov.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1368,7 +1460,11 @@ namespace Cosmos.Gov.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1525,7 +1621,11 @@ namespace Cosmos.Gov.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1540,7 +1640,11 @@ namespace Cosmos.Gov.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1798,7 +1902,11 @@ namespace Cosmos.Gov.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1829,7 +1937,11 @@ namespace Cosmos.Gov.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1986,7 +2098,11 @@ namespace Cosmos.Gov.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -2001,7 +2117,11 @@ namespace Cosmos.Gov.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -2227,7 +2347,11 @@ namespace Cosmos.Gov.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -2254,7 +2378,11 @@ namespace Cosmos.Gov.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -2407,7 +2535,11 @@ namespace Cosmos.Gov.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -2422,7 +2554,11 @@ namespace Cosmos.Gov.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -2634,7 +2770,11 @@ namespace Cosmos.Gov.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -2660,7 +2800,11 @@ namespace Cosmos.Gov.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -2815,7 +2959,11 @@ namespace Cosmos.Gov.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -2830,10 +2978,556 @@ namespace Cosmos.Gov.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// MsgCancelProposal is the Msg/CancelProposal request type.
+  ///
+  /// Since: cosmos-sdk 0.50
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class MsgCancelProposal : pb::IMessage<MsgCancelProposal>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<MsgCancelProposal> _parser = new pb::MessageParser<MsgCancelProposal>(() => new MsgCancelProposal());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<MsgCancelProposal> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Cosmos.Gov.V1.TxReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public MsgCancelProposal() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public MsgCancelProposal(MsgCancelProposal other) : this() {
+      proposalId_ = other.proposalId_;
+      proposer_ = other.proposer_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public MsgCancelProposal Clone() {
+      return new MsgCancelProposal(this);
+    }
+
+    /// <summary>Field number for the "proposal_id" field.</summary>
+    public const int ProposalIdFieldNumber = 1;
+    private ulong proposalId_;
+    /// <summary>
+    /// proposal_id defines the unique id of the proposal.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong ProposalId {
+      get { return proposalId_; }
+      set {
+        proposalId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "proposer" field.</summary>
+    public const int ProposerFieldNumber = 2;
+    private string proposer_ = "";
+    /// <summary>
+    /// proposer is the account address of the proposer.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Proposer {
+      get { return proposer_; }
+      set {
+        proposer_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as MsgCancelProposal);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(MsgCancelProposal other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ProposalId != other.ProposalId) return false;
+      if (Proposer != other.Proposer) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ProposalId != 0UL) hash ^= ProposalId.GetHashCode();
+      if (Proposer.Length != 0) hash ^= Proposer.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ProposalId != 0UL) {
+        output.WriteRawTag(8);
+        output.WriteUInt64(ProposalId);
+      }
+      if (Proposer.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Proposer);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ProposalId != 0UL) {
+        output.WriteRawTag(8);
+        output.WriteUInt64(ProposalId);
+      }
+      if (Proposer.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Proposer);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (ProposalId != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(ProposalId);
+      }
+      if (Proposer.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Proposer);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(MsgCancelProposal other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ProposalId != 0UL) {
+        ProposalId = other.ProposalId;
+      }
+      if (other.Proposer.Length != 0) {
+        Proposer = other.Proposer;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ProposalId = input.ReadUInt64();
+            break;
+          }
+          case 18: {
+            Proposer = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ProposalId = input.ReadUInt64();
+            break;
+          }
+          case 18: {
+            Proposer = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// MsgCancelProposalResponse defines the response structure for executing a
+  /// MsgCancelProposal message.
+  ///
+  /// Since: cosmos-sdk 0.50
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class MsgCancelProposalResponse : pb::IMessage<MsgCancelProposalResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<MsgCancelProposalResponse> _parser = new pb::MessageParser<MsgCancelProposalResponse>(() => new MsgCancelProposalResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<MsgCancelProposalResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Cosmos.Gov.V1.TxReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public MsgCancelProposalResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public MsgCancelProposalResponse(MsgCancelProposalResponse other) : this() {
+      proposalId_ = other.proposalId_;
+      canceledTime_ = other.canceledTime_ != null ? other.canceledTime_.Clone() : null;
+      canceledHeight_ = other.canceledHeight_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public MsgCancelProposalResponse Clone() {
+      return new MsgCancelProposalResponse(this);
+    }
+
+    /// <summary>Field number for the "proposal_id" field.</summary>
+    public const int ProposalIdFieldNumber = 1;
+    private ulong proposalId_;
+    /// <summary>
+    /// proposal_id defines the unique id of the proposal.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong ProposalId {
+      get { return proposalId_; }
+      set {
+        proposalId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "canceled_time" field.</summary>
+    public const int CanceledTimeFieldNumber = 2;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp canceledTime_;
+    /// <summary>
+    /// canceled_time is the time when proposal is canceled.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp CanceledTime {
+      get { return canceledTime_; }
+      set {
+        canceledTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "canceled_height" field.</summary>
+    public const int CanceledHeightFieldNumber = 3;
+    private ulong canceledHeight_;
+    /// <summary>
+    /// canceled_height defines the block height at which the proposal is canceled.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong CanceledHeight {
+      get { return canceledHeight_; }
+      set {
+        canceledHeight_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as MsgCancelProposalResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(MsgCancelProposalResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ProposalId != other.ProposalId) return false;
+      if (!object.Equals(CanceledTime, other.CanceledTime)) return false;
+      if (CanceledHeight != other.CanceledHeight) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ProposalId != 0UL) hash ^= ProposalId.GetHashCode();
+      if (canceledTime_ != null) hash ^= CanceledTime.GetHashCode();
+      if (CanceledHeight != 0UL) hash ^= CanceledHeight.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ProposalId != 0UL) {
+        output.WriteRawTag(8);
+        output.WriteUInt64(ProposalId);
+      }
+      if (canceledTime_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(CanceledTime);
+      }
+      if (CanceledHeight != 0UL) {
+        output.WriteRawTag(24);
+        output.WriteUInt64(CanceledHeight);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ProposalId != 0UL) {
+        output.WriteRawTag(8);
+        output.WriteUInt64(ProposalId);
+      }
+      if (canceledTime_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(CanceledTime);
+      }
+      if (CanceledHeight != 0UL) {
+        output.WriteRawTag(24);
+        output.WriteUInt64(CanceledHeight);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (ProposalId != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(ProposalId);
+      }
+      if (canceledTime_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CanceledTime);
+      }
+      if (CanceledHeight != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(CanceledHeight);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(MsgCancelProposalResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ProposalId != 0UL) {
+        ProposalId = other.ProposalId;
+      }
+      if (other.canceledTime_ != null) {
+        if (canceledTime_ == null) {
+          CanceledTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        CanceledTime.MergeFrom(other.CanceledTime);
+      }
+      if (other.CanceledHeight != 0UL) {
+        CanceledHeight = other.CanceledHeight;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ProposalId = input.ReadUInt64();
+            break;
+          }
+          case 18: {
+            if (canceledTime_ == null) {
+              CanceledTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(CanceledTime);
+            break;
+          }
+          case 24: {
+            CanceledHeight = input.ReadUInt64();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ProposalId = input.ReadUInt64();
+            break;
+          }
+          case 18: {
+            if (canceledTime_ == null) {
+              CanceledTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(CanceledTime);
+            break;
+          }
+          case 24: {
+            CanceledHeight = input.ReadUInt64();
+            break;
+          }
         }
       }
     }

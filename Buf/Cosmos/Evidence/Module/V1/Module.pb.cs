@@ -26,14 +26,13 @@ namespace Cosmos.Evidence.Module.V1 {
           string.Concat(
             "CiZjb3Ntb3MvZXZpZGVuY2UvbW9kdWxlL3YxL21vZHVsZS5wcm90bxIZY29z",
             "bW9zLmV2aWRlbmNlLm1vZHVsZS52MRogY29zbW9zL2FwcC92MWFscGhhMS9t",
-            "b2R1bGUucHJvdG8iOQoGTW9kdWxlOi+6wJbaASkKJ2dpdGh1Yi5jb20vY29z",
-            "bW9zL2Nvc21vcy1zZGsveC9ldmlkZW5jZUL0AQodY29tLmNvc21vcy5ldmlk",
-            "ZW5jZS5tb2R1bGUudjFCC01vZHVsZVByb3RvUAFaP2dpdGh1Yi5jb20vY29z",
-            "bW9zL2Nvc21vcy1zZGsvY29zbW9zL2V2aWRlbmNlL21vZHVsZS92MTttb2R1",
-            "bGV2MaICA0NFTaoCGUNvc21vcy5FdmlkZW5jZS5Nb2R1bGUuVjHKAhlDb3Nt",
-            "b3NcRXZpZGVuY2VcTW9kdWxlXFYx4gIlQ29zbW9zXEV2aWRlbmNlXE1vZHVs",
-            "ZVxWMVxHUEJNZXRhZGF0YeoCHENvc21vczo6RXZpZGVuY2U6Ok1vZHVsZTo6",
-            "VjFiBnByb3RvMw=="));
+            "b2R1bGUucHJvdG8iKQoGTW9kdWxlOh+6wJbaARkKF2Nvc21vc3Nkay5pby94",
+            "L2V2aWRlbmNlQvQBCh1jb20uY29zbW9zLmV2aWRlbmNlLm1vZHVsZS52MUIL",
+            "TW9kdWxlUHJvdG9QAVo/Z2l0aHViLmNvbS9jb3Ntb3MvY29zbW9zLXNkay9j",
+            "b3Ntb3MvZXZpZGVuY2UvbW9kdWxlL3YxO21vZHVsZXYxogIDQ0VNqgIZQ29z",
+            "bW9zLkV2aWRlbmNlLk1vZHVsZS5WMcoCGUNvc21vc1xFdmlkZW5jZVxNb2R1",
+            "bGVcVjHiAiVDb3Ntb3NcRXZpZGVuY2VcTW9kdWxlXFYxXEdQQk1ldGFkYXRh",
+            "6gIcQ29zbW9zOjpFdmlkZW5jZTo6TW9kdWxlOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Cosmos.App.V1alpha1.ModuleReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -174,7 +173,11 @@ namespace Cosmos.Evidence.Module.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -189,7 +192,11 @@ namespace Cosmos.Evidence.Module.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

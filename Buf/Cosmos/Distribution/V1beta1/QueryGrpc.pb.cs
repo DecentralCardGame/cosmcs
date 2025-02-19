@@ -491,7 +491,7 @@ namespace Cosmos.Distribution.V1beta1 {
         return CallInvoker.AsyncUnaryCall(__Method_DelegationRewards, null, options, request);
       }
       /// <summary>
-      /// DelegationTotalRewards queries the total rewards accrued by a each
+      /// DelegationTotalRewards queries the total rewards accrued by each
       /// validator.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -505,7 +505,7 @@ namespace Cosmos.Distribution.V1beta1 {
         return DelegationTotalRewards(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// DelegationTotalRewards queries the total rewards accrued by a each
+      /// DelegationTotalRewards queries the total rewards accrued by each
       /// validator.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -517,7 +517,7 @@ namespace Cosmos.Distribution.V1beta1 {
         return CallInvoker.BlockingUnaryCall(__Method_DelegationTotalRewards, null, options, request);
       }
       /// <summary>
-      /// DelegationTotalRewards queries the total rewards accrued by a each
+      /// DelegationTotalRewards queries the total rewards accrued by each
       /// validator.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -531,7 +531,7 @@ namespace Cosmos.Distribution.V1beta1 {
         return DelegationTotalRewardsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// DelegationTotalRewards queries the total rewards accrued by a each
+      /// DelegationTotalRewards queries the total rewards accrued by each
       /// validator.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>

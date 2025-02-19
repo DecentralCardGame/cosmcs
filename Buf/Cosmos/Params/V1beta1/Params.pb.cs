@@ -26,20 +26,20 @@ namespace Cosmos.Params.V1beta1 {
           string.Concat(
             "CiJjb3Ntb3MvcGFyYW1zL3YxYmV0YTEvcGFyYW1zLnByb3RvEhVjb3Ntb3Mu",
             "cGFyYW1zLnYxYmV0YTEaFGdvZ29wcm90by9nb2dvLnByb3RvGhljb3Ntb3Nf",
-            "cHJvdG8vY29zbW9zLnByb3RvGhFhbWluby9hbWluby5wcm90byLpAQoXUGFy",
+            "cHJvdG8vY29zbW9zLnByb3RvGhFhbWluby9hbWluby5wcm90byLlAQoXUGFy",
             "YW1ldGVyQ2hhbmdlUHJvcG9zYWwSFAoFdGl0bGUYASABKAlSBXRpdGxlEiAK",
             "C2Rlc2NyaXB0aW9uGAIgASgJUgtkZXNjcmlwdGlvbhJHCgdjaGFuZ2VzGAMg",
             "AygLMiIuY29zbW9zLnBhcmFtcy52MWJldGExLlBhcmFtQ2hhbmdlQgnI3h8A",
-            "qOewKgFSB2NoYW5nZXM6TYigHwCYoB8AyrQtGmNvc21vcy5nb3YudjFiZXRh",
-            "MS5Db250ZW50iuewKiJjb3Ntb3Mtc2RrL1BhcmFtZXRlckNoYW5nZVByb3Bv",
-            "c2FsIlcKC1BhcmFtQ2hhbmdlEhoKCHN1YnNwYWNlGAEgASgJUghzdWJzcGFj",
-            "ZRIQCgNrZXkYAiABKAlSA2tleRIUCgV2YWx1ZRgDIAEoCVIFdmFsdWU6BJig",
-            "HwBC5AEKGWNvbS5jb3Ntb3MucGFyYW1zLnYxYmV0YTFCC1BhcmFtc1Byb3Rv",
-            "UAFaQGdpdGh1Yi5jb20vY29zbW9zL2Nvc21vcy1zZGsvY29zbW9zL3BhcmFt",
-            "cy92MWJldGExO3BhcmFtc3YxYmV0YTGiAgNDUFiqAhVDb3Ntb3MuUGFyYW1z",
-            "LlYxYmV0YTHKAhVDb3Ntb3NcUGFyYW1zXFYxYmV0YTHiAiFDb3Ntb3NcUGFy",
-            "YW1zXFYxYmV0YTFcR1BCTWV0YWRhdGHqAhdDb3Ntb3M6OlBhcmFtczo6VjFi",
-            "ZXRhMajiHgFiBnByb3RvMw=="));
+            "qOewKgFSB2NoYW5nZXM6SYigHwDKtC0aY29zbW9zLmdvdi52MWJldGExLkNv",
+            "bnRlbnSK57AqImNvc21vcy1zZGsvUGFyYW1ldGVyQ2hhbmdlUHJvcG9zYWwi",
+            "UQoLUGFyYW1DaGFuZ2USGgoIc3Vic3BhY2UYASABKAlSCHN1YnNwYWNlEhAK",
+            "A2tleRgCIAEoCVIDa2V5EhQKBXZhbHVlGAMgASgJUgV2YWx1ZULkAQoZY29t",
+            "LmNvc21vcy5wYXJhbXMudjFiZXRhMUILUGFyYW1zUHJvdG9QAVpAZ2l0aHVi",
+            "LmNvbS9jb3Ntb3MvY29zbW9zLXNkay9jb3Ntb3MvcGFyYW1zL3YxYmV0YTE7",
+            "cGFyYW1zdjFiZXRhMaICA0NQWKoCFUNvc21vcy5QYXJhbXMuVjFiZXRhMcoC",
+            "FUNvc21vc1xQYXJhbXNcVjFiZXRhMeICIUNvc21vc1xQYXJhbXNcVjFiZXRh",
+            "MVxHUEJNZXRhZGF0YeoCF0Nvc21vczo6UGFyYW1zOjpWMWJldGExqOIeAWIG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::CosmosProto.CosmosReflection.Descriptor, global::Amino.AminoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -257,7 +257,11 @@ namespace Cosmos.Params.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -284,7 +288,11 @@ namespace Cosmos.Params.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -525,7 +533,11 @@ namespace Cosmos.Params.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -552,7 +564,11 @@ namespace Cosmos.Params.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

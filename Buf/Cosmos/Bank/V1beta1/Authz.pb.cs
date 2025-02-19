@@ -27,18 +27,18 @@ namespace Cosmos.Bank.V1beta1 {
             "Ch9jb3Ntb3MvYmFuay92MWJldGExL2F1dGh6LnByb3RvEhNjb3Ntb3MuYmFu",
             "ay52MWJldGExGhFhbWluby9hbWluby5wcm90bxoUZ29nb3Byb3RvL2dvZ28u",
             "cHJvdG8aGWNvc21vc19wcm90by9jb3Ntb3MucHJvdG8aHmNvc21vcy9iYXNl",
-            "L3YxYmV0YTEvY29pbi5wcm90byKIAgoRU2VuZEF1dGhvcml6YXRpb24ScQoL",
-            "c3BlbmRfbGltaXQYASADKAsyGS5jb3Ntb3MuYmFzZS52MWJldGExLkNvaW5C",
-            "NcjeHwCq3x8oZ2l0aHViLmNvbS9jb3Ntb3MvY29zbW9zLXNkay90eXBlcy5D",
-            "b2luc6jnsCoBUgpzcGVuZExpbWl0EjcKCmFsbG93X2xpc3QYAiADKAlCGNK0",
-            "LRRjb3Ntb3MuQWRkcmVzc1N0cmluZ1IJYWxsb3dMaXN0OkfKtC0iY29zbW9z",
-            "LmF1dGh6LnYxYmV0YTEuQXV0aG9yaXphdGlvbornsCocY29zbW9zLXNkay9T",
-            "ZW5kQXV0aG9yaXphdGlvbkLRAQoXY29tLmNvc21vcy5iYW5rLnYxYmV0YTFC",
-            "CkF1dGh6UHJvdG9QAVo8Z2l0aHViLmNvbS9jb3Ntb3MvY29zbW9zLXNkay9j",
-            "b3Ntb3MvYmFuay92MWJldGExO2Jhbmt2MWJldGExogIDQ0JYqgITQ29zbW9z",
-            "LkJhbmsuVjFiZXRhMcoCE0Nvc21vc1xCYW5rXFYxYmV0YTHiAh9Db3Ntb3Nc",
-            "QmFua1xWMWJldGExXEdQQk1ldGFkYXRh6gIVQ29zbW9zOjpCYW5rOjpWMWJl",
-            "dGExYgZwcm90bzM="));
+            "L3YxYmV0YTEvY29pbi5wcm90byKaAgoRU2VuZEF1dGhvcml6YXRpb24SggEK",
+            "C3NwZW5kX2xpbWl0GAEgAygLMhkuY29zbW9zLmJhc2UudjFiZXRhMS5Db2lu",
+            "QkbI3h8Aqt8fKGdpdGh1Yi5jb20vY29zbW9zL2Nvc21vcy1zZGsvdHlwZXMu",
+            "Q29pbnOa57AqDGxlZ2FjeV9jb2luc6jnsCoBUgpzcGVuZExpbWl0EjcKCmFs",
+            "bG93X2xpc3QYAiADKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZ1IJYWxs",
+            "b3dMaXN0OkfKtC0iY29zbW9zLmF1dGh6LnYxYmV0YTEuQXV0aG9yaXphdGlv",
+            "bornsCocY29zbW9zLXNkay9TZW5kQXV0aG9yaXphdGlvbkLRAQoXY29tLmNv",
+            "c21vcy5iYW5rLnYxYmV0YTFCCkF1dGh6UHJvdG9QAVo8Z2l0aHViLmNvbS9j",
+            "b3Ntb3MvY29zbW9zLXNkay9jb3Ntb3MvYmFuay92MWJldGExO2Jhbmt2MWJl",
+            "dGExogIDQ0JYqgITQ29zbW9zLkJhbmsuVjFiZXRhMcoCE0Nvc21vc1xCYW5r",
+            "XFYxYmV0YTHiAh9Db3Ntb3NcQmFua1xWMWJldGExXEdQQk1ldGFkYXRh6gIV",
+            "Q29zbW9zOjpCYW5rOjpWMWJldGExYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Amino.AminoReflection.Descriptor, global::Gogoproto.GogoReflection.Descriptor, global::CosmosProto.CosmosReflection.Descriptor, global::Cosmos.Base.V1beta1.CoinReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -224,7 +224,11 @@ namespace Cosmos.Bank.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -247,7 +251,11 @@ namespace Cosmos.Bank.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

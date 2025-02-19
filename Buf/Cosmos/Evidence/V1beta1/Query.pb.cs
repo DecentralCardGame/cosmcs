@@ -26,34 +26,32 @@ namespace Cosmos.Evidence.V1beta1 {
           string.Concat(
             "CiNjb3Ntb3MvZXZpZGVuY2UvdjFiZXRhMS9xdWVyeS5wcm90bxIXY29zbW9z",
             "LmV2aWRlbmNlLnYxYmV0YTEaKmNvc21vcy9iYXNlL3F1ZXJ5L3YxYmV0YTEv",
-            "cGFnaW5hdGlvbi5wcm90bxoUZ29nb3Byb3RvL2dvZ28ucHJvdG8aGWdvb2ds",
-            "ZS9wcm90b2J1Zi9hbnkucHJvdG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMu",
-            "cHJvdG8ihwEKFFF1ZXJ5RXZpZGVuY2VSZXF1ZXN0ElsKDWV2aWRlbmNlX2hh",
-            "c2gYASABKAxCNhgB+t4fMGdpdGh1Yi5jb20vY29tZXRiZnQvY29tZXRiZnQv",
-            "bGlicy9ieXRlcy5IZXhCeXRlc1IMZXZpZGVuY2VIYXNoEhIKBGhhc2gYAiAB",
-            "KAlSBGhhc2giSQoVUXVlcnlFdmlkZW5jZVJlc3BvbnNlEjAKCGV2aWRlbmNl",
-            "GAEgASgLMhQuZ29vZ2xlLnByb3RvYnVmLkFueVIIZXZpZGVuY2UiYQoXUXVl",
-            "cnlBbGxFdmlkZW5jZVJlcXVlc3QSRgoKcGFnaW5hdGlvbhgBIAEoCzImLmNv",
-            "c21vcy5iYXNlLnF1ZXJ5LnYxYmV0YTEuUGFnZVJlcXVlc3RSCnBhZ2luYXRp",
-            "b24ilQEKGFF1ZXJ5QWxsRXZpZGVuY2VSZXNwb25zZRIwCghldmlkZW5jZRgB",
-            "IAMoCzIULmdvb2dsZS5wcm90b2J1Zi5BbnlSCGV2aWRlbmNlEkcKCnBhZ2lu",
-            "YXRpb24YAiABKAsyJy5jb3Ntb3MuYmFzZS5xdWVyeS52MWJldGExLlBhZ2VS",
-            "ZXNwb25zZVIKcGFnaW5hdGlvbjLFAgoFUXVlcnkSmwEKCEV2aWRlbmNlEi0u",
-            "Y29zbW9zLmV2aWRlbmNlLnYxYmV0YTEuUXVlcnlFdmlkZW5jZVJlcXVlc3Qa",
-            "Li5jb3Ntb3MuZXZpZGVuY2UudjFiZXRhMS5RdWVyeUV2aWRlbmNlUmVzcG9u",
-            "c2UiMILT5JMCKhIoL2Nvc21vcy9ldmlkZW5jZS92MWJldGExL2V2aWRlbmNl",
-            "L3toYXNofRKdAQoLQWxsRXZpZGVuY2USMC5jb3Ntb3MuZXZpZGVuY2UudjFi",
-            "ZXRhMS5RdWVyeUFsbEV2aWRlbmNlUmVxdWVzdBoxLmNvc21vcy5ldmlkZW5j",
-            "ZS52MWJldGExLlF1ZXJ5QWxsRXZpZGVuY2VSZXNwb25zZSIpgtPkkwIjEiEv",
-            "Y29zbW9zL2V2aWRlbmNlL3YxYmV0YTEvZXZpZGVuY2VC7QEKG2NvbS5jb3Nt",
-            "b3MuZXZpZGVuY2UudjFiZXRhMUIKUXVlcnlQcm90b1ABWkRnaXRodWIuY29t",
-            "L2Nvc21vcy9jb3Ntb3Mtc2RrL2Nvc21vcy9ldmlkZW5jZS92MWJldGExO2V2",
-            "aWRlbmNldjFiZXRhMaICA0NFWKoCF0Nvc21vcy5FdmlkZW5jZS5WMWJldGEx",
-            "ygIXQ29zbW9zXEV2aWRlbmNlXFYxYmV0YTHiAiNDb3Ntb3NcRXZpZGVuY2Vc",
-            "VjFiZXRhMVxHUEJNZXRhZGF0YeoCGUNvc21vczo6RXZpZGVuY2U6OlYxYmV0",
-            "YTFiBnByb3RvMw=="));
+            "cGFnaW5hdGlvbi5wcm90bxoZZ29vZ2xlL3Byb3RvYnVmL2FueS5wcm90bxoc",
+            "Z29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byJTChRRdWVyeUV2aWRlbmNl",
+            "UmVxdWVzdBInCg1ldmlkZW5jZV9oYXNoGAEgASgMQgIYAVIMZXZpZGVuY2VI",
+            "YXNoEhIKBGhhc2gYAiABKAlSBGhhc2giSQoVUXVlcnlFdmlkZW5jZVJlc3Bv",
+            "bnNlEjAKCGV2aWRlbmNlGAEgASgLMhQuZ29vZ2xlLnByb3RvYnVmLkFueVII",
+            "ZXZpZGVuY2UiYQoXUXVlcnlBbGxFdmlkZW5jZVJlcXVlc3QSRgoKcGFnaW5h",
+            "dGlvbhgBIAEoCzImLmNvc21vcy5iYXNlLnF1ZXJ5LnYxYmV0YTEuUGFnZVJl",
+            "cXVlc3RSCnBhZ2luYXRpb24ilQEKGFF1ZXJ5QWxsRXZpZGVuY2VSZXNwb25z",
+            "ZRIwCghldmlkZW5jZRgBIAMoCzIULmdvb2dsZS5wcm90b2J1Zi5BbnlSCGV2",
+            "aWRlbmNlEkcKCnBhZ2luYXRpb24YAiABKAsyJy5jb3Ntb3MuYmFzZS5xdWVy",
+            "eS52MWJldGExLlBhZ2VSZXNwb25zZVIKcGFnaW5hdGlvbjLFAgoFUXVlcnkS",
+            "mwEKCEV2aWRlbmNlEi0uY29zbW9zLmV2aWRlbmNlLnYxYmV0YTEuUXVlcnlF",
+            "dmlkZW5jZVJlcXVlc3QaLi5jb3Ntb3MuZXZpZGVuY2UudjFiZXRhMS5RdWVy",
+            "eUV2aWRlbmNlUmVzcG9uc2UiMILT5JMCKhIoL2Nvc21vcy9ldmlkZW5jZS92",
+            "MWJldGExL2V2aWRlbmNlL3toYXNofRKdAQoLQWxsRXZpZGVuY2USMC5jb3Nt",
+            "b3MuZXZpZGVuY2UudjFiZXRhMS5RdWVyeUFsbEV2aWRlbmNlUmVxdWVzdBox",
+            "LmNvc21vcy5ldmlkZW5jZS52MWJldGExLlF1ZXJ5QWxsRXZpZGVuY2VSZXNw",
+            "b25zZSIpgtPkkwIjEiEvY29zbW9zL2V2aWRlbmNlL3YxYmV0YTEvZXZpZGVu",
+            "Y2VC7QEKG2NvbS5jb3Ntb3MuZXZpZGVuY2UudjFiZXRhMUIKUXVlcnlQcm90",
+            "b1ABWkRnaXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL2Nvc21vcy9ldmlk",
+            "ZW5jZS92MWJldGExO2V2aWRlbmNldjFiZXRhMaICA0NFWKoCF0Nvc21vcy5F",
+            "dmlkZW5jZS5WMWJldGExygIXQ29zbW9zXEV2aWRlbmNlXFYxYmV0YTHiAiND",
+            "b3Ntb3NcRXZpZGVuY2VcVjFiZXRhMVxHUEJNZXRhZGF0YeoCGUNvc21vczo6",
+            "RXZpZGVuY2U6OlYxYmV0YTFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Cosmos.Base.Query.V1beta1.PaginationReflection.Descriptor, global::Gogoproto.GogoReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Cosmos.Base.Query.V1beta1.PaginationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Evidence.V1beta1.QueryEvidenceRequest), global::Cosmos.Evidence.V1beta1.QueryEvidenceRequest.Parser, new[]{ "EvidenceHash", "Hash" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Evidence.V1beta1.QueryEvidenceResponse), global::Cosmos.Evidence.V1beta1.QueryEvidenceResponse.Parser, new[]{ "Evidence" }, null, null, null, null),
@@ -263,7 +261,11 @@ namespace Cosmos.Evidence.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -286,7 +288,11 @@ namespace Cosmos.Evidence.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -470,7 +476,11 @@ namespace Cosmos.Evidence.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -492,7 +502,11 @@ namespace Cosmos.Evidence.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -676,7 +690,11 @@ namespace Cosmos.Evidence.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -698,7 +716,11 @@ namespace Cosmos.Evidence.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -903,7 +925,11 @@ namespace Cosmos.Evidence.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -929,7 +955,11 @@ namespace Cosmos.Evidence.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

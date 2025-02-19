@@ -20,7 +20,6 @@ namespace Cosmcs.Tx
             var proto = new Cosmos.Tx.V1beta1.AuthInfo
             {
                 Fee = Fee.IntoProto(),
-                Tip = null
             };
             proto.SignerInfos.Add(SignerInfos.Select(s => s.IntoProto()));
 

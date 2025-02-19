@@ -26,13 +26,12 @@ namespace Cosmos.Nft.Module.V1 {
           string.Concat(
             "CiFjb3Ntb3MvbmZ0L21vZHVsZS92MS9tb2R1bGUucHJvdG8SFGNvc21vcy5u",
             "ZnQubW9kdWxlLnYxGiBjb3Ntb3MvYXBwL3YxYWxwaGExL21vZHVsZS5wcm90",
-            "byI0CgZNb2R1bGU6KrrAltoBJAoiZ2l0aHViLmNvbS9jb3Ntb3MvY29zbW9z",
-            "LXNkay94L25mdELWAQoYY29tLmNvc21vcy5uZnQubW9kdWxlLnYxQgtNb2R1",
-            "bGVQcm90b1ABWjpnaXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL2Nvc21v",
-            "cy9uZnQvbW9kdWxlL3YxO21vZHVsZXYxogIDQ05NqgIUQ29zbW9zLk5mdC5N",
-            "b2R1bGUuVjHKAhRDb3Ntb3NcTmZ0XE1vZHVsZVxWMeICIENvc21vc1xOZnRc",
-            "TW9kdWxlXFYxXEdQQk1ldGFkYXRh6gIXQ29zbW9zOjpOZnQ6Ok1vZHVsZTo6",
-            "VjFiBnByb3RvMw=="));
+            "byIkCgZNb2R1bGU6GrrAltoBFAoSY29zbW9zc2RrLmlvL3gvbmZ0QtYBChhj",
+            "b20uY29zbW9zLm5mdC5tb2R1bGUudjFCC01vZHVsZVByb3RvUAFaOmdpdGh1",
+            "Yi5jb20vY29zbW9zL2Nvc21vcy1zZGsvY29zbW9zL25mdC9tb2R1bGUvdjE7",
+            "bW9kdWxldjGiAgNDTk2qAhRDb3Ntb3MuTmZ0Lk1vZHVsZS5WMcoCFENvc21v",
+            "c1xOZnRcTW9kdWxlXFYx4gIgQ29zbW9zXE5mdFxNb2R1bGVcVjFcR1BCTWV0",
+            "YWRhdGHqAhdDb3Ntb3M6Ok5mdDo6TW9kdWxlOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Cosmos.App.V1alpha1.ModuleReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -173,7 +172,11 @@ namespace Cosmos.Nft.Module.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -188,7 +191,11 @@ namespace Cosmos.Nft.Module.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

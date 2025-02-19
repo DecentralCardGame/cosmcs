@@ -27,18 +27,18 @@ namespace Cosmos.Evidence.V1beta1 {
             "CiZjb3Ntb3MvZXZpZGVuY2UvdjFiZXRhMS9ldmlkZW5jZS5wcm90bxIXY29z",
             "bW9zLmV2aWRlbmNlLnYxYmV0YTEaEWFtaW5vL2FtaW5vLnByb3RvGhRnb2dv",
             "cHJvdG8vZ29nby5wcm90bxofZ29vZ2xlL3Byb3RvYnVmL3RpbWVzdGFtcC5w",
-            "cm90bxoZY29zbW9zX3Byb3RvL2Nvc21vcy5wcm90byLsAQoMRXF1aXZvY2F0",
+            "cm90bxoZY29zbW9zX3Byb3RvL2Nvc21vcy5wcm90byLoAQoMRXF1aXZvY2F0",
             "aW9uEhYKBmhlaWdodBgBIAEoA1IGaGVpZ2h0Ej0KBHRpbWUYAiABKAsyGi5n",
             "b29nbGUucHJvdG9idWYuVGltZXN0YW1wQg3I3h8AkN8fAajnsCoBUgR0aW1l",
             "EhQKBXBvd2VyGAMgASgDUgVwb3dlchJFChFjb25zZW5zdXNfYWRkcmVzcxgE",
             "IAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nUhBjb25zZW5zdXNBZGRy",
-            "ZXNzOiiIoB8AmKAfAOigHwCK57AqF2Nvc21vcy1zZGsvRXF1aXZvY2F0aW9u",
-            "QvQBChtjb20uY29zbW9zLmV2aWRlbmNlLnYxYmV0YTFCDUV2aWRlbmNlUHJv",
-            "dG9QAVpEZ2l0aHViLmNvbS9jb3Ntb3MvY29zbW9zLXNkay9jb3Ntb3MvZXZp",
-            "ZGVuY2UvdjFiZXRhMTtldmlkZW5jZXYxYmV0YTGiAgNDRViqAhdDb3Ntb3Mu",
-            "RXZpZGVuY2UuVjFiZXRhMcoCF0Nvc21vc1xFdmlkZW5jZVxWMWJldGEx4gIj",
-            "Q29zbW9zXEV2aWRlbmNlXFYxYmV0YTFcR1BCTWV0YWRhdGHqAhlDb3Ntb3M6",
-            "OkV2aWRlbmNlOjpWMWJldGExqOIeAWIGcHJvdG8z"));
+            "ZXNzOiSIoB8A6KAfAIrnsCoXY29zbW9zLXNkay9FcXVpdm9jYXRpb25C9AEK",
+            "G2NvbS5jb3Ntb3MuZXZpZGVuY2UudjFiZXRhMUINRXZpZGVuY2VQcm90b1AB",
+            "WkRnaXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL2Nvc21vcy9ldmlkZW5j",
+            "ZS92MWJldGExO2V2aWRlbmNldjFiZXRhMaICA0NFWKoCF0Nvc21vcy5Fdmlk",
+            "ZW5jZS5WMWJldGExygIXQ29zbW9zXEV2aWRlbmNlXFYxYmV0YTHiAiNDb3Nt",
+            "b3NcRXZpZGVuY2VcVjFiZXRhMVxHUEJNZXRhZGF0YeoCGUNvc21vczo6RXZp",
+            "ZGVuY2U6OlYxYmV0YTGo4h4BYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Amino.AminoReflection.Descriptor, global::Gogoproto.GogoReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::CosmosProto.CosmosReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -311,7 +311,11 @@ namespace Cosmos.Evidence.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -345,7 +349,11 @@ namespace Cosmos.Evidence.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

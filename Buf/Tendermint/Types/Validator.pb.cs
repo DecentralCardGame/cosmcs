@@ -36,15 +36,19 @@ namespace Tendermint.Types {
             "ASgDUgt2b3RpbmdQb3dlchIrChFwcm9wb3Nlcl9wcmlvcml0eRgEIAEoA1IQ",
             "cHJvcG9zZXJQcmlvcml0eSJrCg9TaW1wbGVWYWxpZGF0b3ISNQoHcHViX2tl",
             "eRgBIAEoCzIcLnRlbmRlcm1pbnQuY3J5cHRvLlB1YmxpY0tleVIGcHViS2V5",
-            "EiEKDHZvdGluZ19wb3dlchgCIAEoA1ILdm90aW5nUG93ZXJCtgEKFGNvbS50",
-            "ZW5kZXJtaW50LnR5cGVzQg5WYWxpZGF0b3JQcm90b1ABWi1naXRodWIuY29t",
-            "L2Nvc21vcy9jb3Ntb3Mtc2RrL3RlbmRlcm1pbnQvdHlwZXOiAgNUVFiqAhBU",
-            "ZW5kZXJtaW50LlR5cGVzygIQVGVuZGVybWludFxUeXBlc+ICHFRlbmRlcm1p",
-            "bnRcVHlwZXNcR1BCTWV0YWRhdGHqAhFUZW5kZXJtaW50OjpUeXBlc2IGcHJv",
-            "dG8z"));
+            "EiEKDHZvdGluZ19wb3dlchgCIAEoA1ILdm90aW5nUG93ZXIq1wEKC0Jsb2Nr",
+            "SURGbGFnEjEKFUJMT0NLX0lEX0ZMQUdfVU5LTk9XThAAGhaKnSASQmxvY2tJ",
+            "REZsYWdVbmtub3duEi8KFEJMT0NLX0lEX0ZMQUdfQUJTRU5UEAEaFYqdIBFC",
+            "bG9ja0lERmxhZ0Fic2VudBIvChRCTE9DS19JRF9GTEFHX0NPTU1JVBACGhWK",
+            "nSARQmxvY2tJREZsYWdDb21taXQSKQoRQkxPQ0tfSURfRkxBR19OSUwQAxoS",
+            "ip0gDkJsb2NrSURGbGFnTmlsGgiIox4AqKQeAUK2AQoUY29tLnRlbmRlcm1p",
+            "bnQudHlwZXNCDlZhbGlkYXRvclByb3RvUAFaLWdpdGh1Yi5jb20vY29zbW9z",
+            "L2Nvc21vcy1zZGsvdGVuZGVybWludC90eXBlc6ICA1RUWKoCEFRlbmRlcm1p",
+            "bnQuVHlwZXPKAhBUZW5kZXJtaW50XFR5cGVz4gIcVGVuZGVybWludFxUeXBl",
+            "c1xHUEJNZXRhZGF0YeoCEVRlbmRlcm1pbnQ6OlR5cGVzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::Tendermint.Crypto.KeysReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Tendermint.Types.BlockIDFlag), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Tendermint.Types.ValidatorSet), global::Tendermint.Types.ValidatorSet.Parser, new[]{ "Validators", "Proposer", "TotalVotingPower" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tendermint.Types.Validator), global::Tendermint.Types.Validator.Parser, new[]{ "Address", "PubKey", "VotingPower", "ProposerPriority" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tendermint.Types.SimpleValidator), global::Tendermint.Types.SimpleValidator.Parser, new[]{ "PubKey", "VotingPower" }, null, null, null, null)
@@ -53,6 +57,31 @@ namespace Tendermint.Types {
     #endregion
 
   }
+  #region Enums
+  /// <summary>
+  /// BlockIdFlag indicates which BlockID the signature is for
+  /// </summary>
+  public enum BlockIDFlag {
+    /// <summary>
+    /// indicates an error condition
+    /// </summary>
+    [pbr::OriginalName("BLOCK_ID_FLAG_UNKNOWN")] Unknown = 0,
+    /// <summary>
+    /// the vote was not received
+    /// </summary>
+    [pbr::OriginalName("BLOCK_ID_FLAG_ABSENT")] Absent = 1,
+    /// <summary>
+    /// voted for the block that received the majority
+    /// </summary>
+    [pbr::OriginalName("BLOCK_ID_FLAG_COMMIT")] Commit = 2,
+    /// <summary>
+    /// voted for nil
+    /// </summary>
+    [pbr::OriginalName("BLOCK_ID_FLAG_NIL")] Nil = 3,
+  }
+
+  #endregion
+
   #region Messages
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ValidatorSet : pb::IMessage<ValidatorSet>
@@ -260,7 +289,11 @@ namespace Tendermint.Types {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -290,7 +323,11 @@ namespace Tendermint.Types {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -562,7 +599,11 @@ namespace Tendermint.Types {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -596,7 +637,11 @@ namespace Tendermint.Types {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -814,7 +859,11 @@ namespace Tendermint.Types {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -840,7 +889,11 @@ namespace Tendermint.Types {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

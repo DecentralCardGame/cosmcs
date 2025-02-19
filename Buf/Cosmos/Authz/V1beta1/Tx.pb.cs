@@ -33,12 +33,12 @@ namespace Cosmos.Authz.V1beta1 {
             "ZXISMgoHZ3JhbnRlZRgCIAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5n",
             "UgdncmFudGVlEjwKBWdyYW50GAMgASgLMhsuY29zbW9zLmF1dGh6LnYxYmV0",
             "YTEuR3JhbnRCCcjeHwCo57AqAVIFZ3JhbnQ6JILnsCoHZ3JhbnRlcornsCoT",
-            "Y29zbW9zLXNkay9Nc2dHcmFudCIrCg9Nc2dFeGVjUmVzcG9uc2USGAoHcmVz",
-            "dWx0cxgBIAMoDFIHcmVzdWx0cyKpAQoHTXNnRXhlYxIyCgdncmFudGVlGAEg",
-            "ASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmdSB2dyYW50ZWUSRQoEbXNn",
-            "cxgCIAMoCzIULmdvb2dsZS5wcm90b2J1Zi5BbnlCG8q0LRdjb3Ntb3MuYmFz",
-            "ZS52MWJldGExLk1zZ1IEbXNnczojguewKgdncmFudGVliuewKhJjb3Ntb3Mt",
-            "c2RrL01zZ0V4ZWMiEgoQTXNnR3JhbnRSZXNwb25zZSK8AQoJTXNnUmV2b2tl",
+            "Y29zbW9zLXNkay9Nc2dHcmFudCISChBNc2dHcmFudFJlc3BvbnNlIqkBCgdN",
+            "c2dFeGVjEjIKB2dyYW50ZWUYASABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0",
+            "cmluZ1IHZ3JhbnRlZRJFCgRtc2dzGAIgAygLMhQuZ29vZ2xlLnByb3RvYnVm",
+            "LkFueUIbyrQtF2Nvc21vcy5iYXNlLnYxYmV0YTEuTXNnUgRtc2dzOiOC57Aq",
+            "B2dyYW50ZWWK57AqEmNvc21vcy1zZGsvTXNnRXhlYyIrCg9Nc2dFeGVjUmVz",
+            "cG9uc2USGAoHcmVzdWx0cxgBIAMoDFIHcmVzdWx0cyK8AQoJTXNnUmV2b2tl",
             "EjIKB2dyYW50ZXIYASABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZ1IH",
             "Z3JhbnRlchIyCgdncmFudGVlGAIgASgJQhjStC0UY29zbW9zLkFkZHJlc3NT",
             "dHJpbmdSB2dyYW50ZWUSIAoMbXNnX3R5cGVfdXJsGAMgASgJUgptc2dUeXBl",
@@ -59,9 +59,9 @@ namespace Cosmos.Authz.V1beta1 {
           new pbr::FileDescriptor[] { global::CosmosProto.CosmosReflection.Descriptor, global::Gogoproto.GogoReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, global::Cosmos.Authz.V1beta1.AuthzReflection.Descriptor, global::Cosmos.Msg.V1.MsgReflection.Descriptor, global::Amino.AminoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Authz.V1beta1.MsgGrant), global::Cosmos.Authz.V1beta1.MsgGrant.Parser, new[]{ "Granter", "Grantee", "Grant" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Authz.V1beta1.MsgExecResponse), global::Cosmos.Authz.V1beta1.MsgExecResponse.Parser, new[]{ "Results" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Authz.V1beta1.MsgExec), global::Cosmos.Authz.V1beta1.MsgExec.Parser, new[]{ "Grantee", "Msgs" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Authz.V1beta1.MsgGrantResponse), global::Cosmos.Authz.V1beta1.MsgGrantResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Authz.V1beta1.MsgExec), global::Cosmos.Authz.V1beta1.MsgExec.Parser, new[]{ "Grantee", "Msgs" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Authz.V1beta1.MsgExecResponse), global::Cosmos.Authz.V1beta1.MsgExecResponse.Parser, new[]{ "Results" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Authz.V1beta1.MsgRevoke), global::Cosmos.Authz.V1beta1.MsgRevoke.Parser, new[]{ "Granter", "Grantee", "MsgTypeUrl" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Authz.V1beta1.MsgRevokeResponse), global::Cosmos.Authz.V1beta1.MsgRevokeResponse.Parser, null, null, null, null, null)
           }));
@@ -291,7 +291,11 @@ namespace Cosmos.Authz.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -321,7 +325,11 @@ namespace Cosmos.Authz.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -348,19 +356,19 @@ namespace Cosmos.Authz.V1beta1 {
   }
 
   /// <summary>
-  /// MsgExecResponse defines the Msg/MsgExecResponse response type.
+  /// MsgGrantResponse defines the Msg/MsgGrant response type.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class MsgExecResponse : pb::IMessage<MsgExecResponse>
+  public sealed partial class MsgGrantResponse : pb::IMessage<MsgGrantResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<MsgExecResponse> _parser = new pb::MessageParser<MsgExecResponse>(() => new MsgExecResponse());
+    private static readonly pb::MessageParser<MsgGrantResponse> _parser = new pb::MessageParser<MsgGrantResponse>(() => new MsgGrantResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<MsgExecResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<MsgGrantResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -376,7 +384,7 @@ namespace Cosmos.Authz.V1beta1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MsgExecResponse() {
+    public MsgGrantResponse() {
       OnConstruction();
     }
 
@@ -384,44 +392,31 @@ namespace Cosmos.Authz.V1beta1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MsgExecResponse(MsgExecResponse other) : this() {
-      results_ = other.results_.Clone();
+    public MsgGrantResponse(MsgGrantResponse other) : this() {
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MsgExecResponse Clone() {
-      return new MsgExecResponse(this);
-    }
-
-    /// <summary>Field number for the "results" field.</summary>
-    public const int ResultsFieldNumber = 1;
-    private static readonly pb::FieldCodec<pb::ByteString> _repeated_results_codec
-        = pb::FieldCodec.ForBytes(10);
-    private readonly pbc::RepeatedField<pb::ByteString> results_ = new pbc::RepeatedField<pb::ByteString>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<pb::ByteString> Results {
-      get { return results_; }
+    public MsgGrantResponse Clone() {
+      return new MsgGrantResponse(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as MsgExecResponse);
+      return Equals(other as MsgGrantResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(MsgExecResponse other) {
+    public bool Equals(MsgGrantResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!results_.Equals(other.results_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -429,7 +424,6 @@ namespace Cosmos.Authz.V1beta1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= results_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -448,7 +442,6 @@ namespace Cosmos.Authz.V1beta1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      results_.WriteTo(output, _repeated_results_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -459,7 +452,6 @@ namespace Cosmos.Authz.V1beta1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      results_.WriteTo(ref output, _repeated_results_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -470,7 +462,6 @@ namespace Cosmos.Authz.V1beta1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += results_.CalculateSize(_repeated_results_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -479,11 +470,10 @@ namespace Cosmos.Authz.V1beta1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(MsgExecResponse other) {
+    public void MergeFrom(MsgGrantResponse other) {
       if (other == null) {
         return;
       }
-      results_.Add(other.results_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -495,14 +485,14 @@ namespace Cosmos.Authz.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            results_.AddEntriesFrom(input, _repeated_results_codec);
-            break;
-          }
         }
       }
     #endif
@@ -514,14 +504,14 @@ namespace Cosmos.Authz.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
-            results_.AddEntriesFrom(ref input, _repeated_results_codec);
-            break;
-          }
         }
       }
     }
@@ -713,7 +703,11 @@ namespace Cosmos.Authz.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -736,7 +730,11 @@ namespace Cosmos.Authz.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -756,19 +754,19 @@ namespace Cosmos.Authz.V1beta1 {
   }
 
   /// <summary>
-  /// MsgGrantResponse defines the Msg/MsgGrant response type.
+  /// MsgExecResponse defines the Msg/MsgExecResponse response type.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class MsgGrantResponse : pb::IMessage<MsgGrantResponse>
+  public sealed partial class MsgExecResponse : pb::IMessage<MsgExecResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<MsgGrantResponse> _parser = new pb::MessageParser<MsgGrantResponse>(() => new MsgGrantResponse());
+    private static readonly pb::MessageParser<MsgExecResponse> _parser = new pb::MessageParser<MsgExecResponse>(() => new MsgExecResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<MsgGrantResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<MsgExecResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -784,7 +782,7 @@ namespace Cosmos.Authz.V1beta1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MsgGrantResponse() {
+    public MsgExecResponse() {
       OnConstruction();
     }
 
@@ -792,31 +790,44 @@ namespace Cosmos.Authz.V1beta1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MsgGrantResponse(MsgGrantResponse other) : this() {
+    public MsgExecResponse(MsgExecResponse other) : this() {
+      results_ = other.results_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MsgGrantResponse Clone() {
-      return new MsgGrantResponse(this);
+    public MsgExecResponse Clone() {
+      return new MsgExecResponse(this);
+    }
+
+    /// <summary>Field number for the "results" field.</summary>
+    public const int ResultsFieldNumber = 1;
+    private static readonly pb::FieldCodec<pb::ByteString> _repeated_results_codec
+        = pb::FieldCodec.ForBytes(10);
+    private readonly pbc::RepeatedField<pb::ByteString> results_ = new pbc::RepeatedField<pb::ByteString>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<pb::ByteString> Results {
+      get { return results_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as MsgGrantResponse);
+      return Equals(other as MsgExecResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(MsgGrantResponse other) {
+    public bool Equals(MsgExecResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if(!results_.Equals(other.results_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -824,6 +835,7 @@ namespace Cosmos.Authz.V1beta1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
+      hash ^= results_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -842,6 +854,7 @@ namespace Cosmos.Authz.V1beta1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
+      results_.WriteTo(output, _repeated_results_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -852,6 +865,7 @@ namespace Cosmos.Authz.V1beta1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      results_.WriteTo(ref output, _repeated_results_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -862,6 +876,7 @@ namespace Cosmos.Authz.V1beta1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
+      size += results_.CalculateSize(_repeated_results_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -870,10 +885,11 @@ namespace Cosmos.Authz.V1beta1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(MsgGrantResponse other) {
+    public void MergeFrom(MsgExecResponse other) {
       if (other == null) {
         return;
       }
+      results_.Add(other.results_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -885,10 +901,18 @@ namespace Cosmos.Authz.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 10: {
+            results_.AddEntriesFrom(input, _repeated_results_codec);
+            break;
+          }
         }
       }
     #endif
@@ -900,10 +924,18 @@ namespace Cosmos.Authz.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
+          case 10: {
+            results_.AddEntriesFrom(ref input, _repeated_results_codec);
+            break;
+          }
         }
       }
     }
@@ -1129,7 +1161,11 @@ namespace Cosmos.Authz.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1156,7 +1192,11 @@ namespace Cosmos.Authz.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1309,7 +1349,11 @@ namespace Cosmos.Authz.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1324,7 +1368,11 @@ namespace Cosmos.Authz.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

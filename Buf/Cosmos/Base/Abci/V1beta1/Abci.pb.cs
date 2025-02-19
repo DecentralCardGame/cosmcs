@@ -26,51 +26,57 @@ namespace Cosmos.Base.Abci.V1beta1 {
           string.Concat(
             "CiNjb3Ntb3MvYmFzZS9hYmNpL3YxYmV0YTEvYWJjaS5wcm90bxIYY29zbW9z",
             "LmJhc2UuYWJjaS52MWJldGExGhRnb2dvcHJvdG8vZ29nby5wcm90bxobdGVu",
-            "ZGVybWludC9hYmNpL3R5cGVzLnByb3RvGhlnb29nbGUvcHJvdG9idWYvYW55",
-            "LnByb3RvIswDCgpUeFJlc3BvbnNlEhYKBmhlaWdodBgBIAEoA1IGaGVpZ2h0",
-            "EiIKBnR4aGFzaBgCIAEoCUIK4t4fBlR4SGFzaFIGdHhoYXNoEhwKCWNvZGVz",
-            "cGFjZRgDIAEoCVIJY29kZXNwYWNlEhIKBGNvZGUYBCABKA1SBGNvZGUSEgoE",
-            "ZGF0YRgFIAEoCVIEZGF0YRIXCgdyYXdfbG9nGAYgASgJUgZyYXdMb2cSVQoE",
-            "bG9ncxgHIAMoCzIoLmNvc21vcy5iYXNlLmFiY2kudjFiZXRhMS5BQkNJTWVz",
-            "c2FnZUxvZ0IXyN4fAKrfHw9BQkNJTWVzc2FnZUxvZ3NSBGxvZ3MSEgoEaW5m",
-            "bxgIIAEoCVIEaW5mbxIdCgpnYXNfd2FudGVkGAkgASgDUglnYXNXYW50ZWQS",
-            "GQoIZ2FzX3VzZWQYCiABKANSB2dhc1VzZWQSJAoCdHgYCyABKAsyFC5nb29n",
-            "bGUucHJvdG9idWYuQW55UgJ0eBIcCgl0aW1lc3RhbXAYDCABKAlSCXRpbWVz",
-            "dGFtcBI0CgZldmVudHMYDSADKAsyFi50ZW5kZXJtaW50LmFiY2kuRXZlbnRC",
-            "BMjeHwBSBmV2ZW50czoEiKAfACKpAQoOQUJDSU1lc3NhZ2VMb2cSKgoJbXNn",
-            "X2luZGV4GAEgASgNQg3q3h8JbXNnX2luZGV4Ughtc2dJbmRleBIQCgNsb2cY",
-            "AiABKAlSA2xvZxJTCgZldmVudHMYAyADKAsyJS5jb3Ntb3MuYmFzZS5hYmNp",
-            "LnYxYmV0YTEuU3RyaW5nRXZlbnRCFMjeHwCq3x8MU3RyaW5nRXZlbnRzUgZl",
-            "dmVudHM6BIDcIAEicgoLU3RyaW5nRXZlbnQSEgoEdHlwZRgBIAEoCVIEdHlw",
-            "ZRJJCgphdHRyaWJ1dGVzGAIgAygLMiMuY29zbW9zLmJhc2UuYWJjaS52MWJl",
-            "dGExLkF0dHJpYnV0ZUIEyN4fAFIKYXR0cmlidXRlczoEgNwgASIzCglBdHRy",
-            "aWJ1dGUSEAoDa2V5GAEgASgJUgNrZXkSFAoFdmFsdWUYAiABKAlSBXZhbHVl",
-            "IkMKB0dhc0luZm8SHQoKZ2FzX3dhbnRlZBgBIAEoBFIJZ2FzV2FudGVkEhkK",
-            "CGdhc191c2VkGAIgASgEUgdnYXNVc2VkIqkBCgZSZXN1bHQSFgoEZGF0YRgB",
-            "IAEoDEICGAFSBGRhdGESEAoDbG9nGAIgASgJUgNsb2cSNAoGZXZlbnRzGAMg",
-            "AygLMhYudGVuZGVybWludC5hYmNpLkV2ZW50QgTI3h8AUgZldmVudHMSOQoN",
-            "bXNnX3Jlc3BvbnNlcxgEIAMoCzIULmdvb2dsZS5wcm90b2J1Zi5BbnlSDG1z",
-            "Z1Jlc3BvbnNlczoEiKAfACKWAQoSU2ltdWxhdGlvblJlc3BvbnNlEkYKCGdh",
-            "c19pbmZvGAEgASgLMiEuY29zbW9zLmJhc2UuYWJjaS52MWJldGExLkdhc0lu",
-            "Zm9CCMjeHwDQ3h8BUgdnYXNJbmZvEjgKBnJlc3VsdBgCIAEoCzIgLmNvc21v",
-            "cy5iYXNlLmFiY2kudjFiZXRhMS5SZXN1bHRSBnJlc3VsdCJACgdNc2dEYXRh",
-            "EhkKCG1zZ190eXBlGAEgASgJUgdtc2dUeXBlEhIKBGRhdGEYAiABKAxSBGRh",
-            "dGE6BhgBgNwgASKHAQoJVHhNc2dEYXRhEjkKBGRhdGEYASADKAsyIS5jb3Nt",
-            "b3MuYmFzZS5hYmNpLnYxYmV0YTEuTXNnRGF0YUICGAFSBGRhdGESOQoNbXNn",
-            "X3Jlc3BvbnNlcxgCIAMoCzIULmdvb2dsZS5wcm90b2J1Zi5BbnlSDG1zZ1Jl",
-            "c3BvbnNlczoEgNwgASLcAQoPU2VhcmNoVHhzUmVzdWx0Eh8KC3RvdGFsX2Nv",
-            "dW50GAEgASgEUgp0b3RhbENvdW50EhQKBWNvdW50GAIgASgEUgVjb3VudBIf",
-            "CgtwYWdlX251bWJlchgDIAEoBFIKcGFnZU51bWJlchIdCgpwYWdlX3RvdGFs",
-            "GAQgASgEUglwYWdlVG90YWwSFAoFbGltaXQYBSABKARSBWxpbWl0EjYKA3R4",
-            "cxgGIAMoCzIkLmNvc21vcy5iYXNlLmFiY2kudjFiZXRhMS5UeFJlc3BvbnNl",
-            "UgN0eHM6BIDcIAFC8wEKHGNvbS5jb3Ntb3MuYmFzZS5hYmNpLnYxYmV0YTFC",
-            "CUFiY2lQcm90b1ABWkFnaXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL2Nv",
-            "c21vcy9iYXNlL2FiY2kvdjFiZXRhMTthYmNpdjFiZXRhMaICA0NCQaoCGENv",
-            "c21vcy5CYXNlLkFiY2kuVjFiZXRhMcoCGENvc21vc1xCYXNlXEFiY2lcVjFi",
-            "ZXRhMeICJENvc21vc1xCYXNlXEFiY2lcVjFiZXRhMVxHUEJNZXRhZGF0YeoC",
-            "G0Nvc21vczo6QmFzZTo6QWJjaTo6VjFiZXRhMdjhHgBiBnByb3RvMw=="));
+            "ZGVybWludC9hYmNpL3R5cGVzLnByb3RvGhx0ZW5kZXJtaW50L3R5cGVzL2Js",
+            "b2NrLnByb3RvGhlnb29nbGUvcHJvdG9idWYvYW55LnByb3RvIswDCgpUeFJl",
+            "c3BvbnNlEhYKBmhlaWdodBgBIAEoA1IGaGVpZ2h0EiIKBnR4aGFzaBgCIAEo",
+            "CUIK4t4fBlR4SGFzaFIGdHhoYXNoEhwKCWNvZGVzcGFjZRgDIAEoCVIJY29k",
+            "ZXNwYWNlEhIKBGNvZGUYBCABKA1SBGNvZGUSEgoEZGF0YRgFIAEoCVIEZGF0",
+            "YRIXCgdyYXdfbG9nGAYgASgJUgZyYXdMb2cSVQoEbG9ncxgHIAMoCzIoLmNv",
+            "c21vcy5iYXNlLmFiY2kudjFiZXRhMS5BQkNJTWVzc2FnZUxvZ0IXyN4fAKrf",
+            "Hw9BQkNJTWVzc2FnZUxvZ3NSBGxvZ3MSEgoEaW5mbxgIIAEoCVIEaW5mbxId",
+            "CgpnYXNfd2FudGVkGAkgASgDUglnYXNXYW50ZWQSGQoIZ2FzX3VzZWQYCiAB",
+            "KANSB2dhc1VzZWQSJAoCdHgYCyABKAsyFC5nb29nbGUucHJvdG9idWYuQW55",
+            "UgJ0eBIcCgl0aW1lc3RhbXAYDCABKAlSCXRpbWVzdGFtcBI0CgZldmVudHMY",
+            "DSADKAsyFi50ZW5kZXJtaW50LmFiY2kuRXZlbnRCBMjeHwBSBmV2ZW50czoE",
+            "iKAfACKpAQoOQUJDSU1lc3NhZ2VMb2cSKgoJbXNnX2luZGV4GAEgASgNQg3q",
+            "3h8JbXNnX2luZGV4Ughtc2dJbmRleBIQCgNsb2cYAiABKAlSA2xvZxJTCgZl",
+            "dmVudHMYAyADKAsyJS5jb3Ntb3MuYmFzZS5hYmNpLnYxYmV0YTEuU3RyaW5n",
+            "RXZlbnRCFMjeHwCq3x8MU3RyaW5nRXZlbnRzUgZldmVudHM6BIDcIAEicgoL",
+            "U3RyaW5nRXZlbnQSEgoEdHlwZRgBIAEoCVIEdHlwZRJJCgphdHRyaWJ1dGVz",
+            "GAIgAygLMiMuY29zbW9zLmJhc2UuYWJjaS52MWJldGExLkF0dHJpYnV0ZUIE",
+            "yN4fAFIKYXR0cmlidXRlczoEgNwgASIzCglBdHRyaWJ1dGUSEAoDa2V5GAEg",
+            "ASgJUgNrZXkSFAoFdmFsdWUYAiABKAlSBXZhbHVlIkMKB0dhc0luZm8SHQoK",
+            "Z2FzX3dhbnRlZBgBIAEoBFIJZ2FzV2FudGVkEhkKCGdhc191c2VkGAIgASgE",
+            "UgdnYXNVc2VkIqkBCgZSZXN1bHQSFgoEZGF0YRgBIAEoDEICGAFSBGRhdGES",
+            "EAoDbG9nGAIgASgJUgNsb2cSNAoGZXZlbnRzGAMgAygLMhYudGVuZGVybWlu",
+            "dC5hYmNpLkV2ZW50QgTI3h8AUgZldmVudHMSOQoNbXNnX3Jlc3BvbnNlcxgE",
+            "IAMoCzIULmdvb2dsZS5wcm90b2J1Zi5BbnlSDG1zZ1Jlc3BvbnNlczoEiKAf",
+            "ACKWAQoSU2ltdWxhdGlvblJlc3BvbnNlEkYKCGdhc19pbmZvGAEgASgLMiEu",
+            "Y29zbW9zLmJhc2UuYWJjaS52MWJldGExLkdhc0luZm9CCMjeHwDQ3h8BUgdn",
+            "YXNJbmZvEjgKBnJlc3VsdBgCIAEoCzIgLmNvc21vcy5iYXNlLmFiY2kudjFi",
+            "ZXRhMS5SZXN1bHRSBnJlc3VsdCJACgdNc2dEYXRhEhkKCG1zZ190eXBlGAEg",
+            "ASgJUgdtc2dUeXBlEhIKBGRhdGEYAiABKAxSBGRhdGE6BhgBgNwgASKHAQoJ",
+            "VHhNc2dEYXRhEjkKBGRhdGEYASADKAsyIS5jb3Ntb3MuYmFzZS5hYmNpLnYx",
+            "YmV0YTEuTXNnRGF0YUICGAFSBGRhdGESOQoNbXNnX3Jlc3BvbnNlcxgCIAMo",
+            "CzIULmdvb2dsZS5wcm90b2J1Zi5BbnlSDG1zZ1Jlc3BvbnNlczoEgNwgASLc",
+            "AQoPU2VhcmNoVHhzUmVzdWx0Eh8KC3RvdGFsX2NvdW50GAEgASgEUgp0b3Rh",
+            "bENvdW50EhQKBWNvdW50GAIgASgEUgVjb3VudBIfCgtwYWdlX251bWJlchgD",
+            "IAEoBFIKcGFnZU51bWJlchIdCgpwYWdlX3RvdGFsGAQgASgEUglwYWdlVG90",
+            "YWwSFAoFbGltaXQYBSABKARSBWxpbWl0EjYKA3R4cxgGIAMoCzIkLmNvc21v",
+            "cy5iYXNlLmFiY2kudjFiZXRhMS5UeFJlc3BvbnNlUgN0eHM6BIDcIAEi2AEK",
+            "ElNlYXJjaEJsb2Nrc1Jlc3VsdBIfCgt0b3RhbF9jb3VudBgBIAEoA1IKdG90",
+            "YWxDb3VudBIUCgVjb3VudBgCIAEoA1IFY291bnQSHwoLcGFnZV9udW1iZXIY",
+            "AyABKANSCnBhZ2VOdW1iZXISHQoKcGFnZV90b3RhbBgEIAEoA1IJcGFnZVRv",
+            "dGFsEhQKBWxpbWl0GAUgASgDUgVsaW1pdBIvCgZibG9ja3MYBiADKAsyFy50",
+            "ZW5kZXJtaW50LnR5cGVzLkJsb2NrUgZibG9ja3M6BIDcIAFC8wEKHGNvbS5j",
+            "b3Ntb3MuYmFzZS5hYmNpLnYxYmV0YTFCCUFiY2lQcm90b1ABWkFnaXRodWIu",
+            "Y29tL2Nvc21vcy9jb3Ntb3Mtc2RrL2Nvc21vcy9iYXNlL2FiY2kvdjFiZXRh",
+            "MTthYmNpdjFiZXRhMaICA0NCQaoCGENvc21vcy5CYXNlLkFiY2kuVjFiZXRh",
+            "McoCGENvc21vc1xCYXNlXEFiY2lcVjFiZXRhMeICJENvc21vc1xCYXNlXEFi",
+            "Y2lcVjFiZXRhMVxHUEJNZXRhZGF0YeoCG0Nvc21vczo6QmFzZTo6QWJjaTo6",
+            "VjFiZXRhMdjhHgBiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::Tendermint.Abci.TypesReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::Tendermint.Abci.TypesReflection.Descriptor, global::Tendermint.Types.BlockReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Base.Abci.V1beta1.TxResponse), global::Cosmos.Base.Abci.V1beta1.TxResponse.Parser, new[]{ "Height", "Txhash", "Codespace", "Code", "Data", "RawLog", "Logs", "Info", "GasWanted", "GasUsed", "Tx", "Timestamp", "Events" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Base.Abci.V1beta1.ABCIMessageLog), global::Cosmos.Base.Abci.V1beta1.ABCIMessageLog.Parser, new[]{ "MsgIndex", "Log", "Events" }, null, null, null, null),
@@ -81,7 +87,8 @@ namespace Cosmos.Base.Abci.V1beta1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Base.Abci.V1beta1.SimulationResponse), global::Cosmos.Base.Abci.V1beta1.SimulationResponse.Parser, new[]{ "GasInfo", "Result" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Base.Abci.V1beta1.MsgData), global::Cosmos.Base.Abci.V1beta1.MsgData.Parser, new[]{ "MsgType", "Data" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Base.Abci.V1beta1.TxMsgData), global::Cosmos.Base.Abci.V1beta1.TxMsgData.Parser, new[]{ "Data", "MsgResponses" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Base.Abci.V1beta1.SearchTxsResult), global::Cosmos.Base.Abci.V1beta1.SearchTxsResult.Parser, new[]{ "TotalCount", "Count", "PageNumber", "PageTotal", "Limit", "Txs" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Base.Abci.V1beta1.SearchTxsResult), global::Cosmos.Base.Abci.V1beta1.SearchTxsResult.Parser, new[]{ "TotalCount", "Count", "PageNumber", "PageTotal", "Limit", "Txs" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Base.Abci.V1beta1.SearchBlocksResult), global::Cosmos.Base.Abci.V1beta1.SearchBlocksResult.Parser, new[]{ "TotalCount", "Count", "PageNumber", "PageTotal", "Limit", "Blocks" }, null, null, null, null)
           }));
     }
     #endregion
@@ -624,7 +631,11 @@ namespace Cosmos.Base.Abci.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -694,7 +705,11 @@ namespace Cosmos.Base.Abci.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -970,7 +985,11 @@ namespace Cosmos.Base.Abci.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -997,7 +1016,11 @@ namespace Cosmos.Base.Abci.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1198,7 +1221,11 @@ namespace Cosmos.Base.Abci.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1221,7 +1248,11 @@ namespace Cosmos.Base.Abci.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1429,7 +1460,11 @@ namespace Cosmos.Base.Abci.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1452,7 +1487,11 @@ namespace Cosmos.Base.Abci.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1665,7 +1704,11 @@ namespace Cosmos.Base.Abci.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1688,7 +1731,11 @@ namespace Cosmos.Base.Abci.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1950,7 +1997,11 @@ namespace Cosmos.Base.Abci.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1981,7 +2032,11 @@ namespace Cosmos.Base.Abci.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -2203,7 +2258,11 @@ namespace Cosmos.Base.Abci.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -2232,7 +2291,11 @@ namespace Cosmos.Base.Abci.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -2447,7 +2510,11 @@ namespace Cosmos.Base.Abci.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -2470,7 +2537,11 @@ namespace Cosmos.Base.Abci.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -2665,7 +2736,11 @@ namespace Cosmos.Base.Abci.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -2688,7 +2763,11 @@ namespace Cosmos.Base.Abci.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -3018,7 +3097,11 @@ namespace Cosmos.Base.Abci.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -3057,7 +3140,11 @@ namespace Cosmos.Base.Abci.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -3083,6 +3170,399 @@ namespace Cosmos.Base.Abci.V1beta1 {
           }
           case 50: {
             txs_.AddEntriesFrom(ref input, _repeated_txs_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// SearchBlocksResult defines a structure for querying blocks pageable
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SearchBlocksResult : pb::IMessage<SearchBlocksResult>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SearchBlocksResult> _parser = new pb::MessageParser<SearchBlocksResult>(() => new SearchBlocksResult());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SearchBlocksResult> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Cosmos.Base.Abci.V1beta1.AbciReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SearchBlocksResult() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SearchBlocksResult(SearchBlocksResult other) : this() {
+      totalCount_ = other.totalCount_;
+      count_ = other.count_;
+      pageNumber_ = other.pageNumber_;
+      pageTotal_ = other.pageTotal_;
+      limit_ = other.limit_;
+      blocks_ = other.blocks_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SearchBlocksResult Clone() {
+      return new SearchBlocksResult(this);
+    }
+
+    /// <summary>Field number for the "total_count" field.</summary>
+    public const int TotalCountFieldNumber = 1;
+    private long totalCount_;
+    /// <summary>
+    /// Count of all blocks
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long TotalCount {
+      get { return totalCount_; }
+      set {
+        totalCount_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "count" field.</summary>
+    public const int CountFieldNumber = 2;
+    private long count_;
+    /// <summary>
+    /// Count of blocks in current page
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long Count {
+      get { return count_; }
+      set {
+        count_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "page_number" field.</summary>
+    public const int PageNumberFieldNumber = 3;
+    private long pageNumber_;
+    /// <summary>
+    /// Index of current page, start from 1
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long PageNumber {
+      get { return pageNumber_; }
+      set {
+        pageNumber_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "page_total" field.</summary>
+    public const int PageTotalFieldNumber = 4;
+    private long pageTotal_;
+    /// <summary>
+    /// Count of total pages
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long PageTotal {
+      get { return pageTotal_; }
+      set {
+        pageTotal_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "limit" field.</summary>
+    public const int LimitFieldNumber = 5;
+    private long limit_;
+    /// <summary>
+    /// Max count blocks per page
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long Limit {
+      get { return limit_; }
+      set {
+        limit_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "blocks" field.</summary>
+    public const int BlocksFieldNumber = 6;
+    private static readonly pb::FieldCodec<global::Tendermint.Types.Block> _repeated_blocks_codec
+        = pb::FieldCodec.ForMessage(50, global::Tendermint.Types.Block.Parser);
+    private readonly pbc::RepeatedField<global::Tendermint.Types.Block> blocks_ = new pbc::RepeatedField<global::Tendermint.Types.Block>();
+    /// <summary>
+    /// List of blocks in current page
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Tendermint.Types.Block> Blocks {
+      get { return blocks_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SearchBlocksResult);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SearchBlocksResult other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (TotalCount != other.TotalCount) return false;
+      if (Count != other.Count) return false;
+      if (PageNumber != other.PageNumber) return false;
+      if (PageTotal != other.PageTotal) return false;
+      if (Limit != other.Limit) return false;
+      if(!blocks_.Equals(other.blocks_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (TotalCount != 0L) hash ^= TotalCount.GetHashCode();
+      if (Count != 0L) hash ^= Count.GetHashCode();
+      if (PageNumber != 0L) hash ^= PageNumber.GetHashCode();
+      if (PageTotal != 0L) hash ^= PageTotal.GetHashCode();
+      if (Limit != 0L) hash ^= Limit.GetHashCode();
+      hash ^= blocks_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (TotalCount != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(TotalCount);
+      }
+      if (Count != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(Count);
+      }
+      if (PageNumber != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(PageNumber);
+      }
+      if (PageTotal != 0L) {
+        output.WriteRawTag(32);
+        output.WriteInt64(PageTotal);
+      }
+      if (Limit != 0L) {
+        output.WriteRawTag(40);
+        output.WriteInt64(Limit);
+      }
+      blocks_.WriteTo(output, _repeated_blocks_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (TotalCount != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(TotalCount);
+      }
+      if (Count != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(Count);
+      }
+      if (PageNumber != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(PageNumber);
+      }
+      if (PageTotal != 0L) {
+        output.WriteRawTag(32);
+        output.WriteInt64(PageTotal);
+      }
+      if (Limit != 0L) {
+        output.WriteRawTag(40);
+        output.WriteInt64(Limit);
+      }
+      blocks_.WriteTo(ref output, _repeated_blocks_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (TotalCount != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(TotalCount);
+      }
+      if (Count != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Count);
+      }
+      if (PageNumber != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(PageNumber);
+      }
+      if (PageTotal != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(PageTotal);
+      }
+      if (Limit != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Limit);
+      }
+      size += blocks_.CalculateSize(_repeated_blocks_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SearchBlocksResult other) {
+      if (other == null) {
+        return;
+      }
+      if (other.TotalCount != 0L) {
+        TotalCount = other.TotalCount;
+      }
+      if (other.Count != 0L) {
+        Count = other.Count;
+      }
+      if (other.PageNumber != 0L) {
+        PageNumber = other.PageNumber;
+      }
+      if (other.PageTotal != 0L) {
+        PageTotal = other.PageTotal;
+      }
+      if (other.Limit != 0L) {
+        Limit = other.Limit;
+      }
+      blocks_.Add(other.blocks_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            TotalCount = input.ReadInt64();
+            break;
+          }
+          case 16: {
+            Count = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            PageNumber = input.ReadInt64();
+            break;
+          }
+          case 32: {
+            PageTotal = input.ReadInt64();
+            break;
+          }
+          case 40: {
+            Limit = input.ReadInt64();
+            break;
+          }
+          case 50: {
+            blocks_.AddEntriesFrom(input, _repeated_blocks_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            TotalCount = input.ReadInt64();
+            break;
+          }
+          case 16: {
+            Count = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            PageNumber = input.ReadInt64();
+            break;
+          }
+          case 32: {
+            PageTotal = input.ReadInt64();
+            break;
+          }
+          case 40: {
+            Limit = input.ReadInt64();
+            break;
+          }
+          case 50: {
+            blocks_.AddEntriesFrom(ref input, _repeated_blocks_codec);
             break;
           }
         }

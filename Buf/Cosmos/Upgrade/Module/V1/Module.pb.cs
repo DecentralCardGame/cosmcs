@@ -26,14 +26,14 @@ namespace Cosmos.Upgrade.Module.V1 {
           string.Concat(
             "CiVjb3Ntb3MvdXBncmFkZS9tb2R1bGUvdjEvbW9kdWxlLnByb3RvEhhjb3Nt",
             "b3MudXBncmFkZS5tb2R1bGUudjEaIGNvc21vcy9hcHAvdjFhbHBoYTEvbW9k",
-            "dWxlLnByb3RvIlYKBk1vZHVsZRIcCglhdXRob3JpdHkYASABKAlSCWF1dGhv",
-            "cml0eTouusCW2gEoCiZnaXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL3gv",
-            "dXBncmFkZULuAQocY29tLmNvc21vcy51cGdyYWRlLm1vZHVsZS52MUILTW9k",
-            "dWxlUHJvdG9QAVo+Z2l0aHViLmNvbS9jb3Ntb3MvY29zbW9zLXNkay9jb3Nt",
-            "b3MvdXBncmFkZS9tb2R1bGUvdjE7bW9kdWxldjGiAgNDVU2qAhhDb3Ntb3Mu",
-            "VXBncmFkZS5Nb2R1bGUuVjHKAhhDb3Ntb3NcVXBncmFkZVxNb2R1bGVcVjHi",
-            "AiRDb3Ntb3NcVXBncmFkZVxNb2R1bGVcVjFcR1BCTWV0YWRhdGHqAhtDb3Nt",
-            "b3M6OlVwZ3JhZGU6Ok1vZHVsZTo6VjFiBnByb3RvMw=="));
+            "dWxlLnByb3RvIkYKBk1vZHVsZRIcCglhdXRob3JpdHkYASABKAlSCWF1dGhv",
+            "cml0eToeusCW2gEYChZjb3Ntb3NzZGsuaW8veC91cGdyYWRlQu4BChxjb20u",
+            "Y29zbW9zLnVwZ3JhZGUubW9kdWxlLnYxQgtNb2R1bGVQcm90b1ABWj5naXRo",
+            "dWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL2Nvc21vcy91cGdyYWRlL21vZHVs",
+            "ZS92MTttb2R1bGV2MaICA0NVTaoCGENvc21vcy5VcGdyYWRlLk1vZHVsZS5W",
+            "McoCGENvc21vc1xVcGdyYWRlXE1vZHVsZVxWMeICJENvc21vc1xVcGdyYWRl",
+            "XE1vZHVsZVxWMVxHUEJNZXRhZGF0YeoCG0Nvc21vczo6VXBncmFkZTo6TW9k",
+            "dWxlOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Cosmos.App.V1alpha1.ModuleReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -206,7 +206,11 @@ namespace Cosmos.Upgrade.Module.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -225,7 +229,11 @@ namespace Cosmos.Upgrade.Module.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

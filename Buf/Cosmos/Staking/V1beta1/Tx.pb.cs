@@ -30,96 +30,97 @@ namespace Cosmos.Staking.V1beta1 {
             "cm90bxoZY29zbW9zX3Byb3RvL2Nvc21vcy5wcm90bxoeY29zbW9zL2Jhc2Uv",
             "djFiZXRhMS9jb2luLnByb3RvGiRjb3Ntb3Mvc3Rha2luZy92MWJldGExL3N0",
             "YWtpbmcucHJvdG8aF2Nvc21vcy9tc2cvdjEvbXNnLnByb3RvGhFhbWluby9h",
-            "bWluby5wcm90byKSBQoSTXNnQ3JlYXRlVmFsaWRhdG9yElAKC2Rlc2NyaXB0",
+            "bWluby5wcm90byL7BAoSTXNnQ3JlYXRlVmFsaWRhdG9yElAKC2Rlc2NyaXB0",
             "aW9uGAEgASgLMiMuY29zbW9zLnN0YWtpbmcudjFiZXRhMS5EZXNjcmlwdGlv",
             "bkIJyN4fAKjnsCoBUgtkZXNjcmlwdGlvbhJSCgpjb21taXNzaW9uGAIgASgL",
             "MicuY29zbW9zLnN0YWtpbmcudjFiZXRhMS5Db21taXNzaW9uUmF0ZXNCCcje",
-            "HwCo57AqAVIKY29tbWlzc2lvbhJsChNtaW5fc2VsZl9kZWxlZ2F0aW9uGAMg",
-            "ASgJQjzI3h8A2t4fJmdpdGh1Yi5jb20vY29zbW9zL2Nvc21vcy1zZGsvdHlw",
-            "ZXMuSW500rQtCmNvc21vcy5JbnRSEW1pblNlbGZEZWxlZ2F0aW9uEkUKEWRl",
-            "bGVnYXRvcl9hZGRyZXNzGAQgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJp",
-            "bmdSEGRlbGVnYXRvckFkZHJlc3MSRQoRdmFsaWRhdG9yX2FkZHJlc3MYBSAB",
-            "KAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZ1IQdmFsaWRhdG9yQWRkcmVz",
-            "cxJGCgZwdWJrZXkYBiABKAsyFC5nb29nbGUucHJvdG9idWYuQW55QhjKtC0U",
-            "Y29zbW9zLmNyeXB0by5QdWJLZXlSBnB1YmtleRI6CgV2YWx1ZRgHIAEoCzIZ",
-            "LmNvc21vcy5iYXNlLnYxYmV0YTEuQ29pbkIJyN4fAKjnsCoBUgV2YWx1ZTpW",
-            "iKAfAOigHwCC57AqEWRlbGVnYXRvcl9hZGRyZXNzguewKhF2YWxpZGF0b3Jf",
-            "YWRkcmVzc4rnsCodY29zbW9zLXNkay9Nc2dDcmVhdGVWYWxpZGF0b3IiHAoa",
-            "TXNnQ3JlYXRlVmFsaWRhdG9yUmVzcG9uc2UiuAMKEE1zZ0VkaXRWYWxpZGF0",
-            "b3ISUAoLZGVzY3JpcHRpb24YASABKAsyIy5jb3Ntb3Muc3Rha2luZy52MWJl",
-            "dGExLkRlc2NyaXB0aW9uQgnI3h8AqOewKgFSC2Rlc2NyaXB0aW9uEkUKEXZh",
-            "bGlkYXRvcl9hZGRyZXNzGAIgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJp",
-            "bmdSEHZhbGlkYXRvckFkZHJlc3MSYQoPY29tbWlzc2lvbl9yYXRlGAMgASgJ",
-            "Qjja3h8mZ2l0aHViLmNvbS9jb3Ntb3MvY29zbW9zLXNkay90eXBlcy5EZWPS",
-            "tC0KY29zbW9zLkRlY1IOY29tbWlzc2lvblJhdGUSaAoTbWluX3NlbGZfZGVs",
-            "ZWdhdGlvbhgEIAEoCUI42t4fJmdpdGh1Yi5jb20vY29zbW9zL2Nvc21vcy1z",
-            "ZGsvdHlwZXMuSW500rQtCmNvc21vcy5JbnRSEW1pblNlbGZEZWxlZ2F0aW9u",
-            "Oj6IoB8A6KAfAILnsCoRdmFsaWRhdG9yX2FkZHJlc3OK57AqG2Nvc21vcy1z",
-            "ZGsvTXNnRWRpdFZhbGlkYXRvciIaChhNc2dFZGl0VmFsaWRhdG9yUmVzcG9u",
-            "c2UilAIKC01zZ0RlbGVnYXRlEkUKEWRlbGVnYXRvcl9hZGRyZXNzGAEgASgJ",
+            "HwCo57AqAVIKY29tbWlzc2lvbhJgChNtaW5fc2VsZl9kZWxlZ2F0aW9uGAMg",
+            "ASgJQjDI3h8A2t4fFWNvc21vc3Nkay5pby9tYXRoLkludNK0LQpjb3Ntb3Mu",
+            "SW50qOewKgFSEW1pblNlbGZEZWxlZ2F0aW9uEkcKEWRlbGVnYXRvcl9hZGRy",
+            "ZXNzGAQgASgJQhoYAdK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZ1IQZGVsZWdh",
+            "dG9yQWRkcmVzcxJOChF2YWxpZGF0b3JfYWRkcmVzcxgFIAEoCUIh0rQtHWNv",
+            "c21vcy5WYWxpZGF0b3JBZGRyZXNzU3RyaW5nUhB2YWxpZGF0b3JBZGRyZXNz",
+            "EkYKBnB1YmtleRgGIAEoCzIULmdvb2dsZS5wcm90b2J1Zi5BbnlCGMq0LRRj",
+            "b3Ntb3MuY3J5cHRvLlB1YktleVIGcHVia2V5EjoKBXZhbHVlGAcgASgLMhku",
+            "Y29zbW9zLmJhc2UudjFiZXRhMS5Db2luQgnI3h8AqOewKgFSBXZhbHVlOkCI",
+            "oB8A6KAfAILnsCoRdmFsaWRhdG9yX2FkZHJlc3OK57AqHWNvc21vcy1zZGsv",
+            "TXNnQ3JlYXRlVmFsaWRhdG9yIhwKGk1zZ0NyZWF0ZVZhbGlkYXRvclJlc3Bv",
+            "bnNlIqUDChBNc2dFZGl0VmFsaWRhdG9yElAKC2Rlc2NyaXB0aW9uGAEgASgL",
+            "MiMuY29zbW9zLnN0YWtpbmcudjFiZXRhMS5EZXNjcmlwdGlvbkIJyN4fAKjn",
+            "sCoBUgtkZXNjcmlwdGlvbhJOChF2YWxpZGF0b3JfYWRkcmVzcxgCIAEoCUIh",
+            "0rQtHWNvc21vcy5WYWxpZGF0b3JBZGRyZXNzU3RyaW5nUhB2YWxpZGF0b3JB",
+            "ZGRyZXNzElYKD2NvbW1pc3Npb25fcmF0ZRgDIAEoCUIt2t4fG2Nvc21vc3Nk",
+            "ay5pby9tYXRoLkxlZ2FjeURlY9K0LQpjb3Ntb3MuRGVjUg5jb21taXNzaW9u",
+            "UmF0ZRJXChNtaW5fc2VsZl9kZWxlZ2F0aW9uGAQgASgJQifa3h8VY29zbW9z",
+            "c2RrLmlvL21hdGguSW500rQtCmNvc21vcy5JbnRSEW1pblNlbGZEZWxlZ2F0",
+            "aW9uOj6IoB8A6KAfAILnsCoRdmFsaWRhdG9yX2FkZHJlc3OK57AqG2Nvc21v",
+            "cy1zZGsvTXNnRWRpdFZhbGlkYXRvciIaChhNc2dFZGl0VmFsaWRhdG9yUmVz",
+            "cG9uc2UinQIKC01zZ0RlbGVnYXRlEkUKEWRlbGVnYXRvcl9hZGRyZXNzGAEg",
+            "ASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmdSEGRlbGVnYXRvckFkZHJl",
+            "c3MSTgoRdmFsaWRhdG9yX2FkZHJlc3MYAiABKAlCIdK0LR1jb3Ntb3MuVmFs",
+            "aWRhdG9yQWRkcmVzc1N0cmluZ1IQdmFsaWRhdG9yQWRkcmVzcxI8CgZhbW91",
+            "bnQYAyABKAsyGS5jb3Ntb3MuYmFzZS52MWJldGExLkNvaW5CCcjeHwCo57Aq",
+            "AVIGYW1vdW50OjmIoB8A6KAfAILnsCoRZGVsZWdhdG9yX2FkZHJlc3OK57Aq",
+            "FmNvc21vcy1zZGsvTXNnRGVsZWdhdGUiFQoTTXNnRGVsZWdhdGVSZXNwb25z",
+            "ZSKJAwoSTXNnQmVnaW5SZWRlbGVnYXRlEkUKEWRlbGVnYXRvcl9hZGRyZXNz",
+            "GAEgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmdSEGRlbGVnYXRvckFk",
+            "ZHJlc3MSVQoVdmFsaWRhdG9yX3NyY19hZGRyZXNzGAIgASgJQiHStC0dY29z",
+            "bW9zLlZhbGlkYXRvckFkZHJlc3NTdHJpbmdSE3ZhbGlkYXRvclNyY0FkZHJl",
+            "c3MSVQoVdmFsaWRhdG9yX2RzdF9hZGRyZXNzGAMgASgJQiHStC0dY29zbW9z",
+            "LlZhbGlkYXRvckFkZHJlc3NTdHJpbmdSE3ZhbGlkYXRvckRzdEFkZHJlc3MS",
+            "PAoGYW1vdW50GAQgASgLMhkuY29zbW9zLmJhc2UudjFiZXRhMS5Db2luQgnI",
+            "3h8AqOewKgFSBmFtb3VudDpAiKAfAOigHwCC57AqEWRlbGVnYXRvcl9hZGRy",
+            "ZXNziuewKh1jb3Ntb3Mtc2RrL01zZ0JlZ2luUmVkZWxlZ2F0ZSJwChpNc2dC",
+            "ZWdpblJlZGVsZWdhdGVSZXNwb25zZRJSCg9jb21wbGV0aW9uX3RpbWUYASAB",
+            "KAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQg3I3h8AkN8fAajnsCoB",
+            "Ug5jb21wbGV0aW9uVGltZSKhAgoNTXNnVW5kZWxlZ2F0ZRJFChFkZWxlZ2F0",
+            "b3JfYWRkcmVzcxgBIAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nUhBk",
+            "ZWxlZ2F0b3JBZGRyZXNzEk4KEXZhbGlkYXRvcl9hZGRyZXNzGAIgASgJQiHS",
+            "tC0dY29zbW9zLlZhbGlkYXRvckFkZHJlc3NTdHJpbmdSEHZhbGlkYXRvckFk",
+            "ZHJlc3MSPAoGYW1vdW50GAMgASgLMhkuY29zbW9zLmJhc2UudjFiZXRhMS5D",
+            "b2luQgnI3h8AqOewKgFSBmFtb3VudDo7iKAfAOigHwCC57AqEWRlbGVnYXRv",
+            "cl9hZGRyZXNziuewKhhjb3Ntb3Mtc2RrL01zZ1VuZGVsZWdhdGUiqQEKFU1z",
+            "Z1VuZGVsZWdhdGVSZXNwb25zZRJSCg9jb21wbGV0aW9uX3RpbWUYASABKAsy",
+            "Gi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQg3I3h8AkN8fAajnsCoBUg5j",
+            "b21wbGV0aW9uVGltZRI8CgZhbW91bnQYAiABKAsyGS5jb3Ntb3MuYmFzZS52",
+            "MWJldGExLkNvaW5CCcjeHwCo57AqAVIGYW1vdW50IugCChxNc2dDYW5jZWxV",
+            "bmJvbmRpbmdEZWxlZ2F0aW9uEkUKEWRlbGVnYXRvcl9hZGRyZXNzGAEgASgJ",
             "QhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmdSEGRlbGVnYXRvckFkZHJlc3MS",
-            "RQoRdmFsaWRhdG9yX2FkZHJlc3MYAiABKAlCGNK0LRRjb3Ntb3MuQWRkcmVz",
-            "c1N0cmluZ1IQdmFsaWRhdG9yQWRkcmVzcxI8CgZhbW91bnQYAyABKAsyGS5j",
-            "b3Ntb3MuYmFzZS52MWJldGExLkNvaW5CCcjeHwCo57AqAVIGYW1vdW50OjmI",
-            "oB8A6KAfAILnsCoRZGVsZWdhdG9yX2FkZHJlc3OK57AqFmNvc21vcy1zZGsv",
-            "TXNnRGVsZWdhdGUiFQoTTXNnRGVsZWdhdGVSZXNwb25zZSL3AgoSTXNnQmVn",
-            "aW5SZWRlbGVnYXRlEkUKEWRlbGVnYXRvcl9hZGRyZXNzGAEgASgJQhjStC0U",
-            "Y29zbW9zLkFkZHJlc3NTdHJpbmdSEGRlbGVnYXRvckFkZHJlc3MSTAoVdmFs",
-            "aWRhdG9yX3NyY19hZGRyZXNzGAIgASgJQhjStC0UY29zbW9zLkFkZHJlc3NT",
-            "dHJpbmdSE3ZhbGlkYXRvclNyY0FkZHJlc3MSTAoVdmFsaWRhdG9yX2RzdF9h",
-            "ZGRyZXNzGAMgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmdSE3ZhbGlk",
-            "YXRvckRzdEFkZHJlc3MSPAoGYW1vdW50GAQgASgLMhkuY29zbW9zLmJhc2Uu",
-            "djFiZXRhMS5Db2luQgnI3h8AqOewKgFSBmFtb3VudDpAiKAfAOigHwCC57Aq",
-            "EWRlbGVnYXRvcl9hZGRyZXNziuewKh1jb3Ntb3Mtc2RrL01zZ0JlZ2luUmVk",
-            "ZWxlZ2F0ZSJwChpNc2dCZWdpblJlZGVsZWdhdGVSZXNwb25zZRJSCg9jb21w",
-            "bGV0aW9uX3RpbWUYASABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1w",
-            "Qg3I3h8AkN8fAajnsCoBUg5jb21wbGV0aW9uVGltZSKYAgoNTXNnVW5kZWxl",
-            "Z2F0ZRJFChFkZWxlZ2F0b3JfYWRkcmVzcxgBIAEoCUIY0rQtFGNvc21vcy5B",
-            "ZGRyZXNzU3RyaW5nUhBkZWxlZ2F0b3JBZGRyZXNzEkUKEXZhbGlkYXRvcl9h",
-            "ZGRyZXNzGAIgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmdSEHZhbGlk",
-            "YXRvckFkZHJlc3MSPAoGYW1vdW50GAMgASgLMhkuY29zbW9zLmJhc2UudjFi",
-            "ZXRhMS5Db2luQgnI3h8AqOewKgFSBmFtb3VudDo7iKAfAOigHwCC57AqEWRl",
-            "bGVnYXRvcl9hZGRyZXNziuewKhhjb3Ntb3Mtc2RrL01zZ1VuZGVsZWdhdGUi",
-            "awoVTXNnVW5kZWxlZ2F0ZVJlc3BvbnNlElIKD2NvbXBsZXRpb25fdGltZRgB",
-            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCDcjeHwCQ3x8BqOew",
-            "KgFSDmNvbXBsZXRpb25UaW1lIt8CChxNc2dDYW5jZWxVbmJvbmRpbmdEZWxl",
-            "Z2F0aW9uEkUKEWRlbGVnYXRvcl9hZGRyZXNzGAEgASgJQhjStC0UY29zbW9z",
-            "LkFkZHJlc3NTdHJpbmdSEGRlbGVnYXRvckFkZHJlc3MSRQoRdmFsaWRhdG9y",
-            "X2FkZHJlc3MYAiABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZ1IQdmFs",
-            "aWRhdG9yQWRkcmVzcxI8CgZhbW91bnQYAyABKAsyGS5jb3Ntb3MuYmFzZS52",
-            "MWJldGExLkNvaW5CCcjeHwCo57AqAVIGYW1vdW50EicKD2NyZWF0aW9uX2hl",
-            "aWdodBgEIAEoA1IOY3JlYXRpb25IZWlnaHQ6SoigHwDooB8AguewKhFkZWxl",
-            "Z2F0b3JfYWRkcmVzc4rnsConY29zbW9zLXNkay9Nc2dDYW5jZWxVbmJvbmRp",
-            "bmdEZWxlZ2F0aW9uIiYKJE1zZ0NhbmNlbFVuYm9uZGluZ0RlbGVnYXRpb25S",
-            "ZXNwb25zZSLFAQoPTXNnVXBkYXRlUGFyYW1zEjYKCWF1dGhvcml0eRgBIAEo",
-            "CUIY0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nUglhdXRob3JpdHkSQQoGcGFy",
-            "YW1zGAIgASgLMh4uY29zbW9zLnN0YWtpbmcudjFiZXRhMS5QYXJhbXNCCcje",
-            "HwCo57AqAVIGcGFyYW1zOjeC57AqCWF1dGhvcml0eYrnsCokY29zbW9zLXNk",
-            "ay94L3N0YWtpbmcvTXNnVXBkYXRlUGFyYW1zIhkKF01zZ1VwZGF0ZVBhcmFt",
-            "c1Jlc3BvbnNlMp0GCgNNc2cScQoPQ3JlYXRlVmFsaWRhdG9yEiouY29zbW9z",
-            "LnN0YWtpbmcudjFiZXRhMS5Nc2dDcmVhdGVWYWxpZGF0b3IaMi5jb3Ntb3Mu",
-            "c3Rha2luZy52MWJldGExLk1zZ0NyZWF0ZVZhbGlkYXRvclJlc3BvbnNlEmsK",
-            "DUVkaXRWYWxpZGF0b3ISKC5jb3Ntb3Muc3Rha2luZy52MWJldGExLk1zZ0Vk",
-            "aXRWYWxpZGF0b3IaMC5jb3Ntb3Muc3Rha2luZy52MWJldGExLk1zZ0VkaXRW",
-            "YWxpZGF0b3JSZXNwb25zZRJcCghEZWxlZ2F0ZRIjLmNvc21vcy5zdGFraW5n",
-            "LnYxYmV0YTEuTXNnRGVsZWdhdGUaKy5jb3Ntb3Muc3Rha2luZy52MWJldGEx",
-            "Lk1zZ0RlbGVnYXRlUmVzcG9uc2UScQoPQmVnaW5SZWRlbGVnYXRlEiouY29z",
-            "bW9zLnN0YWtpbmcudjFiZXRhMS5Nc2dCZWdpblJlZGVsZWdhdGUaMi5jb3Nt",
-            "b3Muc3Rha2luZy52MWJldGExLk1zZ0JlZ2luUmVkZWxlZ2F0ZVJlc3BvbnNl",
-            "EmIKClVuZGVsZWdhdGUSJS5jb3Ntb3Muc3Rha2luZy52MWJldGExLk1zZ1Vu",
-            "ZGVsZWdhdGUaLS5jb3Ntb3Muc3Rha2luZy52MWJldGExLk1zZ1VuZGVsZWdh",
-            "dGVSZXNwb25zZRKPAQoZQ2FuY2VsVW5ib25kaW5nRGVsZWdhdGlvbhI0LmNv",
-            "c21vcy5zdGFraW5nLnYxYmV0YTEuTXNnQ2FuY2VsVW5ib25kaW5nRGVsZWdh",
-            "dGlvbho8LmNvc21vcy5zdGFraW5nLnYxYmV0YTEuTXNnQ2FuY2VsVW5ib25k",
-            "aW5nRGVsZWdhdGlvblJlc3BvbnNlEmgKDFVwZGF0ZVBhcmFtcxInLmNvc21v",
-            "cy5zdGFraW5nLnYxYmV0YTEuTXNnVXBkYXRlUGFyYW1zGi8uY29zbW9zLnN0",
-            "YWtpbmcudjFiZXRhMS5Nc2dVcGRhdGVQYXJhbXNSZXNwb25zZRoFgOewKgFC",
-            "4wEKGmNvbS5jb3Ntb3Muc3Rha2luZy52MWJldGExQgdUeFByb3RvUAFaQmdp",
-            "dGh1Yi5jb20vY29zbW9zL2Nvc21vcy1zZGsvY29zbW9zL3N0YWtpbmcvdjFi",
-            "ZXRhMTtzdGFraW5ndjFiZXRhMaICA0NTWKoCFkNvc21vcy5TdGFraW5nLlYx",
-            "YmV0YTHKAhZDb3Ntb3NcU3Rha2luZ1xWMWJldGEx4gIiQ29zbW9zXFN0YWtp",
-            "bmdcVjFiZXRhMVxHUEJNZXRhZGF0YeoCGENvc21vczo6U3Rha2luZzo6VjFi",
-            "ZXRhMWIGcHJvdG8z"));
+            "TgoRdmFsaWRhdG9yX2FkZHJlc3MYAiABKAlCIdK0LR1jb3Ntb3MuVmFsaWRh",
+            "dG9yQWRkcmVzc1N0cmluZ1IQdmFsaWRhdG9yQWRkcmVzcxI8CgZhbW91bnQY",
+            "AyABKAsyGS5jb3Ntb3MuYmFzZS52MWJldGExLkNvaW5CCcjeHwCo57AqAVIG",
+            "YW1vdW50EicKD2NyZWF0aW9uX2hlaWdodBgEIAEoA1IOY3JlYXRpb25IZWln",
+            "aHQ6SoigHwDooB8AguewKhFkZWxlZ2F0b3JfYWRkcmVzc4rnsConY29zbW9z",
+            "LXNkay9Nc2dDYW5jZWxVbmJvbmRpbmdEZWxlZ2F0aW9uIiYKJE1zZ0NhbmNl",
+            "bFVuYm9uZGluZ0RlbGVnYXRpb25SZXNwb25zZSLFAQoPTXNnVXBkYXRlUGFy",
+            "YW1zEjYKCWF1dGhvcml0eRgBIAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3Ry",
+            "aW5nUglhdXRob3JpdHkSQQoGcGFyYW1zGAIgASgLMh4uY29zbW9zLnN0YWtp",
+            "bmcudjFiZXRhMS5QYXJhbXNCCcjeHwCo57AqAVIGcGFyYW1zOjeC57AqCWF1",
+            "dGhvcml0eYrnsCokY29zbW9zLXNkay94L3N0YWtpbmcvTXNnVXBkYXRlUGFy",
+            "YW1zIhkKF01zZ1VwZGF0ZVBhcmFtc1Jlc3BvbnNlMp0GCgNNc2cScQoPQ3Jl",
+            "YXRlVmFsaWRhdG9yEiouY29zbW9zLnN0YWtpbmcudjFiZXRhMS5Nc2dDcmVh",
+            "dGVWYWxpZGF0b3IaMi5jb3Ntb3Muc3Rha2luZy52MWJldGExLk1zZ0NyZWF0",
+            "ZVZhbGlkYXRvclJlc3BvbnNlEmsKDUVkaXRWYWxpZGF0b3ISKC5jb3Ntb3Mu",
+            "c3Rha2luZy52MWJldGExLk1zZ0VkaXRWYWxpZGF0b3IaMC5jb3Ntb3Muc3Rh",
+            "a2luZy52MWJldGExLk1zZ0VkaXRWYWxpZGF0b3JSZXNwb25zZRJcCghEZWxl",
+            "Z2F0ZRIjLmNvc21vcy5zdGFraW5nLnYxYmV0YTEuTXNnRGVsZWdhdGUaKy5j",
+            "b3Ntb3Muc3Rha2luZy52MWJldGExLk1zZ0RlbGVnYXRlUmVzcG9uc2UScQoP",
+            "QmVnaW5SZWRlbGVnYXRlEiouY29zbW9zLnN0YWtpbmcudjFiZXRhMS5Nc2dC",
+            "ZWdpblJlZGVsZWdhdGUaMi5jb3Ntb3Muc3Rha2luZy52MWJldGExLk1zZ0Jl",
+            "Z2luUmVkZWxlZ2F0ZVJlc3BvbnNlEmIKClVuZGVsZWdhdGUSJS5jb3Ntb3Mu",
+            "c3Rha2luZy52MWJldGExLk1zZ1VuZGVsZWdhdGUaLS5jb3Ntb3Muc3Rha2lu",
+            "Zy52MWJldGExLk1zZ1VuZGVsZWdhdGVSZXNwb25zZRKPAQoZQ2FuY2VsVW5i",
+            "b25kaW5nRGVsZWdhdGlvbhI0LmNvc21vcy5zdGFraW5nLnYxYmV0YTEuTXNn",
+            "Q2FuY2VsVW5ib25kaW5nRGVsZWdhdGlvbho8LmNvc21vcy5zdGFraW5nLnYx",
+            "YmV0YTEuTXNnQ2FuY2VsVW5ib25kaW5nRGVsZWdhdGlvblJlc3BvbnNlEmgK",
+            "DFVwZGF0ZVBhcmFtcxInLmNvc21vcy5zdGFraW5nLnYxYmV0YTEuTXNnVXBk",
+            "YXRlUGFyYW1zGi8uY29zbW9zLnN0YWtpbmcudjFiZXRhMS5Nc2dVcGRhdGVQ",
+            "YXJhbXNSZXNwb25zZRoFgOewKgFC4wEKGmNvbS5jb3Ntb3Muc3Rha2luZy52",
+            "MWJldGExQgdUeFByb3RvUAFaQmdpdGh1Yi5jb20vY29zbW9zL2Nvc21vcy1z",
+            "ZGsvY29zbW9zL3N0YWtpbmcvdjFiZXRhMTtzdGFraW5ndjFiZXRhMaICA0NT",
+            "WKoCFkNvc21vcy5TdGFraW5nLlYxYmV0YTHKAhZDb3Ntb3NcU3Rha2luZ1xW",
+            "MWJldGEx4gIiQ29zbW9zXFN0YWtpbmdcVjFiZXRhMVxHUEJNZXRhZGF0YeoC",
+            "GENvc21vczo6U3Rha2luZzo6VjFiZXRhMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Gogoproto.GogoReflection.Descriptor, global::CosmosProto.CosmosReflection.Descriptor, global::Cosmos.Base.V1beta1.CoinReflection.Descriptor, global::Cosmos.Staking.V1beta1.StakingReflection.Descriptor, global::Cosmos.Msg.V1.MsgReflection.Descriptor, global::Amino.AminoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -132,7 +133,7 @@ namespace Cosmos.Staking.V1beta1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Staking.V1beta1.MsgBeginRedelegate), global::Cosmos.Staking.V1beta1.MsgBeginRedelegate.Parser, new[]{ "DelegatorAddress", "ValidatorSrcAddress", "ValidatorDstAddress", "Amount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Staking.V1beta1.MsgBeginRedelegateResponse), global::Cosmos.Staking.V1beta1.MsgBeginRedelegateResponse.Parser, new[]{ "CompletionTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Staking.V1beta1.MsgUndelegate), global::Cosmos.Staking.V1beta1.MsgUndelegate.Parser, new[]{ "DelegatorAddress", "ValidatorAddress", "Amount" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Staking.V1beta1.MsgUndelegateResponse), global::Cosmos.Staking.V1beta1.MsgUndelegateResponse.Parser, new[]{ "CompletionTime" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Staking.V1beta1.MsgUndelegateResponse), global::Cosmos.Staking.V1beta1.MsgUndelegateResponse.Parser, new[]{ "CompletionTime", "Amount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Staking.V1beta1.MsgCancelUnbondingDelegation), global::Cosmos.Staking.V1beta1.MsgCancelUnbondingDelegation.Parser, new[]{ "DelegatorAddress", "ValidatorAddress", "Amount", "CreationHeight" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Staking.V1beta1.MsgCancelUnbondingDelegationResponse), global::Cosmos.Staking.V1beta1.MsgCancelUnbondingDelegationResponse.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Staking.V1beta1.MsgUpdateParams), global::Cosmos.Staking.V1beta1.MsgUpdateParams.Parser, new[]{ "Authority", "Params" }, null, null, null, null),
@@ -236,6 +237,12 @@ namespace Cosmos.Staking.V1beta1 {
     /// <summary>Field number for the "delegator_address" field.</summary>
     public const int DelegatorAddressFieldNumber = 4;
     private string delegatorAddress_ = "";
+    /// <summary>
+    /// Deprecated: Use of Delegator Address in MsgCreateValidator is deprecated.
+    /// The validator address bytes and delegator address bytes refer to the same account while creating validator (defer
+    /// only in bech32 notation).
+    /// </summary>
+    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string DelegatorAddress {
@@ -488,7 +495,11 @@ namespace Cosmos.Staking.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -543,7 +554,11 @@ namespace Cosmos.Staking.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -724,7 +739,11 @@ namespace Cosmos.Staking.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -739,7 +758,11 @@ namespace Cosmos.Staking.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1005,7 +1028,11 @@ namespace Cosmos.Staking.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1039,7 +1066,11 @@ namespace Cosmos.Staking.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1199,7 +1230,11 @@ namespace Cosmos.Staking.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1214,7 +1249,11 @@ namespace Cosmos.Staking.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1446,7 +1485,11 @@ namespace Cosmos.Staking.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1476,7 +1519,11 @@ namespace Cosmos.Staking.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1632,7 +1679,11 @@ namespace Cosmos.Staking.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1647,7 +1698,11 @@ namespace Cosmos.Staking.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1908,7 +1963,11 @@ namespace Cosmos.Staking.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1942,7 +2001,11 @@ namespace Cosmos.Staking.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -2134,7 +2197,11 @@ namespace Cosmos.Staking.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -2156,7 +2223,11 @@ namespace Cosmos.Staking.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -2395,7 +2466,11 @@ namespace Cosmos.Staking.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -2425,7 +2500,11 @@ namespace Cosmos.Staking.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -2490,6 +2569,7 @@ namespace Cosmos.Staking.V1beta1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MsgUndelegateResponse(MsgUndelegateResponse other) : this() {
       completionTime_ = other.completionTime_ != null ? other.completionTime_.Clone() : null;
+      amount_ = other.amount_ != null ? other.amount_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2511,6 +2591,23 @@ namespace Cosmos.Staking.V1beta1 {
       }
     }
 
+    /// <summary>Field number for the "amount" field.</summary>
+    public const int AmountFieldNumber = 2;
+    private global::Cosmos.Base.V1beta1.Coin amount_;
+    /// <summary>
+    /// amount returns the amount of undelegated coins
+    ///
+    /// Since: cosmos-sdk 0.50
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Cosmos.Base.V1beta1.Coin Amount {
+      get { return amount_; }
+      set {
+        amount_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -2527,6 +2624,7 @@ namespace Cosmos.Staking.V1beta1 {
         return true;
       }
       if (!object.Equals(CompletionTime, other.CompletionTime)) return false;
+      if (!object.Equals(Amount, other.Amount)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2535,6 +2633,7 @@ namespace Cosmos.Staking.V1beta1 {
     public override int GetHashCode() {
       int hash = 1;
       if (completionTime_ != null) hash ^= CompletionTime.GetHashCode();
+      if (amount_ != null) hash ^= Amount.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2557,6 +2656,10 @@ namespace Cosmos.Staking.V1beta1 {
         output.WriteRawTag(10);
         output.WriteMessage(CompletionTime);
       }
+      if (amount_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Amount);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2571,6 +2674,10 @@ namespace Cosmos.Staking.V1beta1 {
         output.WriteRawTag(10);
         output.WriteMessage(CompletionTime);
       }
+      if (amount_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Amount);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2583,6 +2690,9 @@ namespace Cosmos.Staking.V1beta1 {
       int size = 0;
       if (completionTime_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CompletionTime);
+      }
+      if (amount_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Amount);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2602,6 +2712,12 @@ namespace Cosmos.Staking.V1beta1 {
         }
         CompletionTime.MergeFrom(other.CompletionTime);
       }
+      if (other.amount_ != null) {
+        if (amount_ == null) {
+          Amount = new global::Cosmos.Base.V1beta1.Coin();
+        }
+        Amount.MergeFrom(other.Amount);
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2613,7 +2729,11 @@ namespace Cosmos.Staking.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -2622,6 +2742,13 @@ namespace Cosmos.Staking.V1beta1 {
               CompletionTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(CompletionTime);
+            break;
+          }
+          case 18: {
+            if (amount_ == null) {
+              Amount = new global::Cosmos.Base.V1beta1.Coin();
+            }
+            input.ReadMessage(Amount);
             break;
           }
         }
@@ -2635,7 +2762,11 @@ namespace Cosmos.Staking.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -2644,6 +2775,13 @@ namespace Cosmos.Staking.V1beta1 {
               CompletionTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(CompletionTime);
+            break;
+          }
+          case 18: {
+            if (amount_ == null) {
+              Amount = new global::Cosmos.Base.V1beta1.Coin();
+            }
+            input.ReadMessage(Amount);
             break;
           }
         }
@@ -2910,7 +3048,11 @@ namespace Cosmos.Staking.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -2944,7 +3086,11 @@ namespace Cosmos.Staking.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -3106,7 +3252,11 @@ namespace Cosmos.Staking.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -3121,7 +3271,11 @@ namespace Cosmos.Staking.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -3333,7 +3487,11 @@ namespace Cosmos.Staking.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -3359,7 +3517,11 @@ namespace Cosmos.Staking.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -3514,7 +3676,11 @@ namespace Cosmos.Staking.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -3529,7 +3695,11 @@ namespace Cosmos.Staking.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

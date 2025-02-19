@@ -169,7 +169,7 @@ namespace Cosmos.Gov.V1beta1 {
     public const int DepositParamsFieldNumber = 5;
     private global::Cosmos.Gov.V1beta1.DepositParams depositParams_;
     /// <summary>
-    /// params defines all the parameters of related to deposit.
+    /// deposit_params defines all the parameters related to deposit.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -184,7 +184,7 @@ namespace Cosmos.Gov.V1beta1 {
     public const int VotingParamsFieldNumber = 6;
     private global::Cosmos.Gov.V1beta1.VotingParams votingParams_;
     /// <summary>
-    /// params defines all the parameters of related to voting.
+    /// voting_params defines all the parameters related to voting.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -199,7 +199,7 @@ namespace Cosmos.Gov.V1beta1 {
     public const int TallyParamsFieldNumber = 7;
     private global::Cosmos.Gov.V1beta1.TallyParams tallyParams_;
     /// <summary>
-    /// params defines all the parameters of related to tally.
+    /// tally_params defines all the parameters related to tally.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -384,7 +384,11 @@ namespace Cosmos.Gov.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -436,7 +440,11 @@ namespace Cosmos.Gov.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

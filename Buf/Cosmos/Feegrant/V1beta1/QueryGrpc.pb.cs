@@ -121,7 +121,7 @@ namespace Cosmos.Feegrant.V1beta1 {
       }
 
       /// <summary>
-      /// Allowance returns fee granted to the grantee by the granter.
+      /// Allowance returns granted allwance to the grantee by the granter.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -134,7 +134,7 @@ namespace Cosmos.Feegrant.V1beta1 {
         return Allowance(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Allowance returns fee granted to the grantee by the granter.
+      /// Allowance returns granted allwance to the grantee by the granter.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -145,7 +145,7 @@ namespace Cosmos.Feegrant.V1beta1 {
         return CallInvoker.BlockingUnaryCall(__Method_Allowance, null, options, request);
       }
       /// <summary>
-      /// Allowance returns fee granted to the grantee by the granter.
+      /// Allowance returns granted allwance to the grantee by the granter.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -158,7 +158,7 @@ namespace Cosmos.Feegrant.V1beta1 {
         return AllowanceAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Allowance returns fee granted to the grantee by the granter.
+      /// Allowance returns granted allwance to the grantee by the granter.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -169,7 +169,7 @@ namespace Cosmos.Feegrant.V1beta1 {
         return CallInvoker.AsyncUnaryCall(__Method_Allowance, null, options, request);
       }
       /// <summary>
-      /// Allowances returns all the grants for address.
+      /// Allowances returns all the grants for the given grantee address.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -182,7 +182,7 @@ namespace Cosmos.Feegrant.V1beta1 {
         return Allowances(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Allowances returns all the grants for address.
+      /// Allowances returns all the grants for the given grantee address.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -193,7 +193,7 @@ namespace Cosmos.Feegrant.V1beta1 {
         return CallInvoker.BlockingUnaryCall(__Method_Allowances, null, options, request);
       }
       /// <summary>
-      /// Allowances returns all the grants for address.
+      /// Allowances returns all the grants for the given grantee address.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -206,7 +206,7 @@ namespace Cosmos.Feegrant.V1beta1 {
         return AllowancesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Allowances returns all the grants for address.
+      /// Allowances returns all the grants for the given grantee address.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

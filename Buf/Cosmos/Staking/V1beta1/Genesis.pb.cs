@@ -27,30 +27,30 @@ namespace Cosmos.Staking.V1beta1 {
             "CiRjb3Ntb3Mvc3Rha2luZy92MWJldGExL2dlbmVzaXMucHJvdG8SFmNvc21v",
             "cy5zdGFraW5nLnYxYmV0YTEaFGdvZ29wcm90by9nb2dvLnByb3RvGiRjb3Nt",
             "b3Mvc3Rha2luZy92MWJldGExL3N0YWtpbmcucHJvdG8aGWNvc21vc19wcm90",
-            "by9jb3Ntb3MucHJvdG8aEWFtaW5vL2FtaW5vLnByb3RvIpoFCgxHZW5lc2lz",
+            "by9jb3Ntb3MucHJvdG8aEWFtaW5vL2FtaW5vLnByb3RvIpcFCgxHZW5lc2lz",
             "U3RhdGUSQQoGcGFyYW1zGAEgASgLMh4uY29zbW9zLnN0YWtpbmcudjFiZXRh",
-            "MS5QYXJhbXNCCcjeHwCo57AqAVIGcGFyYW1zEl0KEGxhc3RfdG90YWxfcG93",
-            "ZXIYAiABKAxCM8jeHwDa3h8mZ2l0aHViLmNvbS9jb3Ntb3MvY29zbW9zLXNk",
-            "ay90eXBlcy5JbnSo57AqAVIObGFzdFRvdGFsUG93ZXISaQoVbGFzdF92YWxp",
-            "ZGF0b3JfcG93ZXJzGAMgAygLMiouY29zbW9zLnN0YWtpbmcudjFiZXRhMS5M",
-            "YXN0VmFsaWRhdG9yUG93ZXJCCcjeHwCo57AqAVITbGFzdFZhbGlkYXRvclBv",
-            "d2VycxJMCgp2YWxpZGF0b3JzGAQgAygLMiEuY29zbW9zLnN0YWtpbmcudjFi",
-            "ZXRhMS5WYWxpZGF0b3JCCcjeHwCo57AqAVIKdmFsaWRhdG9ycxJPCgtkZWxl",
-            "Z2F0aW9ucxgFIAMoCzIiLmNvc21vcy5zdGFraW5nLnYxYmV0YTEuRGVsZWdh",
-            "dGlvbkIJyN4fAKjnsCoBUgtkZWxlZ2F0aW9ucxJrChV1bmJvbmRpbmdfZGVs",
-            "ZWdhdGlvbnMYBiADKAsyKy5jb3Ntb3Muc3Rha2luZy52MWJldGExLlVuYm9u",
-            "ZGluZ0RlbGVnYXRpb25CCcjeHwCo57AqAVIUdW5ib25kaW5nRGVsZWdhdGlv",
-            "bnMSVQoNcmVkZWxlZ2F0aW9ucxgHIAMoCzIkLmNvc21vcy5zdGFraW5nLnYx",
-            "YmV0YTEuUmVkZWxlZ2F0aW9uQgnI3h8AqOewKgFSDXJlZGVsZWdhdGlvbnMS",
-            "GgoIZXhwb3J0ZWQYCCABKAhSCGV4cG9ydGVkImgKEkxhc3RWYWxpZGF0b3JQ",
-            "b3dlchIyCgdhZGRyZXNzGAEgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJp",
-            "bmdSB2FkZHJlc3MSFAoFcG93ZXIYAiABKANSBXBvd2VyOgiIoB8A6KAfAELo",
-            "AQoaY29tLmNvc21vcy5zdGFraW5nLnYxYmV0YTFCDEdlbmVzaXNQcm90b1AB",
-            "WkJnaXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL2Nvc21vcy9zdGFraW5n",
-            "L3YxYmV0YTE7c3Rha2luZ3YxYmV0YTGiAgNDU1iqAhZDb3Ntb3MuU3Rha2lu",
-            "Zy5WMWJldGExygIWQ29zbW9zXFN0YWtpbmdcVjFiZXRhMeICIkNvc21vc1xT",
-            "dGFraW5nXFYxYmV0YTFcR1BCTWV0YWRhdGHqAhhDb3Ntb3M6OlN0YWtpbmc6",
-            "OlYxYmV0YTFiBnByb3RvMw=="));
+            "MS5QYXJhbXNCCcjeHwCo57AqAVIGcGFyYW1zEloKEGxhc3RfdG90YWxfcG93",
+            "ZXIYAiABKAxCMMjeHwDa3h8VY29zbW9zc2RrLmlvL21hdGguSW500rQtCmNv",
+            "c21vcy5JbnSo57AqAVIObGFzdFRvdGFsUG93ZXISaQoVbGFzdF92YWxpZGF0",
+            "b3JfcG93ZXJzGAMgAygLMiouY29zbW9zLnN0YWtpbmcudjFiZXRhMS5MYXN0",
+            "VmFsaWRhdG9yUG93ZXJCCcjeHwCo57AqAVITbGFzdFZhbGlkYXRvclBvd2Vy",
+            "cxJMCgp2YWxpZGF0b3JzGAQgAygLMiEuY29zbW9zLnN0YWtpbmcudjFiZXRh",
+            "MS5WYWxpZGF0b3JCCcjeHwCo57AqAVIKdmFsaWRhdG9ycxJPCgtkZWxlZ2F0",
+            "aW9ucxgFIAMoCzIiLmNvc21vcy5zdGFraW5nLnYxYmV0YTEuRGVsZWdhdGlv",
+            "bkIJyN4fAKjnsCoBUgtkZWxlZ2F0aW9ucxJrChV1bmJvbmRpbmdfZGVsZWdh",
+            "dGlvbnMYBiADKAsyKy5jb3Ntb3Muc3Rha2luZy52MWJldGExLlVuYm9uZGlu",
+            "Z0RlbGVnYXRpb25CCcjeHwCo57AqAVIUdW5ib25kaW5nRGVsZWdhdGlvbnMS",
+            "VQoNcmVkZWxlZ2F0aW9ucxgHIAMoCzIkLmNvc21vcy5zdGFraW5nLnYxYmV0",
+            "YTEuUmVkZWxlZ2F0aW9uQgnI3h8AqOewKgFSDXJlZGVsZWdhdGlvbnMSGgoI",
+            "ZXhwb3J0ZWQYCCABKAhSCGV4cG9ydGVkImgKEkxhc3RWYWxpZGF0b3JQb3dl",
+            "chIyCgdhZGRyZXNzGAEgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmdS",
+            "B2FkZHJlc3MSFAoFcG93ZXIYAiABKANSBXBvd2VyOgiIoB8A6KAfAELoAQoa",
+            "Y29tLmNvc21vcy5zdGFraW5nLnYxYmV0YTFCDEdlbmVzaXNQcm90b1ABWkJn",
+            "aXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL2Nvc21vcy9zdGFraW5nL3Yx",
+            "YmV0YTE7c3Rha2luZ3YxYmV0YTGiAgNDU1iqAhZDb3Ntb3MuU3Rha2luZy5W",
+            "MWJldGExygIWQ29zbW9zXFN0YWtpbmdcVjFiZXRhMeICIkNvc21vc1xTdGFr",
+            "aW5nXFYxYmV0YTFcR1BCTWV0YWRhdGHqAhhDb3Ntb3M6OlN0YWtpbmc6OlYx",
+            "YmV0YTFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::Cosmos.Staking.V1beta1.StakingReflection.Descriptor, global::CosmosProto.CosmosReflection.Descriptor, global::Amino.AminoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -169,7 +169,7 @@ namespace Cosmos.Staking.V1beta1 {
         = pb::FieldCodec.ForMessage(34, global::Cosmos.Staking.V1beta1.Validator.Parser);
     private readonly pbc::RepeatedField<global::Cosmos.Staking.V1beta1.Validator> validators_ = new pbc::RepeatedField<global::Cosmos.Staking.V1beta1.Validator>();
     /// <summary>
-    /// delegations defines the validator set at genesis.
+    /// validators defines the validator set at genesis.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -222,6 +222,9 @@ namespace Cosmos.Staking.V1beta1 {
     /// <summary>Field number for the "exported" field.</summary>
     public const int ExportedFieldNumber = 8;
     private bool exported_;
+    /// <summary>
+    /// exported defines a bool to identify whether the chain dealing with exported or initialized genesis.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Exported {
@@ -395,7 +398,11 @@ namespace Cosmos.Staking.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -445,7 +452,11 @@ namespace Cosmos.Staking.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -685,7 +696,11 @@ namespace Cosmos.Staking.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -708,7 +723,11 @@ namespace Cosmos.Staking.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

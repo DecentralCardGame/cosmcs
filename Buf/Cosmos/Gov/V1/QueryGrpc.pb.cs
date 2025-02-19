@@ -51,6 +51,10 @@ namespace Cosmos.Gov.V1 {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Cosmos.Gov.V1.QueryConstitutionRequest> __Marshaller_cosmos_gov_v1_QueryConstitutionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Cosmos.Gov.V1.QueryConstitutionRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Cosmos.Gov.V1.QueryConstitutionResponse> __Marshaller_cosmos_gov_v1_QueryConstitutionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Cosmos.Gov.V1.QueryConstitutionResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Cosmos.Gov.V1.QueryProposalRequest> __Marshaller_cosmos_gov_v1_QueryProposalRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Cosmos.Gov.V1.QueryProposalRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Cosmos.Gov.V1.QueryProposalResponse> __Marshaller_cosmos_gov_v1_QueryProposalResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Cosmos.Gov.V1.QueryProposalResponse.Parser));
@@ -82,6 +86,14 @@ namespace Cosmos.Gov.V1 {
     static readonly grpc::Marshaller<global::Cosmos.Gov.V1.QueryTallyResultRequest> __Marshaller_cosmos_gov_v1_QueryTallyResultRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Cosmos.Gov.V1.QueryTallyResultRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Cosmos.Gov.V1.QueryTallyResultResponse> __Marshaller_cosmos_gov_v1_QueryTallyResultResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Cosmos.Gov.V1.QueryTallyResultResponse.Parser));
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Cosmos.Gov.V1.QueryConstitutionRequest, global::Cosmos.Gov.V1.QueryConstitutionResponse> __Method_Constitution = new grpc::Method<global::Cosmos.Gov.V1.QueryConstitutionRequest, global::Cosmos.Gov.V1.QueryConstitutionResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "Constitution",
+        __Marshaller_cosmos_gov_v1_QueryConstitutionRequest,
+        __Marshaller_cosmos_gov_v1_QueryConstitutionResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Cosmos.Gov.V1.QueryProposalRequest, global::Cosmos.Gov.V1.QueryProposalResponse> __Method_Proposal = new grpc::Method<global::Cosmos.Gov.V1.QueryProposalRequest, global::Cosmos.Gov.V1.QueryProposalResponse>(
@@ -180,6 +192,54 @@ namespace Cosmos.Gov.V1 {
       {
       }
 
+      /// <summary>
+      /// Constitution queries the chain's constitution.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Cosmos.Gov.V1.QueryConstitutionResponse Constitution(global::Cosmos.Gov.V1.QueryConstitutionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return Constitution(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Constitution queries the chain's constitution.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Cosmos.Gov.V1.QueryConstitutionResponse Constitution(global::Cosmos.Gov.V1.QueryConstitutionRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_Constitution, null, options, request);
+      }
+      /// <summary>
+      /// Constitution queries the chain's constitution.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Cosmos.Gov.V1.QueryConstitutionResponse> ConstitutionAsync(global::Cosmos.Gov.V1.QueryConstitutionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ConstitutionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Constitution queries the chain's constitution.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Cosmos.Gov.V1.QueryConstitutionResponse> ConstitutionAsync(global::Cosmos.Gov.V1.QueryConstitutionRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_Constitution, null, options, request);
+      }
       /// <summary>
       /// Proposal queries proposal details based on ProposalID.
       /// </summary>
@@ -421,7 +481,7 @@ namespace Cosmos.Gov.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_Params, null, options, request);
       }
       /// <summary>
-      /// Deposit queries single deposit information based proposalID, depositAddr.
+      /// Deposit queries single deposit information based on proposalID, depositAddr.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -434,7 +494,7 @@ namespace Cosmos.Gov.V1 {
         return Deposit(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Deposit queries single deposit information based proposalID, depositAddr.
+      /// Deposit queries single deposit information based on proposalID, depositAddr.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -445,7 +505,7 @@ namespace Cosmos.Gov.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_Deposit, null, options, request);
       }
       /// <summary>
-      /// Deposit queries single deposit information based proposalID, depositAddr.
+      /// Deposit queries single deposit information based on proposalID, depositAddr.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -458,7 +518,7 @@ namespace Cosmos.Gov.V1 {
         return DepositAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Deposit queries single deposit information based proposalID, depositAddr.
+      /// Deposit queries single deposit information based on proposalID, depositAddr.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

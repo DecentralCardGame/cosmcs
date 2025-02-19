@@ -26,14 +26,14 @@ namespace Cosmos.Orm.Module.V1alpha1 {
           string.Concat(
             "Cidjb3Ntb3Mvb3JtL21vZHVsZS92MWFscGhhMS9tb2R1bGUucHJvdG8SGmNv",
             "c21vcy5vcm0ubW9kdWxlLnYxYWxwaGExGiBjb3Ntb3MvYXBwL3YxYWxwaGEx",
-            "L21vZHVsZS5wcm90byIyCgZNb2R1bGU6KLrAltoBIgogZ2l0aHViLmNvbS9j",
-            "b3Ntb3MvY29zbW9zLXNkay9vcm1CgAIKHmNvbS5jb3Ntb3Mub3JtLm1vZHVs",
-            "ZS52MWFscGhhMUILTW9kdWxlUHJvdG9QAVpGZ2l0aHViLmNvbS9jb3Ntb3Mv",
-            "Y29zbW9zLXNkay9jb3Ntb3Mvb3JtL21vZHVsZS92MWFscGhhMTttb2R1bGV2",
-            "MWFscGhhMaICA0NPTaoCGkNvc21vcy5Pcm0uTW9kdWxlLlYxYWxwaGExygIa",
-            "Q29zbW9zXE9ybVxNb2R1bGVcVjFhbHBoYTHiAiZDb3Ntb3NcT3JtXE1vZHVs",
-            "ZVxWMWFscGhhMVxHUEJNZXRhZGF0YeoCHUNvc21vczo6T3JtOjpNb2R1bGU6",
-            "OlYxYWxwaGExYgZwcm90bzM="));
+            "L21vZHVsZS5wcm90byIiCgZNb2R1bGU6GLrAltoBEgoQY29zbW9zc2RrLmlv",
+            "L29ybUKAAgoeY29tLmNvc21vcy5vcm0ubW9kdWxlLnYxYWxwaGExQgtNb2R1",
+            "bGVQcm90b1ABWkZnaXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL2Nvc21v",
+            "cy9vcm0vbW9kdWxlL3YxYWxwaGExO21vZHVsZXYxYWxwaGExogIDQ09NqgIa",
+            "Q29zbW9zLk9ybS5Nb2R1bGUuVjFhbHBoYTHKAhpDb3Ntb3NcT3JtXE1vZHVs",
+            "ZVxWMWFscGhhMeICJkNvc21vc1xPcm1cTW9kdWxlXFYxYWxwaGExXEdQQk1l",
+            "dGFkYXRh6gIdQ29zbW9zOjpPcm06Ok1vZHVsZTo6VjFhbHBoYTFiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Cosmos.App.V1alpha1.ModuleReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -46,8 +46,8 @@ namespace Cosmos.Orm.Module.V1alpha1 {
   #region Messages
   /// <summary>
   /// Module defines the ORM module which adds providers to the app container for
-  /// module-scoped DB's. In the future it may provide gRPC services for interacting
-  /// with ORM data.
+  /// ORM ModuleDB's and in the future will automatically register query
+  /// services for modules that use the ORM.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Module : pb::IMessage<Module>
@@ -176,7 +176,11 @@ namespace Cosmos.Orm.Module.V1alpha1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -191,7 +195,11 @@ namespace Cosmos.Orm.Module.V1alpha1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

@@ -8,9 +8,9 @@
 using grpc = global::Grpc.Core;
 
 namespace Tendermint.Abci {
-  public static partial class ABCIApplication
+  public static partial class ABCI
   {
-    static readonly string __ServiceName = "tendermint.abci.ABCIApplication";
+    static readonly string __ServiceName = "tendermint.abci.ABCI";
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
@@ -58,10 +58,6 @@ namespace Tendermint.Abci {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tendermint.Abci.ResponseInfo> __Marshaller_tendermint_abci_ResponseInfo = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tendermint.Abci.ResponseInfo.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Tendermint.Abci.RequestDeliverTx> __Marshaller_tendermint_abci_RequestDeliverTx = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tendermint.Abci.RequestDeliverTx.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Tendermint.Abci.ResponseDeliverTx> __Marshaller_tendermint_abci_ResponseDeliverTx = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tendermint.Abci.ResponseDeliverTx.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tendermint.Abci.RequestCheckTx> __Marshaller_tendermint_abci_RequestCheckTx = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tendermint.Abci.RequestCheckTx.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tendermint.Abci.ResponseCheckTx> __Marshaller_tendermint_abci_ResponseCheckTx = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tendermint.Abci.ResponseCheckTx.Parser));
@@ -77,14 +73,6 @@ namespace Tendermint.Abci {
     static readonly grpc::Marshaller<global::Tendermint.Abci.RequestInitChain> __Marshaller_tendermint_abci_RequestInitChain = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tendermint.Abci.RequestInitChain.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tendermint.Abci.ResponseInitChain> __Marshaller_tendermint_abci_ResponseInitChain = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tendermint.Abci.ResponseInitChain.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Tendermint.Abci.RequestBeginBlock> __Marshaller_tendermint_abci_RequestBeginBlock = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tendermint.Abci.RequestBeginBlock.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Tendermint.Abci.ResponseBeginBlock> __Marshaller_tendermint_abci_ResponseBeginBlock = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tendermint.Abci.ResponseBeginBlock.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Tendermint.Abci.RequestEndBlock> __Marshaller_tendermint_abci_RequestEndBlock = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tendermint.Abci.RequestEndBlock.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Tendermint.Abci.ResponseEndBlock> __Marshaller_tendermint_abci_ResponseEndBlock = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tendermint.Abci.ResponseEndBlock.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tendermint.Abci.RequestListSnapshots> __Marshaller_tendermint_abci_RequestListSnapshots = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tendermint.Abci.RequestListSnapshots.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -109,6 +97,18 @@ namespace Tendermint.Abci {
     static readonly grpc::Marshaller<global::Tendermint.Abci.RequestProcessProposal> __Marshaller_tendermint_abci_RequestProcessProposal = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tendermint.Abci.RequestProcessProposal.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tendermint.Abci.ResponseProcessProposal> __Marshaller_tendermint_abci_ResponseProcessProposal = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tendermint.Abci.ResponseProcessProposal.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tendermint.Abci.RequestExtendVote> __Marshaller_tendermint_abci_RequestExtendVote = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tendermint.Abci.RequestExtendVote.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tendermint.Abci.ResponseExtendVote> __Marshaller_tendermint_abci_ResponseExtendVote = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tendermint.Abci.ResponseExtendVote.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tendermint.Abci.RequestVerifyVoteExtension> __Marshaller_tendermint_abci_RequestVerifyVoteExtension = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tendermint.Abci.RequestVerifyVoteExtension.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tendermint.Abci.ResponseVerifyVoteExtension> __Marshaller_tendermint_abci_ResponseVerifyVoteExtension = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tendermint.Abci.ResponseVerifyVoteExtension.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tendermint.Abci.RequestFinalizeBlock> __Marshaller_tendermint_abci_RequestFinalizeBlock = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tendermint.Abci.RequestFinalizeBlock.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tendermint.Abci.ResponseFinalizeBlock> __Marshaller_tendermint_abci_ResponseFinalizeBlock = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tendermint.Abci.ResponseFinalizeBlock.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Tendermint.Abci.RequestEcho, global::Tendermint.Abci.ResponseEcho> __Method_Echo = new grpc::Method<global::Tendermint.Abci.RequestEcho, global::Tendermint.Abci.ResponseEcho>(
@@ -133,14 +133,6 @@ namespace Tendermint.Abci {
         "Info",
         __Marshaller_tendermint_abci_RequestInfo,
         __Marshaller_tendermint_abci_ResponseInfo);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Tendermint.Abci.RequestDeliverTx, global::Tendermint.Abci.ResponseDeliverTx> __Method_DeliverTx = new grpc::Method<global::Tendermint.Abci.RequestDeliverTx, global::Tendermint.Abci.ResponseDeliverTx>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "DeliverTx",
-        __Marshaller_tendermint_abci_RequestDeliverTx,
-        __Marshaller_tendermint_abci_ResponseDeliverTx);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Tendermint.Abci.RequestCheckTx, global::Tendermint.Abci.ResponseCheckTx> __Method_CheckTx = new grpc::Method<global::Tendermint.Abci.RequestCheckTx, global::Tendermint.Abci.ResponseCheckTx>(
@@ -173,22 +165,6 @@ namespace Tendermint.Abci {
         "InitChain",
         __Marshaller_tendermint_abci_RequestInitChain,
         __Marshaller_tendermint_abci_ResponseInitChain);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Tendermint.Abci.RequestBeginBlock, global::Tendermint.Abci.ResponseBeginBlock> __Method_BeginBlock = new grpc::Method<global::Tendermint.Abci.RequestBeginBlock, global::Tendermint.Abci.ResponseBeginBlock>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "BeginBlock",
-        __Marshaller_tendermint_abci_RequestBeginBlock,
-        __Marshaller_tendermint_abci_ResponseBeginBlock);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Tendermint.Abci.RequestEndBlock, global::Tendermint.Abci.ResponseEndBlock> __Method_EndBlock = new grpc::Method<global::Tendermint.Abci.RequestEndBlock, global::Tendermint.Abci.ResponseEndBlock>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "EndBlock",
-        __Marshaller_tendermint_abci_RequestEndBlock,
-        __Marshaller_tendermint_abci_ResponseEndBlock);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Tendermint.Abci.RequestListSnapshots, global::Tendermint.Abci.ResponseListSnapshots> __Method_ListSnapshots = new grpc::Method<global::Tendermint.Abci.RequestListSnapshots, global::Tendermint.Abci.ResponseListSnapshots>(
@@ -238,36 +214,60 @@ namespace Tendermint.Abci {
         __Marshaller_tendermint_abci_RequestProcessProposal,
         __Marshaller_tendermint_abci_ResponseProcessProposal);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tendermint.Abci.RequestExtendVote, global::Tendermint.Abci.ResponseExtendVote> __Method_ExtendVote = new grpc::Method<global::Tendermint.Abci.RequestExtendVote, global::Tendermint.Abci.ResponseExtendVote>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ExtendVote",
+        __Marshaller_tendermint_abci_RequestExtendVote,
+        __Marshaller_tendermint_abci_ResponseExtendVote);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tendermint.Abci.RequestVerifyVoteExtension, global::Tendermint.Abci.ResponseVerifyVoteExtension> __Method_VerifyVoteExtension = new grpc::Method<global::Tendermint.Abci.RequestVerifyVoteExtension, global::Tendermint.Abci.ResponseVerifyVoteExtension>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "VerifyVoteExtension",
+        __Marshaller_tendermint_abci_RequestVerifyVoteExtension,
+        __Marshaller_tendermint_abci_ResponseVerifyVoteExtension);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tendermint.Abci.RequestFinalizeBlock, global::Tendermint.Abci.ResponseFinalizeBlock> __Method_FinalizeBlock = new grpc::Method<global::Tendermint.Abci.RequestFinalizeBlock, global::Tendermint.Abci.ResponseFinalizeBlock>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "FinalizeBlock",
+        __Marshaller_tendermint_abci_RequestFinalizeBlock,
+        __Marshaller_tendermint_abci_ResponseFinalizeBlock);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
       get { return global::Tendermint.Abci.TypesReflection.Descriptor.Services[0]; }
     }
 
-    /// <summary>Client for ABCIApplication</summary>
-    public partial class ABCIApplicationClient : grpc::ClientBase<ABCIApplicationClient>
+    /// <summary>Client for ABCI</summary>
+    public partial class ABCIClient : grpc::ClientBase<ABCIClient>
     {
-      /// <summary>Creates a new client for ABCIApplication</summary>
+      /// <summary>Creates a new client for ABCI</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public ABCIApplicationClient(grpc::ChannelBase channel) : base(channel)
+      public ABCIClient(grpc::ChannelBase channel) : base(channel)
       {
       }
-      /// <summary>Creates a new client for ABCIApplication that uses a custom <c>CallInvoker</c>.</summary>
+      /// <summary>Creates a new client for ABCI that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public ABCIApplicationClient(grpc::CallInvoker callInvoker) : base(callInvoker)
+      public ABCIClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      protected ABCIApplicationClient() : base()
+      protected ABCIClient() : base()
       {
       }
       /// <summary>Protected constructor to allow creation of configured clients.</summary>
       /// <param name="configuration">The client configuration.</param>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      protected ABCIApplicationClient(ClientBaseConfiguration configuration) : base(configuration)
+      protected ABCIClient(ClientBaseConfiguration configuration) : base(configuration)
       {
       }
 
@@ -330,26 +330,6 @@ namespace Tendermint.Abci {
       public virtual grpc::AsyncUnaryCall<global::Tendermint.Abci.ResponseInfo> InfoAsync(global::Tendermint.Abci.RequestInfo request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Info, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tendermint.Abci.ResponseDeliverTx DeliverTx(global::Tendermint.Abci.RequestDeliverTx request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return DeliverTx(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tendermint.Abci.ResponseDeliverTx DeliverTx(global::Tendermint.Abci.RequestDeliverTx request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_DeliverTx, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tendermint.Abci.ResponseDeliverTx> DeliverTxAsync(global::Tendermint.Abci.RequestDeliverTx request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return DeliverTxAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tendermint.Abci.ResponseDeliverTx> DeliverTxAsync(global::Tendermint.Abci.RequestDeliverTx request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_DeliverTx, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Tendermint.Abci.ResponseCheckTx CheckTx(global::Tendermint.Abci.RequestCheckTx request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
@@ -430,46 +410,6 @@ namespace Tendermint.Abci {
       public virtual grpc::AsyncUnaryCall<global::Tendermint.Abci.ResponseInitChain> InitChainAsync(global::Tendermint.Abci.RequestInitChain request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_InitChain, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tendermint.Abci.ResponseBeginBlock BeginBlock(global::Tendermint.Abci.RequestBeginBlock request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return BeginBlock(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tendermint.Abci.ResponseBeginBlock BeginBlock(global::Tendermint.Abci.RequestBeginBlock request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_BeginBlock, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tendermint.Abci.ResponseBeginBlock> BeginBlockAsync(global::Tendermint.Abci.RequestBeginBlock request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return BeginBlockAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tendermint.Abci.ResponseBeginBlock> BeginBlockAsync(global::Tendermint.Abci.RequestBeginBlock request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_BeginBlock, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tendermint.Abci.ResponseEndBlock EndBlock(global::Tendermint.Abci.RequestEndBlock request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return EndBlock(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tendermint.Abci.ResponseEndBlock EndBlock(global::Tendermint.Abci.RequestEndBlock request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_EndBlock, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tendermint.Abci.ResponseEndBlock> EndBlockAsync(global::Tendermint.Abci.RequestEndBlock request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return EndBlockAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tendermint.Abci.ResponseEndBlock> EndBlockAsync(global::Tendermint.Abci.RequestEndBlock request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_EndBlock, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Tendermint.Abci.ResponseListSnapshots ListSnapshots(global::Tendermint.Abci.RequestListSnapshots request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
@@ -591,11 +531,71 @@ namespace Tendermint.Abci {
       {
         return CallInvoker.AsyncUnaryCall(__Method_ProcessProposal, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tendermint.Abci.ResponseExtendVote ExtendVote(global::Tendermint.Abci.RequestExtendVote request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ExtendVote(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tendermint.Abci.ResponseExtendVote ExtendVote(global::Tendermint.Abci.RequestExtendVote request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ExtendVote, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tendermint.Abci.ResponseExtendVote> ExtendVoteAsync(global::Tendermint.Abci.RequestExtendVote request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ExtendVoteAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tendermint.Abci.ResponseExtendVote> ExtendVoteAsync(global::Tendermint.Abci.RequestExtendVote request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ExtendVote, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tendermint.Abci.ResponseVerifyVoteExtension VerifyVoteExtension(global::Tendermint.Abci.RequestVerifyVoteExtension request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return VerifyVoteExtension(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tendermint.Abci.ResponseVerifyVoteExtension VerifyVoteExtension(global::Tendermint.Abci.RequestVerifyVoteExtension request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_VerifyVoteExtension, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tendermint.Abci.ResponseVerifyVoteExtension> VerifyVoteExtensionAsync(global::Tendermint.Abci.RequestVerifyVoteExtension request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return VerifyVoteExtensionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tendermint.Abci.ResponseVerifyVoteExtension> VerifyVoteExtensionAsync(global::Tendermint.Abci.RequestVerifyVoteExtension request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_VerifyVoteExtension, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tendermint.Abci.ResponseFinalizeBlock FinalizeBlock(global::Tendermint.Abci.RequestFinalizeBlock request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return FinalizeBlock(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tendermint.Abci.ResponseFinalizeBlock FinalizeBlock(global::Tendermint.Abci.RequestFinalizeBlock request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_FinalizeBlock, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tendermint.Abci.ResponseFinalizeBlock> FinalizeBlockAsync(global::Tendermint.Abci.RequestFinalizeBlock request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return FinalizeBlockAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tendermint.Abci.ResponseFinalizeBlock> FinalizeBlockAsync(global::Tendermint.Abci.RequestFinalizeBlock request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_FinalizeBlock, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      protected override ABCIApplicationClient NewInstance(ClientBaseConfiguration configuration)
+      protected override ABCIClient NewInstance(ClientBaseConfiguration configuration)
       {
-        return new ABCIApplicationClient(configuration);
+        return new ABCIClient(configuration);
       }
     }
 

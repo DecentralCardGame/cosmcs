@@ -38,25 +38,32 @@ namespace Cosmos.Feegrant.V1beta1 {
             "GNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZ1IHZ3JhbnRlchIyCgdncmFudGVl",
             "GAIgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmdSB2dyYW50ZWU6LoLn",
             "sCoHZ3JhbnRlcornsCodY29zbW9zLXNkay9Nc2dSZXZva2VBbGxvd2FuY2Ui",
-            "HAoaTXNnUmV2b2tlQWxsb3dhbmNlUmVzcG9uc2Uy8wEKA01zZxJwCg5HcmFu",
-            "dEFsbG93YW5jZRIqLmNvc21vcy5mZWVncmFudC52MWJldGExLk1zZ0dyYW50",
-            "QWxsb3dhbmNlGjIuY29zbW9zLmZlZWdyYW50LnYxYmV0YTEuTXNnR3JhbnRB",
-            "bGxvd2FuY2VSZXNwb25zZRJzCg9SZXZva2VBbGxvd2FuY2USKy5jb3Ntb3Mu",
-            "ZmVlZ3JhbnQudjFiZXRhMS5Nc2dSZXZva2VBbGxvd2FuY2UaMy5jb3Ntb3Mu",
-            "ZmVlZ3JhbnQudjFiZXRhMS5Nc2dSZXZva2VBbGxvd2FuY2VSZXNwb25zZRoF",
-            "gOewKgFC6gEKG2NvbS5jb3Ntb3MuZmVlZ3JhbnQudjFiZXRhMUIHVHhQcm90",
-            "b1ABWkRnaXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL2Nvc21vcy9mZWVn",
-            "cmFudC92MWJldGExO2ZlZWdyYW50djFiZXRhMaICA0NGWKoCF0Nvc21vcy5G",
-            "ZWVncmFudC5WMWJldGExygIXQ29zbW9zXEZlZWdyYW50XFYxYmV0YTHiAiND",
-            "b3Ntb3NcRmVlZ3JhbnRcVjFiZXRhMVxHUEJNZXRhZGF0YeoCGUNvc21vczo6",
-            "RmVlZ3JhbnQ6OlYxYmV0YTFiBnByb3RvMw=="));
+            "HAoaTXNnUmV2b2tlQWxsb3dhbmNlUmVzcG9uc2UiUwoSTXNnUHJ1bmVBbGxv",
+            "d2FuY2VzEjAKBnBydW5lchgBIAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3Ry",
+            "aW5nUgZwcnVuZXI6C4LnsCoGcHJ1bmVyIhwKGk1zZ1BydW5lQWxsb3dhbmNl",
+            "c1Jlc3BvbnNlMugCCgNNc2cScAoOR3JhbnRBbGxvd2FuY2USKi5jb3Ntb3Mu",
+            "ZmVlZ3JhbnQudjFiZXRhMS5Nc2dHcmFudEFsbG93YW5jZRoyLmNvc21vcy5m",
+            "ZWVncmFudC52MWJldGExLk1zZ0dyYW50QWxsb3dhbmNlUmVzcG9uc2UScwoP",
+            "UmV2b2tlQWxsb3dhbmNlEisuY29zbW9zLmZlZWdyYW50LnYxYmV0YTEuTXNn",
+            "UmV2b2tlQWxsb3dhbmNlGjMuY29zbW9zLmZlZWdyYW50LnYxYmV0YTEuTXNn",
+            "UmV2b2tlQWxsb3dhbmNlUmVzcG9uc2UScwoPUHJ1bmVBbGxvd2FuY2VzEisu",
+            "Y29zbW9zLmZlZWdyYW50LnYxYmV0YTEuTXNnUHJ1bmVBbGxvd2FuY2VzGjMu",
+            "Y29zbW9zLmZlZWdyYW50LnYxYmV0YTEuTXNnUHJ1bmVBbGxvd2FuY2VzUmVz",
+            "cG9uc2UaBYDnsCoBQuoBChtjb20uY29zbW9zLmZlZWdyYW50LnYxYmV0YTFC",
+            "B1R4UHJvdG9QAVpEZ2l0aHViLmNvbS9jb3Ntb3MvY29zbW9zLXNkay9jb3Nt",
+            "b3MvZmVlZ3JhbnQvdjFiZXRhMTtmZWVncmFudHYxYmV0YTGiAgNDRliqAhdD",
+            "b3Ntb3MuRmVlZ3JhbnQuVjFiZXRhMcoCF0Nvc21vc1xGZWVncmFudFxWMWJl",
+            "dGEx4gIjQ29zbW9zXEZlZWdyYW50XFYxYmV0YTFcR1BCTWV0YWRhdGHqAhlD",
+            "b3Ntb3M6OkZlZWdyYW50OjpWMWJldGExYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, global::CosmosProto.CosmosReflection.Descriptor, global::Cosmos.Msg.V1.MsgReflection.Descriptor, global::Amino.AminoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Feegrant.V1beta1.MsgGrantAllowance), global::Cosmos.Feegrant.V1beta1.MsgGrantAllowance.Parser, new[]{ "Granter", "Grantee", "Allowance" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Feegrant.V1beta1.MsgGrantAllowanceResponse), global::Cosmos.Feegrant.V1beta1.MsgGrantAllowanceResponse.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Feegrant.V1beta1.MsgRevokeAllowance), global::Cosmos.Feegrant.V1beta1.MsgRevokeAllowance.Parser, new[]{ "Granter", "Grantee" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Feegrant.V1beta1.MsgRevokeAllowanceResponse), global::Cosmos.Feegrant.V1beta1.MsgRevokeAllowanceResponse.Parser, null, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Feegrant.V1beta1.MsgRevokeAllowanceResponse), global::Cosmos.Feegrant.V1beta1.MsgRevokeAllowanceResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Feegrant.V1beta1.MsgPruneAllowances), global::Cosmos.Feegrant.V1beta1.MsgPruneAllowances.Parser, new[]{ "Pruner" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Feegrant.V1beta1.MsgPruneAllowancesResponse), global::Cosmos.Feegrant.V1beta1.MsgPruneAllowancesResponse.Parser, null, null, null, null, null)
           }));
     }
     #endregion
@@ -293,7 +300,11 @@ namespace Cosmos.Feegrant.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -323,7 +334,11 @@ namespace Cosmos.Feegrant.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -479,7 +494,11 @@ namespace Cosmos.Feegrant.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -494,7 +513,11 @@ namespace Cosmos.Feegrant.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -699,7 +722,11 @@ namespace Cosmos.Feegrant.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -722,7 +749,11 @@ namespace Cosmos.Feegrant.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -871,7 +902,11 @@ namespace Cosmos.Feegrant.V1beta1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -886,7 +921,383 @@ namespace Cosmos.Feegrant.V1beta1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// MsgPruneAllowances prunes expired fee allowances.
+  ///
+  /// Since cosmos-sdk 0.50
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class MsgPruneAllowances : pb::IMessage<MsgPruneAllowances>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<MsgPruneAllowances> _parser = new pb::MessageParser<MsgPruneAllowances>(() => new MsgPruneAllowances());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<MsgPruneAllowances> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Cosmos.Feegrant.V1beta1.TxReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public MsgPruneAllowances() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public MsgPruneAllowances(MsgPruneAllowances other) : this() {
+      pruner_ = other.pruner_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public MsgPruneAllowances Clone() {
+      return new MsgPruneAllowances(this);
+    }
+
+    /// <summary>Field number for the "pruner" field.</summary>
+    public const int PrunerFieldNumber = 1;
+    private string pruner_ = "";
+    /// <summary>
+    /// pruner is the address of the user pruning expired allowances.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Pruner {
+      get { return pruner_; }
+      set {
+        pruner_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as MsgPruneAllowances);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(MsgPruneAllowances other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Pruner != other.Pruner) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Pruner.Length != 0) hash ^= Pruner.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Pruner.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Pruner);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Pruner.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Pruner);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Pruner.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Pruner);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(MsgPruneAllowances other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Pruner.Length != 0) {
+        Pruner = other.Pruner;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Pruner = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Pruner = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// MsgPruneAllowancesResponse defines the Msg/PruneAllowancesResponse response type.
+  ///
+  /// Since cosmos-sdk 0.50
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class MsgPruneAllowancesResponse : pb::IMessage<MsgPruneAllowancesResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<MsgPruneAllowancesResponse> _parser = new pb::MessageParser<MsgPruneAllowancesResponse>(() => new MsgPruneAllowancesResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<MsgPruneAllowancesResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Cosmos.Feegrant.V1beta1.TxReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public MsgPruneAllowancesResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public MsgPruneAllowancesResponse(MsgPruneAllowancesResponse other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public MsgPruneAllowancesResponse Clone() {
+      return new MsgPruneAllowancesResponse(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as MsgPruneAllowancesResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(MsgPruneAllowancesResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(MsgPruneAllowancesResponse other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

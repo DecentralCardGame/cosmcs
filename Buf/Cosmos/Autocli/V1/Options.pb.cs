@@ -48,26 +48,25 @@ namespace Cosmos.Autocli.V1 {
             "Z0Rlc2NyaXB0b3JSDnBvc2l0aW9uYWxBcmdzEhIKBHNraXAYDCABKAhSBHNr",
             "aXAaXgoQRmxhZ09wdGlvbnNFbnRyeRIQCgNrZXkYASABKAlSA2tleRI0CgV2",
             "YWx1ZRgCIAEoCzIeLmNvc21vcy5hdXRvY2xpLnYxLkZsYWdPcHRpb25zUgV2",
-            "YWx1ZToCOAEilgIKC0ZsYWdPcHRpb25zEhIKBG5hbWUYASABKAlSBG5hbWUS",
+            "YWx1ZToCOAEi5QEKC0ZsYWdPcHRpb25zEhIKBG5hbWUYASABKAlSBG5hbWUS",
             "HAoJc2hvcnRoYW5kGAIgASgJUglzaG9ydGhhbmQSFAoFdXNhZ2UYAyABKAlS",
-            "BXVzYWdlEiMKDWRlZmF1bHRfdmFsdWUYBCABKAlSDGRlZmF1bHRWYWx1ZRIv",
-            "ChRub19vcHRfZGVmYXVsdF92YWx1ZRgFIAEoCVIRbm9PcHREZWZhdWx0VmFs",
-            "dWUSHgoKZGVwcmVjYXRlZBgGIAEoCVIKZGVwcmVjYXRlZBIxChRzaG9ydGhh",
-            "bmRfZGVwcmVjYXRlZBgHIAEoCVITc2hvcnRoYW5kRGVwcmVjYXRlZBIWCgZo",
-            "aWRkZW4YCCABKAhSBmhpZGRlbiJUChdQb3NpdGlvbmFsQXJnRGVzY3JpcHRv",
-            "chIfCgtwcm90b19maWVsZBgBIAEoCVIKcHJvdG9GaWVsZBIYCgd2YXJhcmdz",
-            "GAIgASgIUgd2YXJhcmdzQsUBChVjb20uY29zbW9zLmF1dG9jbGkudjFCDE9w",
-            "dGlvbnNQcm90b1ABWjhnaXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL2Nv",
-            "c21vcy9hdXRvY2xpL3YxO2F1dG9jbGl2MaICA0NBWKoCEUNvc21vcy5BdXRv",
-            "Y2xpLlYxygIRQ29zbW9zXEF1dG9jbGlcVjHiAh1Db3Ntb3NcQXV0b2NsaVxW",
-            "MVxHUEJNZXRhZGF0YeoCE0Nvc21vczo6QXV0b2NsaTo6VjFiBnByb3RvMw=="));
+            "BXVzYWdlEiMKDWRlZmF1bHRfdmFsdWUYBCABKAlSDGRlZmF1bHRWYWx1ZRIe",
+            "CgpkZXByZWNhdGVkGAYgASgJUgpkZXByZWNhdGVkEjEKFHNob3J0aGFuZF9k",
+            "ZXByZWNhdGVkGAcgASgJUhNzaG9ydGhhbmREZXByZWNhdGVkEhYKBmhpZGRl",
+            "bhgIIAEoCFIGaGlkZGVuIlQKF1Bvc2l0aW9uYWxBcmdEZXNjcmlwdG9yEh8K",
+            "C3Byb3RvX2ZpZWxkGAEgASgJUgpwcm90b0ZpZWxkEhgKB3ZhcmFyZ3MYAiAB",
+            "KAhSB3ZhcmFyZ3NCxQEKFWNvbS5jb3Ntb3MuYXV0b2NsaS52MUIMT3B0aW9u",
+            "c1Byb3RvUAFaOGdpdGh1Yi5jb20vY29zbW9zL2Nvc21vcy1zZGsvY29zbW9z",
+            "L2F1dG9jbGkvdjE7YXV0b2NsaXYxogIDQ0FYqgIRQ29zbW9zLkF1dG9jbGku",
+            "VjHKAhFDb3Ntb3NcQXV0b2NsaVxWMeICHUNvc21vc1xBdXRvY2xpXFYxXEdQ",
+            "Qk1ldGFkYXRh6gITQ29zbW9zOjpBdXRvY2xpOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Autocli.V1.ModuleOptions), global::Cosmos.Autocli.V1.ModuleOptions.Parser, new[]{ "Tx", "Query" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Autocli.V1.ServiceCommandDescriptor), global::Cosmos.Autocli.V1.ServiceCommandDescriptor.Parser, new[]{ "Service", "RpcCommandOptions", "SubCommands" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Autocli.V1.RpcCommandOptions), global::Cosmos.Autocli.V1.RpcCommandOptions.Parser, new[]{ "RpcMethod", "Use", "Long", "Short", "Example", "Alias", "SuggestFor", "Deprecated", "Version", "FlagOptions", "PositionalArgs", "Skip" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Autocli.V1.FlagOptions), global::Cosmos.Autocli.V1.FlagOptions.Parser, new[]{ "Name", "Shorthand", "Usage", "DefaultValue", "NoOptDefaultValue", "Deprecated", "ShorthandDeprecated", "Hidden" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Autocli.V1.FlagOptions), global::Cosmos.Autocli.V1.FlagOptions.Parser, new[]{ "Name", "Shorthand", "Usage", "DefaultValue", "Deprecated", "ShorthandDeprecated", "Hidden" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cosmos.Autocli.V1.PositionalArgDescriptor), global::Cosmos.Autocli.V1.PositionalArgDescriptor.Parser, new[]{ "ProtoField", "Varargs" }, null, null, null, null)
           }));
     }
@@ -128,7 +127,7 @@ namespace Cosmos.Autocli.V1 {
     public const int TxFieldNumber = 1;
     private global::Cosmos.Autocli.V1.ServiceCommandDescriptor tx_;
     /// <summary>
-    /// tx describes the tx command for the module.
+    /// tx describes the tx commands for the module.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -143,7 +142,7 @@ namespace Cosmos.Autocli.V1 {
     public const int QueryFieldNumber = 2;
     private global::Cosmos.Autocli.V1.ServiceCommandDescriptor query_;
     /// <summary>
-    /// query describes the tx command for the module.
+    /// query describes the queries commands for the module.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -275,7 +274,11 @@ namespace Cosmos.Autocli.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -304,7 +307,11 @@ namespace Cosmos.Autocli.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -539,7 +546,11 @@ namespace Cosmos.Autocli.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -566,7 +577,11 @@ namespace Cosmos.Autocli.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1071,7 +1086,11 @@ namespace Cosmos.Autocli.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1134,7 +1153,11 @@ namespace Cosmos.Autocli.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1238,7 +1261,6 @@ namespace Cosmos.Autocli.V1 {
       shorthand_ = other.shorthand_;
       usage_ = other.usage_;
       defaultValue_ = other.defaultValue_;
-      noOptDefaultValue_ = other.noOptDefaultValue_;
       deprecated_ = other.deprecated_;
       shorthandDeprecated_ = other.shorthandDeprecated_;
       hidden_ = other.hidden_;
@@ -1311,21 +1333,6 @@ namespace Cosmos.Autocli.V1 {
       }
     }
 
-    /// <summary>Field number for the "no_opt_default_value" field.</summary>
-    public const int NoOptDefaultValueFieldNumber = 5;
-    private string noOptDefaultValue_ = "";
-    /// <summary>
-    /// default value is the default value as text if the flag is used without any value.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string NoOptDefaultValue {
-      get { return noOptDefaultValue_; }
-      set {
-        noOptDefaultValue_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
     /// <summary>Field number for the "deprecated" field.</summary>
     public const int DeprecatedFieldNumber = 6;
     private string deprecated_ = "";
@@ -1390,7 +1397,6 @@ namespace Cosmos.Autocli.V1 {
       if (Shorthand != other.Shorthand) return false;
       if (Usage != other.Usage) return false;
       if (DefaultValue != other.DefaultValue) return false;
-      if (NoOptDefaultValue != other.NoOptDefaultValue) return false;
       if (Deprecated != other.Deprecated) return false;
       if (ShorthandDeprecated != other.ShorthandDeprecated) return false;
       if (Hidden != other.Hidden) return false;
@@ -1405,7 +1411,6 @@ namespace Cosmos.Autocli.V1 {
       if (Shorthand.Length != 0) hash ^= Shorthand.GetHashCode();
       if (Usage.Length != 0) hash ^= Usage.GetHashCode();
       if (DefaultValue.Length != 0) hash ^= DefaultValue.GetHashCode();
-      if (NoOptDefaultValue.Length != 0) hash ^= NoOptDefaultValue.GetHashCode();
       if (Deprecated.Length != 0) hash ^= Deprecated.GetHashCode();
       if (ShorthandDeprecated.Length != 0) hash ^= ShorthandDeprecated.GetHashCode();
       if (Hidden != false) hash ^= Hidden.GetHashCode();
@@ -1442,10 +1447,6 @@ namespace Cosmos.Autocli.V1 {
       if (DefaultValue.Length != 0) {
         output.WriteRawTag(34);
         output.WriteString(DefaultValue);
-      }
-      if (NoOptDefaultValue.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(NoOptDefaultValue);
       }
       if (Deprecated.Length != 0) {
         output.WriteRawTag(50);
@@ -1485,10 +1486,6 @@ namespace Cosmos.Autocli.V1 {
         output.WriteRawTag(34);
         output.WriteString(DefaultValue);
       }
-      if (NoOptDefaultValue.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(NoOptDefaultValue);
-      }
       if (Deprecated.Length != 0) {
         output.WriteRawTag(50);
         output.WriteString(Deprecated);
@@ -1523,9 +1520,6 @@ namespace Cosmos.Autocli.V1 {
       if (DefaultValue.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(DefaultValue);
       }
-      if (NoOptDefaultValue.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(NoOptDefaultValue);
-      }
       if (Deprecated.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Deprecated);
       }
@@ -1559,9 +1553,6 @@ namespace Cosmos.Autocli.V1 {
       if (other.DefaultValue.Length != 0) {
         DefaultValue = other.DefaultValue;
       }
-      if (other.NoOptDefaultValue.Length != 0) {
-        NoOptDefaultValue = other.NoOptDefaultValue;
-      }
       if (other.Deprecated.Length != 0) {
         Deprecated = other.Deprecated;
       }
@@ -1582,7 +1573,11 @@ namespace Cosmos.Autocli.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1600,10 +1595,6 @@ namespace Cosmos.Autocli.V1 {
           }
           case 34: {
             DefaultValue = input.ReadString();
-            break;
-          }
-          case 42: {
-            NoOptDefaultValue = input.ReadString();
             break;
           }
           case 50: {
@@ -1629,7 +1620,11 @@ namespace Cosmos.Autocli.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1647,10 +1642,6 @@ namespace Cosmos.Autocli.V1 {
           }
           case 34: {
             DefaultValue = input.ReadString();
-            break;
-          }
-          case 42: {
-            NoOptDefaultValue = input.ReadString();
             break;
           }
           case 50: {
@@ -1869,7 +1860,11 @@ namespace Cosmos.Autocli.V1 {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1892,7 +1887,11 @@ namespace Cosmos.Autocli.V1 {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
