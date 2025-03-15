@@ -17,17 +17,19 @@ namespace Cosmcs.Client
         public AccountId AccoutAddress { get; }
         public string ChainId { get; }
         public QueryClient QueryClient { get; }
+        public string Prefix { get; }
         public Cosmos.Tx.V1beta1.Service.ServiceClient TxClient { get; }
 
-        public EasyClient(QueryClient queryClient, string chainId, byte[] bytes, string prefix)
+        public EasyClient(QueryClient queryClient, string chainId, byte[] privateKey)
         {
             ChainId = chainId;
             QueryClient = queryClient;
             Broadcaster = new GrpcBroadcaster(queryClient.Channel);
-            PrivateKey = new PrivateKey(bytes);
+            PrivateKey = new PrivateKey(privateKey);
             TxClient = Broadcaster.TxClient;
             var pubkey = PrivateKey.PublicKey();
-            AccoutAddress = pubkey.AccountId(prefix);
+            Prefix = queryPrefix();
+            AccoutAddress = pubkey.AccountId(Prefix);
             var queriedBaseAccount = GetBaseAccount();
             BaseAccount = new BaseAccount(
                 AccoutAddress, pubkey, queriedBaseAccount.AccountNumber,
@@ -41,6 +43,12 @@ namespace Cosmcs.Client
             {
                 Hash = txHash
             }).ResponseAsync;
+        }
+
+        private string queryPrefix() {
+            return QueryClient.AuthClient.Bech32Prefix(
+                    new Cosmos.Auth.V1beta1.Bech32PrefixRequest {}
+            ).Bech32Prefix;
         }
 
         public Task<Cosmos.Auth.V1beta1.QueryAccountResponse> QueryAccount(string addr)
