@@ -45,9 +45,10 @@ namespace Cosmcs.Client
             }).ResponseAsync;
         }
 
-        private string queryPrefix() {
+        private string queryPrefix()
+        {
             return QueryClient.AuthClient.Bech32Prefix(
-                    new Cosmos.Auth.V1beta1.Bech32PrefixRequest {}
+                    new Cosmos.Auth.V1beta1.Bech32PrefixRequest { }
             ).Bech32Prefix;
         }
 

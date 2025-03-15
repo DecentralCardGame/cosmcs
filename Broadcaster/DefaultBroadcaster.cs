@@ -37,7 +37,8 @@ namespace Cosmcs.Broadcaster
         public Task<HttpContent> Broadcast(byte[] bytes, Cosmos.Tx.V1beta1.BroadcastMode mode)
         {
             var content = new StringContent(
-                Formatter.Format(new Cosmos.Tx.V1beta1.BroadcastTxRequest
+                Formatter.Format(
+                    new Cosmos.Tx.V1beta1.BroadcastTxRequest
                     {
                         TxBytes = ByteString.CopyFrom(bytes),
                         Mode = mode

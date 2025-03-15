@@ -8,7 +8,7 @@ namespace Cosmcs.Auth
         public AccountId AccountId { get; }
         public PublicKey? Pubkey { get; }
         public ulong AccountNumber { get; }
-        public ulong Sequence { get; private set;}
+        public ulong Sequence { get; private set; }
 
         public BaseAccount(
             AccountId address,
