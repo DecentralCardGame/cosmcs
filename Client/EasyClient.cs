@@ -20,10 +20,10 @@ namespace Cosmcs.Client
         public string Prefix { get; }
         public Cosmos.Tx.V1beta1.Service.ServiceClient TxClient { get; }
 
-        public EasyClient(QueryClient queryClient, string chainId, byte[] privateKey)
+        public EasyClient(QueryClient queryClient, byte[] privateKey)
         {
-            ChainId = chainId;
             QueryClient = queryClient;
+            ChainId = queryChainId();
             Broadcaster = new GrpcBroadcaster(queryClient.Channel);
             PrivateKey = new PrivateKey(privateKey);
             TxClient = Broadcaster.TxClient;
@@ -50,6 +50,13 @@ namespace Cosmcs.Client
             return QueryClient.AuthClient.Bech32Prefix(
                     new Cosmos.Auth.V1beta1.Bech32PrefixRequest { }
             ).Bech32Prefix;
+        }
+
+        private string queryChainId()
+        {
+            return QueryClient.TendermintServiceClient.GetNodeInfo(
+                new Cosmos.Base.Tendermint.V1beta1.GetNodeInfoRequest { }
+            ).DefaultNodeInfo.Network;
         }
 
         public Task<Cosmos.Auth.V1beta1.QueryAccountResponse> QueryAccount(string addr)

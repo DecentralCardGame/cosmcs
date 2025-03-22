@@ -9,6 +9,7 @@ namespace Cosmcs.Client
         public Cosmos.Bank.V1beta1.Query.QueryClient BankQueryClient { get; }
         public Cosmos.Authz.V1beta1.Query.QueryClient AuthzQueryClient { get; }
         public Cosmos.Gov.V1beta1.Query.QueryClient GovQueryClient { get; }
+        public Cosmos.Base.Tendermint.V1beta1.Service.ServiceClient TendermintServiceClient { get; }
 
         public QueryClient(string rpcUrl, GrpcChannelOptions? options = null)
         {
@@ -17,6 +18,7 @@ namespace Cosmcs.Client
             BankQueryClient = new Cosmos.Bank.V1beta1.Query.QueryClient(Channel);
             AuthzQueryClient = new Cosmos.Authz.V1beta1.Query.QueryClient(Channel);
             GovQueryClient = new Cosmos.Gov.V1beta1.Query.QueryClient(Channel);
+            TendermintServiceClient = new Cosmos.Base.Tendermint.V1beta1.Service.ServiceClient(Channel);
         }
     }
 
