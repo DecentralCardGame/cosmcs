@@ -20,31 +20,29 @@ namespace Cosmcs.Crypto
         private const string Secp256K1TypeUrl = "/cosmos.crypto.secp256k1.PubKey";
 
         public PublicKeyType Type { get; }
-        private readonly byte[]? _ed25519Pub;
-        private readonly byte[]? _secp256K1Pub;
+        private readonly byte[] _key;
 
-        private PublicKey(PublicKeyType type, byte[]? ed25519Pub, byte[]? secp256K1Pub)
+        private PublicKey(PublicKeyType type, byte[] key)
         {
             Type = type;
-            _ed25519Pub = ed25519Pub;
-            _secp256K1Pub = secp256K1Pub;
+            _key = key;
         }
 
         public static PublicKey Secp256K1(byte[] key)
         {
-            return new PublicKey(PublicKeyType.Secp256K1, null, key);
+            return new PublicKey(PublicKeyType.Secp256K1, key);
         }
 
-        public static PublicKey Ed25519(byte[]? key)
+        public static PublicKey Ed25519(byte[] key)
         {
-            return new PublicKey(PublicKeyType.Ed25519, key, null);
+            return new PublicKey(PublicKeyType.Ed25519, key);
         }
 
         public AccountId AccountId(string prefix)
         {
-            if (_secp256K1Pub != null)
+            if (Type == PublicKeyType.Secp256K1)
             {
-                var shaDigest = SHA256.Create().ComputeHash(_secp256K1Pub);
+                var shaDigest = SHA256.Create().ComputeHash(_key);
                 var ripemdDigest = new RIPEMD160().ComputeHash(shaDigest);
                 return new AccountId(prefix, ripemdDigest[..20]);
             }
@@ -54,6 +52,7 @@ namespace Cosmcs.Crypto
 
         public Any IntoProto()
         {
+            ByteString keyBytes = ByteString.CopyFrom(_key);
             switch (Type)
             {
                 case PublicKeyType.Secp256K1:
@@ -61,7 +60,7 @@ namespace Cosmcs.Crypto
                     {
                         Value = new Cosmos.Crypto.Secp256k1.PubKey
                         {
-                            Key = ByteString.CopyFrom(_secp256K1Pub)
+                            Key = keyBytes
                         }.ToByteString(),
                         TypeUrl = Secp256K1TypeUrl
                     };
@@ -70,7 +69,7 @@ namespace Cosmcs.Crypto
                     {
                         Value = new Cosmos.Crypto.Ed25519.PubKey
                         {
-                            Key = ByteString.CopyFrom(_ed25519Pub)
+                            Key = keyBytes
                         }.ToByteString(),
                         TypeUrl = Ed25519TypeUrl
                     };
